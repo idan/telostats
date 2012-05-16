@@ -128,23 +128,9 @@ LOGGING = {
 # from S3 import CallingFormat
 # AWS_CALLING_FORMAT = CallingFormat.SUBDOMAIN
 
-
-# from celery.schedules import crontab
-
-# CELERYBEAT_SCHEDULE = {
-#     # Executes every Monday morning at 7:30 A.M
-#     "every-monday-morning": {
-#         "task": "tasks.add",
-#         "schedule": crontab(hour=7, minute=30, day_of_week=1),
-#         "args": (16, 16),
-#     },
-# }
-
+# Celery
 CELERY_ENABLE_UTC = True
 CELERY_TIMEZONE = "Etc/UTC"
 CELERYBEAT_SCHEDULER = 'djcelery.schedulers.DatabaseScheduler'
-
-
-# Celery
 import djcelery
 djcelery.setup_loader()
