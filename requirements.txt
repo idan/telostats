@@ -1,0 +1,12 @@
+django-celery==2.5.5
+django-redis-cache==0.9.4
+django-storages==1.1.4
+django-tastypie==0.9.11
+Django==1.4
+gunicorn==0.14.3
+pyquery==1.2
+pytz==2012c
+redis==2.4.12
+requests==0.11.2
+South==0.7.5
+Unipath==0.2.1
