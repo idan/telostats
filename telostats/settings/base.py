@@ -64,8 +64,8 @@ TEMPLATE_DIRS = (
     PROJECT_DIR.child('templates'),
 )
 
-ROOT_URLCONF = 'skills.urls'
-WSGI_APPLICATION = 'skills.wsgi.application'
+ROOT_URLCONF = 'telostats.urls'
+WSGI_APPLICATION = 'telostats.wsgi.application'
 
 
 INSTALLED_APPS = (
@@ -81,6 +81,7 @@ INSTALLED_APPS = (
     'storages',
     'south',
     'djcelery',
+    'tastypie',
 
     'telostats.stations',
 )
