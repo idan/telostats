@@ -8,6 +8,9 @@ class Station(models.Model):
     longitude = models.FloatField(u'longitude')
     latitude = models.FloatField(u'latitude')
 
+    def __unicode__(self):
+        return self.name
+
 
 class Status(models.Model):
     station = models.ForeignKey(Station)
@@ -15,3 +18,9 @@ class Status(models.Model):
     actual_timestamp = models.DateTimeField(default=timezone.now)
     bikes = models.IntegerField(u'available bikes')
     docks = models.IntegerField(u'available docks')
+
+    def __unicode__(self):
+        return u'{}: {}/{} ({})'.format(
+            self.station,
+            self.bikes, self.docks,
+            self.timestamp)
