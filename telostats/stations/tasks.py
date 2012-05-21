@@ -1,5 +1,6 @@
 import re
-import pyquery
+from bs4 import BeautifulSoup
+import requests
 import datetime
 import logging
 
@@ -14,14 +15,15 @@ STATION_DATA_URL = u'http://www.tel-o-fun.co.il/DesktopModules/Locations/Station
 
 
 def build_station_list():
-    dom = pyquery.PyQuery(STATION_LIST_URL)
-    raw_stations = dom('.bicycle_station')
+    r = requests.get(STATION_LIST_URL)
+    soup = BeautifulSoup(r.content)
+    raw_stations = soup.find_all('a', 'bicycle_station')
     stations = {}
-    for elem in raw_stations:
-        id = elem.attrib['sid']
-        stations[id] = {'name': unicode(elem.text),
-                        'longitude': elem.attrib['x'],
-                        'latitude': elem.attrib['y']}
+    for tag in raw_stations:
+        id = tag['sid']
+        stations[id] = {'name': tag.string,
+                        'longitude': tag['x'],
+                        'latitude': tag['y']}
     return stations
 
 
@@ -30,8 +32,9 @@ def get_station_metadata(id):
 
     Returns a two-element tuple consisting of available (bikes, docks)
     """
-    dom = pyquery.PyQuery(STATION_DATA_URL.format(id))
-    return tuple(re.findall('\d+', dom('div')[4].text_content()))
+    r = requests.get(STATION_DATA_URL.format(id))
+    soup = BeautifulSoup(r.content)
+    return tuple(re.findall('\d+', soup.find_all('div')[4].get_text()))
 
 
 @periodic_task(ignore_result=True, run_every=crontab(minute="*/15"))
