@@ -9,9 +9,16 @@ from django.utils.timezone import utc
 from celery.schedules import crontab
 from celery.task import task, periodic_task
 from .models import Station, Status
+from utils.settings import get_setting_or_die
+from utils import tempodb
 
 STATION_LIST_URL = u'http://www.tel-o-fun.co.il/%D7%AA%D7%97%D7%A0%D7%95%D7%AA%D7%AA%D7%9C%D7%90%D7%95%D7%A4%D7%9F.aspx'
 STATION_DATA_URL = u'http://www.tel-o-fun.co.il/DesktopModules/Locations/StationData.ashx?sid={0}'
+
+TEMPODB_API_KEY = get_setting_or_die('TEMPODB_API_KEY')
+TEMPODB_API_SECRET = get_setting_or_die('TEMPODB_API_SECRET')
+
+tempo = tempodb.Client(TEMPODB_API_KEY, TEMPODB_API_SECRET)
 
 
 def build_station_list():
@@ -45,6 +52,8 @@ def scrape_station_list():
     logging.info("Found {} stations".format(len(stations)))
     for id, defaults in stations.items():
         station, created = Station.objects.get_or_create(id=id, defaults=defaults)
+        tempo.create_series('{}.bikes'.format(id))
+        tempo.create_series('{}.docks'.format(id))
         scrape_station_data.delay(id, timestamp)
 
 
@@ -59,4 +68,7 @@ def scrape_station_data(id, timestamp):
     bikes, docks = get_station_metadata(id)
     Status.objects.create(station=station, bikes=bikes, docks=docks,
                           timestamp=timestamp, actual_timestamp=actual_timestamp)
+
+    tempo.write_key('{}.bikes'.format(id), [tempodb.DataPoint(timestamp, bikes)])
+    tempo.write_key('{}.docks'.format(id), [tempodb.DataPoint(timestamp, docks)])
     logging.info("Station {} has {} bikes, {} docks".format(id, bikes, docks))
