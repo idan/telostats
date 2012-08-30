@@ -3,72 +3,100 @@ from bs4 import BeautifulSoup
 import requests
 import datetime
 import logging
+import os
+import json
 
 from django.utils.timezone import utc
 
 from celery.schedules import crontab
-from celery.task import task, periodic_task
-from .models import Station, Status
-from utils.settings import get_setting_or_die
-from utils import tempodb
+from celery.task import periodic_task
+from pyparsing import commaSeparatedList
+from .models import Station
 
-STATION_LIST_URL = u'http://www.tel-o-fun.co.il/%D7%AA%D7%97%D7%A0%D7%95%D7%AA%D7%AA%D7%9C%D7%90%D7%95%D7%A4%D7%9F.aspx'
-STATION_DATA_URL = u'http://www.tel-o-fun.co.il/DesktopModules/Locations/StationData.ashx?sid={0}'
+STATION_LIST_URL = u'http://www.tel-o-fun.co.il/Default.aspx?TabID=64'
 
-TEMPODB_API_KEY = get_setting_or_die('TEMPODB_API_KEY')
-TEMPODB_API_SECRET = get_setting_or_die('TEMPODB_API_SECRET')
+TEMPODB_KEY = os.environ['TEMPODB_KEY']
+TEMPODB_SECRET = os.environ['TEMPODB_SECRET']
+TEMPODB_BASEURL = 'https://api.tempo-db.com/v1'
+TEMPO_JSONCT = {'content-type': 'application/json'}
+tempo_auth = requests.auth.HTTPBasicAuth(TEMPODB_KEY, TEMPODB_SECRET)
+tempo = requests.session(auth=tempo_auth)
 
-tempo = tempodb.Client(TEMPODB_API_KEY, TEMPODB_API_SECRET)
-
-
-def build_station_list():
-    r = requests.get(STATION_LIST_URL)
-    soup = BeautifulSoup(r.content)
-    raw_stations = soup.find_all('a', 'bicycle_station')
-    stations = {}
-    for tag in raw_stations:
-        id = tag['sid']
-        stations[id] = {'name': tag.string,
-                        'longitude': tag['x'],
-                        'latitude': tag['y']}
-    return stations
-
-
-def get_station_metadata(id):
-    """Gets the metadata for a given station
-
-    Returns a two-element tuple consisting of available (bikes, docks)
-    """
-    r = requests.get(STATION_DATA_URL.format(id))
-    soup = BeautifulSoup(r.content)
-    return tuple(re.findall('\d+', soup.find_all('div')[4].get_text()))
+FIELD_KEYS = ['longitude', 'latitude', 'id', 'name', 'address', 'poles', 'available']
 
 
 @periodic_task(ignore_result=True, run_every=crontab(minute="*/15"))
-def scrape_station_list():
+def measure():
     timestamp = datetime.datetime.utcnow().replace(tzinfo=utc)
-    logging.info("Fetching station list at {}".format(timestamp.isoformat()))
-    stations = build_station_list()
-    logging.info("Found {} stations".format(len(stations)))
-    for id, defaults in stations.items():
-        station, created = Station.objects.get_or_create(id=id, defaults=defaults)
-        tempo.create_series('{}.bikes'.format(id))
-        tempo.create_series('{}.docks'.format(id))
-        scrape_station_data.delay(id, timestamp)
+    stations = parse_stations(scrape_stations())
+    store_stations(stations)
+    log_data(timestamp, stations)
+    # TODO: periodically write more metadata about stations to the tempo series?
 
 
-@task(ignore_result=True)
-def scrape_station_data(id, timestamp):
-    actual_timestamp = datetime.datetime.utcnow().replace(tzinfo=utc)
-    try:
-        station = Station.objects.get(id=id)
-    except Station.DoesNotExist:
-        raise
-    logging.info("Fetching Station {} at {}".format(id, actual_timestamp.isoformat()))
-    bikes, docks = get_station_metadata(id)
-    Status.objects.create(station=station, bikes=bikes, docks=docks,
-                          timestamp=timestamp, actual_timestamp=actual_timestamp)
+def scrape_stations():
+    # timestamp = datetime.datetime.utcnow().replace(tzinfo=utc)
+    logging.debug("Scraping site content...")
+    r = requests.get(STATION_LIST_URL)
+    logging.debug("Parsing DOM...")
+    soup = BeautifulSoup(r.content)
+    raw_stations = soup.find_all(lambda t:
+        t.name == 'script' and
+        hasattr(t, 'text') and
+        t.decode_contents().startswith('function loadMarkers'))[0].decode_contents()
+    return raw_stations
 
-    tempo.write_key('{}.bikes'.format(id), [tempodb.DataPoint(timestamp, bikes)])
-    tempo.write_key('{}.docks'.format(id), [tempodb.DataPoint(timestamp, docks)])
-    logging.info("Station {} has {} bikes, {} docks".format(id, bikes, docks))
+
+def parse_stations(raw_stations):
+    logging.debug("Extracting raw stations...")
+    filtered = re.findall(r'setMarker\((.+?)\);(?=setMarker|\})', raw_stations)
+    logging.debug("Parsing stations...")
+    parsed = []
+    for station in filtered:
+        stripped = [s.strip("' ") for s in commaSeparatedList.parseString(station)[:7]]
+        d = dict(zip(FIELD_KEYS, stripped))
+        for floatkey in ['longitude', 'latitude']:
+            d[floatkey] = float(d[floatkey])
+        for intkey in ['id', 'poles', 'available']:
+            d[intkey] = int(d[intkey])
+        parsed.append(d)
+    logging.debug("Parsed {} stations".format(len(parsed)))
+    return parsed
+
+
+def store_stations(stations):
+    logging.debug("Create/update station metadata in Django DB...")
+    for station in stations:
+        metadata = {
+            'longitude': station['longitude'],
+            'latitude': station['latitude'],
+            'name': station['name'],
+            'address': station['address'],
+        }
+
+        station, created = Station.objects.get_or_create(
+            id=station['id'], defaults=metadata)
+
+
+def station_poles_key(station):
+    return "station:{id}.poles.{id}".format(**station)
+
+
+def station_available_key(station):
+    return "station:{id}.available.{id}".format(**station)
+
+
+def log_data(timestamp, stations):
+    logging.debug("Logging measurements to TempoDB...")
+    payload = {}
+    payload['t'] = timestamp.isoformat()
+    data = []
+    for station in stations:
+        poles_key = station_poles_key(station)
+        available_key = station_available_key(station)
+        data.append({'key': poles_key, 'v': station['poles']})
+        data.append({'key': available_key, 'v': station['available']})
+    payload['data'] = data
+    tempo.post(TEMPODB_BASEURL + '/data/',
+               headers=TEMPO_JSONCT,
+               data=json.dumps(payload))
