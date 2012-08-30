@@ -1,26 +1,12 @@
 from django.db import models
-from django.utils import timezone
 
 
 class Station(models.Model):
     id = models.IntegerField(unique=True, primary_key=True)
     name = models.CharField(u'name', max_length=100)
+    address = models.CharField(u'address', max_length=100, null=True, blank=True)
     longitude = models.FloatField(u'longitude')
     latitude = models.FloatField(u'latitude')
 
     def __unicode__(self):
         return self.name
-
-
-class Status(models.Model):
-    station = models.ForeignKey(Station)
-    timestamp = models.DateTimeField(default=timezone.now)
-    actual_timestamp = models.DateTimeField(default=timezone.now)
-    bikes = models.IntegerField(u'available bikes')
-    docks = models.IntegerField(u'available docks')
-
-    def __unicode__(self):
-        return u'{}: {}/{} ({})'.format(
-            self.station,
-            self.bikes, self.docks,
-            self.timestamp)

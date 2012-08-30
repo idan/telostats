@@ -8,20 +8,15 @@ from django.db import models
 class Migration(SchemaMigration):
 
     def forwards(self, orm):
-        # Adding model 'Station'
-        db.create_table('stations_station', (
-            ('id', self.gf('django.db.models.fields.IntegerField')(unique=True, primary_key=True)),
-            ('name', self.gf('django.db.models.fields.CharField')(max_length=100)),
-            ('address', self.gf('django.db.models.fields.CharField')(max_length=100, null=True, blank=True)),
-            ('longitude', self.gf('django.db.models.fields.FloatField')()),
-            ('latitude', self.gf('django.db.models.fields.FloatField')()),
-        ))
-        db.send_create_signal('stations', ['Station'])
+        # Deleting field 'Station.poles'
+        db.delete_column('stations_station', 'poles')
 
 
     def backwards(self, orm):
-        # Deleting model 'Station'
-        db.delete_table('stations_station')
+        # Adding field 'Station.poles'
+        db.add_column('stations_station', 'poles',
+                      self.gf('django.db.models.fields.IntegerField')(default=20),
+                      keep_default=False)
 
 
     models = {
