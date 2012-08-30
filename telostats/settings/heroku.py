@@ -14,7 +14,7 @@ urlparse.uses_netloc.append('redis')
 
 # Grab database info
 #db_url = urlparse.urlparse(os.environ['DATABASE_URL'])
-db_url = urlparse.urlparse(os.environ['HEROKU_POSTGRESQL_YELLOW_URL'])
+db_url = urlparse.urlparse(os.environ['HEROKU_POSTGRESQL_NAVY_URL'])
 DATABASES = {
     'default': {
         'ENGINE':  'django.db.backends.postgresql_psycopg2',
