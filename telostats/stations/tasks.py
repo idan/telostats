@@ -27,10 +27,12 @@ FIELD_KEYS = ['longitude', 'latitude', 'id', 'name', 'address', 'poles', 'availa
 
 @periodic_task(ignore_result=True, run_every=crontab(minute="*/15"))
 def measure():
+    logging.info("Measuring stations...")
     timestamp = datetime.datetime.utcnow().replace(tzinfo=utc)
     stations = parse_stations(scrape_stations())
     store_stations(stations)
     log_data(timestamp, stations)
+    logging.info("Measured {} stations.".format(len(stations)))
     # TODO: periodically write more metadata about stations to the tempo series?
 
 
