@@ -12,9 +12,9 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'telostats',
-        'USER': 'telostats',
-        'PASSWORD': 'telostats',
-        'HOST': '',
+        'USER': '',
+        'PASSWORD': '',
+        'HOST': 'localhost',
         'PORT': '',
     }
 }
@@ -36,7 +36,7 @@ LOGGING['handlers']['console']['level'] = 'DEBUG'
 
 if DEBUG and not STATIC_S3:
     STATIC_URL = '/static/'
-    STATICFILES_STORAGE = 'django.contrib.staticfiles.storage.StaticFileStorage'
+    STATICFILES_STORAGE = 'django.contrib.staticfiles.storage.StaticFilesStorage'
 
 # Celery
 CELERY_RESULT_BACKEND = "redis"
