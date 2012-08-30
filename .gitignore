@@ -2,3 +2,5 @@
 *.sublime-workspace
 *.pyc
 *.pyo
+*.ipynb
+.env
