@@ -1,4 +1,5 @@
 {% extends "base.html" %}
+{% load static from staticfiles %}
 
 {% block extra_head %}
   <link href='http://api.tiles.mapbox.com/mapbox.js/v0.6.5/mapbox.css' rel='stylesheet'>
@@ -6,13 +7,86 @@
 
 {% block body %}
     <div id="map"></div>
+    <div id="overlay" class="RdBu"></div>
 {% endblock body %}
 
 {% block body_js %}
     {{ block.super }}
+    <script src="{% static 'js/underscore.min.js' %}"></script>
     <script src="http://d3js.org/d3.v2.js"></script>
     <script src='http://api.tiles.mapbox.com/mapbox.js/v0.6.5/mapbox.js'></script>
     <script>
-        mapbox.auto('map', 'idan.map-8isjwg7h');
+        var m = mapbox.map('map');
+        m.addLayer(mapbox.layer().id('idan.map-8isjwg7h'));
+        var markerLayer = mapbox.markers.layer();
+        mapbox.markers.interaction(markerLayer);
+        m.addLayer(markerLayer);
+        m.ui.zoomer.add();
+
+        //m.zoom(13).center({ lat: 32.09185177255735, lon: 34.781692124285584 });
+        m.setExtent(new MM.Extent(
+            32.15603702811953,
+            34.8453784951352,
+            32.02354637361072,
+            34.733455277361784));
+
+        // Project a lat/lon point onto the displayed map (pixel coords)
+        var project = function(point) {
+            var point = m.locationPoint({lat: point[1], lon: point[0]});
+            return [point.x, point.y];
+        }
+
+        var color = d3.scale.quantile()
+            .domain([0, 1])
+            .range(d3.range(9));
+
+        var render = function (data, textStatus, xhr) {
+            var mapElem = $("#map");
+            var svg = d3.select("#overlay").append("svg")
+                .attr("width", mapElem.width())
+                .attr("height", mapElem.height());
+
+            // Add map markers and build an array of vertices
+            var stations = []
+            _.each(data.objects, function(station) {
+                stations.push(project([station.longitude, station.latitude]));
+                // markerLayer.add_feature({
+                //     geometry: {
+                //         // geojson requires coords in x, y, z form
+                //         // hence lon, lat
+                //         coordinates: [station.longitude, station.latitude]
+                //     },
+                //     properties: {
+                //         'marker-color': '#f00',
+                //         'marker-symbol': 'star-stroked',
+                //         title: station.name,
+                //         description: station.address
+                //     }
+                // })
+            });
+
+            svg.selectAll("path")
+                    .data(d3.geom.voronoi(stations))
+                .enter().append("path")
+                    .attr("class", function(d) { return "station_cell q" + color(Math.random()) + "-9"; })
+                    .attr("d", function(d) { return "M" + d.join("L") + "Z"; });
+
+
+            svg.selectAll("circle")
+                    .data(stations)
+                .enter().append("circle")
+                    .attr("transform", function(d) { return "translate(" + d + ")"; })
+                    .attr("r", 2);
+        };
+
+        var stationsxhr = $.ajax({
+            url: '/api/v1/station/',
+            dataType: 'json' })
+        .done(render)
+        .fail(function() {
+            console.log("oops. XHR failed");
+        });
+
+
     </script>
 {% endblock body_js %}

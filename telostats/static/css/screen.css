@@ -145,8 +145,3984 @@ textarea { overflow: auto; /* 1 */ vertical-align: top; /* 2 */ }
 /* line 372, ../../../sass/_normalize.scss */
 table { border-collapse: collapse; border-spacing: 0; }
 
-/* line 3, ../../../sass/screen.scss */
+/* This product includes color specifications and designs developed by Cynthia Brewer (http://colorbrewer.org/). */
+/* line 5, ../../../sass/_colorbrewer.scss */
+.YlGn .q0-3 { fill: #f7fcb9; }
+
+/* line 6, ../../../sass/_colorbrewer.scss */
+.YlGn .q1-3 { fill: #addd8e; }
+
+/* line 7, ../../../sass/_colorbrewer.scss */
+.YlGn .q2-3 { fill: #31a354; }
+
+/* line 8, ../../../sass/_colorbrewer.scss */
+.YlGn .q0-4 { fill: #ffffcc; }
+
+/* line 9, ../../../sass/_colorbrewer.scss */
+.YlGn .q1-4 { fill: #c2e699; }
+
+/* line 10, ../../../sass/_colorbrewer.scss */
+.YlGn .q2-4 { fill: #78c679; }
+
+/* line 11, ../../../sass/_colorbrewer.scss */
+.YlGn .q3-4 { fill: #238443; }
+
+/* line 12, ../../../sass/_colorbrewer.scss */
+.YlGn .q0-5 { fill: #ffffcc; }
+
+/* line 13, ../../../sass/_colorbrewer.scss */
+.YlGn .q1-5 { fill: #c2e699; }
+
+/* line 14, ../../../sass/_colorbrewer.scss */
+.YlGn .q2-5 { fill: #78c679; }
+
+/* line 15, ../../../sass/_colorbrewer.scss */
+.YlGn .q3-5 { fill: #31a354; }
+
+/* line 16, ../../../sass/_colorbrewer.scss */
+.YlGn .q4-5 { fill: #006837; }
+
+/* line 17, ../../../sass/_colorbrewer.scss */
+.YlGn .q0-6 { fill: #ffffcc; }
+
+/* line 18, ../../../sass/_colorbrewer.scss */
+.YlGn .q1-6 { fill: #d9f0a3; }
+
+/* line 19, ../../../sass/_colorbrewer.scss */
+.YlGn .q2-6 { fill: #addd8e; }
+
+/* line 20, ../../../sass/_colorbrewer.scss */
+.YlGn .q3-6 { fill: #78c679; }
+
+/* line 21, ../../../sass/_colorbrewer.scss */
+.YlGn .q4-6 { fill: #31a354; }
+
+/* line 22, ../../../sass/_colorbrewer.scss */
+.YlGn .q5-6 { fill: #006837; }
+
+/* line 23, ../../../sass/_colorbrewer.scss */
+.YlGn .q0-7 { fill: #ffffcc; }
+
+/* line 24, ../../../sass/_colorbrewer.scss */
+.YlGn .q1-7 { fill: #d9f0a3; }
+
+/* line 25, ../../../sass/_colorbrewer.scss */
+.YlGn .q2-7 { fill: #addd8e; }
+
+/* line 26, ../../../sass/_colorbrewer.scss */
+.YlGn .q3-7 { fill: #78c679; }
+
+/* line 27, ../../../sass/_colorbrewer.scss */
+.YlGn .q4-7 { fill: #41ab5d; }
+
+/* line 28, ../../../sass/_colorbrewer.scss */
+.YlGn .q5-7 { fill: #238443; }
+
+/* line 29, ../../../sass/_colorbrewer.scss */
+.YlGn .q6-7 { fill: #005a32; }
+
+/* line 30, ../../../sass/_colorbrewer.scss */
+.YlGn .q0-8 { fill: #ffffe5; }
+
+/* line 31, ../../../sass/_colorbrewer.scss */
+.YlGn .q1-8 { fill: #f7fcb9; }
+
+/* line 32, ../../../sass/_colorbrewer.scss */
+.YlGn .q2-8 { fill: #d9f0a3; }
+
+/* line 33, ../../../sass/_colorbrewer.scss */
+.YlGn .q3-8 { fill: #addd8e; }
+
+/* line 34, ../../../sass/_colorbrewer.scss */
+.YlGn .q4-8 { fill: #78c679; }
+
+/* line 35, ../../../sass/_colorbrewer.scss */
+.YlGn .q5-8 { fill: #41ab5d; }
+
+/* line 36, ../../../sass/_colorbrewer.scss */
+.YlGn .q6-8 { fill: #238443; }
+
+/* line 37, ../../../sass/_colorbrewer.scss */
+.YlGn .q7-8 { fill: #005a32; }
+
+/* line 38, ../../../sass/_colorbrewer.scss */
+.YlGn .q0-9 { fill: #ffffe5; }
+
+/* line 39, ../../../sass/_colorbrewer.scss */
+.YlGn .q1-9 { fill: #f7fcb9; }
+
+/* line 40, ../../../sass/_colorbrewer.scss */
+.YlGn .q2-9 { fill: #d9f0a3; }
+
+/* line 41, ../../../sass/_colorbrewer.scss */
+.YlGn .q3-9 { fill: #addd8e; }
+
+/* line 42, ../../../sass/_colorbrewer.scss */
+.YlGn .q4-9 { fill: #78c679; }
+
+/* line 43, ../../../sass/_colorbrewer.scss */
+.YlGn .q5-9 { fill: #41ab5d; }
+
+/* line 44, ../../../sass/_colorbrewer.scss */
+.YlGn .q6-9 { fill: #238443; }
+
+/* line 45, ../../../sass/_colorbrewer.scss */
+.YlGn .q7-9 { fill: #006837; }
+
+/* line 46, ../../../sass/_colorbrewer.scss */
+.YlGn .q8-9 { fill: #004529; }
+
+/* line 47, ../../../sass/_colorbrewer.scss */
+.YlGnBu .q0-3 { fill: #edf8b1; }
+
+/* line 48, ../../../sass/_colorbrewer.scss */
+.YlGnBu .q1-3 { fill: #7fcdbb; }
+
+/* line 49, ../../../sass/_colorbrewer.scss */
+.YlGnBu .q2-3 { fill: #2c7fb8; }
+
+/* line 50, ../../../sass/_colorbrewer.scss */
+.YlGnBu .q0-4 { fill: #ffffcc; }
+
+/* line 51, ../../../sass/_colorbrewer.scss */
+.YlGnBu .q1-4 { fill: #a1dab4; }
+
+/* line 52, ../../../sass/_colorbrewer.scss */
+.YlGnBu .q2-4 { fill: #41b6c4; }
+
+/* line 53, ../../../sass/_colorbrewer.scss */
+.YlGnBu .q3-4 { fill: #225ea8; }
+
+/* line 54, ../../../sass/_colorbrewer.scss */
+.YlGnBu .q0-5 { fill: #ffffcc; }
+
+/* line 55, ../../../sass/_colorbrewer.scss */
+.YlGnBu .q1-5 { fill: #a1dab4; }
+
+/* line 56, ../../../sass/_colorbrewer.scss */
+.YlGnBu .q2-5 { fill: #41b6c4; }
+
+/* line 57, ../../../sass/_colorbrewer.scss */
+.YlGnBu .q3-5 { fill: #2c7fb8; }
+
+/* line 58, ../../../sass/_colorbrewer.scss */
+.YlGnBu .q4-5 { fill: #253494; }
+
+/* line 59, ../../../sass/_colorbrewer.scss */
+.YlGnBu .q0-6 { fill: #ffffcc; }
+
+/* line 60, ../../../sass/_colorbrewer.scss */
+.YlGnBu .q1-6 { fill: #c7e9b4; }
+
+/* line 61, ../../../sass/_colorbrewer.scss */
+.YlGnBu .q2-6 { fill: #7fcdbb; }
+
+/* line 62, ../../../sass/_colorbrewer.scss */
+.YlGnBu .q3-6 { fill: #41b6c4; }
+
+/* line 63, ../../../sass/_colorbrewer.scss */
+.YlGnBu .q4-6 { fill: #2c7fb8; }
+
+/* line 64, ../../../sass/_colorbrewer.scss */
+.YlGnBu .q5-6 { fill: #253494; }
+
+/* line 65, ../../../sass/_colorbrewer.scss */
+.YlGnBu .q0-7 { fill: #ffffcc; }
+
+/* line 66, ../../../sass/_colorbrewer.scss */
+.YlGnBu .q1-7 { fill: #c7e9b4; }
+
+/* line 67, ../../../sass/_colorbrewer.scss */
+.YlGnBu .q2-7 { fill: #7fcdbb; }
+
+/* line 68, ../../../sass/_colorbrewer.scss */
+.YlGnBu .q3-7 { fill: #41b6c4; }
+
+/* line 69, ../../../sass/_colorbrewer.scss */
+.YlGnBu .q4-7 { fill: #1d91c0; }
+
+/* line 70, ../../../sass/_colorbrewer.scss */
+.YlGnBu .q5-7 { fill: #225ea8; }
+
+/* line 71, ../../../sass/_colorbrewer.scss */
+.YlGnBu .q6-7 { fill: #0c2c84; }
+
+/* line 72, ../../../sass/_colorbrewer.scss */
+.YlGnBu .q0-8 { fill: #ffffd9; }
+
+/* line 73, ../../../sass/_colorbrewer.scss */
+.YlGnBu .q1-8 { fill: #edf8b1; }
+
+/* line 74, ../../../sass/_colorbrewer.scss */
+.YlGnBu .q2-8 { fill: #c7e9b4; }
+
+/* line 75, ../../../sass/_colorbrewer.scss */
+.YlGnBu .q3-8 { fill: #7fcdbb; }
+
+/* line 76, ../../../sass/_colorbrewer.scss */
+.YlGnBu .q4-8 { fill: #41b6c4; }
+
+/* line 77, ../../../sass/_colorbrewer.scss */
+.YlGnBu .q5-8 { fill: #1d91c0; }
+
+/* line 78, ../../../sass/_colorbrewer.scss */
+.YlGnBu .q6-8 { fill: #225ea8; }
+
+/* line 79, ../../../sass/_colorbrewer.scss */
+.YlGnBu .q7-8 { fill: #0c2c84; }
+
+/* line 80, ../../../sass/_colorbrewer.scss */
+.YlGnBu .q0-9 { fill: #ffffd9; }
+
+/* line 81, ../../../sass/_colorbrewer.scss */
+.YlGnBu .q1-9 { fill: #edf8b1; }
+
+/* line 82, ../../../sass/_colorbrewer.scss */
+.YlGnBu .q2-9 { fill: #c7e9b4; }
+
+/* line 83, ../../../sass/_colorbrewer.scss */
+.YlGnBu .q3-9 { fill: #7fcdbb; }
+
+/* line 84, ../../../sass/_colorbrewer.scss */
+.YlGnBu .q4-9 { fill: #41b6c4; }
+
+/* line 85, ../../../sass/_colorbrewer.scss */
+.YlGnBu .q5-9 { fill: #1d91c0; }
+
+/* line 86, ../../../sass/_colorbrewer.scss */
+.YlGnBu .q6-9 { fill: #225ea8; }
+
+/* line 87, ../../../sass/_colorbrewer.scss */
+.YlGnBu .q7-9 { fill: #253494; }
+
+/* line 88, ../../../sass/_colorbrewer.scss */
+.YlGnBu .q8-9 { fill: #081d58; }
+
+/* line 89, ../../../sass/_colorbrewer.scss */
+.GnBu .q0-3 { fill: #e0f3db; }
+
+/* line 90, ../../../sass/_colorbrewer.scss */
+.GnBu .q1-3 { fill: #a8ddb5; }
+
+/* line 91, ../../../sass/_colorbrewer.scss */
+.GnBu .q2-3 { fill: #43a2ca; }
+
+/* line 92, ../../../sass/_colorbrewer.scss */
+.GnBu .q0-4 { fill: #f0f9e8; }
+
+/* line 93, ../../../sass/_colorbrewer.scss */
+.GnBu .q1-4 { fill: #bae4bc; }
+
+/* line 94, ../../../sass/_colorbrewer.scss */
+.GnBu .q2-4 { fill: #7bccc4; }
+
+/* line 95, ../../../sass/_colorbrewer.scss */
+.GnBu .q3-4 { fill: #2b8cbe; }
+
+/* line 96, ../../../sass/_colorbrewer.scss */
+.GnBu .q0-5 { fill: #f0f9e8; }
+
+/* line 97, ../../../sass/_colorbrewer.scss */
+.GnBu .q1-5 { fill: #bae4bc; }
+
+/* line 98, ../../../sass/_colorbrewer.scss */
+.GnBu .q2-5 { fill: #7bccc4; }
+
+/* line 99, ../../../sass/_colorbrewer.scss */
+.GnBu .q3-5 { fill: #43a2ca; }
+
+/* line 100, ../../../sass/_colorbrewer.scss */
+.GnBu .q4-5 { fill: #0868ac; }
+
+/* line 101, ../../../sass/_colorbrewer.scss */
+.GnBu .q0-6 { fill: #f0f9e8; }
+
+/* line 102, ../../../sass/_colorbrewer.scss */
+.GnBu .q1-6 { fill: #ccebc5; }
+
+/* line 103, ../../../sass/_colorbrewer.scss */
+.GnBu .q2-6 { fill: #a8ddb5; }
+
+/* line 104, ../../../sass/_colorbrewer.scss */
+.GnBu .q3-6 { fill: #7bccc4; }
+
+/* line 105, ../../../sass/_colorbrewer.scss */
+.GnBu .q4-6 { fill: #43a2ca; }
+
+/* line 106, ../../../sass/_colorbrewer.scss */
+.GnBu .q5-6 { fill: #0868ac; }
+
+/* line 107, ../../../sass/_colorbrewer.scss */
+.GnBu .q0-7 { fill: #f0f9e8; }
+
+/* line 108, ../../../sass/_colorbrewer.scss */
+.GnBu .q1-7 { fill: #ccebc5; }
+
+/* line 109, ../../../sass/_colorbrewer.scss */
+.GnBu .q2-7 { fill: #a8ddb5; }
+
+/* line 110, ../../../sass/_colorbrewer.scss */
+.GnBu .q3-7 { fill: #7bccc4; }
+
+/* line 111, ../../../sass/_colorbrewer.scss */
+.GnBu .q4-7 { fill: #4eb3d3; }
+
+/* line 112, ../../../sass/_colorbrewer.scss */
+.GnBu .q5-7 { fill: #2b8cbe; }
+
+/* line 113, ../../../sass/_colorbrewer.scss */
+.GnBu .q6-7 { fill: #08589e; }
+
+/* line 114, ../../../sass/_colorbrewer.scss */
+.GnBu .q0-8 { fill: #f7fcf0; }
+
+/* line 115, ../../../sass/_colorbrewer.scss */
+.GnBu .q1-8 { fill: #e0f3db; }
+
+/* line 116, ../../../sass/_colorbrewer.scss */
+.GnBu .q2-8 { fill: #ccebc5; }
+
+/* line 117, ../../../sass/_colorbrewer.scss */
+.GnBu .q3-8 { fill: #a8ddb5; }
+
+/* line 118, ../../../sass/_colorbrewer.scss */
+.GnBu .q4-8 { fill: #7bccc4; }
+
+/* line 119, ../../../sass/_colorbrewer.scss */
+.GnBu .q5-8 { fill: #4eb3d3; }
+
+/* line 120, ../../../sass/_colorbrewer.scss */
+.GnBu .q6-8 { fill: #2b8cbe; }
+
+/* line 121, ../../../sass/_colorbrewer.scss */
+.GnBu .q7-8 { fill: #08589e; }
+
+/* line 122, ../../../sass/_colorbrewer.scss */
+.GnBu .q0-9 { fill: #f7fcf0; }
+
+/* line 123, ../../../sass/_colorbrewer.scss */
+.GnBu .q1-9 { fill: #e0f3db; }
+
+/* line 124, ../../../sass/_colorbrewer.scss */
+.GnBu .q2-9 { fill: #ccebc5; }
+
+/* line 125, ../../../sass/_colorbrewer.scss */
+.GnBu .q3-9 { fill: #a8ddb5; }
+
+/* line 126, ../../../sass/_colorbrewer.scss */
+.GnBu .q4-9 { fill: #7bccc4; }
+
+/* line 127, ../../../sass/_colorbrewer.scss */
+.GnBu .q5-9 { fill: #4eb3d3; }
+
+/* line 128, ../../../sass/_colorbrewer.scss */
+.GnBu .q6-9 { fill: #2b8cbe; }
+
+/* line 129, ../../../sass/_colorbrewer.scss */
+.GnBu .q7-9 { fill: #0868ac; }
+
+/* line 130, ../../../sass/_colorbrewer.scss */
+.GnBu .q8-9 { fill: #084081; }
+
+/* line 131, ../../../sass/_colorbrewer.scss */
+.BuGn .q0-3 { fill: #e5f5f9; }
+
+/* line 132, ../../../sass/_colorbrewer.scss */
+.BuGn .q1-3 { fill: #99d8c9; }
+
+/* line 133, ../../../sass/_colorbrewer.scss */
+.BuGn .q2-3 { fill: #2ca25f; }
+
+/* line 134, ../../../sass/_colorbrewer.scss */
+.BuGn .q0-4 { fill: #edf8fb; }
+
+/* line 135, ../../../sass/_colorbrewer.scss */
+.BuGn .q1-4 { fill: #b2e2e2; }
+
+/* line 136, ../../../sass/_colorbrewer.scss */
+.BuGn .q2-4 { fill: #66c2a4; }
+
+/* line 137, ../../../sass/_colorbrewer.scss */
+.BuGn .q3-4 { fill: #238b45; }
+
+/* line 138, ../../../sass/_colorbrewer.scss */
+.BuGn .q0-5 { fill: #edf8fb; }
+
+/* line 139, ../../../sass/_colorbrewer.scss */
+.BuGn .q1-5 { fill: #b2e2e2; }
+
+/* line 140, ../../../sass/_colorbrewer.scss */
+.BuGn .q2-5 { fill: #66c2a4; }
+
+/* line 141, ../../../sass/_colorbrewer.scss */
+.BuGn .q3-5 { fill: #2ca25f; }
+
+/* line 142, ../../../sass/_colorbrewer.scss */
+.BuGn .q4-5 { fill: #006d2c; }
+
+/* line 143, ../../../sass/_colorbrewer.scss */
+.BuGn .q0-6 { fill: #edf8fb; }
+
+/* line 144, ../../../sass/_colorbrewer.scss */
+.BuGn .q1-6 { fill: #ccece6; }
+
+/* line 145, ../../../sass/_colorbrewer.scss */
+.BuGn .q2-6 { fill: #99d8c9; }
+
+/* line 146, ../../../sass/_colorbrewer.scss */
+.BuGn .q3-6 { fill: #66c2a4; }
+
+/* line 147, ../../../sass/_colorbrewer.scss */
+.BuGn .q4-6 { fill: #2ca25f; }
+
+/* line 148, ../../../sass/_colorbrewer.scss */
+.BuGn .q5-6 { fill: #006d2c; }
+
+/* line 149, ../../../sass/_colorbrewer.scss */
+.BuGn .q0-7 { fill: #edf8fb; }
+
+/* line 150, ../../../sass/_colorbrewer.scss */
+.BuGn .q1-7 { fill: #ccece6; }
+
+/* line 151, ../../../sass/_colorbrewer.scss */
+.BuGn .q2-7 { fill: #99d8c9; }
+
+/* line 152, ../../../sass/_colorbrewer.scss */
+.BuGn .q3-7 { fill: #66c2a4; }
+
+/* line 153, ../../../sass/_colorbrewer.scss */
+.BuGn .q4-7 { fill: #41ae76; }
+
+/* line 154, ../../../sass/_colorbrewer.scss */
+.BuGn .q5-7 { fill: #238b45; }
+
+/* line 155, ../../../sass/_colorbrewer.scss */
+.BuGn .q6-7 { fill: #005824; }
+
+/* line 156, ../../../sass/_colorbrewer.scss */
+.BuGn .q0-8 { fill: #f7fcfd; }
+
+/* line 157, ../../../sass/_colorbrewer.scss */
+.BuGn .q1-8 { fill: #e5f5f9; }
+
+/* line 158, ../../../sass/_colorbrewer.scss */
+.BuGn .q2-8 { fill: #ccece6; }
+
+/* line 159, ../../../sass/_colorbrewer.scss */
+.BuGn .q3-8 { fill: #99d8c9; }
+
+/* line 160, ../../../sass/_colorbrewer.scss */
+.BuGn .q4-8 { fill: #66c2a4; }
+
+/* line 161, ../../../sass/_colorbrewer.scss */
+.BuGn .q5-8 { fill: #41ae76; }
+
+/* line 162, ../../../sass/_colorbrewer.scss */
+.BuGn .q6-8 { fill: #238b45; }
+
+/* line 163, ../../../sass/_colorbrewer.scss */
+.BuGn .q7-8 { fill: #005824; }
+
+/* line 164, ../../../sass/_colorbrewer.scss */
+.BuGn .q0-9 { fill: #f7fcfd; }
+
+/* line 165, ../../../sass/_colorbrewer.scss */
+.BuGn .q1-9 { fill: #e5f5f9; }
+
+/* line 166, ../../../sass/_colorbrewer.scss */
+.BuGn .q2-9 { fill: #ccece6; }
+
+/* line 167, ../../../sass/_colorbrewer.scss */
+.BuGn .q3-9 { fill: #99d8c9; }
+
+/* line 168, ../../../sass/_colorbrewer.scss */
+.BuGn .q4-9 { fill: #66c2a4; }
+
+/* line 169, ../../../sass/_colorbrewer.scss */
+.BuGn .q5-9 { fill: #41ae76; }
+
+/* line 170, ../../../sass/_colorbrewer.scss */
+.BuGn .q6-9 { fill: #238b45; }
+
+/* line 171, ../../../sass/_colorbrewer.scss */
+.BuGn .q7-9 { fill: #006d2c; }
+
+/* line 172, ../../../sass/_colorbrewer.scss */
+.BuGn .q8-9 { fill: #00441b; }
+
+/* line 173, ../../../sass/_colorbrewer.scss */
+.PuBuGn .q0-3 { fill: #ece2f0; }
+
+/* line 174, ../../../sass/_colorbrewer.scss */
+.PuBuGn .q1-3 { fill: #a6bddb; }
+
+/* line 175, ../../../sass/_colorbrewer.scss */
+.PuBuGn .q2-3 { fill: #1c9099; }
+
+/* line 176, ../../../sass/_colorbrewer.scss */
+.PuBuGn .q0-4 { fill: #f6eff7; }
+
+/* line 177, ../../../sass/_colorbrewer.scss */
+.PuBuGn .q1-4 { fill: #bdc9e1; }
+
+/* line 178, ../../../sass/_colorbrewer.scss */
+.PuBuGn .q2-4 { fill: #67a9cf; }
+
+/* line 179, ../../../sass/_colorbrewer.scss */
+.PuBuGn .q3-4 { fill: #02818a; }
+
+/* line 180, ../../../sass/_colorbrewer.scss */
+.PuBuGn .q0-5 { fill: #f6eff7; }
+
+/* line 181, ../../../sass/_colorbrewer.scss */
+.PuBuGn .q1-5 { fill: #bdc9e1; }
+
+/* line 182, ../../../sass/_colorbrewer.scss */
+.PuBuGn .q2-5 { fill: #67a9cf; }
+
+/* line 183, ../../../sass/_colorbrewer.scss */
+.PuBuGn .q3-5 { fill: #1c9099; }
+
+/* line 184, ../../../sass/_colorbrewer.scss */
+.PuBuGn .q4-5 { fill: #016c59; }
+
+/* line 185, ../../../sass/_colorbrewer.scss */
+.PuBuGn .q0-6 { fill: #f6eff7; }
+
+/* line 186, ../../../sass/_colorbrewer.scss */
+.PuBuGn .q1-6 { fill: #d0d1e6; }
+
+/* line 187, ../../../sass/_colorbrewer.scss */
+.PuBuGn .q2-6 { fill: #a6bddb; }
+
+/* line 188, ../../../sass/_colorbrewer.scss */
+.PuBuGn .q3-6 { fill: #67a9cf; }
+
+/* line 189, ../../../sass/_colorbrewer.scss */
+.PuBuGn .q4-6 { fill: #1c9099; }
+
+/* line 190, ../../../sass/_colorbrewer.scss */
+.PuBuGn .q5-6 { fill: #016c59; }
+
+/* line 191, ../../../sass/_colorbrewer.scss */
+.PuBuGn .q0-7 { fill: #f6eff7; }
+
+/* line 192, ../../../sass/_colorbrewer.scss */
+.PuBuGn .q1-7 { fill: #d0d1e6; }
+
+/* line 193, ../../../sass/_colorbrewer.scss */
+.PuBuGn .q2-7 { fill: #a6bddb; }
+
+/* line 194, ../../../sass/_colorbrewer.scss */
+.PuBuGn .q3-7 { fill: #67a9cf; }
+
+/* line 195, ../../../sass/_colorbrewer.scss */
+.PuBuGn .q4-7 { fill: #3690c0; }
+
+/* line 196, ../../../sass/_colorbrewer.scss */
+.PuBuGn .q5-7 { fill: #02818a; }
+
+/* line 197, ../../../sass/_colorbrewer.scss */
+.PuBuGn .q6-7 { fill: #016450; }
+
+/* line 198, ../../../sass/_colorbrewer.scss */
+.PuBuGn .q0-8 { fill: #fff7fb; }
+
+/* line 199, ../../../sass/_colorbrewer.scss */
+.PuBuGn .q1-8 { fill: #ece2f0; }
+
+/* line 200, ../../../sass/_colorbrewer.scss */
+.PuBuGn .q2-8 { fill: #d0d1e6; }
+
+/* line 201, ../../../sass/_colorbrewer.scss */
+.PuBuGn .q3-8 { fill: #a6bddb; }
+
+/* line 202, ../../../sass/_colorbrewer.scss */
+.PuBuGn .q4-8 { fill: #67a9cf; }
+
+/* line 203, ../../../sass/_colorbrewer.scss */
+.PuBuGn .q5-8 { fill: #3690c0; }
+
+/* line 204, ../../../sass/_colorbrewer.scss */
+.PuBuGn .q6-8 { fill: #02818a; }
+
+/* line 205, ../../../sass/_colorbrewer.scss */
+.PuBuGn .q7-8 { fill: #016450; }
+
+/* line 206, ../../../sass/_colorbrewer.scss */
+.PuBuGn .q0-9 { fill: #fff7fb; }
+
+/* line 207, ../../../sass/_colorbrewer.scss */
+.PuBuGn .q1-9 { fill: #ece2f0; }
+
+/* line 208, ../../../sass/_colorbrewer.scss */
+.PuBuGn .q2-9 { fill: #d0d1e6; }
+
+/* line 209, ../../../sass/_colorbrewer.scss */
+.PuBuGn .q3-9 { fill: #a6bddb; }
+
+/* line 210, ../../../sass/_colorbrewer.scss */
+.PuBuGn .q4-9 { fill: #67a9cf; }
+
+/* line 211, ../../../sass/_colorbrewer.scss */
+.PuBuGn .q5-9 { fill: #3690c0; }
+
+/* line 212, ../../../sass/_colorbrewer.scss */
+.PuBuGn .q6-9 { fill: #02818a; }
+
+/* line 213, ../../../sass/_colorbrewer.scss */
+.PuBuGn .q7-9 { fill: #016c59; }
+
+/* line 214, ../../../sass/_colorbrewer.scss */
+.PuBuGn .q8-9 { fill: #014636; }
+
+/* line 215, ../../../sass/_colorbrewer.scss */
+.PuBu .q0-3 { fill: #ece7f2; }
+
+/* line 216, ../../../sass/_colorbrewer.scss */
+.PuBu .q1-3 { fill: #a6bddb; }
+
+/* line 217, ../../../sass/_colorbrewer.scss */
+.PuBu .q2-3 { fill: #2b8cbe; }
+
+/* line 218, ../../../sass/_colorbrewer.scss */
+.PuBu .q0-4 { fill: #f1eef6; }
+
+/* line 219, ../../../sass/_colorbrewer.scss */
+.PuBu .q1-4 { fill: #bdc9e1; }
+
+/* line 220, ../../../sass/_colorbrewer.scss */
+.PuBu .q2-4 { fill: #74a9cf; }
+
+/* line 221, ../../../sass/_colorbrewer.scss */
+.PuBu .q3-4 { fill: #0570b0; }
+
+/* line 222, ../../../sass/_colorbrewer.scss */
+.PuBu .q0-5 { fill: #f1eef6; }
+
+/* line 223, ../../../sass/_colorbrewer.scss */
+.PuBu .q1-5 { fill: #bdc9e1; }
+
+/* line 224, ../../../sass/_colorbrewer.scss */
+.PuBu .q2-5 { fill: #74a9cf; }
+
+/* line 225, ../../../sass/_colorbrewer.scss */
+.PuBu .q3-5 { fill: #2b8cbe; }
+
+/* line 226, ../../../sass/_colorbrewer.scss */
+.PuBu .q4-5 { fill: #045a8d; }
+
+/* line 227, ../../../sass/_colorbrewer.scss */
+.PuBu .q0-6 { fill: #f1eef6; }
+
+/* line 228, ../../../sass/_colorbrewer.scss */
+.PuBu .q1-6 { fill: #d0d1e6; }
+
+/* line 229, ../../../sass/_colorbrewer.scss */
+.PuBu .q2-6 { fill: #a6bddb; }
+
+/* line 230, ../../../sass/_colorbrewer.scss */
+.PuBu .q3-6 { fill: #74a9cf; }
+
+/* line 231, ../../../sass/_colorbrewer.scss */
+.PuBu .q4-6 { fill: #2b8cbe; }
+
+/* line 232, ../../../sass/_colorbrewer.scss */
+.PuBu .q5-6 { fill: #045a8d; }
+
+/* line 233, ../../../sass/_colorbrewer.scss */
+.PuBu .q0-7 { fill: #f1eef6; }
+
+/* line 234, ../../../sass/_colorbrewer.scss */
+.PuBu .q1-7 { fill: #d0d1e6; }
+
+/* line 235, ../../../sass/_colorbrewer.scss */
+.PuBu .q2-7 { fill: #a6bddb; }
+
+/* line 236, ../../../sass/_colorbrewer.scss */
+.PuBu .q3-7 { fill: #74a9cf; }
+
+/* line 237, ../../../sass/_colorbrewer.scss */
+.PuBu .q4-7 { fill: #3690c0; }
+
+/* line 238, ../../../sass/_colorbrewer.scss */
+.PuBu .q5-7 { fill: #0570b0; }
+
+/* line 239, ../../../sass/_colorbrewer.scss */
+.PuBu .q6-7 { fill: #034e7b; }
+
+/* line 240, ../../../sass/_colorbrewer.scss */
+.PuBu .q0-8 { fill: #fff7fb; }
+
+/* line 241, ../../../sass/_colorbrewer.scss */
+.PuBu .q1-8 { fill: #ece7f2; }
+
+/* line 242, ../../../sass/_colorbrewer.scss */
+.PuBu .q2-8 { fill: #d0d1e6; }
+
+/* line 243, ../../../sass/_colorbrewer.scss */
+.PuBu .q3-8 { fill: #a6bddb; }
+
+/* line 244, ../../../sass/_colorbrewer.scss */
+.PuBu .q4-8 { fill: #74a9cf; }
+
+/* line 245, ../../../sass/_colorbrewer.scss */
+.PuBu .q5-8 { fill: #3690c0; }
+
+/* line 246, ../../../sass/_colorbrewer.scss */
+.PuBu .q6-8 { fill: #0570b0; }
+
+/* line 247, ../../../sass/_colorbrewer.scss */
+.PuBu .q7-8 { fill: #034e7b; }
+
+/* line 248, ../../../sass/_colorbrewer.scss */
+.PuBu .q0-9 { fill: #fff7fb; }
+
+/* line 249, ../../../sass/_colorbrewer.scss */
+.PuBu .q1-9 { fill: #ece7f2; }
+
+/* line 250, ../../../sass/_colorbrewer.scss */
+.PuBu .q2-9 { fill: #d0d1e6; }
+
+/* line 251, ../../../sass/_colorbrewer.scss */
+.PuBu .q3-9 { fill: #a6bddb; }
+
+/* line 252, ../../../sass/_colorbrewer.scss */
+.PuBu .q4-9 { fill: #74a9cf; }
+
+/* line 253, ../../../sass/_colorbrewer.scss */
+.PuBu .q5-9 { fill: #3690c0; }
+
+/* line 254, ../../../sass/_colorbrewer.scss */
+.PuBu .q6-9 { fill: #0570b0; }
+
+/* line 255, ../../../sass/_colorbrewer.scss */
+.PuBu .q7-9 { fill: #045a8d; }
+
+/* line 256, ../../../sass/_colorbrewer.scss */
+.PuBu .q8-9 { fill: #023858; }
+
+/* line 257, ../../../sass/_colorbrewer.scss */
+.BuPu .q0-3 { fill: #e0ecf4; }
+
+/* line 258, ../../../sass/_colorbrewer.scss */
+.BuPu .q1-3 { fill: #9ebcda; }
+
+/* line 259, ../../../sass/_colorbrewer.scss */
+.BuPu .q2-3 { fill: #8856a7; }
+
+/* line 260, ../../../sass/_colorbrewer.scss */
+.BuPu .q0-4 { fill: #edf8fb; }
+
+/* line 261, ../../../sass/_colorbrewer.scss */
+.BuPu .q1-4 { fill: #b3cde3; }
+
+/* line 262, ../../../sass/_colorbrewer.scss */
+.BuPu .q2-4 { fill: #8c96c6; }
+
+/* line 263, ../../../sass/_colorbrewer.scss */
+.BuPu .q3-4 { fill: #88419d; }
+
+/* line 264, ../../../sass/_colorbrewer.scss */
+.BuPu .q0-5 { fill: #edf8fb; }
+
+/* line 265, ../../../sass/_colorbrewer.scss */
+.BuPu .q1-5 { fill: #b3cde3; }
+
+/* line 266, ../../../sass/_colorbrewer.scss */
+.BuPu .q2-5 { fill: #8c96c6; }
+
+/* line 267, ../../../sass/_colorbrewer.scss */
+.BuPu .q3-5 { fill: #8856a7; }
+
+/* line 268, ../../../sass/_colorbrewer.scss */
+.BuPu .q4-5 { fill: #810f7c; }
+
+/* line 269, ../../../sass/_colorbrewer.scss */
+.BuPu .q0-6 { fill: #edf8fb; }
+
+/* line 270, ../../../sass/_colorbrewer.scss */
+.BuPu .q1-6 { fill: #bfd3e6; }
+
+/* line 271, ../../../sass/_colorbrewer.scss */
+.BuPu .q2-6 { fill: #9ebcda; }
+
+/* line 272, ../../../sass/_colorbrewer.scss */
+.BuPu .q3-6 { fill: #8c96c6; }
+
+/* line 273, ../../../sass/_colorbrewer.scss */
+.BuPu .q4-6 { fill: #8856a7; }
+
+/* line 274, ../../../sass/_colorbrewer.scss */
+.BuPu .q5-6 { fill: #810f7c; }
+
+/* line 275, ../../../sass/_colorbrewer.scss */
+.BuPu .q0-7 { fill: #edf8fb; }
+
+/* line 276, ../../../sass/_colorbrewer.scss */
+.BuPu .q1-7 { fill: #bfd3e6; }
+
+/* line 277, ../../../sass/_colorbrewer.scss */
+.BuPu .q2-7 { fill: #9ebcda; }
+
+/* line 278, ../../../sass/_colorbrewer.scss */
+.BuPu .q3-7 { fill: #8c96c6; }
+
+/* line 279, ../../../sass/_colorbrewer.scss */
+.BuPu .q4-7 { fill: #8c6bb1; }
+
+/* line 280, ../../../sass/_colorbrewer.scss */
+.BuPu .q5-7 { fill: #88419d; }
+
+/* line 281, ../../../sass/_colorbrewer.scss */
+.BuPu .q6-7 { fill: #6e016b; }
+
+/* line 282, ../../../sass/_colorbrewer.scss */
+.BuPu .q0-8 { fill: #f7fcfd; }
+
+/* line 283, ../../../sass/_colorbrewer.scss */
+.BuPu .q1-8 { fill: #e0ecf4; }
+
+/* line 284, ../../../sass/_colorbrewer.scss */
+.BuPu .q2-8 { fill: #bfd3e6; }
+
+/* line 285, ../../../sass/_colorbrewer.scss */
+.BuPu .q3-8 { fill: #9ebcda; }
+
+/* line 286, ../../../sass/_colorbrewer.scss */
+.BuPu .q4-8 { fill: #8c96c6; }
+
+/* line 287, ../../../sass/_colorbrewer.scss */
+.BuPu .q5-8 { fill: #8c6bb1; }
+
+/* line 288, ../../../sass/_colorbrewer.scss */
+.BuPu .q6-8 { fill: #88419d; }
+
+/* line 289, ../../../sass/_colorbrewer.scss */
+.BuPu .q7-8 { fill: #6e016b; }
+
+/* line 290, ../../../sass/_colorbrewer.scss */
+.BuPu .q0-9 { fill: #f7fcfd; }
+
+/* line 291, ../../../sass/_colorbrewer.scss */
+.BuPu .q1-9 { fill: #e0ecf4; }
+
+/* line 292, ../../../sass/_colorbrewer.scss */
+.BuPu .q2-9 { fill: #bfd3e6; }
+
+/* line 293, ../../../sass/_colorbrewer.scss */
+.BuPu .q3-9 { fill: #9ebcda; }
+
+/* line 294, ../../../sass/_colorbrewer.scss */
+.BuPu .q4-9 { fill: #8c96c6; }
+
+/* line 295, ../../../sass/_colorbrewer.scss */
+.BuPu .q5-9 { fill: #8c6bb1; }
+
+/* line 296, ../../../sass/_colorbrewer.scss */
+.BuPu .q6-9 { fill: #88419d; }
+
+/* line 297, ../../../sass/_colorbrewer.scss */
+.BuPu .q7-9 { fill: #810f7c; }
+
+/* line 298, ../../../sass/_colorbrewer.scss */
+.BuPu .q8-9 { fill: #4d004b; }
+
+/* line 299, ../../../sass/_colorbrewer.scss */
+.RdPu .q0-3 { fill: #fde0dd; }
+
+/* line 300, ../../../sass/_colorbrewer.scss */
+.RdPu .q1-3 { fill: #fa9fb5; }
+
+/* line 301, ../../../sass/_colorbrewer.scss */
+.RdPu .q2-3 { fill: #c51b8a; }
+
+/* line 302, ../../../sass/_colorbrewer.scss */
+.RdPu .q0-4 { fill: #feebe2; }
+
+/* line 303, ../../../sass/_colorbrewer.scss */
+.RdPu .q1-4 { fill: #fbb4b9; }
+
+/* line 304, ../../../sass/_colorbrewer.scss */
+.RdPu .q2-4 { fill: #f768a1; }
+
+/* line 305, ../../../sass/_colorbrewer.scss */
+.RdPu .q3-4 { fill: #ae017e; }
+
+/* line 306, ../../../sass/_colorbrewer.scss */
+.RdPu .q0-5 { fill: #feebe2; }
+
+/* line 307, ../../../sass/_colorbrewer.scss */
+.RdPu .q1-5 { fill: #fbb4b9; }
+
+/* line 308, ../../../sass/_colorbrewer.scss */
+.RdPu .q2-5 { fill: #f768a1; }
+
+/* line 309, ../../../sass/_colorbrewer.scss */
+.RdPu .q3-5 { fill: #c51b8a; }
+
+/* line 310, ../../../sass/_colorbrewer.scss */
+.RdPu .q4-5 { fill: #7a0177; }
+
+/* line 311, ../../../sass/_colorbrewer.scss */
+.RdPu .q0-6 { fill: #feebe2; }
+
+/* line 312, ../../../sass/_colorbrewer.scss */
+.RdPu .q1-6 { fill: #fcc5c0; }
+
+/* line 313, ../../../sass/_colorbrewer.scss */
+.RdPu .q2-6 { fill: #fa9fb5; }
+
+/* line 314, ../../../sass/_colorbrewer.scss */
+.RdPu .q3-6 { fill: #f768a1; }
+
+/* line 315, ../../../sass/_colorbrewer.scss */
+.RdPu .q4-6 { fill: #c51b8a; }
+
+/* line 316, ../../../sass/_colorbrewer.scss */
+.RdPu .q5-6 { fill: #7a0177; }
+
+/* line 317, ../../../sass/_colorbrewer.scss */
+.RdPu .q0-7 { fill: #feebe2; }
+
+/* line 318, ../../../sass/_colorbrewer.scss */
+.RdPu .q1-7 { fill: #fcc5c0; }
+
+/* line 319, ../../../sass/_colorbrewer.scss */
+.RdPu .q2-7 { fill: #fa9fb5; }
+
+/* line 320, ../../../sass/_colorbrewer.scss */
+.RdPu .q3-7 { fill: #f768a1; }
+
+/* line 321, ../../../sass/_colorbrewer.scss */
+.RdPu .q4-7 { fill: #dd3497; }
+
+/* line 322, ../../../sass/_colorbrewer.scss */
+.RdPu .q5-7 { fill: #ae017e; }
+
+/* line 323, ../../../sass/_colorbrewer.scss */
+.RdPu .q6-7 { fill: #7a0177; }
+
+/* line 324, ../../../sass/_colorbrewer.scss */
+.RdPu .q0-8 { fill: #fff7f3; }
+
+/* line 325, ../../../sass/_colorbrewer.scss */
+.RdPu .q1-8 { fill: #fde0dd; }
+
+/* line 326, ../../../sass/_colorbrewer.scss */
+.RdPu .q2-8 { fill: #fcc5c0; }
+
+/* line 327, ../../../sass/_colorbrewer.scss */
+.RdPu .q3-8 { fill: #fa9fb5; }
+
+/* line 328, ../../../sass/_colorbrewer.scss */
+.RdPu .q4-8 { fill: #f768a1; }
+
+/* line 329, ../../../sass/_colorbrewer.scss */
+.RdPu .q5-8 { fill: #dd3497; }
+
+/* line 330, ../../../sass/_colorbrewer.scss */
+.RdPu .q6-8 { fill: #ae017e; }
+
+/* line 331, ../../../sass/_colorbrewer.scss */
+.RdPu .q7-8 { fill: #7a0177; }
+
+/* line 332, ../../../sass/_colorbrewer.scss */
+.RdPu .q0-9 { fill: #fff7f3; }
+
+/* line 333, ../../../sass/_colorbrewer.scss */
+.RdPu .q1-9 { fill: #fde0dd; }
+
+/* line 334, ../../../sass/_colorbrewer.scss */
+.RdPu .q2-9 { fill: #fcc5c0; }
+
+/* line 335, ../../../sass/_colorbrewer.scss */
+.RdPu .q3-9 { fill: #fa9fb5; }
+
+/* line 336, ../../../sass/_colorbrewer.scss */
+.RdPu .q4-9 { fill: #f768a1; }
+
+/* line 337, ../../../sass/_colorbrewer.scss */
+.RdPu .q5-9 { fill: #dd3497; }
+
+/* line 338, ../../../sass/_colorbrewer.scss */
+.RdPu .q6-9 { fill: #ae017e; }
+
+/* line 339, ../../../sass/_colorbrewer.scss */
+.RdPu .q7-9 { fill: #7a0177; }
+
+/* line 340, ../../../sass/_colorbrewer.scss */
+.RdPu .q8-9 { fill: #49006a; }
+
+/* line 341, ../../../sass/_colorbrewer.scss */
+.PuRd .q0-3 { fill: #e7e1ef; }
+
+/* line 342, ../../../sass/_colorbrewer.scss */
+.PuRd .q1-3 { fill: #c994c7; }
+
+/* line 343, ../../../sass/_colorbrewer.scss */
+.PuRd .q2-3 { fill: #dd1c77; }
+
+/* line 344, ../../../sass/_colorbrewer.scss */
+.PuRd .q0-4 { fill: #f1eef6; }
+
+/* line 345, ../../../sass/_colorbrewer.scss */
+.PuRd .q1-4 { fill: #d7b5d8; }
+
+/* line 346, ../../../sass/_colorbrewer.scss */
+.PuRd .q2-4 { fill: #df65b0; }
+
+/* line 347, ../../../sass/_colorbrewer.scss */
+.PuRd .q3-4 { fill: #ce1256; }
+
+/* line 348, ../../../sass/_colorbrewer.scss */
+.PuRd .q0-5 { fill: #f1eef6; }
+
+/* line 349, ../../../sass/_colorbrewer.scss */
+.PuRd .q1-5 { fill: #d7b5d8; }
+
+/* line 350, ../../../sass/_colorbrewer.scss */
+.PuRd .q2-5 { fill: #df65b0; }
+
+/* line 351, ../../../sass/_colorbrewer.scss */
+.PuRd .q3-5 { fill: #dd1c77; }
+
+/* line 352, ../../../sass/_colorbrewer.scss */
+.PuRd .q4-5 { fill: #980043; }
+
+/* line 353, ../../../sass/_colorbrewer.scss */
+.PuRd .q0-6 { fill: #f1eef6; }
+
+/* line 354, ../../../sass/_colorbrewer.scss */
+.PuRd .q1-6 { fill: #d4b9da; }
+
+/* line 355, ../../../sass/_colorbrewer.scss */
+.PuRd .q2-6 { fill: #c994c7; }
+
+/* line 356, ../../../sass/_colorbrewer.scss */
+.PuRd .q3-6 { fill: #df65b0; }
+
+/* line 357, ../../../sass/_colorbrewer.scss */
+.PuRd .q4-6 { fill: #dd1c77; }
+
+/* line 358, ../../../sass/_colorbrewer.scss */
+.PuRd .q5-6 { fill: #980043; }
+
+/* line 359, ../../../sass/_colorbrewer.scss */
+.PuRd .q0-7 { fill: #f1eef6; }
+
+/* line 360, ../../../sass/_colorbrewer.scss */
+.PuRd .q1-7 { fill: #d4b9da; }
+
+/* line 361, ../../../sass/_colorbrewer.scss */
+.PuRd .q2-7 { fill: #c994c7; }
+
+/* line 362, ../../../sass/_colorbrewer.scss */
+.PuRd .q3-7 { fill: #df65b0; }
+
+/* line 363, ../../../sass/_colorbrewer.scss */
+.PuRd .q4-7 { fill: #e7298a; }
+
+/* line 364, ../../../sass/_colorbrewer.scss */
+.PuRd .q5-7 { fill: #ce1256; }
+
+/* line 365, ../../../sass/_colorbrewer.scss */
+.PuRd .q6-7 { fill: #91003f; }
+
+/* line 366, ../../../sass/_colorbrewer.scss */
+.PuRd .q0-8 { fill: #f7f4f9; }
+
+/* line 367, ../../../sass/_colorbrewer.scss */
+.PuRd .q1-8 { fill: #e7e1ef; }
+
+/* line 368, ../../../sass/_colorbrewer.scss */
+.PuRd .q2-8 { fill: #d4b9da; }
+
+/* line 369, ../../../sass/_colorbrewer.scss */
+.PuRd .q3-8 { fill: #c994c7; }
+
+/* line 370, ../../../sass/_colorbrewer.scss */
+.PuRd .q4-8 { fill: #df65b0; }
+
+/* line 371, ../../../sass/_colorbrewer.scss */
+.PuRd .q5-8 { fill: #e7298a; }
+
+/* line 372, ../../../sass/_colorbrewer.scss */
+.PuRd .q6-8 { fill: #ce1256; }
+
+/* line 373, ../../../sass/_colorbrewer.scss */
+.PuRd .q7-8 { fill: #91003f; }
+
+/* line 374, ../../../sass/_colorbrewer.scss */
+.PuRd .q0-9 { fill: #f7f4f9; }
+
+/* line 375, ../../../sass/_colorbrewer.scss */
+.PuRd .q1-9 { fill: #e7e1ef; }
+
+/* line 376, ../../../sass/_colorbrewer.scss */
+.PuRd .q2-9 { fill: #d4b9da; }
+
+/* line 377, ../../../sass/_colorbrewer.scss */
+.PuRd .q3-9 { fill: #c994c7; }
+
+/* line 378, ../../../sass/_colorbrewer.scss */
+.PuRd .q4-9 { fill: #df65b0; }
+
+/* line 379, ../../../sass/_colorbrewer.scss */
+.PuRd .q5-9 { fill: #e7298a; }
+
+/* line 380, ../../../sass/_colorbrewer.scss */
+.PuRd .q6-9 { fill: #ce1256; }
+
+/* line 381, ../../../sass/_colorbrewer.scss */
+.PuRd .q7-9 { fill: #980043; }
+
+/* line 382, ../../../sass/_colorbrewer.scss */
+.PuRd .q8-9 { fill: #67001f; }
+
+/* line 383, ../../../sass/_colorbrewer.scss */
+.OrRd .q0-3 { fill: #fee8c8; }
+
+/* line 384, ../../../sass/_colorbrewer.scss */
+.OrRd .q1-3 { fill: #fdbb84; }
+
+/* line 385, ../../../sass/_colorbrewer.scss */
+.OrRd .q2-3 { fill: #e34a33; }
+
+/* line 386, ../../../sass/_colorbrewer.scss */
+.OrRd .q0-4 { fill: #fef0d9; }
+
+/* line 387, ../../../sass/_colorbrewer.scss */
+.OrRd .q1-4 { fill: #fdcc8a; }
+
+/* line 388, ../../../sass/_colorbrewer.scss */
+.OrRd .q2-4 { fill: #fc8d59; }
+
+/* line 389, ../../../sass/_colorbrewer.scss */
+.OrRd .q3-4 { fill: #d7301f; }
+
+/* line 390, ../../../sass/_colorbrewer.scss */
+.OrRd .q0-5 { fill: #fef0d9; }
+
+/* line 391, ../../../sass/_colorbrewer.scss */
+.OrRd .q1-5 { fill: #fdcc8a; }
+
+/* line 392, ../../../sass/_colorbrewer.scss */
+.OrRd .q2-5 { fill: #fc8d59; }
+
+/* line 393, ../../../sass/_colorbrewer.scss */
+.OrRd .q3-5 { fill: #e34a33; }
+
+/* line 394, ../../../sass/_colorbrewer.scss */
+.OrRd .q4-5 { fill: #b30000; }
+
+/* line 395, ../../../sass/_colorbrewer.scss */
+.OrRd .q0-6 { fill: #fef0d9; }
+
+/* line 396, ../../../sass/_colorbrewer.scss */
+.OrRd .q1-6 { fill: #fdd49e; }
+
+/* line 397, ../../../sass/_colorbrewer.scss */
+.OrRd .q2-6 { fill: #fdbb84; }
+
+/* line 398, ../../../sass/_colorbrewer.scss */
+.OrRd .q3-6 { fill: #fc8d59; }
+
+/* line 399, ../../../sass/_colorbrewer.scss */
+.OrRd .q4-6 { fill: #e34a33; }
+
+/* line 400, ../../../sass/_colorbrewer.scss */
+.OrRd .q5-6 { fill: #b30000; }
+
+/* line 401, ../../../sass/_colorbrewer.scss */
+.OrRd .q0-7 { fill: #fef0d9; }
+
+/* line 402, ../../../sass/_colorbrewer.scss */
+.OrRd .q1-7 { fill: #fdd49e; }
+
+/* line 403, ../../../sass/_colorbrewer.scss */
+.OrRd .q2-7 { fill: #fdbb84; }
+
+/* line 404, ../../../sass/_colorbrewer.scss */
+.OrRd .q3-7 { fill: #fc8d59; }
+
+/* line 405, ../../../sass/_colorbrewer.scss */
+.OrRd .q4-7 { fill: #ef6548; }
+
+/* line 406, ../../../sass/_colorbrewer.scss */
+.OrRd .q5-7 { fill: #d7301f; }
+
+/* line 407, ../../../sass/_colorbrewer.scss */
+.OrRd .q6-7 { fill: #990000; }
+
+/* line 408, ../../../sass/_colorbrewer.scss */
+.OrRd .q0-8 { fill: #fff7ec; }
+
+/* line 409, ../../../sass/_colorbrewer.scss */
+.OrRd .q1-8 { fill: #fee8c8; }
+
+/* line 410, ../../../sass/_colorbrewer.scss */
+.OrRd .q2-8 { fill: #fdd49e; }
+
+/* line 411, ../../../sass/_colorbrewer.scss */
+.OrRd .q3-8 { fill: #fdbb84; }
+
+/* line 412, ../../../sass/_colorbrewer.scss */
+.OrRd .q4-8 { fill: #fc8d59; }
+
+/* line 413, ../../../sass/_colorbrewer.scss */
+.OrRd .q5-8 { fill: #ef6548; }
+
+/* line 414, ../../../sass/_colorbrewer.scss */
+.OrRd .q6-8 { fill: #d7301f; }
+
+/* line 415, ../../../sass/_colorbrewer.scss */
+.OrRd .q7-8 { fill: #990000; }
+
+/* line 416, ../../../sass/_colorbrewer.scss */
+.OrRd .q0-9 { fill: #fff7ec; }
+
+/* line 417, ../../../sass/_colorbrewer.scss */
+.OrRd .q1-9 { fill: #fee8c8; }
+
+/* line 418, ../../../sass/_colorbrewer.scss */
+.OrRd .q2-9 { fill: #fdd49e; }
+
+/* line 419, ../../../sass/_colorbrewer.scss */
+.OrRd .q3-9 { fill: #fdbb84; }
+
+/* line 420, ../../../sass/_colorbrewer.scss */
+.OrRd .q4-9 { fill: #fc8d59; }
+
+/* line 421, ../../../sass/_colorbrewer.scss */
+.OrRd .q5-9 { fill: #ef6548; }
+
+/* line 422, ../../../sass/_colorbrewer.scss */
+.OrRd .q6-9 { fill: #d7301f; }
+
+/* line 423, ../../../sass/_colorbrewer.scss */
+.OrRd .q7-9 { fill: #b30000; }
+
+/* line 424, ../../../sass/_colorbrewer.scss */
+.OrRd .q8-9 { fill: #7f0000; }
+
+/* line 425, ../../../sass/_colorbrewer.scss */
+.YlOrRd .q0-3 { fill: #ffeda0; }
+
+/* line 426, ../../../sass/_colorbrewer.scss */
+.YlOrRd .q1-3 { fill: #feb24c; }
+
+/* line 427, ../../../sass/_colorbrewer.scss */
+.YlOrRd .q2-3 { fill: #f03b20; }
+
+/* line 428, ../../../sass/_colorbrewer.scss */
+.YlOrRd .q0-4 { fill: #ffffb2; }
+
+/* line 429, ../../../sass/_colorbrewer.scss */
+.YlOrRd .q1-4 { fill: #fecc5c; }
+
+/* line 430, ../../../sass/_colorbrewer.scss */
+.YlOrRd .q2-4 { fill: #fd8d3c; }
+
+/* line 431, ../../../sass/_colorbrewer.scss */
+.YlOrRd .q3-4 { fill: #e31a1c; }
+
+/* line 432, ../../../sass/_colorbrewer.scss */
+.YlOrRd .q0-5 { fill: #ffffb2; }
+
+/* line 433, ../../../sass/_colorbrewer.scss */
+.YlOrRd .q1-5 { fill: #fecc5c; }
+
+/* line 434, ../../../sass/_colorbrewer.scss */
+.YlOrRd .q2-5 { fill: #fd8d3c; }
+
+/* line 435, ../../../sass/_colorbrewer.scss */
+.YlOrRd .q3-5 { fill: #f03b20; }
+
+/* line 436, ../../../sass/_colorbrewer.scss */
+.YlOrRd .q4-5 { fill: #bd0026; }
+
+/* line 437, ../../../sass/_colorbrewer.scss */
+.YlOrRd .q0-6 { fill: #ffffb2; }
+
+/* line 438, ../../../sass/_colorbrewer.scss */
+.YlOrRd .q1-6 { fill: #fed976; }
+
+/* line 439, ../../../sass/_colorbrewer.scss */
+.YlOrRd .q2-6 { fill: #feb24c; }
+
+/* line 440, ../../../sass/_colorbrewer.scss */
+.YlOrRd .q3-6 { fill: #fd8d3c; }
+
+/* line 441, ../../../sass/_colorbrewer.scss */
+.YlOrRd .q4-6 { fill: #f03b20; }
+
+/* line 442, ../../../sass/_colorbrewer.scss */
+.YlOrRd .q5-6 { fill: #bd0026; }
+
+/* line 443, ../../../sass/_colorbrewer.scss */
+.YlOrRd .q0-7 { fill: #ffffb2; }
+
+/* line 444, ../../../sass/_colorbrewer.scss */
+.YlOrRd .q1-7 { fill: #fed976; }
+
+/* line 445, ../../../sass/_colorbrewer.scss */
+.YlOrRd .q2-7 { fill: #feb24c; }
+
+/* line 446, ../../../sass/_colorbrewer.scss */
+.YlOrRd .q3-7 { fill: #fd8d3c; }
+
+/* line 447, ../../../sass/_colorbrewer.scss */
+.YlOrRd .q4-7 { fill: #fc4e2a; }
+
+/* line 448, ../../../sass/_colorbrewer.scss */
+.YlOrRd .q5-7 { fill: #e31a1c; }
+
+/* line 449, ../../../sass/_colorbrewer.scss */
+.YlOrRd .q6-7 { fill: #b10026; }
+
+/* line 450, ../../../sass/_colorbrewer.scss */
+.YlOrRd .q0-8 { fill: #ffffcc; }
+
+/* line 451, ../../../sass/_colorbrewer.scss */
+.YlOrRd .q1-8 { fill: #ffeda0; }
+
+/* line 452, ../../../sass/_colorbrewer.scss */
+.YlOrRd .q2-8 { fill: #fed976; }
+
+/* line 453, ../../../sass/_colorbrewer.scss */
+.YlOrRd .q3-8 { fill: #feb24c; }
+
+/* line 454, ../../../sass/_colorbrewer.scss */
+.YlOrRd .q4-8 { fill: #fd8d3c; }
+
+/* line 455, ../../../sass/_colorbrewer.scss */
+.YlOrRd .q5-8 { fill: #fc4e2a; }
+
+/* line 456, ../../../sass/_colorbrewer.scss */
+.YlOrRd .q6-8 { fill: #e31a1c; }
+
+/* line 457, ../../../sass/_colorbrewer.scss */
+.YlOrRd .q7-8 { fill: #b10026; }
+
+/* line 458, ../../../sass/_colorbrewer.scss */
+.YlOrRd .q0-9 { fill: #ffffcc; }
+
+/* line 459, ../../../sass/_colorbrewer.scss */
+.YlOrRd .q1-9 { fill: #ffeda0; }
+
+/* line 460, ../../../sass/_colorbrewer.scss */
+.YlOrRd .q2-9 { fill: #fed976; }
+
+/* line 461, ../../../sass/_colorbrewer.scss */
+.YlOrRd .q3-9 { fill: #feb24c; }
+
+/* line 462, ../../../sass/_colorbrewer.scss */
+.YlOrRd .q4-9 { fill: #fd8d3c; }
+
+/* line 463, ../../../sass/_colorbrewer.scss */
+.YlOrRd .q5-9 { fill: #fc4e2a; }
+
+/* line 464, ../../../sass/_colorbrewer.scss */
+.YlOrRd .q6-9 { fill: #e31a1c; }
+
+/* line 465, ../../../sass/_colorbrewer.scss */
+.YlOrRd .q7-9 { fill: #bd0026; }
+
+/* line 466, ../../../sass/_colorbrewer.scss */
+.YlOrRd .q8-9 { fill: #800026; }
+
+/* line 467, ../../../sass/_colorbrewer.scss */
+.YlOrBr .q0-3 { fill: #fff7bc; }
+
+/* line 468, ../../../sass/_colorbrewer.scss */
+.YlOrBr .q1-3 { fill: #fec44f; }
+
+/* line 469, ../../../sass/_colorbrewer.scss */
+.YlOrBr .q2-3 { fill: #d95f0e; }
+
+/* line 470, ../../../sass/_colorbrewer.scss */
+.YlOrBr .q0-4 { fill: #ffffd4; }
+
+/* line 471, ../../../sass/_colorbrewer.scss */
+.YlOrBr .q1-4 { fill: #fed98e; }
+
+/* line 472, ../../../sass/_colorbrewer.scss */
+.YlOrBr .q2-4 { fill: #fe9929; }
+
+/* line 473, ../../../sass/_colorbrewer.scss */
+.YlOrBr .q3-4 { fill: #cc4c02; }
+
+/* line 474, ../../../sass/_colorbrewer.scss */
+.YlOrBr .q0-5 { fill: #ffffd4; }
+
+/* line 475, ../../../sass/_colorbrewer.scss */
+.YlOrBr .q1-5 { fill: #fed98e; }
+
+/* line 476, ../../../sass/_colorbrewer.scss */
+.YlOrBr .q2-5 { fill: #fe9929; }
+
+/* line 477, ../../../sass/_colorbrewer.scss */
+.YlOrBr .q3-5 { fill: #d95f0e; }
+
+/* line 478, ../../../sass/_colorbrewer.scss */
+.YlOrBr .q4-5 { fill: #993404; }
+
+/* line 479, ../../../sass/_colorbrewer.scss */
+.YlOrBr .q0-6 { fill: #ffffd4; }
+
+/* line 480, ../../../sass/_colorbrewer.scss */
+.YlOrBr .q1-6 { fill: #fee391; }
+
+/* line 481, ../../../sass/_colorbrewer.scss */
+.YlOrBr .q2-6 { fill: #fec44f; }
+
+/* line 482, ../../../sass/_colorbrewer.scss */
+.YlOrBr .q3-6 { fill: #fe9929; }
+
+/* line 483, ../../../sass/_colorbrewer.scss */
+.YlOrBr .q4-6 { fill: #d95f0e; }
+
+/* line 484, ../../../sass/_colorbrewer.scss */
+.YlOrBr .q5-6 { fill: #993404; }
+
+/* line 485, ../../../sass/_colorbrewer.scss */
+.YlOrBr .q0-7 { fill: #ffffd4; }
+
+/* line 486, ../../../sass/_colorbrewer.scss */
+.YlOrBr .q1-7 { fill: #fee391; }
+
+/* line 487, ../../../sass/_colorbrewer.scss */
+.YlOrBr .q2-7 { fill: #fec44f; }
+
+/* line 488, ../../../sass/_colorbrewer.scss */
+.YlOrBr .q3-7 { fill: #fe9929; }
+
+/* line 489, ../../../sass/_colorbrewer.scss */
+.YlOrBr .q4-7 { fill: #ec7014; }
+
+/* line 490, ../../../sass/_colorbrewer.scss */
+.YlOrBr .q5-7 { fill: #cc4c02; }
+
+/* line 491, ../../../sass/_colorbrewer.scss */
+.YlOrBr .q6-7 { fill: #8c2d04; }
+
+/* line 492, ../../../sass/_colorbrewer.scss */
+.YlOrBr .q0-8 { fill: #ffffe5; }
+
+/* line 493, ../../../sass/_colorbrewer.scss */
+.YlOrBr .q1-8 { fill: #fff7bc; }
+
+/* line 494, ../../../sass/_colorbrewer.scss */
+.YlOrBr .q2-8 { fill: #fee391; }
+
+/* line 495, ../../../sass/_colorbrewer.scss */
+.YlOrBr .q3-8 { fill: #fec44f; }
+
+/* line 496, ../../../sass/_colorbrewer.scss */
+.YlOrBr .q4-8 { fill: #fe9929; }
+
+/* line 497, ../../../sass/_colorbrewer.scss */
+.YlOrBr .q5-8 { fill: #ec7014; }
+
+/* line 498, ../../../sass/_colorbrewer.scss */
+.YlOrBr .q6-8 { fill: #cc4c02; }
+
+/* line 499, ../../../sass/_colorbrewer.scss */
+.YlOrBr .q7-8 { fill: #8c2d04; }
+
+/* line 500, ../../../sass/_colorbrewer.scss */
+.YlOrBr .q0-9 { fill: #ffffe5; }
+
+/* line 501, ../../../sass/_colorbrewer.scss */
+.YlOrBr .q1-9 { fill: #fff7bc; }
+
+/* line 502, ../../../sass/_colorbrewer.scss */
+.YlOrBr .q2-9 { fill: #fee391; }
+
+/* line 503, ../../../sass/_colorbrewer.scss */
+.YlOrBr .q3-9 { fill: #fec44f; }
+
+/* line 504, ../../../sass/_colorbrewer.scss */
+.YlOrBr .q4-9 { fill: #fe9929; }
+
+/* line 505, ../../../sass/_colorbrewer.scss */
+.YlOrBr .q5-9 { fill: #ec7014; }
+
+/* line 506, ../../../sass/_colorbrewer.scss */
+.YlOrBr .q6-9 { fill: #cc4c02; }
+
+/* line 507, ../../../sass/_colorbrewer.scss */
+.YlOrBr .q7-9 { fill: #993404; }
+
+/* line 508, ../../../sass/_colorbrewer.scss */
+.YlOrBr .q8-9 { fill: #662506; }
+
+/* line 509, ../../../sass/_colorbrewer.scss */
+.Purples .q0-3 { fill: #efedf5; }
+
+/* line 510, ../../../sass/_colorbrewer.scss */
+.Purples .q1-3 { fill: #bcbddc; }
+
+/* line 511, ../../../sass/_colorbrewer.scss */
+.Purples .q2-3 { fill: #756bb1; }
+
+/* line 512, ../../../sass/_colorbrewer.scss */
+.Purples .q0-4 { fill: #f2f0f7; }
+
+/* line 513, ../../../sass/_colorbrewer.scss */
+.Purples .q1-4 { fill: #cbc9e2; }
+
+/* line 514, ../../../sass/_colorbrewer.scss */
+.Purples .q2-4 { fill: #9e9ac8; }
+
+/* line 515, ../../../sass/_colorbrewer.scss */
+.Purples .q3-4 { fill: #6a51a3; }
+
+/* line 516, ../../../sass/_colorbrewer.scss */
+.Purples .q0-5 { fill: #f2f0f7; }
+
+/* line 517, ../../../sass/_colorbrewer.scss */
+.Purples .q1-5 { fill: #cbc9e2; }
+
+/* line 518, ../../../sass/_colorbrewer.scss */
+.Purples .q2-5 { fill: #9e9ac8; }
+
+/* line 519, ../../../sass/_colorbrewer.scss */
+.Purples .q3-5 { fill: #756bb1; }
+
+/* line 520, ../../../sass/_colorbrewer.scss */
+.Purples .q4-5 { fill: #54278f; }
+
+/* line 521, ../../../sass/_colorbrewer.scss */
+.Purples .q0-6 { fill: #f2f0f7; }
+
+/* line 522, ../../../sass/_colorbrewer.scss */
+.Purples .q1-6 { fill: #dadaeb; }
+
+/* line 523, ../../../sass/_colorbrewer.scss */
+.Purples .q2-6 { fill: #bcbddc; }
+
+/* line 524, ../../../sass/_colorbrewer.scss */
+.Purples .q3-6 { fill: #9e9ac8; }
+
+/* line 525, ../../../sass/_colorbrewer.scss */
+.Purples .q4-6 { fill: #756bb1; }
+
+/* line 526, ../../../sass/_colorbrewer.scss */
+.Purples .q5-6 { fill: #54278f; }
+
+/* line 527, ../../../sass/_colorbrewer.scss */
+.Purples .q0-7 { fill: #f2f0f7; }
+
+/* line 528, ../../../sass/_colorbrewer.scss */
+.Purples .q1-7 { fill: #dadaeb; }
+
+/* line 529, ../../../sass/_colorbrewer.scss */
+.Purples .q2-7 { fill: #bcbddc; }
+
+/* line 530, ../../../sass/_colorbrewer.scss */
+.Purples .q3-7 { fill: #9e9ac8; }
+
+/* line 531, ../../../sass/_colorbrewer.scss */
+.Purples .q4-7 { fill: #807dba; }
+
+/* line 532, ../../../sass/_colorbrewer.scss */
+.Purples .q5-7 { fill: #6a51a3; }
+
+/* line 533, ../../../sass/_colorbrewer.scss */
+.Purples .q6-7 { fill: #4a1486; }
+
+/* line 534, ../../../sass/_colorbrewer.scss */
+.Purples .q0-8 { fill: #fcfbfd; }
+
+/* line 535, ../../../sass/_colorbrewer.scss */
+.Purples .q1-8 { fill: #efedf5; }
+
+/* line 536, ../../../sass/_colorbrewer.scss */
+.Purples .q2-8 { fill: #dadaeb; }
+
+/* line 537, ../../../sass/_colorbrewer.scss */
+.Purples .q3-8 { fill: #bcbddc; }
+
+/* line 538, ../../../sass/_colorbrewer.scss */
+.Purples .q4-8 { fill: #9e9ac8; }
+
+/* line 539, ../../../sass/_colorbrewer.scss */
+.Purples .q5-8 { fill: #807dba; }
+
+/* line 540, ../../../sass/_colorbrewer.scss */
+.Purples .q6-8 { fill: #6a51a3; }
+
+/* line 541, ../../../sass/_colorbrewer.scss */
+.Purples .q7-8 { fill: #4a1486; }
+
+/* line 542, ../../../sass/_colorbrewer.scss */
+.Purples .q0-9 { fill: #fcfbfd; }
+
+/* line 543, ../../../sass/_colorbrewer.scss */
+.Purples .q1-9 { fill: #efedf5; }
+
+/* line 544, ../../../sass/_colorbrewer.scss */
+.Purples .q2-9 { fill: #dadaeb; }
+
+/* line 545, ../../../sass/_colorbrewer.scss */
+.Purples .q3-9 { fill: #bcbddc; }
+
+/* line 546, ../../../sass/_colorbrewer.scss */
+.Purples .q4-9 { fill: #9e9ac8; }
+
+/* line 547, ../../../sass/_colorbrewer.scss */
+.Purples .q5-9 { fill: #807dba; }
+
+/* line 548, ../../../sass/_colorbrewer.scss */
+.Purples .q6-9 { fill: #6a51a3; }
+
+/* line 549, ../../../sass/_colorbrewer.scss */
+.Purples .q7-9 { fill: #54278f; }
+
+/* line 550, ../../../sass/_colorbrewer.scss */
+.Purples .q8-9 { fill: #3f007d; }
+
+/* line 551, ../../../sass/_colorbrewer.scss */
+.Blues .q0-3 { fill: #deebf7; }
+
+/* line 552, ../../../sass/_colorbrewer.scss */
+.Blues .q1-3 { fill: #9ecae1; }
+
+/* line 553, ../../../sass/_colorbrewer.scss */
+.Blues .q2-3 { fill: #3182bd; }
+
+/* line 554, ../../../sass/_colorbrewer.scss */
+.Blues .q0-4 { fill: #eff3ff; }
+
+/* line 555, ../../../sass/_colorbrewer.scss */
+.Blues .q1-4 { fill: #bdd7e7; }
+
+/* line 556, ../../../sass/_colorbrewer.scss */
+.Blues .q2-4 { fill: #6baed6; }
+
+/* line 557, ../../../sass/_colorbrewer.scss */
+.Blues .q3-4 { fill: #2171b5; }
+
+/* line 558, ../../../sass/_colorbrewer.scss */
+.Blues .q0-5 { fill: #eff3ff; }
+
+/* line 559, ../../../sass/_colorbrewer.scss */
+.Blues .q1-5 { fill: #bdd7e7; }
+
+/* line 560, ../../../sass/_colorbrewer.scss */
+.Blues .q2-5 { fill: #6baed6; }
+
+/* line 561, ../../../sass/_colorbrewer.scss */
+.Blues .q3-5 { fill: #3182bd; }
+
+/* line 562, ../../../sass/_colorbrewer.scss */
+.Blues .q4-5 { fill: #08519c; }
+
+/* line 563, ../../../sass/_colorbrewer.scss */
+.Blues .q0-6 { fill: #eff3ff; }
+
+/* line 564, ../../../sass/_colorbrewer.scss */
+.Blues .q1-6 { fill: #c6dbef; }
+
+/* line 565, ../../../sass/_colorbrewer.scss */
+.Blues .q2-6 { fill: #9ecae1; }
+
+/* line 566, ../../../sass/_colorbrewer.scss */
+.Blues .q3-6 { fill: #6baed6; }
+
+/* line 567, ../../../sass/_colorbrewer.scss */
+.Blues .q4-6 { fill: #3182bd; }
+
+/* line 568, ../../../sass/_colorbrewer.scss */
+.Blues .q5-6 { fill: #08519c; }
+
+/* line 569, ../../../sass/_colorbrewer.scss */
+.Blues .q0-7 { fill: #eff3ff; }
+
+/* line 570, ../../../sass/_colorbrewer.scss */
+.Blues .q1-7 { fill: #c6dbef; }
+
+/* line 571, ../../../sass/_colorbrewer.scss */
+.Blues .q2-7 { fill: #9ecae1; }
+
+/* line 572, ../../../sass/_colorbrewer.scss */
+.Blues .q3-7 { fill: #6baed6; }
+
+/* line 573, ../../../sass/_colorbrewer.scss */
+.Blues .q4-7 { fill: #4292c6; }
+
+/* line 574, ../../../sass/_colorbrewer.scss */
+.Blues .q5-7 { fill: #2171b5; }
+
+/* line 575, ../../../sass/_colorbrewer.scss */
+.Blues .q6-7 { fill: #084594; }
+
+/* line 576, ../../../sass/_colorbrewer.scss */
+.Blues .q0-8 { fill: #f7fbff; }
+
+/* line 577, ../../../sass/_colorbrewer.scss */
+.Blues .q1-8 { fill: #deebf7; }
+
+/* line 578, ../../../sass/_colorbrewer.scss */
+.Blues .q2-8 { fill: #c6dbef; }
+
+/* line 579, ../../../sass/_colorbrewer.scss */
+.Blues .q3-8 { fill: #9ecae1; }
+
+/* line 580, ../../../sass/_colorbrewer.scss */
+.Blues .q4-8 { fill: #6baed6; }
+
+/* line 581, ../../../sass/_colorbrewer.scss */
+.Blues .q5-8 { fill: #4292c6; }
+
+/* line 582, ../../../sass/_colorbrewer.scss */
+.Blues .q6-8 { fill: #2171b5; }
+
+/* line 583, ../../../sass/_colorbrewer.scss */
+.Blues .q7-8 { fill: #084594; }
+
+/* line 584, ../../../sass/_colorbrewer.scss */
+.Blues .q0-9 { fill: #f7fbff; }
+
+/* line 585, ../../../sass/_colorbrewer.scss */
+.Blues .q1-9 { fill: #deebf7; }
+
+/* line 586, ../../../sass/_colorbrewer.scss */
+.Blues .q2-9 { fill: #c6dbef; }
+
+/* line 587, ../../../sass/_colorbrewer.scss */
+.Blues .q3-9 { fill: #9ecae1; }
+
+/* line 588, ../../../sass/_colorbrewer.scss */
+.Blues .q4-9 { fill: #6baed6; }
+
+/* line 589, ../../../sass/_colorbrewer.scss */
+.Blues .q5-9 { fill: #4292c6; }
+
+/* line 590, ../../../sass/_colorbrewer.scss */
+.Blues .q6-9 { fill: #2171b5; }
+
+/* line 591, ../../../sass/_colorbrewer.scss */
+.Blues .q7-9 { fill: #08519c; }
+
+/* line 592, ../../../sass/_colorbrewer.scss */
+.Blues .q8-9 { fill: #08306b; }
+
+/* line 593, ../../../sass/_colorbrewer.scss */
+.Greens .q0-3 { fill: #e5f5e0; }
+
+/* line 594, ../../../sass/_colorbrewer.scss */
+.Greens .q1-3 { fill: #a1d99b; }
+
+/* line 595, ../../../sass/_colorbrewer.scss */
+.Greens .q2-3 { fill: #31a354; }
+
+/* line 596, ../../../sass/_colorbrewer.scss */
+.Greens .q0-4 { fill: #edf8e9; }
+
+/* line 597, ../../../sass/_colorbrewer.scss */
+.Greens .q1-4 { fill: #bae4b3; }
+
+/* line 598, ../../../sass/_colorbrewer.scss */
+.Greens .q2-4 { fill: #74c476; }
+
+/* line 599, ../../../sass/_colorbrewer.scss */
+.Greens .q3-4 { fill: #238b45; }
+
+/* line 600, ../../../sass/_colorbrewer.scss */
+.Greens .q0-5 { fill: #edf8e9; }
+
+/* line 601, ../../../sass/_colorbrewer.scss */
+.Greens .q1-5 { fill: #bae4b3; }
+
+/* line 602, ../../../sass/_colorbrewer.scss */
+.Greens .q2-5 { fill: #74c476; }
+
+/* line 603, ../../../sass/_colorbrewer.scss */
+.Greens .q3-5 { fill: #31a354; }
+
+/* line 604, ../../../sass/_colorbrewer.scss */
+.Greens .q4-5 { fill: #006d2c; }
+
+/* line 605, ../../../sass/_colorbrewer.scss */
+.Greens .q0-6 { fill: #edf8e9; }
+
+/* line 606, ../../../sass/_colorbrewer.scss */
+.Greens .q1-6 { fill: #c7e9c0; }
+
+/* line 607, ../../../sass/_colorbrewer.scss */
+.Greens .q2-6 { fill: #a1d99b; }
+
+/* line 608, ../../../sass/_colorbrewer.scss */
+.Greens .q3-6 { fill: #74c476; }
+
+/* line 609, ../../../sass/_colorbrewer.scss */
+.Greens .q4-6 { fill: #31a354; }
+
+/* line 610, ../../../sass/_colorbrewer.scss */
+.Greens .q5-6 { fill: #006d2c; }
+
+/* line 611, ../../../sass/_colorbrewer.scss */
+.Greens .q0-7 { fill: #edf8e9; }
+
+/* line 612, ../../../sass/_colorbrewer.scss */
+.Greens .q1-7 { fill: #c7e9c0; }
+
+/* line 613, ../../../sass/_colorbrewer.scss */
+.Greens .q2-7 { fill: #a1d99b; }
+
+/* line 614, ../../../sass/_colorbrewer.scss */
+.Greens .q3-7 { fill: #74c476; }
+
+/* line 615, ../../../sass/_colorbrewer.scss */
+.Greens .q4-7 { fill: #41ab5d; }
+
+/* line 616, ../../../sass/_colorbrewer.scss */
+.Greens .q5-7 { fill: #238b45; }
+
+/* line 617, ../../../sass/_colorbrewer.scss */
+.Greens .q6-7 { fill: #005a32; }
+
+/* line 618, ../../../sass/_colorbrewer.scss */
+.Greens .q0-8 { fill: #f7fcf5; }
+
+/* line 619, ../../../sass/_colorbrewer.scss */
+.Greens .q1-8 { fill: #e5f5e0; }
+
+/* line 620, ../../../sass/_colorbrewer.scss */
+.Greens .q2-8 { fill: #c7e9c0; }
+
+/* line 621, ../../../sass/_colorbrewer.scss */
+.Greens .q3-8 { fill: #a1d99b; }
+
+/* line 622, ../../../sass/_colorbrewer.scss */
+.Greens .q4-8 { fill: #74c476; }
+
+/* line 623, ../../../sass/_colorbrewer.scss */
+.Greens .q5-8 { fill: #41ab5d; }
+
+/* line 624, ../../../sass/_colorbrewer.scss */
+.Greens .q6-8 { fill: #238b45; }
+
+/* line 625, ../../../sass/_colorbrewer.scss */
+.Greens .q7-8 { fill: #005a32; }
+
+/* line 626, ../../../sass/_colorbrewer.scss */
+.Greens .q0-9 { fill: #f7fcf5; }
+
+/* line 627, ../../../sass/_colorbrewer.scss */
+.Greens .q1-9 { fill: #e5f5e0; }
+
+/* line 628, ../../../sass/_colorbrewer.scss */
+.Greens .q2-9 { fill: #c7e9c0; }
+
+/* line 629, ../../../sass/_colorbrewer.scss */
+.Greens .q3-9 { fill: #a1d99b; }
+
+/* line 630, ../../../sass/_colorbrewer.scss */
+.Greens .q4-9 { fill: #74c476; }
+
+/* line 631, ../../../sass/_colorbrewer.scss */
+.Greens .q5-9 { fill: #41ab5d; }
+
+/* line 632, ../../../sass/_colorbrewer.scss */
+.Greens .q6-9 { fill: #238b45; }
+
+/* line 633, ../../../sass/_colorbrewer.scss */
+.Greens .q7-9 { fill: #006d2c; }
+
+/* line 634, ../../../sass/_colorbrewer.scss */
+.Greens .q8-9 { fill: #00441b; }
+
+/* line 635, ../../../sass/_colorbrewer.scss */
+.Oranges .q0-3 { fill: #fee6ce; }
+
+/* line 636, ../../../sass/_colorbrewer.scss */
+.Oranges .q1-3 { fill: #fdae6b; }
+
+/* line 637, ../../../sass/_colorbrewer.scss */
+.Oranges .q2-3 { fill: #e6550d; }
+
+/* line 638, ../../../sass/_colorbrewer.scss */
+.Oranges .q0-4 { fill: #feedde; }
+
+/* line 639, ../../../sass/_colorbrewer.scss */
+.Oranges .q1-4 { fill: #fdbe85; }
+
+/* line 640, ../../../sass/_colorbrewer.scss */
+.Oranges .q2-4 { fill: #fd8d3c; }
+
+/* line 641, ../../../sass/_colorbrewer.scss */
+.Oranges .q3-4 { fill: #d94701; }
+
+/* line 642, ../../../sass/_colorbrewer.scss */
+.Oranges .q0-5 { fill: #feedde; }
+
+/* line 643, ../../../sass/_colorbrewer.scss */
+.Oranges .q1-5 { fill: #fdbe85; }
+
+/* line 644, ../../../sass/_colorbrewer.scss */
+.Oranges .q2-5 { fill: #fd8d3c; }
+
+/* line 645, ../../../sass/_colorbrewer.scss */
+.Oranges .q3-5 { fill: #e6550d; }
+
+/* line 646, ../../../sass/_colorbrewer.scss */
+.Oranges .q4-5 { fill: #a63603; }
+
+/* line 647, ../../../sass/_colorbrewer.scss */
+.Oranges .q0-6 { fill: #feedde; }
+
+/* line 648, ../../../sass/_colorbrewer.scss */
+.Oranges .q1-6 { fill: #fdd0a2; }
+
+/* line 649, ../../../sass/_colorbrewer.scss */
+.Oranges .q2-6 { fill: #fdae6b; }
+
+/* line 650, ../../../sass/_colorbrewer.scss */
+.Oranges .q3-6 { fill: #fd8d3c; }
+
+/* line 651, ../../../sass/_colorbrewer.scss */
+.Oranges .q4-6 { fill: #e6550d; }
+
+/* line 652, ../../../sass/_colorbrewer.scss */
+.Oranges .q5-6 { fill: #a63603; }
+
+/* line 653, ../../../sass/_colorbrewer.scss */
+.Oranges .q0-7 { fill: #feedde; }
+
+/* line 654, ../../../sass/_colorbrewer.scss */
+.Oranges .q1-7 { fill: #fdd0a2; }
+
+/* line 655, ../../../sass/_colorbrewer.scss */
+.Oranges .q2-7 { fill: #fdae6b; }
+
+/* line 656, ../../../sass/_colorbrewer.scss */
+.Oranges .q3-7 { fill: #fd8d3c; }
+
+/* line 657, ../../../sass/_colorbrewer.scss */
+.Oranges .q4-7 { fill: #f16913; }
+
+/* line 658, ../../../sass/_colorbrewer.scss */
+.Oranges .q5-7 { fill: #d94801; }
+
+/* line 659, ../../../sass/_colorbrewer.scss */
+.Oranges .q6-7 { fill: #8c2d04; }
+
+/* line 660, ../../../sass/_colorbrewer.scss */
+.Oranges .q0-8 { fill: #fff5eb; }
+
+/* line 661, ../../../sass/_colorbrewer.scss */
+.Oranges .q1-8 { fill: #fee6ce; }
+
+/* line 662, ../../../sass/_colorbrewer.scss */
+.Oranges .q2-8 { fill: #fdd0a2; }
+
+/* line 663, ../../../sass/_colorbrewer.scss */
+.Oranges .q3-8 { fill: #fdae6b; }
+
+/* line 664, ../../../sass/_colorbrewer.scss */
+.Oranges .q4-8 { fill: #fd8d3c; }
+
+/* line 665, ../../../sass/_colorbrewer.scss */
+.Oranges .q5-8 { fill: #f16913; }
+
+/* line 666, ../../../sass/_colorbrewer.scss */
+.Oranges .q6-8 { fill: #d94801; }
+
+/* line 667, ../../../sass/_colorbrewer.scss */
+.Oranges .q7-8 { fill: #8c2d04; }
+
+/* line 668, ../../../sass/_colorbrewer.scss */
+.Oranges .q0-9 { fill: #fff5eb; }
+
+/* line 669, ../../../sass/_colorbrewer.scss */
+.Oranges .q1-9 { fill: #fee6ce; }
+
+/* line 670, ../../../sass/_colorbrewer.scss */
+.Oranges .q2-9 { fill: #fdd0a2; }
+
+/* line 671, ../../../sass/_colorbrewer.scss */
+.Oranges .q3-9 { fill: #fdae6b; }
+
+/* line 672, ../../../sass/_colorbrewer.scss */
+.Oranges .q4-9 { fill: #fd8d3c; }
+
+/* line 673, ../../../sass/_colorbrewer.scss */
+.Oranges .q5-9 { fill: #f16913; }
+
+/* line 674, ../../../sass/_colorbrewer.scss */
+.Oranges .q6-9 { fill: #d94801; }
+
+/* line 675, ../../../sass/_colorbrewer.scss */
+.Oranges .q7-9 { fill: #a63603; }
+
+/* line 676, ../../../sass/_colorbrewer.scss */
+.Oranges .q8-9 { fill: #7f2704; }
+
+/* line 677, ../../../sass/_colorbrewer.scss */
+.Reds .q0-3 { fill: #fee0d2; }
+
+/* line 678, ../../../sass/_colorbrewer.scss */
+.Reds .q1-3 { fill: #fc9272; }
+
+/* line 679, ../../../sass/_colorbrewer.scss */
+.Reds .q2-3 { fill: #de2d26; }
+
+/* line 680, ../../../sass/_colorbrewer.scss */
+.Reds .q0-4 { fill: #fee5d9; }
+
+/* line 681, ../../../sass/_colorbrewer.scss */
+.Reds .q1-4 { fill: #fcae91; }
+
+/* line 682, ../../../sass/_colorbrewer.scss */
+.Reds .q2-4 { fill: #fb6a4a; }
+
+/* line 683, ../../../sass/_colorbrewer.scss */
+.Reds .q3-4 { fill: #cb181d; }
+
+/* line 684, ../../../sass/_colorbrewer.scss */
+.Reds .q0-5 { fill: #fee5d9; }
+
+/* line 685, ../../../sass/_colorbrewer.scss */
+.Reds .q1-5 { fill: #fcae91; }
+
+/* line 686, ../../../sass/_colorbrewer.scss */
+.Reds .q2-5 { fill: #fb6a4a; }
+
+/* line 687, ../../../sass/_colorbrewer.scss */
+.Reds .q3-5 { fill: #de2d26; }
+
+/* line 688, ../../../sass/_colorbrewer.scss */
+.Reds .q4-5 { fill: #a50f15; }
+
+/* line 689, ../../../sass/_colorbrewer.scss */
+.Reds .q0-6 { fill: #fee5d9; }
+
+/* line 690, ../../../sass/_colorbrewer.scss */
+.Reds .q1-6 { fill: #fcbba1; }
+
+/* line 691, ../../../sass/_colorbrewer.scss */
+.Reds .q2-6 { fill: #fc9272; }
+
+/* line 692, ../../../sass/_colorbrewer.scss */
+.Reds .q3-6 { fill: #fb6a4a; }
+
+/* line 693, ../../../sass/_colorbrewer.scss */
+.Reds .q4-6 { fill: #de2d26; }
+
+/* line 694, ../../../sass/_colorbrewer.scss */
+.Reds .q5-6 { fill: #a50f15; }
+
+/* line 695, ../../../sass/_colorbrewer.scss */
+.Reds .q0-7 { fill: #fee5d9; }
+
+/* line 696, ../../../sass/_colorbrewer.scss */
+.Reds .q1-7 { fill: #fcbba1; }
+
+/* line 697, ../../../sass/_colorbrewer.scss */
+.Reds .q2-7 { fill: #fc9272; }
+
+/* line 698, ../../../sass/_colorbrewer.scss */
+.Reds .q3-7 { fill: #fb6a4a; }
+
+/* line 699, ../../../sass/_colorbrewer.scss */
+.Reds .q4-7 { fill: #ef3b2c; }
+
+/* line 700, ../../../sass/_colorbrewer.scss */
+.Reds .q5-7 { fill: #cb181d; }
+
+/* line 701, ../../../sass/_colorbrewer.scss */
+.Reds .q6-7 { fill: #99000d; }
+
+/* line 702, ../../../sass/_colorbrewer.scss */
+.Reds .q0-8 { fill: #fff5f0; }
+
+/* line 703, ../../../sass/_colorbrewer.scss */
+.Reds .q1-8 { fill: #fee0d2; }
+
+/* line 704, ../../../sass/_colorbrewer.scss */
+.Reds .q2-8 { fill: #fcbba1; }
+
+/* line 705, ../../../sass/_colorbrewer.scss */
+.Reds .q3-8 { fill: #fc9272; }
+
+/* line 706, ../../../sass/_colorbrewer.scss */
+.Reds .q4-8 { fill: #fb6a4a; }
+
+/* line 707, ../../../sass/_colorbrewer.scss */
+.Reds .q5-8 { fill: #ef3b2c; }
+
+/* line 708, ../../../sass/_colorbrewer.scss */
+.Reds .q6-8 { fill: #cb181d; }
+
+/* line 709, ../../../sass/_colorbrewer.scss */
+.Reds .q7-8 { fill: #99000d; }
+
+/* line 710, ../../../sass/_colorbrewer.scss */
+.Reds .q0-9 { fill: #fff5f0; }
+
+/* line 711, ../../../sass/_colorbrewer.scss */
+.Reds .q1-9 { fill: #fee0d2; }
+
+/* line 712, ../../../sass/_colorbrewer.scss */
+.Reds .q2-9 { fill: #fcbba1; }
+
+/* line 713, ../../../sass/_colorbrewer.scss */
+.Reds .q3-9 { fill: #fc9272; }
+
+/* line 714, ../../../sass/_colorbrewer.scss */
+.Reds .q4-9 { fill: #fb6a4a; }
+
+/* line 715, ../../../sass/_colorbrewer.scss */
+.Reds .q5-9 { fill: #ef3b2c; }
+
+/* line 716, ../../../sass/_colorbrewer.scss */
+.Reds .q6-9 { fill: #cb181d; }
+
+/* line 717, ../../../sass/_colorbrewer.scss */
+.Reds .q7-9 { fill: #a50f15; }
+
+/* line 718, ../../../sass/_colorbrewer.scss */
+.Reds .q8-9 { fill: #67000d; }
+
+/* line 719, ../../../sass/_colorbrewer.scss */
+.Greys .q0-3 { fill: #f0f0f0; }
+
+/* line 720, ../../../sass/_colorbrewer.scss */
+.Greys .q1-3 { fill: #bdbdbd; }
+
+/* line 721, ../../../sass/_colorbrewer.scss */
+.Greys .q2-3 { fill: #636363; }
+
+/* line 722, ../../../sass/_colorbrewer.scss */
+.Greys .q0-4 { fill: #f7f7f7; }
+
+/* line 723, ../../../sass/_colorbrewer.scss */
+.Greys .q1-4 { fill: #cccccc; }
+
+/* line 724, ../../../sass/_colorbrewer.scss */
+.Greys .q2-4 { fill: #969696; }
+
+/* line 725, ../../../sass/_colorbrewer.scss */
+.Greys .q3-4 { fill: #525252; }
+
+/* line 726, ../../../sass/_colorbrewer.scss */
+.Greys .q0-5 { fill: #f7f7f7; }
+
+/* line 727, ../../../sass/_colorbrewer.scss */
+.Greys .q1-5 { fill: #cccccc; }
+
+/* line 728, ../../../sass/_colorbrewer.scss */
+.Greys .q2-5 { fill: #969696; }
+
+/* line 729, ../../../sass/_colorbrewer.scss */
+.Greys .q3-5 { fill: #636363; }
+
+/* line 730, ../../../sass/_colorbrewer.scss */
+.Greys .q4-5 { fill: #252525; }
+
+/* line 731, ../../../sass/_colorbrewer.scss */
+.Greys .q0-6 { fill: #f7f7f7; }
+
+/* line 732, ../../../sass/_colorbrewer.scss */
+.Greys .q1-6 { fill: #d9d9d9; }
+
+/* line 733, ../../../sass/_colorbrewer.scss */
+.Greys .q2-6 { fill: #bdbdbd; }
+
+/* line 734, ../../../sass/_colorbrewer.scss */
+.Greys .q3-6 { fill: #969696; }
+
+/* line 735, ../../../sass/_colorbrewer.scss */
+.Greys .q4-6 { fill: #636363; }
+
+/* line 736, ../../../sass/_colorbrewer.scss */
+.Greys .q5-6 { fill: #252525; }
+
+/* line 737, ../../../sass/_colorbrewer.scss */
+.Greys .q0-7 { fill: #f7f7f7; }
+
+/* line 738, ../../../sass/_colorbrewer.scss */
+.Greys .q1-7 { fill: #d9d9d9; }
+
+/* line 739, ../../../sass/_colorbrewer.scss */
+.Greys .q2-7 { fill: #bdbdbd; }
+
+/* line 740, ../../../sass/_colorbrewer.scss */
+.Greys .q3-7 { fill: #969696; }
+
+/* line 741, ../../../sass/_colorbrewer.scss */
+.Greys .q4-7 { fill: #737373; }
+
+/* line 742, ../../../sass/_colorbrewer.scss */
+.Greys .q5-7 { fill: #525252; }
+
+/* line 743, ../../../sass/_colorbrewer.scss */
+.Greys .q6-7 { fill: #252525; }
+
+/* line 744, ../../../sass/_colorbrewer.scss */
+.Greys .q0-8 { fill: white; }
+
+/* line 745, ../../../sass/_colorbrewer.scss */
+.Greys .q1-8 { fill: #f0f0f0; }
+
+/* line 746, ../../../sass/_colorbrewer.scss */
+.Greys .q2-8 { fill: #d9d9d9; }
+
+/* line 747, ../../../sass/_colorbrewer.scss */
+.Greys .q3-8 { fill: #bdbdbd; }
+
+/* line 748, ../../../sass/_colorbrewer.scss */
+.Greys .q4-8 { fill: #969696; }
+
+/* line 749, ../../../sass/_colorbrewer.scss */
+.Greys .q5-8 { fill: #737373; }
+
+/* line 750, ../../../sass/_colorbrewer.scss */
+.Greys .q6-8 { fill: #525252; }
+
+/* line 751, ../../../sass/_colorbrewer.scss */
+.Greys .q7-8 { fill: #252525; }
+
+/* line 752, ../../../sass/_colorbrewer.scss */
+.Greys .q0-9 { fill: white; }
+
+/* line 753, ../../../sass/_colorbrewer.scss */
+.Greys .q1-9 { fill: #f0f0f0; }
+
+/* line 754, ../../../sass/_colorbrewer.scss */
+.Greys .q2-9 { fill: #d9d9d9; }
+
+/* line 755, ../../../sass/_colorbrewer.scss */
+.Greys .q3-9 { fill: #bdbdbd; }
+
+/* line 756, ../../../sass/_colorbrewer.scss */
+.Greys .q4-9 { fill: #969696; }
+
+/* line 757, ../../../sass/_colorbrewer.scss */
+.Greys .q5-9 { fill: #737373; }
+
+/* line 758, ../../../sass/_colorbrewer.scss */
+.Greys .q6-9 { fill: #525252; }
+
+/* line 759, ../../../sass/_colorbrewer.scss */
+.Greys .q7-9 { fill: #252525; }
+
+/* line 760, ../../../sass/_colorbrewer.scss */
+.Greys .q8-9 { fill: black; }
+
+/* line 761, ../../../sass/_colorbrewer.scss */
+.PuOr .q0-3 { fill: #f1a340; }
+
+/* line 762, ../../../sass/_colorbrewer.scss */
+.PuOr .q1-3 { fill: #f7f7f7; }
+
+/* line 763, ../../../sass/_colorbrewer.scss */
+.PuOr .q2-3 { fill: #998ec3; }
+
+/* line 764, ../../../sass/_colorbrewer.scss */
+.PuOr .q0-4 { fill: #e66101; }
+
+/* line 765, ../../../sass/_colorbrewer.scss */
+.PuOr .q1-4 { fill: #fdb863; }
+
+/* line 766, ../../../sass/_colorbrewer.scss */
+.PuOr .q2-4 { fill: #b2abd2; }
+
+/* line 767, ../../../sass/_colorbrewer.scss */
+.PuOr .q3-4 { fill: #5e3c99; }
+
+/* line 768, ../../../sass/_colorbrewer.scss */
+.PuOr .q0-5 { fill: #e66101; }
+
+/* line 769, ../../../sass/_colorbrewer.scss */
+.PuOr .q1-5 { fill: #fdb863; }
+
+/* line 770, ../../../sass/_colorbrewer.scss */
+.PuOr .q2-5 { fill: #f7f7f7; }
+
+/* line 771, ../../../sass/_colorbrewer.scss */
+.PuOr .q3-5 { fill: #b2abd2; }
+
+/* line 772, ../../../sass/_colorbrewer.scss */
+.PuOr .q4-5 { fill: #5e3c99; }
+
+/* line 773, ../../../sass/_colorbrewer.scss */
+.PuOr .q0-6 { fill: #b35806; }
+
+/* line 774, ../../../sass/_colorbrewer.scss */
+.PuOr .q1-6 { fill: #f1a340; }
+
+/* line 775, ../../../sass/_colorbrewer.scss */
+.PuOr .q2-6 { fill: #fee0b6; }
+
+/* line 776, ../../../sass/_colorbrewer.scss */
+.PuOr .q3-6 { fill: #d8daeb; }
+
+/* line 777, ../../../sass/_colorbrewer.scss */
+.PuOr .q4-6 { fill: #998ec3; }
+
+/* line 778, ../../../sass/_colorbrewer.scss */
+.PuOr .q5-6 { fill: #542788; }
+
+/* line 779, ../../../sass/_colorbrewer.scss */
+.PuOr .q0-7 { fill: #b35806; }
+
+/* line 780, ../../../sass/_colorbrewer.scss */
+.PuOr .q1-7 { fill: #f1a340; }
+
+/* line 781, ../../../sass/_colorbrewer.scss */
+.PuOr .q2-7 { fill: #fee0b6; }
+
+/* line 782, ../../../sass/_colorbrewer.scss */
+.PuOr .q3-7 { fill: #f7f7f7; }
+
+/* line 783, ../../../sass/_colorbrewer.scss */
+.PuOr .q4-7 { fill: #d8daeb; }
+
+/* line 784, ../../../sass/_colorbrewer.scss */
+.PuOr .q5-7 { fill: #998ec3; }
+
+/* line 785, ../../../sass/_colorbrewer.scss */
+.PuOr .q6-7 { fill: #542788; }
+
+/* line 786, ../../../sass/_colorbrewer.scss */
+.PuOr .q0-8 { fill: #b35806; }
+
+/* line 787, ../../../sass/_colorbrewer.scss */
+.PuOr .q1-8 { fill: #e08214; }
+
+/* line 788, ../../../sass/_colorbrewer.scss */
+.PuOr .q2-8 { fill: #fdb863; }
+
+/* line 789, ../../../sass/_colorbrewer.scss */
+.PuOr .q3-8 { fill: #fee0b6; }
+
+/* line 790, ../../../sass/_colorbrewer.scss */
+.PuOr .q4-8 { fill: #d8daeb; }
+
+/* line 791, ../../../sass/_colorbrewer.scss */
+.PuOr .q5-8 { fill: #b2abd2; }
+
+/* line 792, ../../../sass/_colorbrewer.scss */
+.PuOr .q6-8 { fill: #8073ac; }
+
+/* line 793, ../../../sass/_colorbrewer.scss */
+.PuOr .q7-8 { fill: #542788; }
+
+/* line 794, ../../../sass/_colorbrewer.scss */
+.PuOr .q0-9 { fill: #b35806; }
+
+/* line 795, ../../../sass/_colorbrewer.scss */
+.PuOr .q1-9 { fill: #e08214; }
+
+/* line 796, ../../../sass/_colorbrewer.scss */
+.PuOr .q2-9 { fill: #fdb863; }
+
+/* line 797, ../../../sass/_colorbrewer.scss */
+.PuOr .q3-9 { fill: #fee0b6; }
+
+/* line 798, ../../../sass/_colorbrewer.scss */
+.PuOr .q4-9 { fill: #f7f7f7; }
+
+/* line 799, ../../../sass/_colorbrewer.scss */
+.PuOr .q5-9 { fill: #d8daeb; }
+
+/* line 800, ../../../sass/_colorbrewer.scss */
+.PuOr .q6-9 { fill: #b2abd2; }
+
+/* line 801, ../../../sass/_colorbrewer.scss */
+.PuOr .q7-9 { fill: #8073ac; }
+
+/* line 802, ../../../sass/_colorbrewer.scss */
+.PuOr .q8-9 { fill: #542788; }
+
+/* line 803, ../../../sass/_colorbrewer.scss */
+.PuOr .q0-10 { fill: #7f3b08; }
+
+/* line 804, ../../../sass/_colorbrewer.scss */
+.PuOr .q1-10 { fill: #b35806; }
+
+/* line 805, ../../../sass/_colorbrewer.scss */
+.PuOr .q2-10 { fill: #e08214; }
+
+/* line 806, ../../../sass/_colorbrewer.scss */
+.PuOr .q3-10 { fill: #fdb863; }
+
+/* line 807, ../../../sass/_colorbrewer.scss */
+.PuOr .q4-10 { fill: #fee0b6; }
+
+/* line 808, ../../../sass/_colorbrewer.scss */
+.PuOr .q5-10 { fill: #d8daeb; }
+
+/* line 809, ../../../sass/_colorbrewer.scss */
+.PuOr .q6-10 { fill: #b2abd2; }
+
+/* line 810, ../../../sass/_colorbrewer.scss */
+.PuOr .q7-10 { fill: #8073ac; }
+
+/* line 811, ../../../sass/_colorbrewer.scss */
+.PuOr .q8-10 { fill: #542788; }
+
+/* line 812, ../../../sass/_colorbrewer.scss */
+.PuOr .q9-10 { fill: #2d004b; }
+
+/* line 813, ../../../sass/_colorbrewer.scss */
+.PuOr .q0-11 { fill: #7f3b08; }
+
+/* line 814, ../../../sass/_colorbrewer.scss */
+.PuOr .q1-11 { fill: #b35806; }
+
+/* line 815, ../../../sass/_colorbrewer.scss */
+.PuOr .q2-11 { fill: #e08214; }
+
+/* line 816, ../../../sass/_colorbrewer.scss */
+.PuOr .q3-11 { fill: #fdb863; }
+
+/* line 817, ../../../sass/_colorbrewer.scss */
+.PuOr .q4-11 { fill: #fee0b6; }
+
+/* line 818, ../../../sass/_colorbrewer.scss */
+.PuOr .q5-11 { fill: #f7f7f7; }
+
+/* line 819, ../../../sass/_colorbrewer.scss */
+.PuOr .q6-11 { fill: #d8daeb; }
+
+/* line 820, ../../../sass/_colorbrewer.scss */
+.PuOr .q7-11 { fill: #b2abd2; }
+
+/* line 821, ../../../sass/_colorbrewer.scss */
+.PuOr .q8-11 { fill: #8073ac; }
+
+/* line 822, ../../../sass/_colorbrewer.scss */
+.PuOr .q9-11 { fill: #542788; }
+
+/* line 823, ../../../sass/_colorbrewer.scss */
+.PuOr .q10-11 { fill: #2d004b; }
+
+/* line 824, ../../../sass/_colorbrewer.scss */
+.BrBG .q0-3 { fill: #d8b365; }
+
+/* line 825, ../../../sass/_colorbrewer.scss */
+.BrBG .q1-3 { fill: whitesmoke; }
+
+/* line 826, ../../../sass/_colorbrewer.scss */
+.BrBG .q2-3 { fill: #5ab4ac; }
+
+/* line 827, ../../../sass/_colorbrewer.scss */
+.BrBG .q0-4 { fill: #a6611a; }
+
+/* line 828, ../../../sass/_colorbrewer.scss */
+.BrBG .q1-4 { fill: #dfc27d; }
+
+/* line 829, ../../../sass/_colorbrewer.scss */
+.BrBG .q2-4 { fill: #80cdc1; }
+
+/* line 830, ../../../sass/_colorbrewer.scss */
+.BrBG .q3-4 { fill: #018571; }
+
+/* line 831, ../../../sass/_colorbrewer.scss */
+.BrBG .q0-5 { fill: #a6611a; }
+
+/* line 832, ../../../sass/_colorbrewer.scss */
+.BrBG .q1-5 { fill: #dfc27d; }
+
+/* line 833, ../../../sass/_colorbrewer.scss */
+.BrBG .q2-5 { fill: whitesmoke; }
+
+/* line 834, ../../../sass/_colorbrewer.scss */
+.BrBG .q3-5 { fill: #80cdc1; }
+
+/* line 835, ../../../sass/_colorbrewer.scss */
+.BrBG .q4-5 { fill: #018571; }
+
+/* line 836, ../../../sass/_colorbrewer.scss */
+.BrBG .q0-6 { fill: #8c510a; }
+
+/* line 837, ../../../sass/_colorbrewer.scss */
+.BrBG .q1-6 { fill: #d8b365; }
+
+/* line 838, ../../../sass/_colorbrewer.scss */
+.BrBG .q2-6 { fill: #f6e8c3; }
+
+/* line 839, ../../../sass/_colorbrewer.scss */
+.BrBG .q3-6 { fill: #c7eae5; }
+
+/* line 840, ../../../sass/_colorbrewer.scss */
+.BrBG .q4-6 { fill: #5ab4ac; }
+
+/* line 841, ../../../sass/_colorbrewer.scss */
+.BrBG .q5-6 { fill: #01665e; }
+
+/* line 842, ../../../sass/_colorbrewer.scss */
+.BrBG .q0-7 { fill: #8c510a; }
+
+/* line 843, ../../../sass/_colorbrewer.scss */
+.BrBG .q1-7 { fill: #d8b365; }
+
+/* line 844, ../../../sass/_colorbrewer.scss */
+.BrBG .q2-7 { fill: #f6e8c3; }
+
+/* line 845, ../../../sass/_colorbrewer.scss */
+.BrBG .q3-7 { fill: whitesmoke; }
+
+/* line 846, ../../../sass/_colorbrewer.scss */
+.BrBG .q4-7 { fill: #c7eae5; }
+
+/* line 847, ../../../sass/_colorbrewer.scss */
+.BrBG .q5-7 { fill: #5ab4ac; }
+
+/* line 848, ../../../sass/_colorbrewer.scss */
+.BrBG .q6-7 { fill: #01665e; }
+
+/* line 849, ../../../sass/_colorbrewer.scss */
+.BrBG .q0-8 { fill: #8c510a; }
+
+/* line 850, ../../../sass/_colorbrewer.scss */
+.BrBG .q1-8 { fill: #bf812d; }
+
+/* line 851, ../../../sass/_colorbrewer.scss */
+.BrBG .q2-8 { fill: #dfc27d; }
+
+/* line 852, ../../../sass/_colorbrewer.scss */
+.BrBG .q3-8 { fill: #f6e8c3; }
+
+/* line 853, ../../../sass/_colorbrewer.scss */
+.BrBG .q4-8 { fill: #c7eae5; }
+
+/* line 854, ../../../sass/_colorbrewer.scss */
+.BrBG .q5-8 { fill: #80cdc1; }
+
+/* line 855, ../../../sass/_colorbrewer.scss */
+.BrBG .q6-8 { fill: #35978f; }
+
+/* line 856, ../../../sass/_colorbrewer.scss */
+.BrBG .q7-8 { fill: #01665e; }
+
+/* line 857, ../../../sass/_colorbrewer.scss */
+.BrBG .q0-9 { fill: #8c510a; }
+
+/* line 858, ../../../sass/_colorbrewer.scss */
+.BrBG .q1-9 { fill: #bf812d; }
+
+/* line 859, ../../../sass/_colorbrewer.scss */
+.BrBG .q2-9 { fill: #dfc27d; }
+
+/* line 860, ../../../sass/_colorbrewer.scss */
+.BrBG .q3-9 { fill: #f6e8c3; }
+
+/* line 861, ../../../sass/_colorbrewer.scss */
+.BrBG .q4-9 { fill: whitesmoke; }
+
+/* line 862, ../../../sass/_colorbrewer.scss */
+.BrBG .q5-9 { fill: #c7eae5; }
+
+/* line 863, ../../../sass/_colorbrewer.scss */
+.BrBG .q6-9 { fill: #80cdc1; }
+
+/* line 864, ../../../sass/_colorbrewer.scss */
+.BrBG .q7-9 { fill: #35978f; }
+
+/* line 865, ../../../sass/_colorbrewer.scss */
+.BrBG .q8-9 { fill: #01665e; }
+
+/* line 866, ../../../sass/_colorbrewer.scss */
+.BrBG .q0-10 { fill: #543005; }
+
+/* line 867, ../../../sass/_colorbrewer.scss */
+.BrBG .q1-10 { fill: #8c510a; }
+
+/* line 868, ../../../sass/_colorbrewer.scss */
+.BrBG .q2-10 { fill: #bf812d; }
+
+/* line 869, ../../../sass/_colorbrewer.scss */
+.BrBG .q3-10 { fill: #dfc27d; }
+
+/* line 870, ../../../sass/_colorbrewer.scss */
+.BrBG .q4-10 { fill: #f6e8c3; }
+
+/* line 871, ../../../sass/_colorbrewer.scss */
+.BrBG .q5-10 { fill: #c7eae5; }
+
+/* line 872, ../../../sass/_colorbrewer.scss */
+.BrBG .q6-10 { fill: #80cdc1; }
+
+/* line 873, ../../../sass/_colorbrewer.scss */
+.BrBG .q7-10 { fill: #35978f; }
+
+/* line 874, ../../../sass/_colorbrewer.scss */
+.BrBG .q8-10 { fill: #01665e; }
+
+/* line 875, ../../../sass/_colorbrewer.scss */
+.BrBG .q9-10 { fill: #003c30; }
+
+/* line 876, ../../../sass/_colorbrewer.scss */
+.BrBG .q0-11 { fill: #543005; }
+
+/* line 877, ../../../sass/_colorbrewer.scss */
+.BrBG .q1-11 { fill: #8c510a; }
+
+/* line 878, ../../../sass/_colorbrewer.scss */
+.BrBG .q2-11 { fill: #bf812d; }
+
+/* line 879, ../../../sass/_colorbrewer.scss */
+.BrBG .q3-11 { fill: #dfc27d; }
+
+/* line 880, ../../../sass/_colorbrewer.scss */
+.BrBG .q4-11 { fill: #f6e8c3; }
+
+/* line 881, ../../../sass/_colorbrewer.scss */
+.BrBG .q5-11 { fill: whitesmoke; }
+
+/* line 882, ../../../sass/_colorbrewer.scss */
+.BrBG .q6-11 { fill: #c7eae5; }
+
+/* line 883, ../../../sass/_colorbrewer.scss */
+.BrBG .q7-11 { fill: #80cdc1; }
+
+/* line 884, ../../../sass/_colorbrewer.scss */
+.BrBG .q8-11 { fill: #35978f; }
+
+/* line 885, ../../../sass/_colorbrewer.scss */
+.BrBG .q9-11 { fill: #01665e; }
+
+/* line 886, ../../../sass/_colorbrewer.scss */
+.BrBG .q10-11 { fill: #003c30; }
+
+/* line 887, ../../../sass/_colorbrewer.scss */
+.PRGn .q0-3 { fill: #af8dc3; }
+
+/* line 888, ../../../sass/_colorbrewer.scss */
+.PRGn .q1-3 { fill: #f7f7f7; }
+
+/* line 889, ../../../sass/_colorbrewer.scss */
+.PRGn .q2-3 { fill: #7fbf7b; }
+
+/* line 890, ../../../sass/_colorbrewer.scss */
+.PRGn .q0-4 { fill: #7b3294; }
+
+/* line 891, ../../../sass/_colorbrewer.scss */
+.PRGn .q1-4 { fill: #c2a5cf; }
+
+/* line 892, ../../../sass/_colorbrewer.scss */
+.PRGn .q2-4 { fill: #a6dba0; }
+
+/* line 893, ../../../sass/_colorbrewer.scss */
+.PRGn .q3-4 { fill: #008837; }
+
+/* line 894, ../../../sass/_colorbrewer.scss */
+.PRGn .q0-5 { fill: #7b3294; }
+
+/* line 895, ../../../sass/_colorbrewer.scss */
+.PRGn .q1-5 { fill: #c2a5cf; }
+
+/* line 896, ../../../sass/_colorbrewer.scss */
+.PRGn .q2-5 { fill: #f7f7f7; }
+
+/* line 897, ../../../sass/_colorbrewer.scss */
+.PRGn .q3-5 { fill: #a6dba0; }
+
+/* line 898, ../../../sass/_colorbrewer.scss */
+.PRGn .q4-5 { fill: #008837; }
+
+/* line 899, ../../../sass/_colorbrewer.scss */
+.PRGn .q0-6 { fill: #762a83; }
+
+/* line 900, ../../../sass/_colorbrewer.scss */
+.PRGn .q1-6 { fill: #af8dc3; }
+
+/* line 901, ../../../sass/_colorbrewer.scss */
+.PRGn .q2-6 { fill: #e7d4e8; }
+
+/* line 902, ../../../sass/_colorbrewer.scss */
+.PRGn .q3-6 { fill: #d9f0d3; }
+
+/* line 903, ../../../sass/_colorbrewer.scss */
+.PRGn .q4-6 { fill: #7fbf7b; }
+
+/* line 904, ../../../sass/_colorbrewer.scss */
+.PRGn .q5-6 { fill: #1b7837; }
+
+/* line 905, ../../../sass/_colorbrewer.scss */
+.PRGn .q0-7 { fill: #762a83; }
+
+/* line 906, ../../../sass/_colorbrewer.scss */
+.PRGn .q1-7 { fill: #af8dc3; }
+
+/* line 907, ../../../sass/_colorbrewer.scss */
+.PRGn .q2-7 { fill: #e7d4e8; }
+
+/* line 908, ../../../sass/_colorbrewer.scss */
+.PRGn .q3-7 { fill: #f7f7f7; }
+
+/* line 909, ../../../sass/_colorbrewer.scss */
+.PRGn .q4-7 { fill: #d9f0d3; }
+
+/* line 910, ../../../sass/_colorbrewer.scss */
+.PRGn .q5-7 { fill: #7fbf7b; }
+
+/* line 911, ../../../sass/_colorbrewer.scss */
+.PRGn .q6-7 { fill: #1b7837; }
+
+/* line 912, ../../../sass/_colorbrewer.scss */
+.PRGn .q0-8 { fill: #762a83; }
+
+/* line 913, ../../../sass/_colorbrewer.scss */
+.PRGn .q1-8 { fill: #9970ab; }
+
+/* line 914, ../../../sass/_colorbrewer.scss */
+.PRGn .q2-8 { fill: #c2a5cf; }
+
+/* line 915, ../../../sass/_colorbrewer.scss */
+.PRGn .q3-8 { fill: #e7d4e8; }
+
+/* line 916, ../../../sass/_colorbrewer.scss */
+.PRGn .q4-8 { fill: #d9f0d3; }
+
+/* line 917, ../../../sass/_colorbrewer.scss */
+.PRGn .q5-8 { fill: #a6dba0; }
+
+/* line 918, ../../../sass/_colorbrewer.scss */
+.PRGn .q6-8 { fill: #5aae61; }
+
+/* line 919, ../../../sass/_colorbrewer.scss */
+.PRGn .q7-8 { fill: #1b7837; }
+
+/* line 920, ../../../sass/_colorbrewer.scss */
+.PRGn .q0-9 { fill: #762a83; }
+
+/* line 921, ../../../sass/_colorbrewer.scss */
+.PRGn .q1-9 { fill: #9970ab; }
+
+/* line 922, ../../../sass/_colorbrewer.scss */
+.PRGn .q2-9 { fill: #c2a5cf; }
+
+/* line 923, ../../../sass/_colorbrewer.scss */
+.PRGn .q3-9 { fill: #e7d4e8; }
+
+/* line 924, ../../../sass/_colorbrewer.scss */
+.PRGn .q4-9 { fill: #f7f7f7; }
+
+/* line 925, ../../../sass/_colorbrewer.scss */
+.PRGn .q5-9 { fill: #d9f0d3; }
+
+/* line 926, ../../../sass/_colorbrewer.scss */
+.PRGn .q6-9 { fill: #a6dba0; }
+
+/* line 927, ../../../sass/_colorbrewer.scss */
+.PRGn .q7-9 { fill: #5aae61; }
+
+/* line 928, ../../../sass/_colorbrewer.scss */
+.PRGn .q8-9 { fill: #1b7837; }
+
+/* line 929, ../../../sass/_colorbrewer.scss */
+.PRGn .q0-10 { fill: #40004b; }
+
+/* line 930, ../../../sass/_colorbrewer.scss */
+.PRGn .q1-10 { fill: #762a83; }
+
+/* line 931, ../../../sass/_colorbrewer.scss */
+.PRGn .q2-10 { fill: #9970ab; }
+
+/* line 932, ../../../sass/_colorbrewer.scss */
+.PRGn .q3-10 { fill: #c2a5cf; }
+
+/* line 933, ../../../sass/_colorbrewer.scss */
+.PRGn .q4-10 { fill: #e7d4e8; }
+
+/* line 934, ../../../sass/_colorbrewer.scss */
+.PRGn .q5-10 { fill: #d9f0d3; }
+
+/* line 935, ../../../sass/_colorbrewer.scss */
+.PRGn .q6-10 { fill: #a6dba0; }
+
+/* line 936, ../../../sass/_colorbrewer.scss */
+.PRGn .q7-10 { fill: #5aae61; }
+
+/* line 937, ../../../sass/_colorbrewer.scss */
+.PRGn .q8-10 { fill: #1b7837; }
+
+/* line 938, ../../../sass/_colorbrewer.scss */
+.PRGn .q9-10 { fill: #00441b; }
+
+/* line 939, ../../../sass/_colorbrewer.scss */
+.PRGn .q0-11 { fill: #40004b; }
+
+/* line 940, ../../../sass/_colorbrewer.scss */
+.PRGn .q1-11 { fill: #762a83; }
+
+/* line 941, ../../../sass/_colorbrewer.scss */
+.PRGn .q2-11 { fill: #9970ab; }
+
+/* line 942, ../../../sass/_colorbrewer.scss */
+.PRGn .q3-11 { fill: #c2a5cf; }
+
+/* line 943, ../../../sass/_colorbrewer.scss */
+.PRGn .q4-11 { fill: #e7d4e8; }
+
+/* line 944, ../../../sass/_colorbrewer.scss */
+.PRGn .q5-11 { fill: #f7f7f7; }
+
+/* line 945, ../../../sass/_colorbrewer.scss */
+.PRGn .q6-11 { fill: #d9f0d3; }
+
+/* line 946, ../../../sass/_colorbrewer.scss */
+.PRGn .q7-11 { fill: #a6dba0; }
+
+/* line 947, ../../../sass/_colorbrewer.scss */
+.PRGn .q8-11 { fill: #5aae61; }
+
+/* line 948, ../../../sass/_colorbrewer.scss */
+.PRGn .q9-11 { fill: #1b7837; }
+
+/* line 949, ../../../sass/_colorbrewer.scss */
+.PRGn .q10-11 { fill: #00441b; }
+
+/* line 950, ../../../sass/_colorbrewer.scss */
+.PiYG .q0-3 { fill: #e9a3c9; }
+
+/* line 951, ../../../sass/_colorbrewer.scss */
+.PiYG .q1-3 { fill: #f7f7f7; }
+
+/* line 952, ../../../sass/_colorbrewer.scss */
+.PiYG .q2-3 { fill: #a1d76a; }
+
+/* line 953, ../../../sass/_colorbrewer.scss */
+.PiYG .q0-4 { fill: #d01c8b; }
+
+/* line 954, ../../../sass/_colorbrewer.scss */
+.PiYG .q1-4 { fill: #f1b6da; }
+
+/* line 955, ../../../sass/_colorbrewer.scss */
+.PiYG .q2-4 { fill: #b8e186; }
+
+/* line 956, ../../../sass/_colorbrewer.scss */
+.PiYG .q3-4 { fill: #4dac26; }
+
+/* line 957, ../../../sass/_colorbrewer.scss */
+.PiYG .q0-5 { fill: #d01c8b; }
+
+/* line 958, ../../../sass/_colorbrewer.scss */
+.PiYG .q1-5 { fill: #f1b6da; }
+
+/* line 959, ../../../sass/_colorbrewer.scss */
+.PiYG .q2-5 { fill: #f7f7f7; }
+
+/* line 960, ../../../sass/_colorbrewer.scss */
+.PiYG .q3-5 { fill: #b8e186; }
+
+/* line 961, ../../../sass/_colorbrewer.scss */
+.PiYG .q4-5 { fill: #4dac26; }
+
+/* line 962, ../../../sass/_colorbrewer.scss */
+.PiYG .q0-6 { fill: #c51b7d; }
+
+/* line 963, ../../../sass/_colorbrewer.scss */
+.PiYG .q1-6 { fill: #e9a3c9; }
+
+/* line 964, ../../../sass/_colorbrewer.scss */
+.PiYG .q2-6 { fill: #fde0ef; }
+
+/* line 965, ../../../sass/_colorbrewer.scss */
+.PiYG .q3-6 { fill: #e6f5d0; }
+
+/* line 966, ../../../sass/_colorbrewer.scss */
+.PiYG .q4-6 { fill: #a1d76a; }
+
+/* line 967, ../../../sass/_colorbrewer.scss */
+.PiYG .q5-6 { fill: #4d9221; }
+
+/* line 968, ../../../sass/_colorbrewer.scss */
+.PiYG .q0-7 { fill: #c51b7d; }
+
+/* line 969, ../../../sass/_colorbrewer.scss */
+.PiYG .q1-7 { fill: #e9a3c9; }
+
+/* line 970, ../../../sass/_colorbrewer.scss */
+.PiYG .q2-7 { fill: #fde0ef; }
+
+/* line 971, ../../../sass/_colorbrewer.scss */
+.PiYG .q3-7 { fill: #f7f7f7; }
+
+/* line 972, ../../../sass/_colorbrewer.scss */
+.PiYG .q4-7 { fill: #e6f5d0; }
+
+/* line 973, ../../../sass/_colorbrewer.scss */
+.PiYG .q5-7 { fill: #a1d76a; }
+
+/* line 974, ../../../sass/_colorbrewer.scss */
+.PiYG .q6-7 { fill: #4d9221; }
+
+/* line 975, ../../../sass/_colorbrewer.scss */
+.PiYG .q0-8 { fill: #c51b7d; }
+
+/* line 976, ../../../sass/_colorbrewer.scss */
+.PiYG .q1-8 { fill: #de77ae; }
+
+/* line 977, ../../../sass/_colorbrewer.scss */
+.PiYG .q2-8 { fill: #f1b6da; }
+
+/* line 978, ../../../sass/_colorbrewer.scss */
+.PiYG .q3-8 { fill: #fde0ef; }
+
+/* line 979, ../../../sass/_colorbrewer.scss */
+.PiYG .q4-8 { fill: #e6f5d0; }
+
+/* line 980, ../../../sass/_colorbrewer.scss */
+.PiYG .q5-8 { fill: #b8e186; }
+
+/* line 981, ../../../sass/_colorbrewer.scss */
+.PiYG .q6-8 { fill: #7fbc41; }
+
+/* line 982, ../../../sass/_colorbrewer.scss */
+.PiYG .q7-8 { fill: #4d9221; }
+
+/* line 983, ../../../sass/_colorbrewer.scss */
+.PiYG .q0-9 { fill: #c51b7d; }
+
+/* line 984, ../../../sass/_colorbrewer.scss */
+.PiYG .q1-9 { fill: #de77ae; }
+
+/* line 985, ../../../sass/_colorbrewer.scss */
+.PiYG .q2-9 { fill: #f1b6da; }
+
+/* line 986, ../../../sass/_colorbrewer.scss */
+.PiYG .q3-9 { fill: #fde0ef; }
+
+/* line 987, ../../../sass/_colorbrewer.scss */
+.PiYG .q4-9 { fill: #f7f7f7; }
+
+/* line 988, ../../../sass/_colorbrewer.scss */
+.PiYG .q5-9 { fill: #e6f5d0; }
+
+/* line 989, ../../../sass/_colorbrewer.scss */
+.PiYG .q6-9 { fill: #b8e186; }
+
+/* line 990, ../../../sass/_colorbrewer.scss */
+.PiYG .q7-9 { fill: #7fbc41; }
+
+/* line 991, ../../../sass/_colorbrewer.scss */
+.PiYG .q8-9 { fill: #4d9221; }
+
+/* line 992, ../../../sass/_colorbrewer.scss */
+.PiYG .q0-10 { fill: #8e0152; }
+
+/* line 993, ../../../sass/_colorbrewer.scss */
+.PiYG .q1-10 { fill: #c51b7d; }
+
+/* line 994, ../../../sass/_colorbrewer.scss */
+.PiYG .q2-10 { fill: #de77ae; }
+
+/* line 995, ../../../sass/_colorbrewer.scss */
+.PiYG .q3-10 { fill: #f1b6da; }
+
+/* line 996, ../../../sass/_colorbrewer.scss */
+.PiYG .q4-10 { fill: #fde0ef; }
+
+/* line 997, ../../../sass/_colorbrewer.scss */
+.PiYG .q5-10 { fill: #e6f5d0; }
+
+/* line 998, ../../../sass/_colorbrewer.scss */
+.PiYG .q6-10 { fill: #b8e186; }
+
+/* line 999, ../../../sass/_colorbrewer.scss */
+.PiYG .q7-10 { fill: #7fbc41; }
+
+/* line 1000, ../../../sass/_colorbrewer.scss */
+.PiYG .q8-10 { fill: #4d9221; }
+
+/* line 1001, ../../../sass/_colorbrewer.scss */
+.PiYG .q9-10 { fill: #276419; }
+
+/* line 1002, ../../../sass/_colorbrewer.scss */
+.PiYG .q0-11 { fill: #8e0152; }
+
+/* line 1003, ../../../sass/_colorbrewer.scss */
+.PiYG .q1-11 { fill: #c51b7d; }
+
+/* line 1004, ../../../sass/_colorbrewer.scss */
+.PiYG .q2-11 { fill: #de77ae; }
+
+/* line 1005, ../../../sass/_colorbrewer.scss */
+.PiYG .q3-11 { fill: #f1b6da; }
+
+/* line 1006, ../../../sass/_colorbrewer.scss */
+.PiYG .q4-11 { fill: #fde0ef; }
+
+/* line 1007, ../../../sass/_colorbrewer.scss */
+.PiYG .q5-11 { fill: #f7f7f7; }
+
+/* line 1008, ../../../sass/_colorbrewer.scss */
+.PiYG .q6-11 { fill: #e6f5d0; }
+
+/* line 1009, ../../../sass/_colorbrewer.scss */
+.PiYG .q7-11 { fill: #b8e186; }
+
+/* line 1010, ../../../sass/_colorbrewer.scss */
+.PiYG .q8-11 { fill: #7fbc41; }
+
+/* line 1011, ../../../sass/_colorbrewer.scss */
+.PiYG .q9-11 { fill: #4d9221; }
+
+/* line 1012, ../../../sass/_colorbrewer.scss */
+.PiYG .q10-11 { fill: #276419; }
+
+/* line 1013, ../../../sass/_colorbrewer.scss */
+.RdBu .q0-3 { fill: #ef8a62; }
+
+/* line 1014, ../../../sass/_colorbrewer.scss */
+.RdBu .q1-3 { fill: #f7f7f7; }
+
+/* line 1015, ../../../sass/_colorbrewer.scss */
+.RdBu .q2-3 { fill: #67a9cf; }
+
+/* line 1016, ../../../sass/_colorbrewer.scss */
+.RdBu .q0-4 { fill: #ca0020; }
+
+/* line 1017, ../../../sass/_colorbrewer.scss */
+.RdBu .q1-4 { fill: #f4a582; }
+
+/* line 1018, ../../../sass/_colorbrewer.scss */
+.RdBu .q2-4 { fill: #92c5de; }
+
+/* line 1019, ../../../sass/_colorbrewer.scss */
+.RdBu .q3-4 { fill: #0571b0; }
+
+/* line 1020, ../../../sass/_colorbrewer.scss */
+.RdBu .q0-5 { fill: #ca0020; }
+
+/* line 1021, ../../../sass/_colorbrewer.scss */
+.RdBu .q1-5 { fill: #f4a582; }
+
+/* line 1022, ../../../sass/_colorbrewer.scss */
+.RdBu .q2-5 { fill: #f7f7f7; }
+
+/* line 1023, ../../../sass/_colorbrewer.scss */
+.RdBu .q3-5 { fill: #92c5de; }
+
+/* line 1024, ../../../sass/_colorbrewer.scss */
+.RdBu .q4-5 { fill: #0571b0; }
+
+/* line 1025, ../../../sass/_colorbrewer.scss */
+.RdBu .q0-6 { fill: #b2182b; }
+
+/* line 1026, ../../../sass/_colorbrewer.scss */
+.RdBu .q1-6 { fill: #ef8a62; }
+
+/* line 1027, ../../../sass/_colorbrewer.scss */
+.RdBu .q2-6 { fill: #fddbc7; }
+
+/* line 1028, ../../../sass/_colorbrewer.scss */
+.RdBu .q3-6 { fill: #d1e5f0; }
+
+/* line 1029, ../../../sass/_colorbrewer.scss */
+.RdBu .q4-6 { fill: #67a9cf; }
+
+/* line 1030, ../../../sass/_colorbrewer.scss */
+.RdBu .q5-6 { fill: #2166ac; }
+
+/* line 1031, ../../../sass/_colorbrewer.scss */
+.RdBu .q0-7 { fill: #b2182b; }
+
+/* line 1032, ../../../sass/_colorbrewer.scss */
+.RdBu .q1-7 { fill: #ef8a62; }
+
+/* line 1033, ../../../sass/_colorbrewer.scss */
+.RdBu .q2-7 { fill: #fddbc7; }
+
+/* line 1034, ../../../sass/_colorbrewer.scss */
+.RdBu .q3-7 { fill: #f7f7f7; }
+
+/* line 1035, ../../../sass/_colorbrewer.scss */
+.RdBu .q4-7 { fill: #d1e5f0; }
+
+/* line 1036, ../../../sass/_colorbrewer.scss */
+.RdBu .q5-7 { fill: #67a9cf; }
+
+/* line 1037, ../../../sass/_colorbrewer.scss */
+.RdBu .q6-7 { fill: #2166ac; }
+
+/* line 1038, ../../../sass/_colorbrewer.scss */
+.RdBu .q0-8 { fill: #b2182b; }
+
+/* line 1039, ../../../sass/_colorbrewer.scss */
+.RdBu .q1-8 { fill: #d6604d; }
+
+/* line 1040, ../../../sass/_colorbrewer.scss */
+.RdBu .q2-8 { fill: #f4a582; }
+
+/* line 1041, ../../../sass/_colorbrewer.scss */
+.RdBu .q3-8 { fill: #fddbc7; }
+
+/* line 1042, ../../../sass/_colorbrewer.scss */
+.RdBu .q4-8 { fill: #d1e5f0; }
+
+/* line 1043, ../../../sass/_colorbrewer.scss */
+.RdBu .q5-8 { fill: #92c5de; }
+
+/* line 1044, ../../../sass/_colorbrewer.scss */
+.RdBu .q6-8 { fill: #4393c3; }
+
+/* line 1045, ../../../sass/_colorbrewer.scss */
+.RdBu .q7-8 { fill: #2166ac; }
+
+/* line 1046, ../../../sass/_colorbrewer.scss */
+.RdBu .q0-9 { fill: #b2182b; }
+
+/* line 1047, ../../../sass/_colorbrewer.scss */
+.RdBu .q1-9 { fill: #d6604d; }
+
+/* line 1048, ../../../sass/_colorbrewer.scss */
+.RdBu .q2-9 { fill: #f4a582; }
+
+/* line 1049, ../../../sass/_colorbrewer.scss */
+.RdBu .q3-9 { fill: #fddbc7; }
+
+/* line 1050, ../../../sass/_colorbrewer.scss */
+.RdBu .q4-9 { fill: #f7f7f7; }
+
+/* line 1051, ../../../sass/_colorbrewer.scss */
+.RdBu .q5-9 { fill: #d1e5f0; }
+
+/* line 1052, ../../../sass/_colorbrewer.scss */
+.RdBu .q6-9 { fill: #92c5de; }
+
+/* line 1053, ../../../sass/_colorbrewer.scss */
+.RdBu .q7-9 { fill: #4393c3; }
+
+/* line 1054, ../../../sass/_colorbrewer.scss */
+.RdBu .q8-9 { fill: #2166ac; }
+
+/* line 1055, ../../../sass/_colorbrewer.scss */
+.RdBu .q0-10 { fill: #67001f; }
+
+/* line 1056, ../../../sass/_colorbrewer.scss */
+.RdBu .q1-10 { fill: #b2182b; }
+
+/* line 1057, ../../../sass/_colorbrewer.scss */
+.RdBu .q2-10 { fill: #d6604d; }
+
+/* line 1058, ../../../sass/_colorbrewer.scss */
+.RdBu .q3-10 { fill: #f4a582; }
+
+/* line 1059, ../../../sass/_colorbrewer.scss */
+.RdBu .q4-10 { fill: #fddbc7; }
+
+/* line 1060, ../../../sass/_colorbrewer.scss */
+.RdBu .q5-10 { fill: #d1e5f0; }
+
+/* line 1061, ../../../sass/_colorbrewer.scss */
+.RdBu .q6-10 { fill: #92c5de; }
+
+/* line 1062, ../../../sass/_colorbrewer.scss */
+.RdBu .q7-10 { fill: #4393c3; }
+
+/* line 1063, ../../../sass/_colorbrewer.scss */
+.RdBu .q8-10 { fill: #2166ac; }
+
+/* line 1064, ../../../sass/_colorbrewer.scss */
+.RdBu .q9-10 { fill: #053061; }
+
+/* line 1065, ../../../sass/_colorbrewer.scss */
+.RdBu .q0-11 { fill: #67001f; }
+
+/* line 1066, ../../../sass/_colorbrewer.scss */
+.RdBu .q1-11 { fill: #b2182b; }
+
+/* line 1067, ../../../sass/_colorbrewer.scss */
+.RdBu .q2-11 { fill: #d6604d; }
+
+/* line 1068, ../../../sass/_colorbrewer.scss */
+.RdBu .q3-11 { fill: #f4a582; }
+
+/* line 1069, ../../../sass/_colorbrewer.scss */
+.RdBu .q4-11 { fill: #fddbc7; }
+
+/* line 1070, ../../../sass/_colorbrewer.scss */
+.RdBu .q5-11 { fill: #f7f7f7; }
+
+/* line 1071, ../../../sass/_colorbrewer.scss */
+.RdBu .q6-11 { fill: #d1e5f0; }
+
+/* line 1072, ../../../sass/_colorbrewer.scss */
+.RdBu .q7-11 { fill: #92c5de; }
+
+/* line 1073, ../../../sass/_colorbrewer.scss */
+.RdBu .q8-11 { fill: #4393c3; }
+
+/* line 1074, ../../../sass/_colorbrewer.scss */
+.RdBu .q9-11 { fill: #2166ac; }
+
+/* line 1075, ../../../sass/_colorbrewer.scss */
+.RdBu .q10-11 { fill: #053061; }
+
+/* line 1076, ../../../sass/_colorbrewer.scss */
+.RdGy .q0-3 { fill: #ef8a62; }
+
+/* line 1077, ../../../sass/_colorbrewer.scss */
+.RdGy .q1-3 { fill: white; }
+
+/* line 1078, ../../../sass/_colorbrewer.scss */
+.RdGy .q2-3 { fill: #999999; }
+
+/* line 1079, ../../../sass/_colorbrewer.scss */
+.RdGy .q0-4 { fill: #ca0020; }
+
+/* line 1080, ../../../sass/_colorbrewer.scss */
+.RdGy .q1-4 { fill: #f4a582; }
+
+/* line 1081, ../../../sass/_colorbrewer.scss */
+.RdGy .q2-4 { fill: #bababa; }
+
+/* line 1082, ../../../sass/_colorbrewer.scss */
+.RdGy .q3-4 { fill: #404040; }
+
+/* line 1083, ../../../sass/_colorbrewer.scss */
+.RdGy .q0-5 { fill: #ca0020; }
+
+/* line 1084, ../../../sass/_colorbrewer.scss */
+.RdGy .q1-5 { fill: #f4a582; }
+
+/* line 1085, ../../../sass/_colorbrewer.scss */
+.RdGy .q2-5 { fill: white; }
+
+/* line 1086, ../../../sass/_colorbrewer.scss */
+.RdGy .q3-5 { fill: #bababa; }
+
+/* line 1087, ../../../sass/_colorbrewer.scss */
+.RdGy .q4-5 { fill: #404040; }
+
+/* line 1088, ../../../sass/_colorbrewer.scss */
+.RdGy .q0-6 { fill: #b2182b; }
+
+/* line 1089, ../../../sass/_colorbrewer.scss */
+.RdGy .q1-6 { fill: #ef8a62; }
+
+/* line 1090, ../../../sass/_colorbrewer.scss */
+.RdGy .q2-6 { fill: #fddbc7; }
+
+/* line 1091, ../../../sass/_colorbrewer.scss */
+.RdGy .q3-6 { fill: #e0e0e0; }
+
+/* line 1092, ../../../sass/_colorbrewer.scss */
+.RdGy .q4-6 { fill: #999999; }
+
+/* line 1093, ../../../sass/_colorbrewer.scss */
+.RdGy .q5-6 { fill: #4d4d4d; }
+
+/* line 1094, ../../../sass/_colorbrewer.scss */
+.RdGy .q0-7 { fill: #b2182b; }
+
+/* line 1095, ../../../sass/_colorbrewer.scss */
+.RdGy .q1-7 { fill: #ef8a62; }
+
+/* line 1096, ../../../sass/_colorbrewer.scss */
+.RdGy .q2-7 { fill: #fddbc7; }
+
+/* line 1097, ../../../sass/_colorbrewer.scss */
+.RdGy .q3-7 { fill: white; }
+
+/* line 1098, ../../../sass/_colorbrewer.scss */
+.RdGy .q4-7 { fill: #e0e0e0; }
+
+/* line 1099, ../../../sass/_colorbrewer.scss */
+.RdGy .q5-7 { fill: #999999; }
+
+/* line 1100, ../../../sass/_colorbrewer.scss */
+.RdGy .q6-7 { fill: #4d4d4d; }
+
+/* line 1101, ../../../sass/_colorbrewer.scss */
+.RdGy .q0-8 { fill: #b2182b; }
+
+/* line 1102, ../../../sass/_colorbrewer.scss */
+.RdGy .q1-8 { fill: #d6604d; }
+
+/* line 1103, ../../../sass/_colorbrewer.scss */
+.RdGy .q2-8 { fill: #f4a582; }
+
+/* line 1104, ../../../sass/_colorbrewer.scss */
+.RdGy .q3-8 { fill: #fddbc7; }
+
+/* line 1105, ../../../sass/_colorbrewer.scss */
+.RdGy .q4-8 { fill: #e0e0e0; }
+
+/* line 1106, ../../../sass/_colorbrewer.scss */
+.RdGy .q5-8 { fill: #bababa; }
+
+/* line 1107, ../../../sass/_colorbrewer.scss */
+.RdGy .q6-8 { fill: #878787; }
+
+/* line 1108, ../../../sass/_colorbrewer.scss */
+.RdGy .q7-8 { fill: #4d4d4d; }
+
+/* line 1109, ../../../sass/_colorbrewer.scss */
+.RdGy .q0-9 { fill: #b2182b; }
+
+/* line 1110, ../../../sass/_colorbrewer.scss */
+.RdGy .q1-9 { fill: #d6604d; }
+
+/* line 1111, ../../../sass/_colorbrewer.scss */
+.RdGy .q2-9 { fill: #f4a582; }
+
+/* line 1112, ../../../sass/_colorbrewer.scss */
+.RdGy .q3-9 { fill: #fddbc7; }
+
+/* line 1113, ../../../sass/_colorbrewer.scss */
+.RdGy .q4-9 { fill: white; }
+
+/* line 1114, ../../../sass/_colorbrewer.scss */
+.RdGy .q5-9 { fill: #e0e0e0; }
+
+/* line 1115, ../../../sass/_colorbrewer.scss */
+.RdGy .q6-9 { fill: #bababa; }
+
+/* line 1116, ../../../sass/_colorbrewer.scss */
+.RdGy .q7-9 { fill: #878787; }
+
+/* line 1117, ../../../sass/_colorbrewer.scss */
+.RdGy .q8-9 { fill: #4d4d4d; }
+
+/* line 1118, ../../../sass/_colorbrewer.scss */
+.RdGy .q0-10 { fill: #67001f; }
+
+/* line 1119, ../../../sass/_colorbrewer.scss */
+.RdGy .q1-10 { fill: #b2182b; }
+
+/* line 1120, ../../../sass/_colorbrewer.scss */
+.RdGy .q2-10 { fill: #d6604d; }
+
+/* line 1121, ../../../sass/_colorbrewer.scss */
+.RdGy .q3-10 { fill: #f4a582; }
+
+/* line 1122, ../../../sass/_colorbrewer.scss */
+.RdGy .q4-10 { fill: #fddbc7; }
+
+/* line 1123, ../../../sass/_colorbrewer.scss */
+.RdGy .q5-10 { fill: #e0e0e0; }
+
+/* line 1124, ../../../sass/_colorbrewer.scss */
+.RdGy .q6-10 { fill: #bababa; }
+
+/* line 1125, ../../../sass/_colorbrewer.scss */
+.RdGy .q7-10 { fill: #878787; }
+
+/* line 1126, ../../../sass/_colorbrewer.scss */
+.RdGy .q8-10 { fill: #4d4d4d; }
+
+/* line 1127, ../../../sass/_colorbrewer.scss */
+.RdGy .q9-10 { fill: #1a1a1a; }
+
+/* line 1128, ../../../sass/_colorbrewer.scss */
+.RdGy .q0-11 { fill: #67001f; }
+
+/* line 1129, ../../../sass/_colorbrewer.scss */
+.RdGy .q1-11 { fill: #b2182b; }
+
+/* line 1130, ../../../sass/_colorbrewer.scss */
+.RdGy .q2-11 { fill: #d6604d; }
+
+/* line 1131, ../../../sass/_colorbrewer.scss */
+.RdGy .q3-11 { fill: #f4a582; }
+
+/* line 1132, ../../../sass/_colorbrewer.scss */
+.RdGy .q4-11 { fill: #fddbc7; }
+
+/* line 1133, ../../../sass/_colorbrewer.scss */
+.RdGy .q5-11 { fill: white; }
+
+/* line 1134, ../../../sass/_colorbrewer.scss */
+.RdGy .q6-11 { fill: #e0e0e0; }
+
+/* line 1135, ../../../sass/_colorbrewer.scss */
+.RdGy .q7-11 { fill: #bababa; }
+
+/* line 1136, ../../../sass/_colorbrewer.scss */
+.RdGy .q8-11 { fill: #878787; }
+
+/* line 1137, ../../../sass/_colorbrewer.scss */
+.RdGy .q9-11 { fill: #4d4d4d; }
+
+/* line 1138, ../../../sass/_colorbrewer.scss */
+.RdGy .q10-11 { fill: #1a1a1a; }
+
+/* line 1139, ../../../sass/_colorbrewer.scss */
+.RdYlBu .q0-3 { fill: #fc8d59; }
+
+/* line 1140, ../../../sass/_colorbrewer.scss */
+.RdYlBu .q1-3 { fill: #ffffbf; }
+
+/* line 1141, ../../../sass/_colorbrewer.scss */
+.RdYlBu .q2-3 { fill: #91bfdb; }
+
+/* line 1142, ../../../sass/_colorbrewer.scss */
+.RdYlBu .q0-4 { fill: #d7191c; }
+
+/* line 1143, ../../../sass/_colorbrewer.scss */
+.RdYlBu .q1-4 { fill: #fdae61; }
+
+/* line 1144, ../../../sass/_colorbrewer.scss */
+.RdYlBu .q2-4 { fill: #abd9e9; }
+
+/* line 1145, ../../../sass/_colorbrewer.scss */
+.RdYlBu .q3-4 { fill: #2c7bb6; }
+
+/* line 1146, ../../../sass/_colorbrewer.scss */
+.RdYlBu .q0-5 { fill: #d7191c; }
+
+/* line 1147, ../../../sass/_colorbrewer.scss */
+.RdYlBu .q1-5 { fill: #fdae61; }
+
+/* line 1148, ../../../sass/_colorbrewer.scss */
+.RdYlBu .q2-5 { fill: #ffffbf; }
+
+/* line 1149, ../../../sass/_colorbrewer.scss */
+.RdYlBu .q3-5 { fill: #abd9e9; }
+
+/* line 1150, ../../../sass/_colorbrewer.scss */
+.RdYlBu .q4-5 { fill: #2c7bb6; }
+
+/* line 1151, ../../../sass/_colorbrewer.scss */
+.RdYlBu .q0-6 { fill: #d73027; }
+
+/* line 1152, ../../../sass/_colorbrewer.scss */
+.RdYlBu .q1-6 { fill: #fc8d59; }
+
+/* line 1153, ../../../sass/_colorbrewer.scss */
+.RdYlBu .q2-6 { fill: #fee090; }
+
+/* line 1154, ../../../sass/_colorbrewer.scss */
+.RdYlBu .q3-6 { fill: #e0f3f8; }
+
+/* line 1155, ../../../sass/_colorbrewer.scss */
+.RdYlBu .q4-6 { fill: #91bfdb; }
+
+/* line 1156, ../../../sass/_colorbrewer.scss */
+.RdYlBu .q5-6 { fill: #4575b4; }
+
+/* line 1157, ../../../sass/_colorbrewer.scss */
+.RdYlBu .q0-7 { fill: #d73027; }
+
+/* line 1158, ../../../sass/_colorbrewer.scss */
+.RdYlBu .q1-7 { fill: #fc8d59; }
+
+/* line 1159, ../../../sass/_colorbrewer.scss */
+.RdYlBu .q2-7 { fill: #fee090; }
+
+/* line 1160, ../../../sass/_colorbrewer.scss */
+.RdYlBu .q3-7 { fill: #ffffbf; }
+
+/* line 1161, ../../../sass/_colorbrewer.scss */
+.RdYlBu .q4-7 { fill: #e0f3f8; }
+
+/* line 1162, ../../../sass/_colorbrewer.scss */
+.RdYlBu .q5-7 { fill: #91bfdb; }
+
+/* line 1163, ../../../sass/_colorbrewer.scss */
+.RdYlBu .q6-7 { fill: #4575b4; }
+
+/* line 1164, ../../../sass/_colorbrewer.scss */
+.RdYlBu .q0-8 { fill: #d73027; }
+
+/* line 1165, ../../../sass/_colorbrewer.scss */
+.RdYlBu .q1-8 { fill: #f46d43; }
+
+/* line 1166, ../../../sass/_colorbrewer.scss */
+.RdYlBu .q2-8 { fill: #fdae61; }
+
+/* line 1167, ../../../sass/_colorbrewer.scss */
+.RdYlBu .q3-8 { fill: #fee090; }
+
+/* line 1168, ../../../sass/_colorbrewer.scss */
+.RdYlBu .q4-8 { fill: #e0f3f8; }
+
+/* line 1169, ../../../sass/_colorbrewer.scss */
+.RdYlBu .q5-8 { fill: #abd9e9; }
+
+/* line 1170, ../../../sass/_colorbrewer.scss */
+.RdYlBu .q6-8 { fill: #74add1; }
+
+/* line 1171, ../../../sass/_colorbrewer.scss */
+.RdYlBu .q7-8 { fill: #4575b4; }
+
+/* line 1172, ../../../sass/_colorbrewer.scss */
+.RdYlBu .q0-9 { fill: #d73027; }
+
+/* line 1173, ../../../sass/_colorbrewer.scss */
+.RdYlBu .q1-9 { fill: #f46d43; }
+
+/* line 1174, ../../../sass/_colorbrewer.scss */
+.RdYlBu .q2-9 { fill: #fdae61; }
+
+/* line 1175, ../../../sass/_colorbrewer.scss */
+.RdYlBu .q3-9 { fill: #fee090; }
+
+/* line 1176, ../../../sass/_colorbrewer.scss */
+.RdYlBu .q4-9 { fill: #ffffbf; }
+
+/* line 1177, ../../../sass/_colorbrewer.scss */
+.RdYlBu .q5-9 { fill: #e0f3f8; }
+
+/* line 1178, ../../../sass/_colorbrewer.scss */
+.RdYlBu .q6-9 { fill: #abd9e9; }
+
+/* line 1179, ../../../sass/_colorbrewer.scss */
+.RdYlBu .q7-9 { fill: #74add1; }
+
+/* line 1180, ../../../sass/_colorbrewer.scss */
+.RdYlBu .q8-9 { fill: #4575b4; }
+
+/* line 1181, ../../../sass/_colorbrewer.scss */
+.RdYlBu .q0-10 { fill: #a50026; }
+
+/* line 1182, ../../../sass/_colorbrewer.scss */
+.RdYlBu .q1-10 { fill: #d73027; }
+
+/* line 1183, ../../../sass/_colorbrewer.scss */
+.RdYlBu .q2-10 { fill: #f46d43; }
+
+/* line 1184, ../../../sass/_colorbrewer.scss */
+.RdYlBu .q3-10 { fill: #fdae61; }
+
+/* line 1185, ../../../sass/_colorbrewer.scss */
+.RdYlBu .q4-10 { fill: #fee090; }
+
+/* line 1186, ../../../sass/_colorbrewer.scss */
+.RdYlBu .q5-10 { fill: #e0f3f8; }
+
+/* line 1187, ../../../sass/_colorbrewer.scss */
+.RdYlBu .q6-10 { fill: #abd9e9; }
+
+/* line 1188, ../../../sass/_colorbrewer.scss */
+.RdYlBu .q7-10 { fill: #74add1; }
+
+/* line 1189, ../../../sass/_colorbrewer.scss */
+.RdYlBu .q8-10 { fill: #4575b4; }
+
+/* line 1190, ../../../sass/_colorbrewer.scss */
+.RdYlBu .q9-10 { fill: #313695; }
+
+/* line 1191, ../../../sass/_colorbrewer.scss */
+.RdYlBu .q0-11 { fill: #a50026; }
+
+/* line 1192, ../../../sass/_colorbrewer.scss */
+.RdYlBu .q1-11 { fill: #d73027; }
+
+/* line 1193, ../../../sass/_colorbrewer.scss */
+.RdYlBu .q2-11 { fill: #f46d43; }
+
+/* line 1194, ../../../sass/_colorbrewer.scss */
+.RdYlBu .q3-11 { fill: #fdae61; }
+
+/* line 1195, ../../../sass/_colorbrewer.scss */
+.RdYlBu .q4-11 { fill: #fee090; }
+
+/* line 1196, ../../../sass/_colorbrewer.scss */
+.RdYlBu .q5-11 { fill: #ffffbf; }
+
+/* line 1197, ../../../sass/_colorbrewer.scss */
+.RdYlBu .q6-11 { fill: #e0f3f8; }
+
+/* line 1198, ../../../sass/_colorbrewer.scss */
+.RdYlBu .q7-11 { fill: #abd9e9; }
+
+/* line 1199, ../../../sass/_colorbrewer.scss */
+.RdYlBu .q8-11 { fill: #74add1; }
+
+/* line 1200, ../../../sass/_colorbrewer.scss */
+.RdYlBu .q9-11 { fill: #4575b4; }
+
+/* line 1201, ../../../sass/_colorbrewer.scss */
+.RdYlBu .q10-11 { fill: #313695; }
+
+/* line 1202, ../../../sass/_colorbrewer.scss */
+.Spectral .q0-3 { fill: #fc8d59; }
+
+/* line 1203, ../../../sass/_colorbrewer.scss */
+.Spectral .q1-3 { fill: #ffffbf; }
+
+/* line 1204, ../../../sass/_colorbrewer.scss */
+.Spectral .q2-3 { fill: #99d594; }
+
+/* line 1205, ../../../sass/_colorbrewer.scss */
+.Spectral .q0-4 { fill: #d7191c; }
+
+/* line 1206, ../../../sass/_colorbrewer.scss */
+.Spectral .q1-4 { fill: #fdae61; }
+
+/* line 1207, ../../../sass/_colorbrewer.scss */
+.Spectral .q2-4 { fill: #abdda4; }
+
+/* line 1208, ../../../sass/_colorbrewer.scss */
+.Spectral .q3-4 { fill: #2b83ba; }
+
+/* line 1209, ../../../sass/_colorbrewer.scss */
+.Spectral .q0-5 { fill: #d7191c; }
+
+/* line 1210, ../../../sass/_colorbrewer.scss */
+.Spectral .q1-5 { fill: #fdae61; }
+
+/* line 1211, ../../../sass/_colorbrewer.scss */
+.Spectral .q2-5 { fill: #ffffbf; }
+
+/* line 1212, ../../../sass/_colorbrewer.scss */
+.Spectral .q3-5 { fill: #abdda4; }
+
+/* line 1213, ../../../sass/_colorbrewer.scss */
+.Spectral .q4-5 { fill: #2b83ba; }
+
+/* line 1214, ../../../sass/_colorbrewer.scss */
+.Spectral .q0-6 { fill: #d53e4f; }
+
+/* line 1215, ../../../sass/_colorbrewer.scss */
+.Spectral .q1-6 { fill: #fc8d59; }
+
+/* line 1216, ../../../sass/_colorbrewer.scss */
+.Spectral .q2-6 { fill: #fee08b; }
+
+/* line 1217, ../../../sass/_colorbrewer.scss */
+.Spectral .q3-6 { fill: #e6f598; }
+
+/* line 1218, ../../../sass/_colorbrewer.scss */
+.Spectral .q4-6 { fill: #99d594; }
+
+/* line 1219, ../../../sass/_colorbrewer.scss */
+.Spectral .q5-6 { fill: #3288bd; }
+
+/* line 1220, ../../../sass/_colorbrewer.scss */
+.Spectral .q0-7 { fill: #d53e4f; }
+
+/* line 1221, ../../../sass/_colorbrewer.scss */
+.Spectral .q1-7 { fill: #fc8d59; }
+
+/* line 1222, ../../../sass/_colorbrewer.scss */
+.Spectral .q2-7 { fill: #fee08b; }
+
+/* line 1223, ../../../sass/_colorbrewer.scss */
+.Spectral .q3-7 { fill: #ffffbf; }
+
+/* line 1224, ../../../sass/_colorbrewer.scss */
+.Spectral .q4-7 { fill: #e6f598; }
+
+/* line 1225, ../../../sass/_colorbrewer.scss */
+.Spectral .q5-7 { fill: #99d594; }
+
+/* line 1226, ../../../sass/_colorbrewer.scss */
+.Spectral .q6-7 { fill: #3288bd; }
+
+/* line 1227, ../../../sass/_colorbrewer.scss */
+.Spectral .q0-8 { fill: #d53e4f; }
+
+/* line 1228, ../../../sass/_colorbrewer.scss */
+.Spectral .q1-8 { fill: #f46d43; }
+
+/* line 1229, ../../../sass/_colorbrewer.scss */
+.Spectral .q2-8 { fill: #fdae61; }
+
+/* line 1230, ../../../sass/_colorbrewer.scss */
+.Spectral .q3-8 { fill: #fee08b; }
+
+/* line 1231, ../../../sass/_colorbrewer.scss */
+.Spectral .q4-8 { fill: #e6f598; }
+
+/* line 1232, ../../../sass/_colorbrewer.scss */
+.Spectral .q5-8 { fill: #abdda4; }
+
+/* line 1233, ../../../sass/_colorbrewer.scss */
+.Spectral .q6-8 { fill: #66c2a5; }
+
+/* line 1234, ../../../sass/_colorbrewer.scss */
+.Spectral .q7-8 { fill: #3288bd; }
+
+/* line 1235, ../../../sass/_colorbrewer.scss */
+.Spectral .q0-9 { fill: #d53e4f; }
+
+/* line 1236, ../../../sass/_colorbrewer.scss */
+.Spectral .q1-9 { fill: #f46d43; }
+
+/* line 1237, ../../../sass/_colorbrewer.scss */
+.Spectral .q2-9 { fill: #fdae61; }
+
+/* line 1238, ../../../sass/_colorbrewer.scss */
+.Spectral .q3-9 { fill: #fee08b; }
+
+/* line 1239, ../../../sass/_colorbrewer.scss */
+.Spectral .q4-9 { fill: #ffffbf; }
+
+/* line 1240, ../../../sass/_colorbrewer.scss */
+.Spectral .q5-9 { fill: #e6f598; }
+
+/* line 1241, ../../../sass/_colorbrewer.scss */
+.Spectral .q6-9 { fill: #abdda4; }
+
+/* line 1242, ../../../sass/_colorbrewer.scss */
+.Spectral .q7-9 { fill: #66c2a5; }
+
+/* line 1243, ../../../sass/_colorbrewer.scss */
+.Spectral .q8-9 { fill: #3288bd; }
+
+/* line 1244, ../../../sass/_colorbrewer.scss */
+.Spectral .q0-10 { fill: #9e0142; }
+
+/* line 1245, ../../../sass/_colorbrewer.scss */
+.Spectral .q1-10 { fill: #d53e4f; }
+
+/* line 1246, ../../../sass/_colorbrewer.scss */
+.Spectral .q2-10 { fill: #f46d43; }
+
+/* line 1247, ../../../sass/_colorbrewer.scss */
+.Spectral .q3-10 { fill: #fdae61; }
+
+/* line 1248, ../../../sass/_colorbrewer.scss */
+.Spectral .q4-10 { fill: #fee08b; }
+
+/* line 1249, ../../../sass/_colorbrewer.scss */
+.Spectral .q5-10 { fill: #e6f598; }
+
+/* line 1250, ../../../sass/_colorbrewer.scss */
+.Spectral .q6-10 { fill: #abdda4; }
+
+/* line 1251, ../../../sass/_colorbrewer.scss */
+.Spectral .q7-10 { fill: #66c2a5; }
+
+/* line 1252, ../../../sass/_colorbrewer.scss */
+.Spectral .q8-10 { fill: #3288bd; }
+
+/* line 1253, ../../../sass/_colorbrewer.scss */
+.Spectral .q9-10 { fill: #5e4fa2; }
+
+/* line 1254, ../../../sass/_colorbrewer.scss */
+.Spectral .q0-11 { fill: #9e0142; }
+
+/* line 1255, ../../../sass/_colorbrewer.scss */
+.Spectral .q1-11 { fill: #d53e4f; }
+
+/* line 1256, ../../../sass/_colorbrewer.scss */
+.Spectral .q2-11 { fill: #f46d43; }
+
+/* line 1257, ../../../sass/_colorbrewer.scss */
+.Spectral .q3-11 { fill: #fdae61; }
+
+/* line 1258, ../../../sass/_colorbrewer.scss */
+.Spectral .q4-11 { fill: #fee08b; }
+
+/* line 1259, ../../../sass/_colorbrewer.scss */
+.Spectral .q5-11 { fill: #ffffbf; }
+
+/* line 1260, ../../../sass/_colorbrewer.scss */
+.Spectral .q6-11 { fill: #e6f598; }
+
+/* line 1261, ../../../sass/_colorbrewer.scss */
+.Spectral .q7-11 { fill: #abdda4; }
+
+/* line 1262, ../../../sass/_colorbrewer.scss */
+.Spectral .q8-11 { fill: #66c2a5; }
+
+/* line 1263, ../../../sass/_colorbrewer.scss */
+.Spectral .q9-11 { fill: #3288bd; }
+
+/* line 1264, ../../../sass/_colorbrewer.scss */
+.Spectral .q10-11 { fill: #5e4fa2; }
+
+/* line 1265, ../../../sass/_colorbrewer.scss */
+.RdYlGn .q0-3 { fill: #fc8d59; }
+
+/* line 1266, ../../../sass/_colorbrewer.scss */
+.RdYlGn .q1-3 { fill: #ffffbf; }
+
+/* line 1267, ../../../sass/_colorbrewer.scss */
+.RdYlGn .q2-3 { fill: #91cf60; }
+
+/* line 1268, ../../../sass/_colorbrewer.scss */
+.RdYlGn .q0-4 { fill: #d7191c; }
+
+/* line 1269, ../../../sass/_colorbrewer.scss */
+.RdYlGn .q1-4 { fill: #fdae61; }
+
+/* line 1270, ../../../sass/_colorbrewer.scss */
+.RdYlGn .q2-4 { fill: #a6d96a; }
+
+/* line 1271, ../../../sass/_colorbrewer.scss */
+.RdYlGn .q3-4 { fill: #1a9641; }
+
+/* line 1272, ../../../sass/_colorbrewer.scss */
+.RdYlGn .q0-5 { fill: #d7191c; }
+
+/* line 1273, ../../../sass/_colorbrewer.scss */
+.RdYlGn .q1-5 { fill: #fdae61; }
+
+/* line 1274, ../../../sass/_colorbrewer.scss */
+.RdYlGn .q2-5 { fill: #ffffbf; }
+
+/* line 1275, ../../../sass/_colorbrewer.scss */
+.RdYlGn .q3-5 { fill: #a6d96a; }
+
+/* line 1276, ../../../sass/_colorbrewer.scss */
+.RdYlGn .q4-5 { fill: #1a9641; }
+
+/* line 1277, ../../../sass/_colorbrewer.scss */
+.RdYlGn .q0-6 { fill: #d73027; }
+
+/* line 1278, ../../../sass/_colorbrewer.scss */
+.RdYlGn .q1-6 { fill: #fc8d59; }
+
+/* line 1279, ../../../sass/_colorbrewer.scss */
+.RdYlGn .q2-6 { fill: #fee08b; }
+
+/* line 1280, ../../../sass/_colorbrewer.scss */
+.RdYlGn .q3-6 { fill: #d9ef8b; }
+
+/* line 1281, ../../../sass/_colorbrewer.scss */
+.RdYlGn .q4-6 { fill: #91cf60; }
+
+/* line 1282, ../../../sass/_colorbrewer.scss */
+.RdYlGn .q5-6 { fill: #1a9850; }
+
+/* line 1283, ../../../sass/_colorbrewer.scss */
+.RdYlGn .q0-7 { fill: #d73027; }
+
+/* line 1284, ../../../sass/_colorbrewer.scss */
+.RdYlGn .q1-7 { fill: #fc8d59; }
+
+/* line 1285, ../../../sass/_colorbrewer.scss */
+.RdYlGn .q2-7 { fill: #fee08b; }
+
+/* line 1286, ../../../sass/_colorbrewer.scss */
+.RdYlGn .q3-7 { fill: #ffffbf; }
+
+/* line 1287, ../../../sass/_colorbrewer.scss */
+.RdYlGn .q4-7 { fill: #d9ef8b; }
+
+/* line 1288, ../../../sass/_colorbrewer.scss */
+.RdYlGn .q5-7 { fill: #91cf60; }
+
+/* line 1289, ../../../sass/_colorbrewer.scss */
+.RdYlGn .q6-7 { fill: #1a9850; }
+
+/* line 1290, ../../../sass/_colorbrewer.scss */
+.RdYlGn .q0-8 { fill: #d73027; }
+
+/* line 1291, ../../../sass/_colorbrewer.scss */
+.RdYlGn .q1-8 { fill: #f46d43; }
+
+/* line 1292, ../../../sass/_colorbrewer.scss */
+.RdYlGn .q2-8 { fill: #fdae61; }
+
+/* line 1293, ../../../sass/_colorbrewer.scss */
+.RdYlGn .q3-8 { fill: #fee08b; }
+
+/* line 1294, ../../../sass/_colorbrewer.scss */
+.RdYlGn .q4-8 { fill: #d9ef8b; }
+
+/* line 1295, ../../../sass/_colorbrewer.scss */
+.RdYlGn .q5-8 { fill: #a6d96a; }
+
+/* line 1296, ../../../sass/_colorbrewer.scss */
+.RdYlGn .q6-8 { fill: #66bd63; }
+
+/* line 1297, ../../../sass/_colorbrewer.scss */
+.RdYlGn .q7-8 { fill: #1a9850; }
+
+/* line 1298, ../../../sass/_colorbrewer.scss */
+.RdYlGn .q0-9 { fill: #d73027; }
+
+/* line 1299, ../../../sass/_colorbrewer.scss */
+.RdYlGn .q1-9 { fill: #f46d43; }
+
+/* line 1300, ../../../sass/_colorbrewer.scss */
+.RdYlGn .q2-9 { fill: #fdae61; }
+
+/* line 1301, ../../../sass/_colorbrewer.scss */
+.RdYlGn .q3-9 { fill: #fee08b; }
+
+/* line 1302, ../../../sass/_colorbrewer.scss */
+.RdYlGn .q4-9 { fill: #ffffbf; }
+
+/* line 1303, ../../../sass/_colorbrewer.scss */
+.RdYlGn .q5-9 { fill: #d9ef8b; }
+
+/* line 1304, ../../../sass/_colorbrewer.scss */
+.RdYlGn .q6-9 { fill: #a6d96a; }
+
+/* line 1305, ../../../sass/_colorbrewer.scss */
+.RdYlGn .q7-9 { fill: #66bd63; }
+
+/* line 1306, ../../../sass/_colorbrewer.scss */
+.RdYlGn .q8-9 { fill: #1a9850; }
+
+/* line 1307, ../../../sass/_colorbrewer.scss */
+.RdYlGn .q0-10 { fill: #a50026; }
+
+/* line 1308, ../../../sass/_colorbrewer.scss */
+.RdYlGn .q1-10 { fill: #d73027; }
+
+/* line 1309, ../../../sass/_colorbrewer.scss */
+.RdYlGn .q2-10 { fill: #f46d43; }
+
+/* line 1310, ../../../sass/_colorbrewer.scss */
+.RdYlGn .q3-10 { fill: #fdae61; }
+
+/* line 1311, ../../../sass/_colorbrewer.scss */
+.RdYlGn .q4-10 { fill: #fee08b; }
+
+/* line 1312, ../../../sass/_colorbrewer.scss */
+.RdYlGn .q5-10 { fill: #d9ef8b; }
+
+/* line 1313, ../../../sass/_colorbrewer.scss */
+.RdYlGn .q6-10 { fill: #a6d96a; }
+
+/* line 1314, ../../../sass/_colorbrewer.scss */
+.RdYlGn .q7-10 { fill: #66bd63; }
+
+/* line 1315, ../../../sass/_colorbrewer.scss */
+.RdYlGn .q8-10 { fill: #1a9850; }
+
+/* line 1316, ../../../sass/_colorbrewer.scss */
+.RdYlGn .q9-10 { fill: #006837; }
+
+/* line 1317, ../../../sass/_colorbrewer.scss */
+.RdYlGn .q0-11 { fill: #a50026; }
+
+/* line 1318, ../../../sass/_colorbrewer.scss */
+.RdYlGn .q1-11 { fill: #d73027; }
+
+/* line 1319, ../../../sass/_colorbrewer.scss */
+.RdYlGn .q2-11 { fill: #f46d43; }
+
+/* line 1320, ../../../sass/_colorbrewer.scss */
+.RdYlGn .q3-11 { fill: #fdae61; }
+
+/* line 1321, ../../../sass/_colorbrewer.scss */
+.RdYlGn .q4-11 { fill: #fee08b; }
+
+/* line 1322, ../../../sass/_colorbrewer.scss */
+.RdYlGn .q5-11 { fill: #ffffbf; }
+
+/* line 1323, ../../../sass/_colorbrewer.scss */
+.RdYlGn .q6-11 { fill: #d9ef8b; }
+
+/* line 1324, ../../../sass/_colorbrewer.scss */
+.RdYlGn .q7-11 { fill: #a6d96a; }
+
+/* line 1325, ../../../sass/_colorbrewer.scss */
+.RdYlGn .q8-11 { fill: #66bd63; }
+
+/* line 1326, ../../../sass/_colorbrewer.scss */
+.RdYlGn .q9-11 { fill: #1a9850; }
+
+/* line 1327, ../../../sass/_colorbrewer.scss */
+.RdYlGn .q10-11 { fill: #006837; }
+
+/* line 4, ../../../sass/screen.scss */
 body { margin: 0; padding: 0; }
 
-/* line 8, ../../../sass/screen.scss */
+/* line 9, ../../../sass/screen.scss */
 #map { position: absolute; top: 0; left: 0; height: 100%; width: 100%; }
+
+/* line 17, ../../../sass/screen.scss */
+#overlay { position: absolute; z-index: 9999; }
+
+/* line 22, ../../../sass/screen.scss */
+.station_cell { stroke: black; opacity: 0.2; }
