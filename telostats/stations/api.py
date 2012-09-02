@@ -1,4 +1,5 @@
 from tastypie.resources import ModelResource
+from tastypie.serializers import Serializer
 from .models import Station
 
 
@@ -9,3 +10,4 @@ class StationResource(ModelResource):
         filtering = {
             'id': ('exact', ),
         }
+        serializer = Serializer(formats=['json'])
