@@ -1,0 +1,1492 @@
+[
+    {
+        "pk": 202,
+        "model": "stations.station",
+        "fields": {
+            "latitude": 32.1223,
+            "name": "\u05d0\u05d4\u05e8\u05d5\u05df \u05d1\u05e7\u05e8 15",
+            "longitude": 34.8179,
+            "address": ""
+        }
+    },
+    {
+        "pk": 112,
+        "model": "stations.station",
+        "fields": {
+            "latitude": 32.1133,
+            "name": "\u05d0\u05d5\u05e0\u05d9\u05d1\u05e8\u05e1\u05d9\u05d8\u05d4 \u05d0\u05d9\u05d9\u05e0\u05e9\u05d8\u05d9\u05d9\u05df 78",
+            "longitude": 34.8008,
+            "address": "\u05d0\u05d9\u05d9\u05e0\u05e9\u05d8\u05d9\u05d9\u05df 78"
+        }
+    },
+    {
+        "pk": 122,
+        "model": "stations.station",
+        "fields": {
+            "latitude": 32.1107,
+            "name": "\u05d0\u05d5\u05e0\u05d9\u05d1\u05e8\u05e1\u05d9\u05d8\u05d4 \u05e9\u05e2\u05e8 4",
+            "longitude": 34.8036,
+            "address": "\u05d0\u05d5\u05e0\u05d9\u05d1\u05e8\u05e1\u05d9\u05d8\u05d4 \u05e9\u05e2\u05e8 4"
+        }
+    },
+    {
+        "pk": 104,
+        "model": "stations.station",
+        "fields": {
+            "latitude": 32.1298,
+            "name": "\u05d0\u05d6\u05d5\u05e8\u05d9 \u05d7\u05df  \u05d2\u05e8\u05d9\u05e0\u05d1\u05e8\u05d2 26",
+            "longitude": 34.7923,
+            "address": ""
+        }
+    },
+    {
+        "pk": 111,
+        "model": "stations.station",
+        "fields": {
+            "latitude": 32.1129,
+            "name": "\u05d0\u05d9\u05d9\u05e0\u05e9\u05d8\u05d9\u05d9\u05df 41",
+            "longitude": 34.7968,
+            "address": "\u05d0\u05d9\u05d9\u05e0\u05e9\u05d8\u05d9\u05d9\u05df 41 \u05e7\u05e0\u05d9\u05d5\u05df \u05e8\u05de\u05ea \u05d0\u05d1\u05d9\u05d1"
+        }
+    },
+    {
+        "pk": 211,
+        "model": "stations.station",
+        "fields": {
+            "latitude": 32.1091,
+            "name": "\u05d0\u05e1\u05d5\u05ea\u05d0 \u05d4\u05d1\u05e8\u05d6\u05dc 23",
+            "longitude": 34.8394,
+            "address": ""
+        }
+    },
+    {
+        "pk": 113,
+        "model": "stations.station",
+        "fields": {
+            "latitude": 32.1077,
+            "name": "\u05d1\u05e8\u05d5\u05d3\u05e6\u05e7\u05d9 \u05e4\u05d9\u05e0\u05ea \u05e9\u05d3 \u05d0\u05d1\u05e0\u05e8",
+            "longitude": 34.7981,
+            "address": ""
+        }
+    },
+    {
+        "pk": 217,
+        "model": "stations.station",
+        "fields": {
+            "latitude": 32.1173,
+            "name": "\u05d2\u05d1\u05e2\u05ea \u05d4\u05e4\u05e8\u05d7\u05d9\u05dd",
+            "longitude": 34.8247,
+            "address": "\u05de\u05e8\u05e1\u05dc \u05d9\u05e0\u05e7\u05d5 7-\u05d2\u05d1\u05e2\u05ea \u05d4\u05e4\u05e8\u05d7\u05d9\u05dd"
+        }
+    },
+    {
+        "pk": 117,
+        "model": "stations.station",
+        "fields": {
+            "latitude": 32.1017,
+            "name": "\u05d3\u05e8\u05da \u05e0\u05de\u05d9\u05e8 - \u05e1\u05de\u05d9\u05e0\u05e8 \u05d4\u05e7\u05d9\u05d1\u05d5\u05e6\u05d9\u05dd",
+            "longitude": 34.7929,
+            "address": "\u05e1\u05de\u05d9\u05e0\u05e8 \u05d4\u05e7\u05d9\u05d1\u05d5\u05e6\u05d9\u05dd - \u05d3\u05e8\u05da \u05e0\u05de\u05d9\u05e8 \u05de\u05d9\u05de\u05d9\u05df  \u05dc\u05e8\u05d7\u05d5\u05d1 \u05d5\u05d9\u05d8\u05dc\u05d4 \u05d1\u05d7\u05d5\u05e8\u05e9\u05d4"
+        }
+    },
+    {
+        "pk": 120,
+        "model": "stations.station",
+        "fields": {
+            "latitude": 32.1156,
+            "name": "\u05d4\u05d2\u05d5\u05e9 \u05d4\u05d2\u05d3\u05d5\u05dc \u05d0\u05de\u05d9\u05e8 \u05d2\u05dc\u05d1\u05e2 17",
+            "longitude": 34.7886,
+            "address": "\u05d0\u05de\u05d9\u05e8 \u05d2\u05dc\u05d1\u05d5\u05e2 17"
+        }
+    },
+    {
+        "pk": 210,
+        "model": "stations.station",
+        "fields": {
+            "latitude": 32.1099,
+            "name": "\u05d4\u05d3\u05e8 \u05d9\u05d5\u05e1\u05e3 - \u05de\u05e8\u05db\u05d6 \u05de\u05e1\u05d7\u05e8\u05d9",
+            "longitude": 34.8189,
+            "address": "\u05d4\u05d3\u05e8 \u05d9\u05d5\u05e1\u05e3 7 \u05de\u05e8\u05db\u05d6 \u05de\u05e1\u05d7\u05e8\u05d9- \u05d1\u05d2\u05d9\u05e0\u05d4 \u05de\u05d9\u05de\u05d9\u05df \u05dc\u05e9\u05d1\u05d9\u05dc"
+        }
+    },
+    {
+        "pk": 201,
+        "model": "stations.station",
+        "fields": {
+            "latitude": 32.1263,
+            "name": "\u05d4\u05de\u05e9\u05ea\u05dc\u05d4 \u05d1\u05e8\u05d5\u05d3 \u05de\u05e7\u05e1 12",
+            "longitude": 34.8278,
+            "address": ""
+        }
+    },
+    {
+        "pk": 212,
+        "model": "stations.station",
+        "fields": {
+            "latitude": 32.1101,
+            "name": "\u05d4\u05e8\u05d5\u05d2\u05d9 \u05d4\u05de\u05dc\u05db\u05d5\u05ea 6",
+            "longitude": 34.8324,
+            "address": ""
+        }
+    },
+    {
+        "pk": 102,
+        "model": "stations.station",
+        "fields": {
+            "latitude": 32.1403,
+            "name": "\u05d7\u05d5\u05e3 \u05d4\u05e6\u05d5\u05e7 \u05d4\u05d3\u05e8\u05d5\u05de\u05d9 \u05e1\u05d0\u05de\u05d8 \u05e9\u05de\u05e2\u05d5\u05df",
+            "longitude": 34.791,
+            "address": "\u05d7\u05d5\u05e3 \u05d4\u05e6\u05d5\u05e7 \u05d4\u05d3\u05e8\u05d5\u05de\u05d9 \u05e1\u05d0\u05de\u05d8 \u05e9\u05de\u05e2\u05d5\u05df"
+        }
+    },
+    {
+        "pk": 101,
+        "model": "stations.station",
+        "fields": {
+            "latitude": 32.1438,
+            "name": "\u05d7\u05d5\u05e3 \u05d4\u05e6\u05d5\u05e7 \u05d4\u05e6\u05e4\u05d5\u05e0\u05d9 \u05de\u05dc\u05d5\u05df \u05de\u05e0\u05d3\u05e8\u05d9\u05df",
+            "longitude": 34.7926,
+            "address": "\u05d7\u05d5\u05e3 \u05d4\u05e6\u05d5\u05e7 \u05d4\u05e6\u05e4\u05d5\u05e0\u05d9 \u05de\u05dc\u05d5\u05df \u05de\u05e0\u05d3\u05e8\u05d9\u05df"
+        }
+    },
+    {
+        "pk": 107,
+        "model": "stations.station",
+        "fields": {
+            "latitude": 32.1214,
+            "name": "\u05d7\u05d5\u05e3 \u05ea\u05dc \u05d1\u05e8\u05d5\u05da",
+            "longitude": 34.7832,
+            "address": "\u05d0\u05e8\u05e6\u05d9 \u05d9\u05e6\u05d7\u05e7 34 -\u05d7\u05d5\u05e3 \u05ea\u05dc \u05d1\u05e8\u05d5\u05da -\u05e6\u05de\u05d5\u05d3 \u05dc\u05ea\u05d7\u05e0\u05ea \u05e9\u05d0\u05d9\u05d1\u05d4 \u05d1\u05d2\u05d9\u05e0\u05d4 \u05e6\u05e4\u05d5\u05e0\u05d9\u05ea \u05dc\u05db\u05e0\u05d9\u05e1\u05d4 \u05e8\u05d0\u05e9\u05d9\u05ea"
+        }
+    },
+    {
+        "pk": 109,
+        "model": "stations.station",
+        "fields": {
+            "latitude": 32.1177,
+            "name": "\u05d8\u05d0\u05d2\u05d5\u05e8 \u05de\u05e8\u05db\u05d6 \u05de\u05e1\u05d7\u05e8\u05d9",
+            "longitude": 34.798,
+            "address": ""
+        }
+    },
+    {
+        "pk": 203,
+        "model": "stations.station",
+        "fields": {
+            "latitude": 32.1202,
+            "name": "\u05dc\u05d0\u05d4 16 \u05e4\u05d9\u05e0\u05ea \u05d0\u05dc\u05ea\u05e8\u05de\u05df",
+            "longitude": 34.8214,
+            "address": ""
+        }
+    },
+    {
+        "pk": 114,
+        "model": "stations.station",
+        "fields": {
+            "latitude": 32.1048,
+            "name": "\u05dc\u05d5\u05d9 \u05d0\u05e9\u05db\u05d5\u05dc 26",
+            "longitude": 34.7891,
+            "address": "\u05dc\u05d5\u05d9 \u05d0\u05e9\u05db\u05d5\u05dc 26 \u05e4\u05d9\u05e0\u05ea \u05d0\u05e4\u05d8\u05e8 -   \u05d1\u05de\u05d3\u05e8\u05db\u05d4 \u05d3. \u05de\u05d6\u05e8\u05d7\u05d9\u05ea \u05d1\u05d9\u05df \u05d4\u05e2\u05e6\u05d9\u05dd"
+        }
+    },
+    {
+        "pk": 208,
+        "model": "stations.station",
+        "fields": {
+            "latitude": 32.1137,
+            "name": "\u05de\u05d5\u05dc \u05e4\u05e0\u05d7\u05e1 \u05e8\u05d5\u05d6\u05df 62",
+            "longitude": 34.8252,
+            "address": ""
+        }
+    },
+    {
+        "pk": 105,
+        "model": "stations.station",
+        "fields": {
+            "latitude": 32.1247,
+            "name": "\u05de\u05e8\u05db\u05d6 \u05e9\u05d5\u05e1\u05d8\u05e8 \u05d0\u05d7\u05d9\u05de\u05d0\u05d9\u05e8 18",
+            "longitude": 34.8018,
+            "address": ""
+        }
+    },
+    {
+        "pk": 206,
+        "model": "stations.station",
+        "fields": {
+            "latitude": 32.118,
+            "name": "\u05e0\u05d5\u05d5\u05d4 \u05e9\u05e8\u05ea \u05d4\u05e6\u05e0\u05d7\u05e0\u05d9\u05dd 2",
+            "longitude": 34.8395,
+            "address": ""
+        }
+    },
+    {
+        "pk": 209,
+        "model": "stations.station",
+        "fields": {
+            "latitude": 32.1144,
+            "name": "\u05e2\u05ea\u05d9\u05d3\u05d9\u05dd -\u05d3\u05d1\u05d5\u05e8\u05d4 \u05d4\u05e0\u05d1\u05d9\u05d0\u05d4",
+            "longitude": 34.8414,
+            "address": ""
+        }
+    },
+    {
+        "pk": 108,
+        "model": "stations.station",
+        "fields": {
+            "latitude": 32.1141,
+            "name": "\u05e4\u05e8\u05dc\u05d5\u05e7 4",
+            "longitude": 34.7916,
+            "address": ""
+        }
+    },
+    {
+        "pk": 205,
+        "model": "stations.station",
+        "fields": {
+            "latitude": 32.1214,
+            "name": "\u05e6\u05d4\"\u05dc \u05de\u05d5\u05dc \u05d1\u05d9\u05ea 76",
+            "longitude": 34.8349,
+            "address": "\u05e6\u05d4\"\u05dc \u05de\u05d5\u05dc \u05d1\u05d9\u05ea 76"
+        }
+    },
+    {
+        "pk": 204,
+        "model": "stations.station",
+        "fields": {
+            "latitude": 32.1218,
+            "name": "\u05e6\u05d4\u05dc \u05e4\u05d9\u05e0\u05ea \u05e2\u05d9\u05e8 \u05e9\u05de\u05e9 \u05d1\u05db\u05d9\u05db\u05e8",
+            "longitude": 34.8258,
+            "address": ""
+        }
+    },
+    {
+        "pk": 220,
+        "model": "stations.station",
+        "fields": {
+            "latitude": 32.1122,
+            "name": "\u05e7\u05d3\u05e9 \u05d1\u05e8\u05e0\u05e2 \u05de\u05d5\u05dc \u05d1\u05d9\u05ea 9",
+            "longitude": 34.8151,
+            "address": "\u05e7\u05d3\u05e9 \u05d1\u05e8\u05e0\u05e2 \u05de\u05d5\u05dc \u05d1\u05d9\u05ea 9"
+        }
+    },
+    {
+        "pk": 207,
+        "model": "stations.station",
+        "fields": {
+            "latitude": 32.1142,
+            "name": "\u05e7\u05d4\u05d9\u05dc\u05ea \u05e7\u05d9\u05d5\u05d1 3 - \u05d4\u05de\u05db\u05dc\u05dc\u05d4 \u05dc\u05d4\u05e0\u05d3\u05e1\u05d0\u05d9\u05dd",
+            "longitude": 34.8189,
+            "address": "\u05de\u05db\u05dc\u05dc\u05ea \u05ea\u05dc \u05d0\u05d1\u05d9\u05d1 \u05dc\u05d4\u05e0\u05d3\u05e1\u05d0\u05d9\u05dd -\u05e7\u05d4\u05d9\u05dc\u05ea \u05e7\u05d9\u05d9\u05d1 \u05de\u05d5\u05dc \u05d1\u05d9\u05ea \u05de\u05e1 6 \u05d1\u05de\u05d3\u05e8\u05db\u05d4"
+        }
+    },
+    {
+        "pk": 218,
+        "model": "stations.station",
+        "fields": {
+            "latitude": 32.1067,
+            "name": "\u05e8\u05d0\u05d5\u05dc \u05d5\u05dc\u05e0\u05d1\u05e8\u05d2 \u05e4\u05d9\u05e0\u05ea \u05d4\u05d1\u05e8\u05d6\u05dc",
+            "longitude": 34.8326,
+            "address": ""
+        }
+    },
+    {
+        "pk": 121,
+        "model": "stations.station",
+        "fields": {
+            "latitude": 32.1207,
+            "name": "\u05e8\u05d1 \u05d0\u05e9\u05d9 11 \u05de\u05e8\u05db\u05d6 \u05de\u05e1\u05d7\u05e8\u05d9",
+            "longitude": 34.7993,
+            "address": "\u05e8\u05d1 \u05d0\u05e9\u05d9 \u05d1\u05d2\u05d9\u05e0\u05d4 \u05de\u05d5\u05dc \u05d1\u05d9\u05ea 11"
+        }
+    },
+    {
+        "pk": 106,
+        "model": "stations.station",
+        "fields": {
+            "latitude": 32.1204,
+            "name": "\u05e8\u05d5\u05d3\u05e0\u05e1\u05e7\u05d9 \u05de\u05e8\u05db\u05d6 \u05de\u05e1\u05d7\u05e8\u05d9",
+            "longitude": 34.7924,
+            "address": "\u05e8\u05d5\u05d3\u05e0\u05e1\u05e7\u05d9 3 - \u05de\u05e8\u05db\u05d6 \u05de\u05e1\u05d7\u05e8\u05d9"
+        }
+    },
+    {
+        "pk": 215,
+        "model": "stations.station",
+        "fields": {
+            "latitude": 32.1042,
+            "name": "\u05e8\u05d5\u05e7\u05d7 \u05de\u05e8\u05db\u05d6 \u05d4\u05d9\u05e8\u05d9\u05d3\u05d9\u05dd",
+            "longitude": 34.8094,
+            "address": ""
+        }
+    },
+    {
+        "pk": 116,
+        "model": "stations.station",
+        "fields": {
+            "latitude": 32.1022,
+            "name": "\u05e9\u05d9 \u05e2\u05d2\u05e0\u05d5\u05df 59",
+            "longitude": 34.7854,
+            "address": "\u05e9\u05d9 \u05e2\u05d2\u05e0\u05d5\u05df 59 \u05e4\u05d9\u05e0\u05ea \u05d9\u05e9\u05e8\u05d0\u05dc \u05d2\u05dc\u05d9\u05dc\u05d9 -\u05d1\u05d2\u05d9\u05e0\u05d4 \u05de\u05d6\u05e8\u05d7\u05d9\u05ea \u05dc\u05db\u05e0\u05d9\u05e1\u05d4 \u05dc\u05e9\u05db\u05d5\u05e0\u05d4"
+        }
+    },
+    {
+        "pk": 219,
+        "model": "stations.station",
+        "fields": {
+            "latitude": 32.1136,
+            "name": "\u05e9\u05d9\u05db\u05d5\u05df \u05d3\u05df \u05de\u05e9\u05de\u05e8 \u05d4\u05d9\u05e8\u05d3\u05df 79",
+            "longitude": 34.8326,
+            "address": ""
+        }
+    },
+    {
+        "pk": 110,
+        "model": "stations.station",
+        "fields": {
+            "latitude": 32.1103,
+            "name": "\u05e9\u05d9\u05db\u05d5\u05df \u05dc\u05de\u05d3 \u05d4\u05d0\u05d5\u05d6\u05e0\u05e8 5",
+            "longitude": 34.7905,
+            "address": ""
+        }
+    },
+    {
+        "pk": 213,
+        "model": "stations.station",
+        "fields": {
+            "latitude": 32.1069,
+            "name": "\u05e9\u05dc\u05d5\u05dd \u05d0\u05e9 \u05de\u05e8\u05db\u05d6 \u05de\u05e1\u05d7\u05e8\u05d9",
+            "longitude": 34.8211,
+            "address": "\u05e9\u05dc\u05d5\u05dd \u05d0\u05e9 \u05de\u05d5\u05dc \u05d1\u05d9\u05ea 14"
+        }
+    },
+    {
+        "pk": 118,
+        "model": "stations.station",
+        "fields": {
+            "latitude": 32.1259,
+            "name": "\u05e9\u05dc\u05de\u05d4 \u05d1\u05df \u05d9\u05d5\u05e1\u05e3 24",
+            "longitude": 34.7985,
+            "address": ""
+        }
+    },
+    {
+        "pk": 216,
+        "model": "stations.station",
+        "fields": {
+            "latitude": 32.1032,
+            "name": "\u05ea\u05d7\u05e0\u05ea \u05e8\u05db\u05d1\u05ea \u05d0\u05d5\u05e0\u05d1\u05e8\u05e1\u05d9\u05d8\u05d4",
+            "longitude": 34.8051,
+            "address": "\u05ea\u05d7\u05e0\u05ea \u05e8\u05db\u05d1\u05ea \u05d0\u05d5\u05e0\u05d1\u05e8\u05e1\u05d9\u05d8\u05d4 - \u05d1\u05de\u05d3\u05e8\u05db\u05d4  \u05e6\u05de\u05d5\u05d3 \u05dc\u05e7\u05d9\u05e8 \u05d1\u05e6\u05d3 \u05d4\u05d3\u05e8\u05d5\u05de\u05d9 \u05e9\u05dc*"
+        }
+    },
+    {
+        "pk": 214,
+        "model": "stations.station",
+        "fields": {
+            "latitude": 32.1176,
+            "name": "\u05ea\u05dc \u05d1\u05e8\u05d5\u05da \u05d1\u05d9\u05d4\u05e1 \u05d0\u05dc\u05d7\u05e8\u05d9\u05d6\u05d9",
+            "longitude": 34.8132,
+            "address": ""
+        }
+    },
+    {
+        "pk": 324,
+        "model": "stations.station",
+        "fields": {
+            "latitude": 32.0843,
+            "name": "\u05d0\u05d1\u05df \u05d2\u05d1\u05d9\u05e8\u05d5\u05dc 106 -\u05d1\u05d9\u05ea \u05d4\u05d3\u05d5\u05d0\u05e8",
+            "longitude": 34.7816,
+            "address": "\u05d0\u05d1\u05df \u05d2\u05d1\u05d9\u05e8\u05d5\u05dc 106 - \u05d1\u05d9\u05ea \u05d4\u05d3\u05d5\u05d0\u05e8 \u05d1\u05de\u05d3\u05e8\u05db\u05d4"
+        }
+    },
+    {
+        "pk": 319,
+        "model": "stations.station",
+        "fields": {
+            "latitude": 32.0871,
+            "name": "\u05d0\u05d1\u05df \u05d2\u05d1\u05d9\u05e8\u05d5\u05dc 124",
+            "longitude": 34.7822,
+            "address": "\u05d0\u05d1\u05df \u05d2\u05d1\u05d9\u05e8\u05d5\u05dc 124 \u05d1\u05de\u05d3\u05e8\u05db\u05d4"
+        }
+    },
+    {
+        "pk": 311,
+        "model": "stations.station",
+        "fields": {
+            "latitude": 32.0937,
+            "name": "\u05d0\u05d1\u05df \u05d2\u05d1\u05d9\u05e8\u05d5\u05dc 182",
+            "longitude": 34.7835,
+            "address": "\u05d0\u05d1\u05df \u05d2\u05d1\u05d9\u05e8\u05d5\u05dc 180-182 \u05d1\u05de\u05d3\u05e8\u05db\u05d4"
+        }
+    },
+    {
+        "pk": 346,
+        "model": "stations.station",
+        "fields": {
+            "latitude": 32.075,
+            "name": "\u05d0\u05d1\u05df \u05d2\u05d1\u05d9\u05e8\u05d5\u05dc 28",
+            "longitude": 34.7818,
+            "address": "\u05d0\u05d1\u05df \u05d2\u05d1\u05d9\u05e8\u05d5\u05dc 28 \u05dc\u05d5\u05e0\u05d3\u05d5\u05df \u05de\u05d9\u05e0\u05d9\u05e1\u05d8\u05d5\u05e8 \u05de\u05d0\u05d7\u05d5\u05e8\u05d9 \u05e1\u05e4\u05e1\u05dc \u05d0\u05e8\u05d5\u05da \u05d3\u05e8\u05d5\u05dd \u05dc\u05db\u05e0\u05d9\u05e1\u05d4"
+        }
+    },
+    {
+        "pk": 303,
+        "model": "stations.station",
+        "fields": {
+            "latitude": 32.096,
+            "name": "\u05d0\u05d5\u05e1\u05d9\u05e9\u05e7\u05d9\u05df 48",
+            "longitude": 34.7772,
+            "address": "\u05d0\u05d5\u05e9\u05d9\u05e1\u05e7\u05d9\u05df 46-48 \u05d1\u05db\u05d1\u05d9\u05e9"
+        }
+    },
+    {
+        "pk": 306,
+        "model": "stations.station",
+        "fields": {
+            "latitude": 32.0877,
+            "name": "\u05d0\u05dc\u05d5\u05e0\u05d9 \u05e0\u05d9\u05e1\u05d9\u05dd 8",
+            "longitude": 34.7968,
+            "address": "\u05d0\u05dc\u05d5\u05e0\u05d9 \u05e0\u05d9\u05e1\u05d9\u05dd 8 \u05d1\u05d2\u05d9\u05e0\u05d4 \u05e1\u05de\u05d5\u05da \u05dc\u05de\u05e8\u05db\u05d6 \u05d4\u05de\u05e1\u05d7\u05e8\u05d9"
+        }
+    },
+    {
+        "pk": 361,
+        "model": "stations.station",
+        "fields": {
+            "latitude": 32.0695,
+            "name": "\u05d0\u05dc\u05e0\u05d1\u05d9 53 \u05e9\u05d5\u05e7 \u05d4\u05db\u05e8\u05de\u05dc",
+            "longitude": 34.7707,
+            "address": "\u05d0\u05dc\u05e0\u05d1\u05d9 53 \u05e9\u05d5\u05e7 \u05d4\u05db\u05e8\u05de\u05dc"
+        }
+    },
+    {
+        "pk": 368,
+        "model": "stations.station",
+        "fields": {
+            "latitude": 32.0669,
+            "name": "\u05d0\u05dc\u05e0\u05d1\u05d9 90 \u05e4\u05d9\u05e0\u05ea \u05de\u05d0\u05d6\u05d4",
+            "longitude": 34.7716,
+            "address": "\u05d0\u05dc\u05e0\u05d1\u05d9 88-90 \u05e4\u05d9\u05e0\u05ea \u05d2\u05e8\u05d5\u05d6\u05e0\u05d1\u05e8\u05d2 \u05d1\u05de\u05d3\u05e8\u05db\u05d4 \u05d1\u05d9\u05df \u05d4\u05e2\u05e6\u05d9\u05dd"
+        }
+    },
+    {
+        "pk": 337,
+        "model": "stations.station",
+        "fields": {
+            "latitude": 32.0863,
+            "name": "\u05d0\u05e8\u05dc\u05d5\u05d6\u05d5\u05e8\u05d5\u05d1 62",
+            "longitude": 34.7774,
+            "address": "\u05d0\u05e8\u05dc\u05d5\u05d6\u05d5\u05e8\u05d5\u05d1 62 \u05d1\u05de\u05d3\u05e8\u05db\u05d4"
+        }
+    },
+    {
+        "pk": 328,
+        "model": "stations.station",
+        "fields": {
+            "latitude": 32.095,
+            "name": "\u05d1\u05d1\u05dc\u05d9 \u05e4\u05e2\u05de\u05d5\u05e0\u05d9 2",
+            "longitude": 34.7971,
+            "address": "\u05e9\u05db\u05d5\u05e0\u05ea \u05d1\u05d1\u05dc\u05d9 - \u05e4\u05e2\u05de\u05d5\u05e0\u05d9 2 \u05d1\u05db\u05d1\u05d9\u05e9 \u05de\u05e4\u05e8\u05e5 \u05d7\u05e0\u05d9\u05d4"
+        }
+    },
+    {
+        "pk": 371,
+        "model": "stations.station",
+        "fields": {
+            "latitude": 32.0629,
+            "name": "\u05d1\u05d2\u05d9\u05df 48 \u05e4\u05d9\u05e0\u05ea \u05d4\u05e8\u05db\u05d1\u05ea",
+            "longitude": 34.7799,
+            "address": "\u05d1\u05d2\u05d9\u05df 46-48 \u05e4\u05d9\u05e0\u05ea \u05d4\u05e8\u05db\u05d1\u05ea \u05d1\u05e8\u05d7\u05d1\u05d4 \u05de\u05e6\u05d9\u05d3\u05d9 \u05d4\u05e9\u05d1\u05d9\u05dc"
+        }
+    },
+    {
+        "pk": 347,
+        "model": "stations.station",
+        "fields": {
+            "latitude": 32.076,
+            "name": "\u05d1\u05d5\u05d2\u05e8\u05e9\u05d5\u05d1 45 \u05e4\u05d9\u05e0\u05ea \u05e4\u05d9\u05e0\u05e1\u05e7\u05e8",
+            "longitude": 34.7718,
+            "address": "\u05d1\u05d5\u05d2\u05e8\u05e9\u05d5\u05d1 46-45 \u05e4\u05d9\u05e0\u05ea \u05e4\u05d9\u05e0\u05e1\u05e7\u05e8 \u05d1\u05de\u05d3\u05e8\u05db\u05d4"
+        }
+    },
+    {
+        "pk": 363,
+        "model": "stations.station",
+        "fields": {
+            "latitude": 32.0657,
+            "name": "\u05d1\u05d9\u05ea \u05e8\u05d5\u05d1\u05d9\u05e0\u05e9\u05d8\u05d9\u05d9\u05df-\u05e6. \u05de\u05e2\u05e8\u05d9\u05d1",
+            "longitude": 34.7831,
+            "address": "\u05d1\u05d9\u05ea \u05e8\u05d5\u05d1\u05d9\u05e0\u05e9\u05d8\u05d9\u05d9\u05df \u05d1\u05de\u05d3\u05e8\u05db\u05d4 \u05e1\u05de\u05d5\u05da \u05dc\u05e9\u05e4\u05ea \u05d4\u05db\u05d1\u05d9\u05e9"
+        }
+    },
+    {
+        "pk": 336,
+        "model": "stations.station",
+        "fields": {
+            "latitude": 32.0841,
+            "name": "\u05d1\u05df \u05d2\u05d5\u05e8\u05d9\u05d5\u05df 55 -\u05d1\u05e9\u05d3\u05e8\u05d4",
+            "longitude": 34.775,
+            "address": "\u05d1\u05df \u05d2\u05d5\u05e8\u05d9\u05d5\u05df 55 \u05e4\u05d9\u05e0\u05ea \u05d3\u05d9\u05d6\u05e0\u05d2\u05d5\u05e3 \u05d1\u05de\u05e8\u05db\u05d6 \u05d4\u05e9\u05d3\u05e8\u05d4  \u05e6\u05de\u05d5\u05d3 \u05dc\u05e9\u05d1\u05d9\u05dc \u05d0\u05d5\u05e4\u05e0\u05d9\u05d9\u05dd"
+        }
+    },
+    {
+        "pk": 354,
+        "model": "stations.station",
+        "fields": {
+            "latitude": 32.073,
+            "name": "\u05d1\u05df \u05d9\u05d4\u05d5\u05d3\u05d4 1",
+            "longitude": 34.7682,
+            "address": "\u05d1\u05df \u05d9\u05d4\u05d5\u05d3\u05d4 1 \u05d1\u05de\u05d3\u05e8\u05db\u05d4 \u05db\u05d9\u05db\u05e8 \u05de\u05d5\u05d2\u05e8\u05d1\u05d9"
+        }
+    },
+    {
+        "pk": 318,
+        "model": "stations.station",
+        "fields": {
+            "latitude": 32.0892,
+            "name": "\u05d1\u05df \u05d9\u05d4\u05d5\u05d3\u05d4 192",
+            "longitude": 34.7737,
+            "address": "\u05d1\u05df \u05d9\u05d4\u05d5\u05d3\u05d4 192 \u05d1\u05de\u05d3\u05e8\u05db\u05d4 \u05e4\u05d9\u05e0\u05ea \u05d6\u05d1\u05d5\u05d8\u05d9\u05e0\u05e1\u05e7\u05d9"
+        }
+    },
+    {
+        "pk": 334,
+        "model": "stations.station",
+        "fields": {
+            "latitude": 32.0815,
+            "name": "\u05d1\u05df \u05d9\u05d4\u05d5\u05d3\u05d4 86",
+            "longitude": 34.7706,
+            "address": "\u05d1\u05df \u05d9\u05d4\u05d5\u05d3\u05d4 86   \u05d1\u05de\u05d3\u05e8\u05db\u05d4"
+        }
+    },
+    {
+        "pk": 307,
+        "model": "stations.station",
+        "fields": {
+            "latitude": 32.0962,
+            "name": "\u05d1\u05e0\u05d9 \u05d3\u05df 56- \u05d2\u05e0\u05d9 \u05d9\u05d4\u05d5\u05e9\u05d5\u05e2",
+            "longitude": 34.7907,
+            "address": "\u05d1\u05e0\u05d9 \u05d3\u05df 56 \u05d1\u05d2\u05d9\u05e0\u05d4"
+        }
+    },
+    {
+        "pk": 310,
+        "model": "stations.station",
+        "fields": {
+            "latitude": 32.0936,
+            "name": "\u05d1\u05e8\u05e0\u05d3\u05d9\u05e1 20",
+            "longitude": 34.7872,
+            "address": "\u05d1\u05e8\u05e0\u05d3\u05d9\u05e1 20 \u05d1\u05db\u05d1\u05d9\u05e9 \u05de\u05e4\u05e8\u05e5 \u05d7\u05e0\u05d9\u05d4"
+        }
+    },
+    {
+        "pk": 364,
+        "model": "stations.station",
+        "fields": {
+            "latitude": 32.0696,
+            "name": "\u05d2\u05d9\u05e0\u05ea \u05e9\u05d9\u05e0\u05e7\u05d9\u05df-\u05d9 \u05e0\u05e4\u05d7\u05d0 \u05de\u05d5\u05dc 1",
+            "longitude": 34.7725,
+            "address": "\u05e9\u05d9\u05e0\u05e7\u05d9\u05df  \u05d9\u05e6\u05d7\u05e7 \u05e0\u05e4\u05d7\u05d0 \u05de\u05d5\u05dc \u05d1\u05d9\u05ea 1"
+        }
+    },
+    {
+        "pk": 380,
+        "model": "stations.station",
+        "fields": {
+            "latitude": 32.0724,
+            "name": "\u05d2\u05df \u05de\u05d0\u05d9\u05e8 - \u05e8\u05d7\u05d5\u05d1 \u05e7\u05d9\u05e0\u05d2 \u05d2\u05d5\u05e8\u05d2",
+            "longitude": 34.7739,
+            "address": "\u05d2\u05df \u05de\u05d0\u05d9\u05e8 - \u05e8\u05d7\u05d5\u05d1 \u05e7\u05d9\u05e0\u05d2 \u05d2\u05d5\u05e8\u05d2"
+        }
+    },
+    {
+        "pk": 315,
+        "model": "stations.station",
+        "fields": {
+            "latitude": 32.0914,
+            "name": "\u05d3\u05d4 \u05d4\u05d0\u05d6 30",
+            "longitude": 34.7867,
+            "address": "\u05d3\u05d4 \u05d4\u05d0\u05d6 30 \u05d1\u05de\u05d3\u05e8\u05db\u05d4"
+        }
+    },
+    {
+        "pk": 332,
+        "model": "stations.station",
+        "fields": {
+            "latitude": 32.08,
+            "name": "\u05d3\u05d5\u05d3 \u05d4\u05de\u05dc\u05da 30",
+            "longitude": 34.7854,
+            "address": "\u05d3\u05d5\u05d3 \u05d4\u05de\u05dc\u05da 30 \u05de\u05d5\u05dc \u05d4\u05e8\u05d1\u05e0\u05d5\u05ea \u05d1\u05e9\u05d3\u05e8\u05d4"
+        }
+    },
+    {
+        "pk": 335,
+        "model": "stations.station",
+        "fields": {
+            "latitude": 32.0814,
+            "name": "\u05d3\u05d9\u05d6\u05e0\u05d2\u05d5\u05e3 126",
+            "longitude": 34.7737,
+            "address": "\u05d3\u05d9\u05d6\u05e0\u05d2\u05d5\u05e3 126 \u05e4\u05d9\u05e0\u05ea \u05d2\u05d5\u05e8\u05d3\u05d5\u05df \u05d1\u05de\u05d3\u05e8\u05db\u05d4 \u05e6\u05de\u05d5\u05d3 \u05dc\u05db\u05d1\u05d9\u05e9"
+        }
+    },
+    {
+        "pk": 313,
+        "model": "stations.station",
+        "fields": {
+            "latitude": 32.0926,
+            "name": "\u05d3\u05d9\u05d6\u05e0\u05d2\u05d5\u05e3 280",
+            "longitude": 34.7765,
+            "address": "\u05d3\u05d9\u05d6\u05e0\u05d2\u05d5\u05e3 280 \u05d1\u05de\u05d3\u05e8\u05db\u05d4"
+        }
+    },
+    {
+        "pk": 302,
+        "model": "stations.station",
+        "fields": {
+            "latitude": 32.0971,
+            "name": "\u05d3\u05d9\u05d6\u05e0\u05d2\u05d5\u05e3 342",
+            "longitude": 34.776,
+            "address": "\u05d3\u05d9\u05d6\u05e0\u05d2\u05d5\u05e3 342 \u05d1\u05de\u05d3\u05e8\u05db\u05d4"
+        }
+    },
+    {
+        "pk": 321,
+        "model": "stations.station",
+        "fields": {
+            "latitude": 32.0867,
+            "name": "\u05d4 \u05d1\u05d0\u05d9\u05d9\u05e8 2- \u05db\u05d9\u05db\u05e8 \u05d4\u05de\u05d3\u05d9\u05e0\u05d4",
+            "longitude": 34.7884,
+            "address": "\u05de\u05d5\u05dc \u05d4 \u05d1\u05d0\u05d9\u05d9\u05e8 2 \u05e4\u05d9\u05e0\u05ea \u05d6\u05d1\u05d5\u05d8\u05d9\u05e0\u05e1\u05e7\u05d9 \u05d1\u05db\u05d9\u05db\u05e8 \u05e1\u05de\u05d5\u05da \u05dc\u05e9\u05e4\u05ea \u05d4\u05db\u05d1\u05d9\u05e9"
+        }
+    },
+    {
+        "pk": 325,
+        "model": "stations.station",
+        "fields": {
+            "latitude": 32.0836,
+            "name": "\u05d4\u05dc\u05e1\u05d9\u05e0\u05e7\u05d9 3",
+            "longitude": 34.7917,
+            "address": "\u05d4\u05dc\u05e1\u05d9\u05e0\u05e7\u05d9 3 \u05d1\u05de\u05e4\u05e8\u05e5 \u05d7\u05e0\u05d9\u05d4"
+        }
+    },
+    {
+        "pk": 355,
+        "model": "stations.station",
+        "fields": {
+            "latitude": 32.071,
+            "name": "\u05d4\u05e8\u05d1\u05e8\u05d8 \u05e1\u05de\u05d5\u05d0\u05dc 32",
+            "longitude": 34.7641,
+            "address": "\u05d4\u05e8\u05d1\u05e8\u05d8 \u05e1\u05de\u05d5\u05d0\u05dc 32 \u05d1\u05d8\u05d9\u05d9\u05dc\u05ea \u05d7\u05d5\u05e3 \u05d4\u05d1\u05e0\u05e0\u05d4 \u05d1\u05d9\u05e5"
+        }
+    },
+    {
+        "pk": 341,
+        "model": "stations.station",
+        "fields": {
+            "latitude": 32.0774,
+            "name": "\u05d4\u05e8\u05d1\u05e8\u05d8 \u05e1\u05de\u05d5\u05d0\u05dc 90",
+            "longitude": 34.7664,
+            "address": "\u05d4\u05e8\u05d1\u05e8\u05d8 \u05e1\u05de\u05d5\u05d0\u05dc 90 (\u05de\u05de\u05d5\u05dc )\u05d1\u05d8\u05d9\u05dc\u05ea \u05e6\u05de\u05d5\u05d3 \u05dc\u05d7\u05d5\u05de\u05d4"
+        }
+    },
+    {
+        "pk": 320,
+        "model": "stations.station",
+        "fields": {
+            "latitude": 32.0901,
+            "name": "\u05d4\u05e9\u05dc\u05d4 1  -\u05de\u05ea\u05d7\u05dd \u05d1\u05d6\u05dc",
+            "longitude": 34.7791,
+            "address": "\u05d4\u05e9\u05dc\u05d4 1 \u05d1\u05de\u05d3\u05e8\u05db\u05d4"
+        }
+    },
+    {
+        "pk": 345,
+        "model": "stations.station",
+        "fields": {
+            "latitude": 32.0772,
+            "name": "\u05d5\u05d9\u05e6\u05de\u05df 1 -  \u05d1\u05d9\u05ea \u05d4\u05de\u05e9\u05e4\u05d8",
+            "longitude": 34.7884,
+            "address": "\u05d5\u05d9\u05e6\u05de\u05df 1 \u05d1\u05d9\u05ea \u05d4\u05de\u05e9\u05e4\u05d8"
+        }
+    },
+    {
+        "pk": 333,
+        "model": "stations.station",
+        "fields": {
+            "latitude": 32.0811,
+            "name": "\u05d5\u05d9\u05e6\u05de\u05df 15-\u05d0\u05d9\u05db\u05d9\u05dc\u05d5\u05d1",
+            "longitude": 34.7888,
+            "address": "\u05d5\u05d9\u05e6\u05de\u05df 15 \u05d0\u05d9\u05db\u05d9\u05dc\u05d5\u05d1 \u05d1\u05de\u05d3\u05e8\u05db\u05d4 \u05de\u05d5\u05dc \u05d1\u05d9\u05ea \u05d4\u05d7\u05d5\u05dc\u05d9\u05dd"
+        }
+    },
+    {
+        "pk": 316,
+        "model": "stations.station",
+        "fields": {
+            "latitude": 32.0903,
+            "name": "\u05d5\u05d9\u05e6\u05de\u05df 60 - \u05d1\u05d9\u05ea \u05d4\u05d7\u05d9\u05d9\u05dc",
+            "longitude": 34.7904,
+            "address": "\u05d5\u05d9\u05e6\u05de\u05df 60 \u05d1\u05de\u05d3\u05e8\u05db\u05d4"
+        }
+    },
+    {
+        "pk": 372,
+        "model": "stations.station",
+        "fields": {
+            "latitude": 32.0618,
+            "name": "\u05d9\u05d3 \u05d7\u05e8\u05d5\u05e6\u05d9\u05dd 17 - \u05d4\u05de\u05e1\u05d2\u05e8",
+            "longitude": 34.7844,
+            "address": "\u05d9\u05d3 \u05d7\u05e8\u05d5\u05e6\u05d9\u05dd 17 \u05e4\u05d9\u05e0\u05ea \u05d4\u05de\u05e1\u05d2\u05e8 \u05d1\u05de\u05d3\u05e8\u05db\u05d4"
+        }
+    },
+    {
+        "pk": 375,
+        "model": "stations.station",
+        "fields": {
+            "latitude": 32.0618,
+            "name": "\u05d9\u05d4\u05d5\u05d3\u05d4 \u05d4\u05dc\u05d5\u05d9 43 \u05e4\u05d9\u05e0\u05ea \u05d0\u05dc\u05e0\u05d1\u05d9",
+            "longitude": 34.7731,
+            "address": "\u05d9\u05d4\u05d5\u05d3\u05d4 \u05d4\u05dc\u05d5\u05d9 43 \u05e4\u05d9\u05e0\u05ea \u05d0\u05dc\u05e0\u05d1\u05d9 \u05d1\u05de\u05d3\u05e8\u05db\u05d4"
+        }
+    },
+    {
+        "pk": 309,
+        "model": "stations.station",
+        "fields": {
+            "latitude": 32.0942,
+            "name": "\u05d9\u05d4\u05d5\u05d3\u05d4 \u05de\u05db\u05d1\u05d9 81",
+            "longitude": 34.793,
+            "address": "\u05d9\u05d4\u05d5\u05d3\u05d4 \u05de\u05db\u05d1\u05d9 79-81 \u05d1\u05de\u05d3\u05e8\u05db\u05d4"
+        }
+    },
+    {
+        "pk": 365,
+        "model": "stations.station",
+        "fields": {
+            "latitude": 32.0654,
+            "name": "\u05d9\u05e6\u05d7\u05e7 \u05e9\u05d3\u05d4 17 - \u05d1\u05d9\u05d8\u05d5\u05d7 \u05dc\u05d0\u05d5\u05de\u05d9",
+            "longitude": 34.7858,
+            "address": "\u05de\u05d5\u05dc \u05d9\u05e6\u05d7\u05e7 \u05e9\u05d3\u05d4 17 \u05d1\u05d9\u05d8\u05d5\u05d7 \u05dc\u05d0\u05d5\u05de\u05d9 (\u05d4\u05de\u05e1\u05d2\u05e8) \u05d1\u05de\u05d3\u05e8\u05db\u05d4"
+        }
+    },
+    {
+        "pk": 331,
+        "model": "stations.station",
+        "fields": {
+            "latitude": 32.081,
+            "name": "\u05db\u05d9\u05db\u05e8 \u05e8\u05d1\u05d9\u05df",
+            "longitude": 34.7811,
+            "address": "\u05db\u05d9\u05db\u05e8 \u05e8\u05d1\u05d9\u05df  \u05de\u05d5\u05dc \u05d0\u05d1\u05df \u05d2\u05d1\u05d9\u05e8\u05d5\u05dc 76 -\u05ea\u05d7\u05e0\u05d4 \u05e2\u05d9\u05e8\u05d9\u05d9\u05d4"
+        }
+    },
+    {
+        "pk": 343,
+        "model": "stations.station",
+        "fields": {
+            "latitude": 32.0782,
+            "name": "\u05db\u05db\u05e8 \u05d3\u05d9\u05d6\u05d9\u05e0\u05d2\u05d5\u05e3",
+            "longitude": 34.7745,
+            "address": "\u05e8\u05d9\u05d9\u05e0\u05e1 2 - \u05db\u05d9\u05db\u05e8 \u05d3\u05d9\u05d6\u05e0\u05d2\u05d5\u05e3 \u05d1\u05de\u05d3\u05e8\u05db\u05d4"
+        }
+    },
+    {
+        "pk": 366,
+        "model": "stations.station",
+        "fields": {
+            "latitude": 32.0665,
+            "name": "\u05db\u05e8\u05de\u05dc\u05d9\u05ea \u05e4\u05d9\u05e0\u05ea \u05d4\u05db\u05e8\u05de\u05dc",
+            "longitude": 34.7662,
+            "address": "\u05db\u05e8\u05de\u05dc\u05d9\u05ea \u05e4\u05d9\u05e0\u05ea \u05d4\u05db\u05e8\u05de\u05dc \u05d1\u05d2\u05d9\u05e0\u05d4"
+        }
+    },
+    {
+        "pk": 329,
+        "model": "stations.station",
+        "fields": {
+            "latitude": 32.0866,
+            "name": "\u05de\u05dc\u05d5\u05df \u05e7\u05e8\u05dc\u05d8\u05d5\u05df \u05d1\u05d8\u05d9\u05d9\u05dc\u05ea",
+            "longitude": 34.7694,
+            "address": "\u05d8\u05d9\u05d9\u05dc\u05ea \u05e6\u05de\u05d5\u05d3 \u05dc\u05de\u05e8\u05e4\u05e1\u05ea \u05e6\u05e4\u05d5\u05e0\u05d9\u05ea \u05de\u05dc\u05d5\u05df \u05e7\u05e8\u05dc\u05d8\u05d5\u05df"
+        }
+    },
+    {
+        "pk": 377,
+        "model": "stations.station",
+        "fields": {
+            "latitude": 32.0594,
+            "name": "\u05de\u05ea\u05d7\u05dd \u05d4\u05ea\u05d7\u05e0\u05d4",
+            "longitude": 34.7614,
+            "address": "\u05de\u05ea\u05d7\u05dd \u05d4\u05ea\u05d7\u05e0\u05d4 -\u05d1\u05db\u05e0\u05d9\u05e1\u05d4 \u05dc\u05e8\u05d7\u05d1\u05d4 \u05e9\u05dc \u05d4\u05de\u05d5\u05d6\u05d9\u05d0\u05d5\u05df \u05d1\u05e6\u05d3 \u05d4\u05e6\u05e4\u05d5\u05e0\u05d9"
+        }
+    },
+    {
+        "pk": 314,
+        "model": "stations.station",
+        "fields": {
+            "latitude": 32.0918,
+            "name": "\u05e0\u05d5\u05e8\u05d3\u05d0\u05d5 101\u05d1\u05e9\u05d3\u05e8\u05d4",
+            "longitude": 34.7827,
+            "address": "\u05e0\u05d5\u05e8\u05d3\u05d0\u05d5 99-101 \u05e4\u05d9\u05e0\u05ea \u05d0\u05d1\u05df \u05d2\u05d1\u05d9\u05e8\u05d5\u05dc \u05d1\u05e9\u05d3\u05e8\u05d4"
+        }
+    },
+    {
+        "pk": 312,
+        "model": "stations.station",
+        "fields": {
+            "latitude": 32.0949,
+            "name": "\u05e0\u05de\u05dc \u05ea\u05dc \u05d0\u05d1\u05d9\u05d1   12",
+            "longitude": 34.7726,
+            "address": "\u05e0\u05de\u05dc \u05ea\u05dc \u05d0\u05d1\u05d9\u05d1 12 \u05d1\u05de\u05d3\u05e8\u05db\u05d4 \u05d7\u05d5\u05e3 \u05de\u05e6\u05d9\u05e6\u05d9\u05dd"
+        }
+    },
+    {
+        "pk": 301,
+        "model": "stations.station",
+        "fields": {
+            "latitude": 32.101,
+            "name": "\u05e0\u05de\u05dc \u05ea\u05dc \u05d0\u05d1\u05d9\u05d1 \u05db\u05d9\u05db\u05e8 \u05e9\u05dc\u05d5\u05d5\u05ea\u05d4",
+            "longitude": 34.7753,
+            "address": "\u05e0\u05de\u05dc \u05ea\u05dc \u05d0\u05d1\u05d9\u05d1 \u05db\u05d9\u05db\u05e8 \u05e9\u05dc\u05d5\u05d5\u05ea\u05d4"
+        }
+    },
+    {
+        "pk": 344,
+        "model": "stations.station",
+        "fields": {
+            "latitude": 32.0779,
+            "name": "\u05e0\u05e6\u05d7 \u05d9\u05e9\u05e8\u05d0\u05dc 4 \u05e4\u05d9\u05e0\u05ea \u05de\u05e1\u05e8\u05d9\u05e7",
+            "longitude": 34.7783,
+            "address": "\u05e0\u05e6\u05d7 \u05d9\u05e9\u05e8\u05d0\u05dc 4 \u05e4\u05d9\u05e0\u05ea \u05de\u05e1\u05e8\u05d9\u05e7 - \u05ea\u05d7\u05e0\u05d4 \u05d1\u05d7\u05e0\u05d9\u05d4 \u05d1\u05db\u05d1\u05d9\u05e9"
+        }
+    },
+    {
+        "pk": 317,
+        "model": "stations.station",
+        "fields": {
+            "latitude": 32.0913,
+            "name": "\u05e4\u05e0\u05e7\u05e1  69",
+            "longitude": 34.7943,
+            "address": "\u05e4\u05e0\u05e7\u05e1  69 \u05d1\u05de\u05d3\u05e8\u05db\u05d4 \u05e4\u05d9\u05e0\u05ea \u05e0\u05de\u05d9\u05e8"
+        }
+    },
+    {
+        "pk": 381,
+        "model": "stations.station",
+        "fields": {
+            "latitude": 32.0795,
+            "name": "\u05e4\u05e8\u05d9\u05e9\u05de\u05df 77",
+            "longitude": 34.7797,
+            "address": "\u05e4\u05e8\u05d9\u05e9\u05de\u05df 77-\u05e9\u05d3\u05e8\u05d5\u05ea \u05d7\u05df"
+        }
+    },
+    {
+        "pk": 367,
+        "model": "stations.station",
+        "fields": {
+            "latitude": 32.0635,
+            "name": "\u05e7\u05d5\u05d9\u05e4\u05de\u05df 2 -  \u05ea\u05d7\u05e0\u05ea \u05d4\u05d3\u05dc\u05e7",
+            "longitude": 34.7617,
+            "address": "\u05de\u05d5\u05dc \u05e7\u05d5\u05d9\u05e4\u05de\u05df 2 \u05d1\u05de\u05d3\u05e8\u05db\u05d4 \u05e6\u05de\u05d5\u05d3 \u05dc\u05ea\u05d7\u05e0\u05ea \u05d4\u05d3\u05dc\u05e7"
+        }
+    },
+    {
+        "pk": 308,
+        "model": "stations.station",
+        "fields": {
+            "latitude": 32.0979,
+            "name": "\u05e7\u05d5\u05e1\u05d5\u05d1\u05e1\u05e7\u05d9 34 -\u05d2\u05e0\u05d9 \u05d9\u05d4\u05d5\u05e9\u05d5\u05e2",
+            "longitude": 34.797,
+            "address": "\u05e7\u05d5\u05e1\u05d5\u05d1\u05e1\u05e7\u05d9 34 -32 \u05de\u05de\u05d5\u05dc \u05d1\u05e4\u05d0\u05e8\u05e7 \u05d9\u05d4\u05d5\u05e9\u05d5\u05e2"
+        }
+    },
+    {
+        "pk": 359,
+        "model": "stations.station",
+        "fields": {
+            "latitude": 32.0732,
+            "name": "\u05e7\u05e4\u05dc\u05df \u05e4\u05d9\u05e0\u05ea \u05d0\u05e8\u05e0\u05d9\u05d4",
+            "longitude": 34.7857,
+            "address": "\u05e7\u05e4\u05dc\u05df \u05e4\u05d9\u05e0\u05ea \u05d0\u05e8\u05e0\u05d9\u05d4 \u05e7\u05e8\u05d9\u05d4 \u05de\u05d5\u05dc \u05e9\u05e2\u05e8 \u05e8\u05d1\u05d9\u05df"
+        }
+    },
+    {
+        "pk": 362,
+        "model": "stations.station",
+        "fields": {
+            "latitude": 32.0685,
+            "name": "\u05e8\u05d5\u05d8\u05e9\u05d9\u05dc\u05d3 108",
+            "longitude": 34.7783,
+            "address": "\u05e8\u05d5\u05d8\u05e9\u05d9\u05dc\u05d3 108 \u05d1\u05e9\u05d3\u05e8\u05d4 \u05e4\u05d9\u05e0\u05ea \u05e0\u05d7\u05de\u05e0\u05d9"
+        }
+    },
+    {
+        "pk": 369,
+        "model": "stations.station",
+        "fields": {
+            "latitude": 32.0631,
+            "name": "\u05e8\u05d5\u05d8\u05e9\u05d9\u05dc\u05d3 11 \u05e4\u05d9\u05e0\u05ea \u05d4\u05e8\u05e6\u05dc",
+            "longitude": 34.7709,
+            "address": "\u05e8\u05d5\u05d8\u05e9\u05d9\u05dc\u05d3 11 \u05e4\u05d9\u05e0\u05ea \u05d4\u05e8\u05e6\u05dc \u05d1\u05e9\u05d3\u05e8\u05d4 \u05d1\u05d9\u05df \u05d4\u05e2\u05e6\u05d9\u05dd"
+        }
+    },
+    {
+        "pk": 357,
+        "model": "stations.station",
+        "fields": {
+            "latitude": 32.0718,
+            "name": "\u05e8\u05d5\u05d8\u05e9\u05d9\u05dc\u05d3 140",
+            "longitude": 34.779,
+            "address": "\u05e8\u05d5\u05d8\u05e9\u05d9\u05dc\u05d3 140 \u05d1\u05e9\u05d3\u05e8\u05d4 \u05e4\u05d9\u05e0\u05ea \u05de\u05e8\u05de\u05d5\u05e8\u05e7  (\u05db\u05d9\u05db\u05e8 \u05d4\u05d1\u05d9\u05de\u05d4)"
+        }
+    },
+    {
+        "pk": 370,
+        "model": "stations.station",
+        "fields": {
+            "latitude": 32.0653,
+            "name": "\u05e8\u05d5\u05d8\u05e9\u05d9\u05dc\u05d3 65",
+            "longitude": 34.7766,
+            "address": "\u05e8\u05d5\u05d8\u05e9\u05d9\u05dc\u05d3 65 \u05d1\u05e9\u05d3\u05e8\u05d4 \u05e4\u05d9\u05e0\u05ea \u05e0\u05d7\u05de\u05e0\u05d9"
+        }
+    },
+    {
+        "pk": 342,
+        "model": "stations.station",
+        "fields": {
+            "latitude": 32.0759,
+            "name": "\u05e9\u05d0\u05d5\u05dc \u05d4\u05de\u05dc\u05da 21 \u05e7\u05d0\u05de\u05e8\u05d9",
+            "longitude": 34.7851,
+            "address": "\u05e9\u05d0\u05d5\u05dc \u05d4\u05de\u05dc\u05da 21 \u05e7\u05d0\u05de\u05e8\u05d9 -\u05d1\u05de\u05d3\u05e8\u05db\u05d4 \u05de\u05d9\u05de\u05d9\u05df \u05dc\u05de\u05d3\u05e8\u05d2\u05d5\u05ea \u05db\u05e0\u05d9\u05e1\u05d4 \u05de\u05e2\u05e8\u05d1\u05d9\u05ea"
+        }
+    },
+    {
+        "pk": 379,
+        "model": "stations.station",
+        "fields": {
+            "latitude": 32.0621,
+            "name": "\u05e9\u05d1\u05d6\u05d9 19 -\u05e0\u05d5\u05d5\u05d4 \u05e6\u05d3\u05e7",
+            "longitude": 34.7646,
+            "address": "\u05e9\u05d1\u05d6\u05d9 19 \u05e0\u05d5\u05d5\u05d4 \u05e6\u05d3\u05e7"
+        }
+    },
+    {
+        "pk": 330,
+        "model": "stations.station",
+        "fields": {
+            "latitude": 32.083,
+            "name": "\u05e9\u05d3\u05e8\u05d5\u05ea \u05d1\u05df \u05d2\u05d5\u05e8\u05d9\u05d5\u05df 68",
+            "longitude": 34.777,
+            "address": "\u05e9\u05d3\u05e8\u05d5\u05ea \u05d1\u05df \u05d2\u05d5\u05e8\u05d9\u05d5\u05df 68 \u05d1\u05de\u05e8\u05db\u05d6 \u05d4\u05d2\u05d9\u05e0\u05d4 \u05d1\u05d7\u05d5\u05dc \u05e6\u05de\u05d5\u05d3 \u05dc\u05e9\u05d1\u05d9\u05dc \u05d0\u05d5\u05e4\u05e0\u05d9\u05d9\u05dd"
+        }
+    },
+    {
+        "pk": 348,
+        "model": "stations.station",
+        "fields": {
+            "latitude": 32.074,
+            "name": "\u05e9\u05d3\u05e8\u05d5\u05ea \u05d1\u05df \u05e6\u05d9\u05d5\u05df  1",
+            "longitude": 34.7756,
+            "address": "\u05e9\u05d3\u05e8\u05d5\u05ea \u05d1\u05df \u05e6\u05d9\u05d5\u05df  1 \u05d1\u05de\u05d3\u05e8\u05db\u05d4 \u05d1\u05d9\u05df \u05d4\u05e2\u05e6\u05d9\u05dd"
+        }
+    },
+    {
+        "pk": 322,
+        "model": "stations.station",
+        "fields": {
+            "latitude": 32.0865,
+            "name": "\u05e9\u05d3\u05e8\u05d5\u05ea \u05d4\u05e6\u05d9\u05d5\u05e0\u05d5\u05ea 1",
+            "longitude": 34.7926,
+            "address": "\u05e9\u05d3\u05e8\u05d5\u05ea \u05d4\u05e6\u05d9\u05d5\u05e0\u05d5\u05ea 1"
+        }
+    },
+    {
+        "pk": 305,
+        "model": "stations.station",
+        "fields": {
+            "latitude": 32.0988,
+            "name": "\u05e9\u05d3\u05e8\u05d5\u05ea \u05e8\u05d5\u05e7\u05d7 - \u05e1\u05e4\u05d5\u05e8\u05d8\u05e7",
+            "longitude": 34.789,
+            "address": "\u05e1\u05e4\u05d5\u05e8\u05d8\u05e7 \u05d1\u05d2\u05d9\u05e0\u05d4 100 \u05de\u05d8\u05e8 \u05de\u05d6 \u05dc\u05ea\u05d7\u05e0\u05ea \u05d0\u05d5\u05d8\u05d5\u05d1\u05d5\u05e1"
+        }
+    },
+    {
+        "pk": 304,
+        "model": "stations.station",
+        "fields": {
+            "latitude": 32.099,
+            "name": "\u05e9\u05d3\u05e8\u05d5\u05ea \u05e8\u05d5\u05e7\u05d7-\u05d7\u05e0\u05d9\u05d5\u05df \u05e8\u05d9\u05d3\u05d9\u05e0\u05d2",
+            "longitude": 34.7813,
+            "address": "\u05e8\u05d5\u05e7\u05d7-\u05d7\u05e0\u05d9\u05d5\u05df \u05d1\u05d9\u05ea \u05d4\u05d4\u05dc\u05d5\u05d5\u05d9\u05d5\u05ea \u05d4\u05e2\u05d9\u05e8\u05d5\u05e0\u05d9 -\u05db\u05e0\u05d9\u05e1\u05d4 \u05dc\u05d7\u05e0\u05d9\u05d5\u05df \u05e6\u05d3 \u05d9\u05de\u05d9\u05df \u05d1\u05d3\u05e9\u05d0"
+        }
+    },
+    {
+        "pk": 358,
+        "model": "stations.station",
+        "fields": {
+            "latitude": 32.0707,
+            "name": "\u05e9\u05e4\u05e8\u05d9\u05e0\u05e6\u05e7 1 - \u05e1\u05d9\u05e0\u05d9\u05de\u05d8\u05e7",
+            "longitude": 34.7826,
+            "address": "\u05e1\u05d9\u05e0\u05d9\u05de\u05d8\u05e7 \u05de\u05d5\u05dc \u05e9\u05e4\u05e8\u05d9\u05e0\u05e6\u05e7 1 \u05d1\u05de\u05d3\u05e8\u05db\u05d4"
+        }
+    },
+    {
+        "pk": 326,
+        "model": "stations.station",
+        "fields": {
+            "latitude": 32.0836,
+            "name": "\u05ea\u05d7\u05e0\u05ea \u05e8\u05db\u05d1\u05ea \u05e1\u05d1\u05d9\u05d3\u05d5\u05e8",
+            "longitude": 34.7968,
+            "address": "\u05ea\u05d7\u05e0\u05ea \u05e8\u05db\u05d1\u05ea \u05e1\u05d1\u05d9\u05d3\u05d5\u05e8 - \u05de\u05e2\u05e8\u05d1\u05d9\u05ea \u05dc\u05e9\u05e2\u05e8 \u05d9\u05e6\u05d9\u05d0\u05d4 (\u05e7\u05e8\u05d5\u05e1\u05dc\u05d4) \u05d1\u05de\u05d3\u05e8\u05db\u05d4"
+        }
+    },
+    {
+        "pk": 323,
+        "model": "stations.station",
+        "fields": {
+            "latitude": 32.0847,
+            "name": "\u05ea\u05e9\u05d7 2",
+            "longitude": 34.7867,
+            "address": "\u05ea\u05e9\u05d7 2 \u05d1\u05de\u05d3\u05e8\u05db\u05d4"
+        }
+    },
+    {
+        "pk": 424,
+        "model": "stations.station",
+        "fields": {
+            "latitude": 32.0319,
+            "name": "\u05d0\u05d9\u05d9\u05d6\u05d9\u05e7 \u05d7\u05e8\u05d9\u05e3 \u05de\u05d5\u05dc 36",
+            "longitude": 34.7473,
+            "address": ""
+        }
+    },
+    {
+        "pk": 408,
+        "model": "stations.station",
+        "fields": {
+            "latitude": 32.0411,
+            "name": "\u05d2\u05e8\u05d9\u05e0\u05d1\u05d5\u05d9\u05dd 37 - \u05e0\u05d5\u05d5\u05d4 \u05e2\u05d5\u05e4\u05e8",
+            "longitude": 34.7656,
+            "address": ""
+        }
+    },
+    {
+        "pk": 425,
+        "model": "stations.station",
+        "fields": {
+            "latitude": 32.034,
+            "name": "\u05d4\u05de\u05d7\u05e8\u05d5\u05d6\u05ea 9",
+            "longitude": 34.7531,
+            "address": ""
+        }
+    },
+    {
+        "pk": 406,
+        "model": "stations.station",
+        "fields": {
+            "latitude": 32.0481,
+            "name": "\u05d4\u05e8\u05e6\u05dc 155 - \u05d2\u05e0\u05d9 \u05d4\u05d8\u05d1\u05e2",
+            "longitude": 34.7692,
+            "address": "\u05d4\u05e8\u05e6\u05dc 155 \u05d2\u05e0\u05d9 \u05d4\u05d8\u05d1\u05e2 \u05ea\u05d0"
+        }
+    },
+    {
+        "pk": 401,
+        "model": "stations.station",
+        "fields": {
+            "latitude": 32.0563,
+            "name": "\u05d9\u05e1\u05d5\u05d3 \u05d4\u05de\u05e2\u05dc\u05d4 64 - \u05ea. \u05de\u05e8\u05db\u05d6\u05d9\u05ea",
+            "longitude": 34.7812,
+            "address": "\u05d9\u05e1\u05d5\u05d3 \u05d4\u05de\u05e2\u05dc\u05d4 64 \u05d1\u05de\u05d3\u05e8\u05db\u05d4 -\u05d4\u05ea\u05d7\u05e0\u05d4 \u05d4\u05de\u05e8\u05db\u05d6\u05d9\u05ea \u05d7\u05d3\u05e9\u05d4"
+        }
+    },
+    {
+        "pk": 410,
+        "model": "stations.station",
+        "fields": {
+            "latitude": 32.0476,
+            "name": "\u05d9\u05e4\u05ea 66 -  \u05d2\u05df \u05d4\u05e9\u05e0\u05d9\u05d9\u05dd",
+            "longitude": 34.7525,
+            "address": ""
+        }
+    },
+    {
+        "pk": 412,
+        "model": "stations.station",
+        "fields": {
+            "latitude": 32.0427,
+            "name": "\u05d9\u05e9\u05e8\u05d0\u05dc \u05d2\u05d5\u05e8\u05d9 34",
+            "longitude": 34.7804,
+            "address": ""
+        }
+    },
+    {
+        "pk": 418,
+        "model": "stations.station",
+        "fields": {
+            "latitude": 32.0489,
+            "name": "\u05d9\u05e9\u05e8\u05d0\u05dc \u05de\u05e1\u05dc\u05e0\u05d8 \u05de\u05d5\u05dc 13",
+            "longitude": 34.781,
+            "address": ""
+        }
+    },
+    {
+        "pk": 405,
+        "model": "stations.station",
+        "fields": {
+            "latitude": 32.0546,
+            "name": "\u05db\u05d9\u05db\u05e8 \u05e7\u05d3\u05d5\u05de\u05d9\u05dd -\u05d9\u05e4\u05d5 \u05d4\u05e2\u05ea\u05d9\u05e7\u05d4",
+            "longitude": 34.7521,
+            "address": "- \u05db\u05d9\u05db\u05e8 \u05e7\u05d3\u05d5\u05de\u05d9\u05dd - \u05d1\u05e8\u05d7\u05d1\u05d4"
+        }
+    },
+    {
+        "pk": 407,
+        "model": "stations.station",
+        "fields": {
+            "latitude": 32.0475,
+            "name": "\u05de\u05db\u05dc\u05dc\u05ea \u05ea\u05d0 \u05e2\u05d6\u05d4 \u05de\u05d5\u05dc 34",
+            "longitude": 34.7595,
+            "address": "\u05e2\u05d6\u05d4 34-\u05de\u05db\u05dc\u05dc\u05ea \u05ea\u05dc \u05d0\u05d1\u05d9\u05d1"
+        }
+    },
+    {
+        "pk": 422,
+        "model": "stations.station",
+        "fields": {
+            "latitude": 32.0421,
+            "name": "\u05de\u05e0\u05d3\u05e1 \u05e4\u05e8\u05e0\u05e1 - \u05d2\u05d9\u05e0\u05ea \u05d8\u05d5\u05dc\u05d5\u05d6",
+            "longitude": 34.7473,
+            "address": "\u05de\u05e0\u05d3\u05e1 \u05e4\u05e8\u05e0\u05e1 2 \u05e7\u05d3\u05dd (\u05d2\u05d9\u05e0\u05ea \u05d8\u05d5\u05dc\u05d5\u05d6)"
+        }
+    },
+    {
+        "pk": 409,
+        "model": "stations.station",
+        "fields": {
+            "latitude": 32.0536,
+            "name": "\u05e0\u05de\u05dc \u05d9\u05e4\u05d5 \u05de\u05d1\u05e0\u05d4 \u05d4\u05de\u05d2\u05d3\u05dc\u05d5\u05e8",
+            "longitude": 34.7501,
+            "address": "\u05e0\u05de\u05dc \u05d9\u05e4\u05d5 \u05e7\u05d9\u05e8 \u05de\u05d1\u05e0\u05d4 \u05de\u05d2\u05d3\u05dc\u05d5\u05e8"
+        }
+    },
+    {
+        "pk": 423,
+        "model": "stations.station",
+        "fields": {
+            "latitude": 32.0464,
+            "name": "\u05e7\u05d3\u05dd 49",
+            "longitude": 34.749,
+            "address": "\u05e7\u05d3\u05dd \u05de\u05d5\u05dc 49 - \u05e7\u05d9\u05e8 \u05d3\u05e8\u05d5\u05de\u05d9 \u05d7\u05e1\u05df \u05e2\u05e8\u05d0\u05e4\u05d4"
+        }
+    },
+    {
+        "pk": 403,
+        "model": "stations.station",
+        "fields": {
+            "latitude": 32.0556,
+            "name": "\u05e8\u05e6\u05d9\u05e3 \u05d4\u05e2\u05dc\u05d9\u05d4 \u05d4\u05e9\u05e0\u05d9\u05d4 - \u05db\u05d9\u05db\u05e8 \u05d4\u05e9\u05e2\u05d5\u05df",
+            "longitude": 34.756,
+            "address": "\u05d0\u05e8\u05d9\u05d0\u05e0\u05d4 -\u05e8\u05e6\u05d9\u05e3 \u05d4\u05e2\u05dc\u05d9\u05d4 \u05d4\u05e9\u05e0\u05d9\u05d4 \u05e6\u05e4\u05d5\u05e0\u05d9\u05ea \u05dc\u05e7\u05d9\u05e9\u05dc\u05d4"
+        }
+    },
+    {
+        "pk": 404,
+        "model": "stations.station",
+        "fields": {
+            "latitude": 32.0518,
+            "name": "\u05e9\u05d0\u05e8\u05d9\u05ea \u05d9\u05e9\u05e8\u05d0\u05dc \u05de\u05d5\u05dc 37",
+            "longitude": 34.7643,
+            "address": ""
+        }
+    },
+    {
+        "pk": 414,
+        "model": "stations.station",
+        "fields": {
+            "latitude": 32.0372,
+            "name": "\u05e9\u05d3 \u05d4\u05d1\u05e2\u05dc \u05e9\u05dd \u05d8\u05d5\u05d1 \u05e0\u05d5\u05d4 \u05d0\u05d9\u05dc\u05df",
+            "longitude": 34.7516,
+            "address": ""
+        }
+    },
+    {
+        "pk": 417,
+        "model": "stations.station",
+        "fields": {
+            "latitude": 32.0424,
+            "name": "\u05e9\u05d3 \u05d9\u05e8\u05d5\u05e9\u05dc\u05d9\u05dd \u05e4. \u05e0\u05d7\u05dc \u05d4\u05d1\u05e9\u05d5\u05e8",
+            "longitude": 34.757,
+            "address": "\u05e9\u05d3\u05e8\u05d5\u05ea \u05d9\u05e8\u05d5\u05e9\u05dc\u05d9\u05dd \u05e4\u05d9\u05e0\u05ea \u05e0\u05d7\u05dc \u05d4\u05d1\u05e9\u05d5\u05e8"
+        }
+    },
+    {
+        "pk": 420,
+        "model": "stations.station",
+        "fields": {
+            "latitude": 32.0508,
+            "name": "\u05e9\u05d3 \u05d9\u05e8\u05d5\u05e9\u05dc\u05d9\u05dd \u05e4\u05d9\u05e0\u05ea \u05d1\u05df \u05e6\u05d1\u05d9 1",
+            "longitude": 34.7596,
+            "address": "\u05e9\u05d3 \u05d9\u05e8\u05d5\u05e9\u05dc\u05d9\u05dd \u05e4\u05d9\u05e0\u05ea \u05d1\u05df \u05e6\u05d1\u05d9 1 \u05d1\u05de\u05d3\u05e8\u05db\u05d4 \u05e6\u05de\u05d5\u05d3 \u05dc\u05e9\u05e4\u05ea \u05d4\u05db\u05d1\u05d9\u05e9"
+        }
+    },
+    {
+        "pk": 415,
+        "model": "stations.station",
+        "fields": {
+            "latitude": 32.0419,
+            "name": "\u05e9\u05d3\u05e8\u05d5\u05ea \u05d1\u05df \u05e6\u05d1\u05d9 91",
+            "longitude": 34.7736,
+            "address": ""
+        }
+    },
+    {
+        "pk": 411,
+        "model": "stations.station",
+        "fields": {
+            "latitude": 32.0534,
+            "name": "\u05e9\u05d5\u05e7 \u05e4\u05e9\u05e4\u05e9\u05d9\u05dd- \u05e8\u05d1\u05d9 \u05d0\u05d7\u05d0",
+            "longitude": 34.7553,
+            "address": ""
+        }
+    },
+    {
+        "pk": 523,
+        "model": "stations.station",
+        "fields": {
+            "latitude": 32.0481,
+            "name": "\u05d0\u05e6\u05dc 93",
+            "longitude": 34.7936,
+            "address": ""
+        }
+    },
+    {
+        "pk": 518,
+        "model": "stations.station",
+        "fields": {
+            "latitude": 32.0469,
+            "name": "\u05d3\u05e8\u05da \u05d1\u05e8 \u05dc\u05d1 111",
+            "longitude": 34.8,
+            "address": ""
+        }
+    },
+    {
+        "pk": 517,
+        "model": "stations.station",
+        "fields": {
+            "latitude": 32.045,
+            "name": "\u05d3\u05e8\u05da \u05d1\u05e8 \u05dc\u05d1 186",
+            "longitude": 34.8098,
+            "address": ""
+        }
+    },
+    {
+        "pk": 511,
+        "model": "stations.station",
+        "fields": {
+            "latitude": 32.0543,
+            "name": "\u05d4\u05d4\u05d2\u05e0\u05d4 31 - \u05ea\u05d7\u05e0\u05ea \u05e8\u05db\u05d1\u05ea \u05d4\u05d4\u05d2\u05e0\u05d4",
+            "longitude": 34.7865,
+            "address": ""
+        }
+    },
+    {
+        "pk": 509,
+        "model": "stations.station",
+        "fields": {
+            "latitude": 32.0565,
+            "name": "\u05d4\u05d8\u05d9\u05d9\u05e1\u05d9\u05dd 40",
+            "longitude": 34.8065,
+            "address": ""
+        }
+    },
+    {
+        "pk": 507,
+        "model": "stations.station",
+        "fields": {
+            "latitude": 32.062,
+            "name": "\u05d4\u05d9\u05db\u05dc \u05e0\u05d5\u05e7\u05d9\u05d4 \u05d4\u05e9\u05dc\u05d5\u05e9\u05d4 9",
+            "longitude": 34.7903,
+            "address": "\u05d4\u05d9\u05db\u05dc \u05e0\u05d5\u05e7\u05d9\u05d4 \u05d4\u05e9\u05dc\u05d5\u05e9\u05d4 9"
+        }
+    },
+    {
+        "pk": 512,
+        "model": "stations.station",
+        "fields": {
+            "latitude": 32.0569,
+            "name": "\u05d9\u05d2\u05d0\u05dc \u05d0\u05dc\u05d5\u05df 33 \u05e4\u05d9\u05e0\u05ea \u05e9\u05d3\u05e8\u05d5\u05ea \u05d4\u05d7\u05d9\"\u05dc",
+            "longitude": 34.7918,
+            "address": "\u05d9\u05d2\u05d0\u05dc \u05d0\u05dc\u05d5\u05df 33 \u05e4\u05d9\u05e0\u05ea \u05e9\u05d3\u05e8\u05d5\u05ea \u05d4\u05d7\u05d9\"\u05dc"
+        }
+    },
+    {
+        "pk": 503,
+        "model": "stations.station",
+        "fields": {
+            "latitude": 32.0695,
+            "name": "\u05d9\u05d2\u05d0\u05dc \u05d0\u05dc\u05d5\u05df 96",
+            "longitude": 34.7939,
+            "address": "\u05d9\u05d2\u05d0\u05dc \u05d0\u05dc\u05d5\u05df 96 \u05d1\u05de\u05d3\u05e8\u05db\u05d4 \u05e1\u05de\u05d5\u05da \u05dc\u05e9\u05e4\u05ea \u05d4\u05db\u05d1\u05d9\u05e9  \u05d4\u05e1\u05e8\u05ea \u05e2\u05de\u05d5\u05d3\u05d9 \u05d7\u05e1\u05d9\u05de\u05d4"
+        }
+    },
+    {
+        "pk": 519,
+        "model": "stations.station",
+        "fields": {
+            "latitude": 32.0744,
+            "name": "\u05d9\u05dc\u05e7\u05d5\u05d8  \u05d4\u05e8\u05d5\u05e2\u05d9\u05dd 2 - \u05e0\u05d7\u05dc\u05ea \u05d9\u05e6\u05d7\u05e7",
+            "longitude": 34.8,
+            "address": "\u05d9\u05dc\u05e7\u05d5\u05d8  \u05d4\u05e8\u05d5\u05e2\u05d9\u05dd 2 \u05e0\u05d7\u05dc\u05ea \u05d9\u05e6\u05d7\u05e7 \u05d1\u05de\u05d3\u05e8\u05db\u05d4 \u05e6\u05de\u05d5\u05d3 \u05dc\u05d2\u05d9\u05e0\u05d4 \u05de\u05e8\u05db\u05d6 \u05e7\u05d4\u05d9\u05dc\u05ea\u05d9"
+        }
+    },
+    {
+        "pk": 526,
+        "model": "stations.station",
+        "fields": {
+            "latitude": 32.0593,
+            "name": "\u05dc\u05d4 \u05d2\u05d5\u05d5\u05d0\u05e8\u05d3\u05d9\u05d4 24",
+            "longitude": 34.7897,
+            "address": "\u05dc\u05d4 \u05d2\u05d5\u05d5\u05d0\u05e8\u05d3\u05d9\u05d4 24"
+        }
+    },
+    {
+        "pk": 402,
+        "model": "stations.station",
+        "fields": {
+            "latitude": 32.0588,
+            "name": "\u05dc\u05d5\u05d9\u05e0\u05e1\u05e7\u05d9 83\u05d0",
+            "longitude": 34.7751,
+            "address": "\u05dc\u05d5\u05d9\u05e0\u05e1\u05e7\u05d9 83\u05d0 \u05e4\u05d9\u05e0\u05ea \u05e6\u05dc\u05e0\u05d5\u05d1"
+        }
+    },
+    {
+        "pk": 516,
+        "model": "stations.station",
+        "fields": {
+            "latitude": 32.0497,
+            "name": "\u05de\u05d7\u05dc 79",
+            "longitude": 34.8121,
+            "address": ""
+        }
+    },
+    {
+        "pk": 514,
+        "model": "stations.station",
+        "fields": {
+            "latitude": 32.0532,
+            "name": "\u05de\u05e2\u05e4\u05d9\u05dc\u05d9 \u05d0\u05d2\u05d5\u05d6 59",
+            "longitude": 34.8103,
+            "address": ""
+        }
+    },
+    {
+        "pk": 513,
+        "model": "stations.station",
+        "fields": {
+            "latitude": 32.0529,
+            "name": "\u05de\u05e9\u05d4 \u05d3\u05d9\u05d9\u05df 45",
+            "longitude": 34.7996,
+            "address": ""
+        }
+    },
+    {
+        "pk": 508,
+        "model": "stations.station",
+        "fields": {
+            "latitude": 32.0646,
+            "name": "\u05de\u05e9\u05d4 \u05d3\u05d9\u05d9\u05df \u05e4\u05d9\u05e0\u05ea \u05d9\u05e6\u05d7\u05e7 \u05e9\u05d3\u05d4",
+            "longitude": 34.7986,
+            "address": ""
+        }
+    },
+    {
+        "pk": 504,
+        "model": "stations.station",
+        "fields": {
+            "latitude": 32.058,
+            "name": "\u05de\u05e9\u05d4 \u05d3\u05d9\u05d9\u05df \u05e4\u05d9\u05e0\u05ea \u05dc\u05d4 \u05d2\u05e8\u05d3\u05d9\u05d4",
+            "longitude": 34.8001,
+            "address": ""
+        }
+    },
+    {
+        "pk": 515,
+        "model": "stations.station",
+        "fields": {
+            "latitude": 32.05,
+            "name": "\u05e1\u05de\u05d8\u05ea \u05db\u05d1\u05d9\u05e8 18",
+            "longitude": 34.7889,
+            "address": ""
+        }
+    },
+    {
+        "pk": 525,
+        "model": "stations.station",
+        "fields": {
+            "latitude": 32.0731,
+            "name": "\u05e2\u05d6\u05e8\u05d9\u05d0\u05dc\u05d9-\u05d1\u05d9\u05e8\u05d9\u05d3\u05d4 \u05dc\u05d0\u05d9\u05d9\u05dc\u05d5\u05df \u05d3\u05e8\u05d5\u05dd",
+            "longitude": 34.792,
+            "address": "\u05e2\u05d6\u05e8\u05d9\u05d0\u05dc\u05d9-\u05d1\u05d9\u05e8\u05d9\u05d3\u05d4 \u05dc\u05d0\u05d9\u05d9\u05dc\u05d5\u05df \u05d3\u05e8\u05d5\u05dd"
+        }
+    },
+    {
+        "pk": 520,
+        "model": "stations.station",
+        "fields": {
+            "latitude": 32.0435,
+            "name": "\u05e4\u05d0\u05e8\u05e7 \u05d3\u05e8\u05d5\u05dd \u05d1\u05db\u05e0\u05d9\u05e1\u05d4",
+            "longitude": 34.8047,
+            "address": ""
+        }
+    },
+    {
+        "pk": 416,
+        "model": "stations.station",
+        "fields": {
+            "latitude": 32.056,
+            "name": "\u05e4\u05dc\u05d5\u05e8\u05e0\u05d8\u05d9\u05df \u05e9\u05d3 \u05d5\u05d5\u05e9\u05d9\u05e0\u05d2\u05d8\u05d5\u05df",
+            "longitude": 34.7698,
+            "address": "\u05e4\u05dc\u05d5\u05e8\u05e0\u05d8\u05d9\u05df -\u05d2\u05d9\u05e0\u05ea \u05d5\u05d5\u05e9\u05d9\u05e0\u05d2\u05d8\u05d5\u05df"
+        }
+    },
+    {
+        "pk": 510,
+        "model": "stations.station",
+        "fields": {
+            "latitude": 32.0504,
+            "name": "\u05e7\u05e8\u05d9\u05d9\u05ea\u05d9 \u05de\u05d5\u05dc 28",
+            "longitude": 34.7981,
+            "address": ""
+        }
+    },
+    {
+        "pk": 360,
+        "model": "stations.station",
+        "fields": {
+            "latitude": 32.0701,
+            "name": "\u05e9\u05d3 \u05d9\u05d4\u05d5\u05d3\u05d9\u05ea 11 \u05e4\u05d9\u05e0\u05ea \u05d4\u05e0\u05e6\u05d9\u05d1",
+            "longitude": 34.7901,
+            "address": "\u05e9\u05d3\u05e8\u05d5\u05ea \u05d9\u05d4\u05d5\u05d3\u05d9\u05ea \u05de\u05d5\u05dc 16 \u05d1\u05d2\u05d9\u05e0\u05d4"
+        }
+    },
+    {
+        "pk": 501,
+        "model": "stations.station",
+        "fields": {
+            "latitude": 32.0665,
+            "name": "\u05e9\u05d3\u05e8\u05d5\u05ea \u05d4\u05d4\u05e9\u05db\u05dc\u05d4 11",
+            "longitude": 34.7959,
+            "address": "\u05e9\u05d3\u05e8\u05d5\u05ea \u05d4\u05d4\u05e9\u05db\u05dc\u05d4 11"
+        }
+    },
+    {
+        "pk": 522,
+        "model": "stations.station",
+        "fields": {
+            "latitude": 32.0548,
+            "name": "\u05ea\u05d7\u05e0\u05ea \u05e8\u05db\u05d1\u05ea \u05d4\u05d4\u05d2\u05e0\u05d4",
+            "longitude": 34.7848,
+            "address": ""
+        }
+    }
+]
