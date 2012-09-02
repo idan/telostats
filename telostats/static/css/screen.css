@@ -4125,4 +4125,4 @@ body { margin: 0; padding: 0; }
 #overlay { position: absolute; z-index: 9999; }
 
 /* line 22, ../../../sass/screen.scss */
-.station_cell { stroke: black; opacity: 0.2; }
+.station_cell { stroke: black; opacity: 0.5; }

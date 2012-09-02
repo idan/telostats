@@ -30,6 +30,9 @@
             32.02354637361072,
             34.733455277361784));
 
+        // var heatmap = voronoiHeatmap().data()
+        // m.addLayer(heatmap);
+
         // Project a lat/lon point onto the displayed map (pixel coords)
         var project = function(point) {
             var point = m.locationPoint({lat: point[1], lon: point[0]});
@@ -48,32 +51,39 @@
 
             // Add map markers and build an array of vertices
             var stations = []
+            var vertices = []
             _.each(data.objects, function(station) {
-                stations.push(project([station.longitude, station.latitude]));
-                // markerLayer.add_feature({
-                //     geometry: {
-                //         // geojson requires coords in x, y, z form
-                //         // hence lon, lat
-                //         coordinates: [station.longitude, station.latitude]
-                //     },
-                //     properties: {
-                //         'marker-color': '#f00',
-                //         'marker-symbol': 'star-stroked',
-                //         title: station.name,
-                //         description: station.address
-                //     }
-                // })
+                stations.push({
+                    point: project([station.longitude, station.latitude]),
+                    poles: station.poles,
+                    available: station.available,
+                    percentage: station.available / station.poles
+                });
+                vertices.push(project([station.longitude, station.latitude]));
+                markerLayer.add_feature({
+                    geometry: {
+                        // geojson requires coords in x, y, z form
+                        // hence lon, lat
+                        coordinates: [station.longitude, station.latitude]
+                    },
+                    properties: {
+                        'marker-color': '#f00',
+                        'marker-symbol': 'star-stroked',
+                        title: station.name,
+                        description: station.address
+                    }
+                })
             });
 
             svg.selectAll("path")
-                    .data(d3.geom.voronoi(stations))
+                    .data(d3.geom.voronoi(vertices))
                 .enter().append("path")
-                    .attr("class", function(d) { return "station_cell q" + color(Math.random()) + "-9"; })
+                    .attr("class", function(d, i) { return "station_cell q" + color(stations[i].percentage) + "-9"; })
                     .attr("d", function(d) { return "M" + d.join("L") + "Z"; });
 
 
             svg.selectAll("circle")
-                    .data(stations)
+                    .data(vertices)
                 .enter().append("circle")
                     .attr("transform", function(d) { return "translate(" + d + ")"; })
                     .attr("r", 2);
