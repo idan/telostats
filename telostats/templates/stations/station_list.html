@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block title %}
+Station List
+{% endblock title %}
+
+{% block body %}
+<h1>Station List</h1>
+<ul>
+    {% for station in stations %}
+        <li style="text-direction: rtl"><a href="{% url station_detail station.id %}">{{ station.name }}</a></li>
+    {% endfor %}
+</ul>
+{% endblock body %}
