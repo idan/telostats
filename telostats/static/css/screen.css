@@ -144,3 +144,9 @@ textarea { overflow: auto; /* 1 */ vertical-align: top; /* 2 */ }
 /* Remove most spacing between table cells. */
 /* line 372, ../../../sass/_normalize.scss */
 table { border-collapse: collapse; border-spacing: 0; }
+
+/* line 3, ../../../sass/screen.scss */
+body { margin: 0; padding: 0; }
+
+/* line 8, ../../../sass/screen.scss */
+#map { position: absolute; top: 0; left: 0; height: 100%; width: 100%; }
