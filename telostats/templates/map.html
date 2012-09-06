@@ -22,11 +22,8 @@
 
         function stationVoronoi() {
             var v = {}, bounds, stationData, stations, stationCoords, voronoi, tlvclip;
-            var div = d3.select(document.body)
-                .append("div")
-                .attr("class", 'd3overlay');
-            var svg = div.append("svg").attr("id", "d3svg");
-            //var g = svg.append("g").attr("id", "transformGroup");
+            var svg = d3.select(document.body).append("svg").attr("id", "d3svg");
+
             // var tlvclipGroup = g.append("svg:clipPath").attr("id", "tlvclip");
             var tlvclipGroup = svg.append("g").attr("id", "tlvclip");
 
@@ -36,7 +33,7 @@
                 .domain([0, 1])
                 .range(d3.range(9));
 
-            v.parent = div.node();
+            v.parent = svg.node();
 
             // Project a lat/lon location onto the displayed map (point)
             v.project = function(location) {
@@ -51,13 +48,11 @@
                 svg.attr("width", $("#map").width())
                     .attr("height", $("#map").height());
 
-                //g.attr("transform", "translate(" + -bottomLeft[0] + "," + -topRight[1] + ")");
                 stations.attr("transform", function(d) { return "translate(" + v.project(d) + ")"; })
 
 
                 tlvclip.attr("d", d3.geo.path().projection(v.project));
                 //voronoiGroup.attr("clip-path", "url(#tlvclip)")
-
 
                 voronoi
                     .attr("d", function(d, i) {

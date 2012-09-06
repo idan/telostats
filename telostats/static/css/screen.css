@@ -4125,10 +4125,10 @@ body { margin: 0; padding: 0; }
 .d3overlay { position: absolute; }
 
 /* line 20, ../../../sass/screen.scss */
-.d3svg { position: absolute; width: 100%; height: 100%; }
+#d3svg { position: absolute; }
 
-/* line 26, ../../../sass/screen.scss */
+/* line 24, ../../../sass/screen.scss */
 .station_cell { stroke: rgba(0, 0, 0, 0.25); opacity: 0.5; }
 
-/* line 32, ../../../sass/screen.scss */
+/* line 30, ../../../sass/screen.scss */
 #stationsGroup { fill: white; }
