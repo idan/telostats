@@ -25,11 +25,13 @@
             var div = d3.select(document.body)
                 .append("div")
                 .attr("class", 'd3overlay');
-            var svg = div.append("svg");
-            var g = svg.append("g");
-            var tlvclipGroup = g.append("svg:clipPath");
-            var stationsGroup = g.append("g");
-            var voronoiGroup = g.append("g");
+            var svg = div.append("svg").attr("id", "d3svg");
+            //var g = svg.append("g").attr("id", "transformGroup");
+            // var tlvclipGroup = g.append("svg:clipPath").attr("id", "tlvclip");
+            var tlvclipGroup = svg.append("g").attr("id", "tlvclip");
+
+            var voronoiGroup = svg.append("g").attr("id", "voronoiGroup");
+            var stationsGroup = svg.append("g").attr("id", "stationsGroup");
             var color = d3.scale.quantile()
                 .domain([0, 1])
                 .range(d3.range(9));
@@ -46,33 +48,22 @@
             // called every time something changes
             v.draw = function() {
                 console.log("Draw called!")
-                var bounds = v.map.extent(),
-                    bl = bounds.southWest(),
-                    tr = bounds.northEast();
-                var bottomLeft = v.project([bl.lon, bl.lat]),
-                    topRight = v.project([tr.lon, tr.lat]);
+                svg.attr("width", $("#map").width())
+                    .attr("height", $("#map").height());
 
-                console.log(bounds);
-                console.log(bottomLeft);
-                console.log(topRight);
-                svg.attr("width", topRight[0] - bottomLeft[0])
-                    .attr("height", bottomLeft[1] - topRight[1])
-                    .style("margin-left", bottomLeft[0] + "px")
-                    .style("margin-top", topRight[1] + "px");
-
-                g.attr("transform", "translate(" + -bottomLeft[0] + "," + -topRight[1] + ")");
+                //g.attr("transform", "translate(" + -bottomLeft[0] + "," + -topRight[1] + ")");
                 stations.attr("transform", function(d) { return "translate(" + v.project(d) + ")"; })
 
 
                 tlvclip.attr("d", d3.geo.path().projection(v.project));
-                voronoiGroup.attr("clip-path", "url(#tlvclip)")
+                //voronoiGroup.attr("clip-path", "url(#tlvclip)")
 
 
                 voronoi
                     .attr("d", function(d, i) {
-                        console.log(stationData[i]);
-                        console.log(d);
-                        console.log(_.map(d, v.project));
+                        // console.log(stationData[i]);
+                        // console.log(d);
+                        // console.log(_.map(d, v.project));
                         return "M" + _.map(d, v.project).join("L") + "Z";
                     });
             }
@@ -90,7 +81,6 @@
                   .enter().append("circle")
                     .attr("r", 3);
 
-                tlvclipGroup.attr("id", "tlvclip");
                 tlvclip = tlvclipGroup.selectAll("path")
                     .data(tlv_admin_boundary.features)
                     .enter().append("path");
