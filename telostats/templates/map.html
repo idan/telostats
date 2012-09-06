@@ -57,13 +57,14 @@
 
                 city.enter().append("path")
                     .attr("opacity", 0)
-                  .transition().duration(500)
+                  .transition().duration(300)
                     .attr("opacity", 1);
                 city.attr("d", d3.geo.path().projection(v.project));
 
+
+
                 // render the station voronoi
                 // =============================================================
-
                 // generate the clipped paths
                 projectedPolygons = d3.geom.voronoi(_.map(stationCoords, v.project));
                 projectedTelaviv = d3.geom.polygon(_.map(tlv_admin_boundary.features[0].geometry.coordinates[0], v.project));
@@ -83,7 +84,7 @@
                         return "station_cell q" + color(stationData[i].available / stationData[i].poles) + "-9";
                     })
                     .attr("opacity", 0)
-                  .transition().duration(500)
+                  .transition().delay(100).duration(300)
                     .attr("opacity", 0.5);
 
                 // position them
@@ -101,12 +102,16 @@
 
                 // Grow in when added
                 stations.enter().append("circle")
-                    .attr("r", 0)
-                  .transition().delay(250).duration(500)
-                    .attr("r", 3);
+                    .attr("opacity", 0)
+                    .attr("r", 6)
+                  .transition().delay(300).duration(300)
+                    .attr("r", v.map.zoom() < 14 ? 2 : 3)
+                    .attr("opacity", 1);
 
                 // Postion them
-                stations.attr("transform", function(d) { return "translate(" + v.project(d) + ")"; })
+                stations
+                    .attr("r", v.map.zoom() < 14 ? 2 : 3)
+                    .attr("transform", function(d) { return "translate(" + v.project(d) + ")"; })
 
             }
 
