@@ -27,9 +27,14 @@
             var cityGroup = svg.append("g").attr("id", "cityGroup");
             var voronoiGroup = svg.append("g").attr("id", "voronoiGroup");
             var stationsGroup = svg.append("g").attr("id", "stationsGroup");
+
             var color = d3.scale.quantile()
                 .domain([0, 1])
                 .range(d3.range(9));
+
+            var stationDotSize = d3.scale.quantize()
+                .domain([minZoom, maxZoom])
+                .range([2, 3, 4]);
 
             v.parent = svg.node();
 
@@ -105,12 +110,12 @@
                     .attr("opacity", 0)
                     .attr("r", 6)
                   .transition().delay(300).duration(300)
-                    .attr("r", v.map.zoom() < 14 ? 2 : 3)
+                    .attr("r", stationDotSize(v.map.zoom()))
                     .attr("opacity", 1);
 
                 // Postion them
                 stations
-                    .attr("r", v.map.zoom() < 14 ? 2 : 3)
+                    .attr("r", stationDotSize(v.map.zoom()))
                     .attr("transform", function(d) { return "translate(" + v.project(d) + ")"; })
 
             }
@@ -131,6 +136,8 @@
 
 
         var mapbox_tilejson = 'http://api.tiles.mapbox.com/v3/mapbox.mapbox-light.jsonp';
+        var minZoom = 13;
+        var maxZoom = 17;
         mapbox.load(mapbox_tilejson, function(o) {
             var m = mapbox.map('map');
             m.addLayer(o.layer);
@@ -142,7 +149,7 @@
                 34.733455277361784);
             m.setExtent(mapbounds);
             m.setPanLimits(mapbounds);
-            m.setZoomRange(13,17);
+            m.setZoomRange(minZoom, maxZoom);
             d3.json('/api/v1/station/', function(stations) {
                 var stationMap = stationVoronoi().data(stations.objects);
                 m.addLayer(stationMap);
