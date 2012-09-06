@@ -22,13 +22,20 @@ body {
 }
 
 .station_cell {
+    stroke: white;
     stroke: rgba(0,0,0,0.25);
-    opacity: 0.5;
+    //opacity: 0.5;
 
 }
 
 #stationsGroup {
-    fill: white;
+    fill: black;
+}
+
+#cityGroup {
+    fill: none;
+    stroke: rgba(0,0,0,0.5);
+    stroke-width: 1;
 }
 
 
