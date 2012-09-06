@@ -4119,10 +4119,10 @@ table { border-collapse: collapse; border-spacing: 0; }
 body { margin: 0; padding: 0; }
 
 /* line 9, ../../../sass/screen.scss */
-#map { position: absolute; top: 0; left: 0; height: 100%; width: 100%; }
+#map { position: absolute; top: 0; bottom: 0; width: 100%; }
 
-/* line 17, ../../../sass/screen.scss */
-#overlay { position: absolute; z-index: 9999; }
+/* line 16, ../../../sass/screen.scss */
+.d3overlay { position: absolute; }
 
-/* line 22, ../../../sass/screen.scss */
-.station_cell { stroke: black; opacity: 0.5; }
+/* line 20, ../../../sass/screen.scss */
+.station_cell { stroke: rgba(0, 0, 0, 0.25); opacity: 0.5; }
