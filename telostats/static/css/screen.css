@@ -4130,8 +4130,8 @@ body { margin: 0; padding: 0; }
 /* line 24, ../../../sass/screen.scss */
 .station_cell { stroke: white; stroke: rgba(0, 0, 0, 0.25); }
 
-/* line 31, ../../../sass/screen.scss */
-#stationsGroup { fill: black; }
+/* line 29, ../../../sass/screen.scss */
+#stationsGroup { fill: rgba(0, 0, 0, 0.75); stroke: rgba(255, 255, 255, 0.75); stroke-width: 1; }
 
 /* line 35, ../../../sass/screen.scss */
 #cityGroup { fill: none; stroke: rgba(0, 0, 0, 0.5); stroke-width: 1; }
