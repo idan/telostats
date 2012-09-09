@@ -27,7 +27,7 @@
             var voronoiGroup = svg.append("g").attr("id", "voronoiGroup");
             var stationsGroup = svg.append("g").attr("id", "stationsGroup");
 
-            var fadeInTime = 500;
+            var fadeInTime = 750;
 
             var color = function(station) {
                 var bikes = station.poles - station.available;
@@ -64,6 +64,8 @@
                 // position the overlay
                 svg.attr("width", $("#map").width())
                    .attr("height", $("#map").height());
+
+                var delays = [];
 
 
 
@@ -102,8 +104,9 @@
                     })
                     .attr("opacity", 0)
                   .transition().delay(function(d, i) {
-                        wait = stationAnimation(stationData[i].latitude);
-                        console.log(wait);
+                        // wait = stationAnimation(stationData[i].latitude);
+                        wait = stationAnimation(Math.random());
+                        delays[i] = wait
                         return 300 + (fadeInTime-wait);
                     }).duration(500)
                     .attr("opacity", 0.5);
@@ -123,12 +126,13 @@
 
                 // Grow in when added
                 stations.enter().append("circle")
-                    .attr("opacity", 0)
+                    .attr("opacity", 0.05)
                     .attr("r", 5 * stationDotSize(v.map.zoom()))
-                  .transition().delay(function(d) {
-                        wait = stationAnimation(d[1]);
-                        return 300 + (fadeInTime - wait);
-                    }).duration(500)
+                  .transition().delay(function(d, i) {
+                        // wait = stationAnimation(d[1]);
+                        wait = stationAnimation(Math.random());
+                        return 300 + (fadeInTime - delays[i]);
+                    }).duration(600)
                     .attr("r", stationDotSize(v.map.zoom()))
                     .attr("opacity", 1);
 
@@ -147,8 +151,10 @@
                 stationCoords = _.map(stationData, function(s) {
                     return [s.longitude, s.latitude];
                 });
+
                 stationAnimation = d3.scale.linear()
-                    .domain(d3.extent(stationCoords, function(coord) { return coord[1]; }))
+                    // .domain(d3.extent(stationCoords, function(coord) { return coord[1]; }))
+                    .domain([0,1])
                     .range([0, fadeInTime]);
 
                 return v;
