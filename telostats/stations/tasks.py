@@ -33,7 +33,6 @@ def measure():
 
 
 def scrape_stations():
-    # timestamp = datetime.datetime.utcnow().replace(tzinfo=utc)
     logging.debug("Scraping site content...")
     r = requests.get(STATION_LIST_URL)
     logging.debug("Parsing DOM...")
