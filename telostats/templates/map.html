@@ -26,9 +26,22 @@
             var voronoiGroup = svg.append("g").attr("id", "voronoiGroup");
             var stationsGroup = svg.append("g").attr("id", "stationsGroup");
 
-            var color = d3.scale.quantile()
-                .domain([0, 1])
-                .range(d3.range(9));
+            var fadeInTime = 500;
+
+            var color = function(station) {
+                var bikes = station.poles - station.available;
+                if (bikes == 0) {
+                    return 0;
+                } else if (bikes <=5) {
+                    return 1;
+                } else if (station.available <= 5) {
+                    return 3;
+                } else if (station.available == 0) {
+                    return 4;
+                } else {
+                    return 2;  // middle state is normal.
+                }
+            }
 
             var stationDotSize = d3.scale.quantize()
                 .domain([minZoom, maxZoom])
@@ -84,7 +97,7 @@
                 voronoi.enter().append("path")
                     .attr('id', function(d, i) { return 'station' + stationData[i].id; })
                     .attr("class", function(d, i) {
-                        return "station_cell q" + color(stationData[i].available / stationData[i].poles) + "-9";
+                        return "station_cell q" + color(stationData[i]) + "-5";
                     })
                     .attr("opacity", 0)
                   .transition().delay(100).duration(300)
