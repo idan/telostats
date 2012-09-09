@@ -69,13 +69,8 @@ def parse_stations(raw_stations):
 def store_stations(stations):
     logging.debug("Create/update station metadata in Django DB...")
     for station in stations:
-        metadata = {
-            'longitude': station['longitude'],
-            'latitude': station['latitude'],
-            'name': station['name'],
-            'address': station['address'],
-        }
-
+        fields = ['longitude', 'latitude', 'name', 'address', 'poles', 'available']
+        metadata = dict((f, station[f]) for f in fields)  # not sure if we even need this
         station, created = Station.objects.get_or_create(
             id=station['id'], defaults=metadata)
 
