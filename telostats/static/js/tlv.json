@@ -1,4 +1,4 @@
-tlv_admin_boundary = {"type":"FeatureCollection","features":[
+{"type":"FeatureCollection","features":[
 {"type":"Feature","id":"01","properties":{"name":"Tel Aviv"},"geometry":{"type":"Polygon","coordinates":
 [[
             [
@@ -1759,4 +1759,4 @@ tlv_admin_boundary = {"type":"FeatureCollection","features":[
             ]
         ]]
 }}
-]};
+]}
