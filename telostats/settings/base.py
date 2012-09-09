@@ -12,6 +12,7 @@ TEMPLATE_DEBUG = DEBUG
 
 ADMINS = (
     ('Idan Gazit', 'idan@gazit.me'),
+    ('Yuval Adam', 'yuv.adm@gmail.com'),
 )
 MANAGERS = ADMINS
 INTERNAL_IPS = ('127.0.0.1',)
