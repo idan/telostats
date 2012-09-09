@@ -25,8 +25,6 @@ DATABASES = {
 #     }
 # }
 
-
-
 LOGGING['handlers']['console']['level'] = 'DEBUG'
 
 if DEBUG and not STATIC_S3:
