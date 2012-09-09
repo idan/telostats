@@ -7,6 +7,8 @@ class Station(models.Model):
     address = models.CharField(u'address', max_length=100, null=True, blank=True)
     longitude = models.FloatField(u'longitude')
     latitude = models.FloatField(u'latitude')
+    poles = models.IntegerField(u'poles')
+    available = models.IntegerField(u'available')
 
     def __unicode__(self):
         return self.name
