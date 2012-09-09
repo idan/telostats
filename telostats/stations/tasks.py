@@ -73,9 +73,7 @@ def store_stations(stations):
         metadata = dict((f, station[f]) for f in fields)
         obj, created = Station.objects.get_or_create(
             id=station['id'], defaults=metadata)
-        obj.poles = station['poles']
-        obj.available = station['available']
-        obj.save()
+        obj.update(poles=station['poles'], available=station['available'])
 
 
 def station_poles_key(station):
