@@ -7,9 +7,6 @@ import os
 import json
 
 from django.utils.timezone import utc
-
-from celery.schedules import crontab
-from celery.task import periodic_task
 from pyparsing import commaSeparatedList
 from .models import Station
 
@@ -25,7 +22,6 @@ tempo = requests.session(auth=tempo_auth)
 FIELD_KEYS = ['longitude', 'latitude', 'id', 'name', 'address', 'poles', 'available']
 
 
-@periodic_task(ignore_result=True, run_every=crontab(minute="*/15"))
 def measure():
     logging.info("Measuring stations...")
     timestamp = datetime.datetime.utcnow().replace(tzinfo=utc)

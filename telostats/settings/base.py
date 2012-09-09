@@ -80,7 +80,6 @@ INSTALLED_APPS = (
     'gunicorn',
     'storages',
     'south',
-    'djcelery',
     'tastypie',
 
     'telostats.stations',
@@ -113,32 +112,3 @@ LOGGING = {
         },
     }
 }
-
-# Auth stuff
-# LOGIN_REDIRECT_URL = '/profile'
-# LOGIN_URL = '/login'
-# LOGOUT_URL = '/logout'
-
-# S3 Storage
-# AWS_HEADERS = {
-#     'Expires': 'Wed, 1 Jan 2020 00:00:00 GMT',
-#     'Cache-Control': 'max-age=86400',
-# }
-# # AWS_PRELOAD_METADATA = True
-# AWS_QUERYSTRING_AUTH = False
-# from S3 import CallingFormat
-# AWS_CALLING_FORMAT = CallingFormat.SUBDOMAIN
-
-# Tempo
-# TEMPODB_API_HOST = os.environ.get('TEMPODB_API_HOST')
-# TEMPODB_API_KEY = os.environ.get('TEMPODB_API_KEY')
-# TEMPODB_API_PORT = os.environ.get('TEMPODB_API_PORT')
-# TEMPODB_API_SECRET = os.environ.get('TEMPODB_API_SECRET')
-# TEMPODB_API_SECURE = os.environ.get('TEMPODB_API_SECURE')
-
-# Celery
-CELERY_ENABLE_UTC = True
-CELERY_TIMEZONE = "Etc/UTC"
-CELERYBEAT_SCHEDULER = 'djcelery.schedulers.DatabaseScheduler'
-import djcelery
-djcelery.setup_loader()

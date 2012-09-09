@@ -10,10 +10,8 @@ DEFAULT_FILE_STORAGE = 'storages.backends.s3boto.S3BotoStorage'
 
 # Make sure urlparse understands custom config schemes.
 urlparse.uses_netloc.append('postgres')
-urlparse.uses_netloc.append('redis')
 
 # Grab database info
-#db_url = urlparse.urlparse(os.environ['DATABASE_URL'])
 db_url = urlparse.urlparse(os.environ['HEROKU_POSTGRESQL_NAVY_URL'])
 DATABASES = {
     'default': {
@@ -25,43 +23,6 @@ DATABASES = {
         'PORT':     db_url.port,
     }
 }
-
-# Now do redis
-redis_url = urlparse.urlparse(os.environ['REDISTOGO_URL'])
-
-# Use redis for cache
-CACHES = {
-    'default': {
-        'BACKEND': 'redis_cache.RedisCache',
-        'LOCATION': '{0}:{1}'.format(redis_url.hostname, redis_url.port),
-        'OPTIONS': {
-            'DB': 0,
-            'PASSWORD': redis_url.password,
-            'PARSER_CLASS': 'redis.connection.HiredisParser',
-        },
-    },
-}
-
-# Also use redis for celery
-CELERY_RESULT_BACKEND = "redis"
-REDIS_HOST = CELERY_REDIS_HOST = redis_url.hostname
-REDIS_PORT = CELERY_REDIS_PORT = redis_url.port
-REDIS_PASSWORD = CELERY_REDIS_PASSWORD = redis_url.password
-REDIS_DB = CELERY_REDIS_DB = 0
-REDIS_CONNECT_RETRY = True
-BROKER_BACKEND = "redis"
-BROKER_TRANSPORT = "redis"
-BROKER_HOST = redis_url.hostname
-BROKER_PORT = int(redis_url.port)
-BROKER_PASSWORD = redis_url.password
-
-# Lock down some security stuff.
-# SESSION_COOKIE_SECURE = True
-# SESSION_COOKIE_HTTPONLY = True
-# SECURE_SSL_REDIRECT = True
-# SECURE_FRAME_DENY = True
-# SECURE_HSTS_SECONDS = 6000
-# SECURE_PROXY_SSL_HEADER = ("HTTP_X_FORWARDED_PROTO", "https")
 
 if 'SENTRY_DSN' in os.environ:
     try:

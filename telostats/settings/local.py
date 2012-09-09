@@ -25,27 +25,10 @@ DATABASES = {
 #     }
 # }
 
-CACHES = {
-    'default': {
-        'BACKEND': 'redis_cache.RedisCache',
-        'LOCATION': 'localhost:6379',
-    },
-}
+
 
 LOGGING['handlers']['console']['level'] = 'DEBUG'
 
 if DEBUG and not STATIC_S3:
     STATIC_URL = '/static/'
     STATICFILES_STORAGE = 'django.contrib.staticfiles.storage.StaticFilesStorage'
-
-# Celery
-CELERY_RESULT_BACKEND = "redis"
-REDIS_HOST = "localhost"
-REDIS_PORT = 6379
-REDIS_DB = 2
-REDIS_CONNECT_RETRY = True
-
-BROKER_BACKEND = 'redis'
-BROKER_HOST = "localhost"  # Maps to redis host.
-BROKER_PORT = 6379         # Maps to redis port.
-BROKER_VHOST = "2"         # Maps to database number.
