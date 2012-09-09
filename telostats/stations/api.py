@@ -9,6 +9,7 @@ class StationResource(ModelResource):
         resource_name = 'station'
         serializer = Serializer(formats=['json'])
         limit = 200  # show all stations by default
+        allowed_methods = ['get']
         filtering = {
             'id': ('exact', ),
         }
