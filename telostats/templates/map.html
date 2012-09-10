@@ -23,7 +23,7 @@
                 stationAnimation;
             var svg = d3.select(document.body).append("svg").attr("id", "d3svg");
 
-            var cityGroup = svg.append("g").attr("id", "cityGroup");
+            // var cityGroup = svg.append("g").attr("id", "cityGroup");
             var voronoiGroup = svg.append("g").attr("id", "voronoiGroup");
             var stationsGroup = svg.append("g").attr("id", "stationsGroup");
 
@@ -68,7 +68,7 @@
                 var delays = [];
 
 
-
+/*
                 // render the city outline
                 // =============================================================
                 city = cityGroup.selectAll("path")
@@ -79,19 +79,27 @@
                   .transition().duration(300)
                     .attr("opacity", 1);
                 city.attr("d", d3.geo.path().projection(v.project));
-
+*/
 
 
                 // render the station voronoi
                 // =============================================================
                 // generate the clipped paths
-                projectedPolygons = d3.geom.voronoi(_.map(stationCoords, v.project));
-                projectedTelaviv = d3.geom.polygon(_.map(tlv_admin_boundary.features[0].geometry.coordinates[0], v.project));
+                // projectedPolygons = d3.geom.voronoi(_.map(stationCoords, v.project));
+                // projectedTelaviv = d3.geom.polygon(_.map(tlv_admin_boundary.features[0].geometry.coordinates[0], v.project));
+                // clippedPolygons = projectedPolygons.map(function(polygon) {
+                //     return d3.geom.polygon(polygon).clip(d3.geom.polygon(projectedTelaviv.slice(0)));
+                //     console.log("Clipped: " + clipped);
+                //     return clipped;
+                // });
+                projectedPolygons = d3.geom.voronoi(stationCoords);
+                projectedTelaviv = d3.geom.polygon(tlv_admin_boundary.features[0].geometry.coordinates[0]);
                 clippedPolygons = projectedPolygons.map(function(polygon) {
-                    return d3.geom.polygon(polygon).clip(d3.geom.polygon(projectedTelaviv.slice(0)));
-                    console.log("Clipped: " + clipped);
+                    clipped = d3.geom.polygon(polygon).clip(d3.geom.polygon(projectedTelaviv.slice(0)));
+                    // console.log("Clipped: " + clipped);
                     return clipped;
                 });
+
 
                 voronoi = voronoiGroup.selectAll("path")
                     .data(clippedPolygons);
@@ -114,7 +122,8 @@
                 // position them
                 voronoi
                     .attr("d", function(d, i) {
-                        return "M" + d.join("L") + "Z";
+                        projected = _.map(d, v.project);
+                        return "M" + projected.join("L") + "Z";
                     });
 
 
@@ -163,7 +172,8 @@
 
 
         //var mapbox_tilejson = 'http://api.tiles.mapbox.com/v3/mapbox.mapbox-light.jsonp';
-        var mapbox_tilejson = 'idan.telostats_base';
+        // var mapbox_tilejson = 'idan.telostats_base';
+        var mapbox_tilejson = 'idan.Telostats';
         var minZoom = 13;
         var maxZoom = 17;
         mapbox.load(mapbox_tilejson, function(o) {
