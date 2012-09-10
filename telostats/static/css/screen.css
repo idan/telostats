@@ -4135,3 +4135,6 @@ body { margin: 0; padding: 0; }
 
 /* line 36, ../../../sass/screen.scss */
 #cityGroup { fill: none; stroke: rgba(0, 0, 0, 0.5); stroke-width: 1; }
+
+/* line 42, ../../../sass/screen.scss */
+.RdBu .q2-5 { fill-opacity: 0.1; }
