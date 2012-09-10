@@ -115,7 +115,7 @@
                         wait = stationAnimation(stationData[i].latitude);
                         // wait = stationAnimation(Math.random());
                         delays[i] = wait
-                        return 300 + (fadeInTime-wait);
+                        return 600 + (fadeInTime-wait);
                     }).duration(200)
                     .attr("opacity", 0.5);
 
@@ -135,10 +135,15 @@
 
                 // Grow in when added
                 stations.enter().append("circle")
-                    .attr("opacity", 0.05)
-                    .attr("r", 5 * stationDotSize(v.map.zoom()))
+                    .attr("opacity", 0.0)
+                    .attr("r", 0)
+                  .transition().delay(150).duration(150)
+                    .attr("opacity", 0.1)
+                  .transition().delay(150).duration(450)
+                    .attr("opacity", 0.15)
+                    .attr("r", 8 * stationDotSize(v.map.zoom()))
                   .transition().delay(function(d, i) {
-                        return 300 + (fadeInTime - delays[i]);
+                        return 600 + (fadeInTime - delays[i]);
                     }).duration(200)
                     .attr("r", stationDotSize(v.map.zoom()))
                     .attr("opacity", 1);
