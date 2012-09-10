@@ -20,14 +20,14 @@
 
         function stationVoronoi() {
             var v = {}, stationData, stations, stationCoords, voronoi, city,
-                stationAppearAnimation;
+                stationAnimation;
             var svg = d3.select(document.body).append("svg").attr("id", "d3svg");
 
             var cityGroup = svg.append("g").attr("id", "cityGroup");
             var voronoiGroup = svg.append("g").attr("id", "voronoiGroup");
             var stationsGroup = svg.append("g").attr("id", "stationsGroup");
 
-            var fadeInTime = 750;
+            var fadeInTime = 500;
 
             var color = function(station) {
                 var bikes = station.poles - station.available;
@@ -104,11 +104,11 @@
                     })
                     .attr("opacity", 0)
                   .transition().delay(function(d, i) {
-                        // wait = stationAnimation(stationData[i].latitude);
-                        wait = stationAnimation(Math.random());
+                        wait = stationAnimation(stationData[i].latitude);
+                        // wait = stationAnimation(Math.random());
                         delays[i] = wait
                         return 300 + (fadeInTime-wait);
-                    }).duration(500)
+                    }).duration(200)
                     .attr("opacity", 0.5);
 
                 // position them
@@ -129,17 +129,15 @@
                     .attr("opacity", 0.05)
                     .attr("r", 5 * stationDotSize(v.map.zoom()))
                   .transition().delay(function(d, i) {
-                        // wait = stationAnimation(d[1]);
-                        wait = stationAnimation(Math.random());
                         return 300 + (fadeInTime - delays[i]);
-                    }).duration(600)
+                    }).duration(200)
                     .attr("r", stationDotSize(v.map.zoom()))
                     .attr("opacity", 1);
 
                 // Postion them
                 stations
                     // .attr("r", stationDotSize(v.map.zoom()))
-                    .attr("transform", function(d) { return "translate(" + v.project(d) + ")"; })
+                    .attr("transform", function(d) { return "translate(" + v.project(d) + ")"; });
 
             }
 
@@ -153,8 +151,8 @@
                 });
 
                 stationAnimation = d3.scale.linear()
-                    // .domain(d3.extent(stationCoords, function(coord) { return coord[1]; }))
-                    .domain([0,1])
+                    .domain(d3.extent(stationCoords, function(coord) { return coord[1]; }))
+                    // .domain([0,1])
                     .range([0, fadeInTime]);
 
                 return v;
