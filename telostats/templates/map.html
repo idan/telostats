@@ -175,24 +175,24 @@
         }
 
 
-        //var mapbox_tilejson = 'http://api.tiles.mapbox.com/v3/mapbox.mapbox-light.jsonp';
-        // var mapbox_tilejson = 'idan.telostats_base';
-        var mapbox_tilejson = 'idan.Telostats';
+        var telostats_tiles = {
+            "tilejson": "2.0.0",
+            "tiles": [ "http://tiles.telostats.com/telaviv/{z}/{x}/{y}.png" ]
+        };
         var minZoom = 13;
         var maxZoom = 17;
-        mapbox.load(mapbox_tilejson, function(o) {
-            m.addLayer(o.layer);
-            m.ui.zoomer.add();
-            var mapbounds = new MM.Extent(
-                32.0182,34.7257,
-                32.1572,34.8665);
-            m.setExtent(mapbounds);
-            m.setPanLimits(mapbounds);
-            m.setZoomRange(minZoom, maxZoom);
-            d3.json('/api/v1/station/', function(stations) {
-                var stationMap = stationVoronoi().data(stations.objects);
-                m.addLayer(stationMap);
-                console.log("added d3 layer!")
+        m.addLayer(mapbox.layer().tilejson(telostats_tiles));
+        m.ui.zoomer.add();
+        var mapbounds = new MM.Extent(
+            32.0182,34.7257,
+            32.1572,34.8665);
+        m.setExtent(mapbounds);
+        m.setPanLimits(mapbounds);
+        m.setZoomRange(minZoom, maxZoom);
+        d3.json('/api/v1/station/', function(stations) {
+            var stationMap = stationVoronoi().data(stations.objects);
+            m.addLayer(stationMap);
+            console.log("added d3 layer!")
             });
         });
     </script>
