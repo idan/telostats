@@ -1,4 +1,4 @@
-from tastypie.resources import ModelResource, Resource, Bundle, fields
+from tastypie.resources import ModelResource, Resource, fields
 from tastypie.serializers import Serializer
 from .models import Station
 from ..utils.tempodb import TempoDbClient
@@ -16,7 +16,7 @@ class StationResource(ModelResource):
         }
 
 
-class StationSeries():
+class StationSeries:
     def __init__(self, initial=None):
         self.__dict__['_data'] = {}
 
@@ -40,6 +40,13 @@ class SeriesResource(Resource):
 
     class Meta:
         object_class = StationSeries
+        resource_name = 'series'
+        serializer = Serializer(formats=['json'])
+        limit = 200
+        allowed_methods = ['get']
+        filtering = {
+            'id': ('exact', ),
+        }
 
     def _client(self):
         return TempoDbClient()
@@ -62,18 +69,3 @@ class SeriesResource(Resource):
         station_series = StationSeries(initial=series[station_id])
         station_series.id = station_id
         return station_series
-
-    def detail_uri_kwargs(self, bundle_or_obj):
-        kwargs = {}
-
-        if isinstance(bundle_or_obj, Bundle):
-            kwargs['pk'] = bundle_or_obj.obj.uuid
-        else:
-            kwargs['pk'] = bundle_or_obj.uuid
-
-        return kwargs
-
-    class Meta:
-        resource_name = 'series'
-        serializer = Serializer(formats=['json'])
-        allowed_methods = ['get']
