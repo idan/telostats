@@ -45,8 +45,13 @@ class SeriesResource(Resource):
         return TempoDbClient()
 
     def get_object_list(self, request):
-        series = self._client().get_week_counts()
-        return series
+        series_list = self._client().get_week_counts().items()
+        res = []
+        for sta_id, series in series_list:
+            obj = StationSeries(initial=series)
+            obj.id = sta_id
+            res.append(obj)
+        return res
 
     def obj_get_list(self, request=None, **kwargs):
         return self.get_object_list(request)
