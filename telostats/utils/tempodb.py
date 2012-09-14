@@ -44,8 +44,8 @@ class TempoDbClient():
         url = API_URL + '/data/'
         return self.session.get(url, params=params)
 
-    def get_week_counts(self, station_id=None):
-        start = datetime.utcnow() - timedelta(hours=2)
+    def get_series(self, station_id=None, **kwargs):
+        start = datetime.utcnow() - timedelta(**kwargs)
         content = self.get_pole_series(station_id=station_id, start=start).content
         res = defaultdict(dict)
 
@@ -59,6 +59,7 @@ class TempoDbClient():
         return dict(res)
 
     def get_latest_counts(self, station_id=None):
+        '''This method is pending a proper get_latest API from tempo db'''
         start = datetime.utcnow() - timedelta(minutes=15)
         content = self.get_pole_data(station_id=station_id, start=start).content
         res = defaultdict(dict)
@@ -71,8 +72,3 @@ class TempoDbClient():
             res[station_id][data_type] = data_val
 
         return dict(res)
-
-# c = TempoDbClient()
-# d = c.get_week_counts()
-# from pprint import pprint
-# pprint(d)
