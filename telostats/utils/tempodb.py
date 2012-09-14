@@ -45,7 +45,7 @@ class TempoDbClient():
         return self.session.get(url, params=params)
 
     def get_week_counts(self, station_id=None):
-        start = datetime.utcnow() - timedelta(days=1)
+        start = datetime.utcnow() - timedelta(hours=2)
         content = self.get_pole_series(station_id=station_id, start=start).content
         res = defaultdict(dict)
 
@@ -56,7 +56,7 @@ class TempoDbClient():
             data_val = series['data']
             res[station_id][data_type] = data_val
 
-        return json.dumps(dict(res))
+        return dict(res)
 
     def get_latest_counts(self, station_id=None):
         start = datetime.utcnow() - timedelta(minutes=15)
@@ -72,5 +72,7 @@ class TempoDbClient():
 
         return dict(res)
 
-c = TempoDbClient()
-d = c.get_week_counts()
+# c = TempoDbClient()
+# d = c.get_week_counts()
+# from pprint import pprint
+# pprint(d)
