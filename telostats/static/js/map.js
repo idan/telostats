@@ -14,18 +14,18 @@ function stationVoronoi() {
 
     var color = function(station) {
         var bikes = station.poles - station.available;
-        if (bikes == 0) {
+        if (bikes === 0) {
             return 0;
         } else if (bikes <=5) {
             return 1;
         } else if (station.available <= 5) {
             return 3;
-        } else if (station.available == 0) {
+        } else if (station.available === 0) {
             return 4;
         } else {
             return 2;  // middle state is normal.
         }
-    }
+    };
 
     var stationDotSize = d3.scale.quantize()
         .domain([minZoom, maxZoom])
@@ -37,12 +37,12 @@ function stationVoronoi() {
     v.project = function(location) {
         var point = v.map.locationPoint({lat: location[1], lon: location[0]});
         return [point.x, point.y];
-    }
+    };
 
     // redraw the layer
     // called every time something changes
     v.draw = function() {
-        console.log("Draw called!")
+        console.log("Draw called!");
 
         // position the overlay
         svg.attr("width", $("#map").width())
