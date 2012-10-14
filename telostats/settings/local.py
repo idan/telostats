@@ -30,3 +30,6 @@ LOGGING['handlers']['console']['level'] = 'DEBUG'
 if DEBUG and not STATIC_S3:
     STATIC_URL = '/static/'
     STATICFILES_STORAGE = 'django.contrib.staticfiles.storage.StaticFilesStorage'
+
+if DEBUG:
+    TILESERVER_URL = os.environ.get('TILESERVER_DEBUG_URL')

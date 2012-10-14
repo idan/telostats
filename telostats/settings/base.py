@@ -6,6 +6,7 @@ PROJECT_DIR = Path(__file__).absolute().ancestor(2)
 AWS_ACCESS_KEY_ID = os.environ.get('AWS_ACCESS_KEY_ID')
 AWS_SECRET_ACCESS_KEY = os.environ.get('AWS_SECRET_ACCESS_KEY')
 AWS_STORAGE_BUCKET_NAME = 'telostats'
+TILESERVER_URL = os.environ.get('TILESERVER_URL')
 
 DEBUG = False
 TEMPLATE_DEBUG = DEBUG
