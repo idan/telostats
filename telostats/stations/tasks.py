@@ -64,13 +64,14 @@ def parse_stations(raw_stations):
 def store_stations(stations):
     logging.debug("Create/update station metadata in Django DB...")
     for station in stations:
-        fields = ['longitude', 'latitude', 'name', 'address']
+        fields = ['longitude', 'latitude', 'name', 'address', 'poles', 'available']
         metadata = dict((f, station[f]) for f in fields)
         obj, created = Station.objects.get_or_create(
             id=station['id'], defaults=metadata)
-        obj.poles = station['poles']
-        obj.available = station['available']
-        obj.save()
+        if not created:
+            obj.poles = station['poles']
+            obj.available = station['available']
+            obj.save()
 
 
 def station_poles_key(station):
