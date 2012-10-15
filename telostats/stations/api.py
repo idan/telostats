@@ -1,3 +1,5 @@
+import json
+
 from tastypie.resources import ModelResource, Resource, fields
 from tastypie.serializers import Serializer
 from .models import Station
@@ -14,6 +16,10 @@ class StationResource(ModelResource):
         filtering = {
             'id': ('exact', ),
         }
+
+    def dehydrate(self, bundle):
+        bundle.data['polygon'] = json.loads(bundle.data['polygon'])
+        return bundle
 
 
 class StationSeries:
