@@ -9,3 +9,9 @@ DEFAULT_FILE_STORAGE = 'storages.backends.s3boto.S3BotoStorage'
 DATABASES = {
     'default': dj_database_url.config()
 }
+
+# Setup sentry / raven
+SENTRY_DSN = 'SENTRY_DSN'
+INSTALLED_APPS += (
+    'raven.contrib.django',
+)

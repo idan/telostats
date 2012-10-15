@@ -9,6 +9,7 @@ gunicorn==0.14.6
 psycopg2==2.4.5
 pyparsing==1.5.6
 pytz==2012d
+raven==2.0.6
 requests==0.14.0
 South==0.7.6
 Unipath==0.2.1
