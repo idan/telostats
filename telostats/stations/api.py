@@ -16,6 +16,7 @@ class StationResource(ModelResource):
         filtering = {
             'id': ('exact', ),
         }
+        excludes = ['visible']
 
     def dehydrate(self, bundle):
         bundle.data['polygon'] = json.loads(bundle.data['polygon'])
