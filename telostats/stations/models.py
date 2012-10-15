@@ -21,4 +21,4 @@ class Station(models.Model):
     visible_objects = VisibleStationManager()
 
     def __unicode__(self):
-        return self.name
+        return u'({}) {}'.format(self.id, self.name)
