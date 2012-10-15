@@ -4122,19 +4122,16 @@ body { margin: 0; padding: 0; }
 #map { position: absolute; top: 0; bottom: 0; width: 100%; background: #444; }
 
 /* line 17, ../../../sass/screen.scss */
-.d3overlay { position: absolute; }
-
-/* line 21, ../../../sass/screen.scss */
 #d3svg { position: absolute; }
 
-/* line 25, ../../../sass/screen.scss */
+/* line 21, ../../../sass/screen.scss */
 .station_cell { stroke: white; stroke: rgba(0, 0, 0, 0.25); }
 
-/* line 30, ../../../sass/screen.scss */
+/* line 26, ../../../sass/screen.scss */
 #stationsGroup { fill: rgba(0, 0, 0, 0.75); stroke: rgba(255, 255, 255, 0.75); stroke-width: 1; }
 
-/* line 36, ../../../sass/screen.scss */
+/* line 32, ../../../sass/screen.scss */
 #cityGroup { fill: none; stroke: rgba(0, 0, 0, 0.5); stroke-width: 1; }
 
-/* line 42, ../../../sass/screen.scss */
+/* line 38, ../../../sass/screen.scss */
 .RdBu .q2-5 { fill-opacity: 0.1; }
