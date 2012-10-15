@@ -47,7 +47,7 @@ class SeriesResource(Resource):
 
     class Meta:
         object_class = StationSeries
-        resource_name = 'series'
+        resource_name = 'recent'
         serializer = Serializer(formats=['json'])
         limit = 200
         allowed_methods = ['get']
