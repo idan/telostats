@@ -5,3 +5,4 @@
 *.ipynb
 .sass-cache
 .env
+experiments
