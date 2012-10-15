@@ -18,6 +18,7 @@ class Station(models.Model):
     available = models.IntegerField(u'available')
     visible = models.BooleanField(u'visible', default=False)
 
+    objects = models.Manager()
     visible_objects = VisibleStationManager()
 
     def __unicode__(self):
