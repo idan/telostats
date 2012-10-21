@@ -13,9 +13,9 @@
         <h2>Awesome shit, dude.</h2>
     </div>
 
-    <div class="flyout secondary" id="stationflyout" data-state="hidden">
+    <div class="flyout secondary" id="stationflyout" data-state="{% block stationflyout_state %}hidden{% endblock stationflyout_state %}">
         {% block stationflyout %}
-        {% endblock stationflyout%}
+        {% endblock stationflyout %}
     </div>
 
     <div class="flyout secondary" id="about" data-state="hidden">

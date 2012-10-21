@@ -4,6 +4,8 @@
 Station Detail - {{ station.id }}
 {% endblock title %}
 
+{% block stationflyout_state %}visible{% endblock stationflyout_state %}
+
 {% block stationflyout %}
 {% include 'stations/station_detail-pjax.html' %}
 {% endblock stationflyout %}
