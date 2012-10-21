@@ -1,4 +1,4 @@
-{% extends "base.html" %}
+{% extends 'base.html' %}
 {% load static from staticfiles %}
 
 {% block extra_head %}
@@ -7,6 +7,13 @@
 
 {% block body %}
     <div id="map"></div>
+    <div id="flyout" style="position: absolute; top: 0px; right: 100px;">
+        <a href="/station/110" data-pjax="#flyout">Station</a>
+    </div>
+    <div id="flyout" style="position: absolute; top: 100px; right: 100px;">
+    {% block flyout %}
+    {% endblock %}
+    </div>
 {% endblock body %}
 
 {% block body_js %}
@@ -18,5 +25,6 @@
     <script>
         TILESERVER_URL = "{{ tileserver_url }}";
     </script>
+    <script src="{% static 'js/jquery.pjax.js' %}"></script>
     <script src="{% static 'js/map.js' %}"></script>
 {% endblock body_js %}
