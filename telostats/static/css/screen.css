@@ -390,6 +390,7 @@ body, html {
 
 /* flyouts */
 .flyout {
+  direction: rtl;
   position: absolute;
   width: 400px;
   right: 0;
