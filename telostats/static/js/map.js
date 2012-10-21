@@ -57,13 +57,14 @@ function stationVoronoi() {
             .attr("class", function(d, i) {
                 return "station_cell q" + color(stationData[i]) + "-5";
             })
-            .attr("opacity", 0)
+            .attr("data-state", "fade-in")
           .transition().delay(function(d, i) {
                 wait = stationAnimation(stationData[i].latitude);
                 delays[i] = wait;
                 return 600 + (fadeInTime-wait);
-            }).duration(200)
-            .attr("opacity", 0.5);
+            }).duration(1000)
+                .attr("data-state", "visible");
+//            .attr("opacity", null); // so CSS opacity takes over
 
         // project the station cell polys onto the map
         voronoi
