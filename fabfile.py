@@ -1,8 +1,8 @@
 from fabric.api import local
 from fabric.context_managers import lcd
-from unipath import FSPath as Path
+from unipath import FSPath as _Path
 
-FABFILE_PATH = Path(__file__).absolute().ancestor(1)
+FABFILE_PATH = _Path(__file__).absolute().ancestor(1)
 
 
 def deploy_staticfiles():
