@@ -1,3 +1,6 @@
+<div style="position: absolute; top: 0px; left: 0px;">
+    <a href="{% url station_map %}" class="close-flyout" data-pjax="#">סגור</a>
+</div>
 <h2 class="station-name" style="display: inline;">{{ station.name }}</h2>
 <h5 class="station-id" style="display: inline; margin-right: 0.2em;">({{ station.id }})</h5>
 {% if station.address %}
