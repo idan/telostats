@@ -1,8 +1,8 @@
-<div style="position: absolute; top: 0px; left: 0px; padding: 2px 5px;">
-    <a href="{% url station_map %}" class="close-flyout" data-pjax="#" style="font-size: 1.3em; text-decoration: none;">&#10006;</a>
+<div class="close-flyout">
+    <a href="{% url station_map %}" class="close-flyout" data-pjax="#">&#10006;</a>
 </div>
-<h2 class="station-name" style="display: inline;">{{ station.name }}</h2>
-<h5 class="station-id" style="display: inline; margin-right: 0.2em;">({{ station.id }})</h5>
+<h2 class="station-name">{{ station.name }}</h2>
+<h5 class="station-id">({{ station.id }})</h5>
 {% if station.address %}
 <h4>{{ station.address }}</h4>
 {% endif %}

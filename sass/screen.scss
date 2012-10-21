@@ -18,10 +18,26 @@ body, html {
     overflow-x: hidden;
 }
 
+div.close-flyout {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    padding: 2px 5px;
+}
+
+a.close-flyout {
+    font-size: 1.3em;
+    text-decoration: none;
+}
+
+.station-name {
+    display: inline;
+}
+
+.station-id {
+    display: inline;
+    margin-right: 0.2em;
+}
+
 @import "map";
 @import "flyouts";
-
-
-
-
-
