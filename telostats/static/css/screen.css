@@ -331,23 +331,6 @@ body, html {
   font-weight: 300;
   overflow-x: hidden; }
 
-div.close-flyout {
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  padding: 2px 5px; }
-
-a.close-flyout {
-  font-size: 1.3em;
-  text-decoration: none; }
-
-.station-name {
-  display: inline; }
-
-.station-id {
-  display: inline;
-  margin-right: 0.2em; }
-
 /* Map */
 #map {
   position: absolute;
@@ -435,3 +418,20 @@ a.close-flyout {
     opacity: 0; }
   .flyout > h1 {
     font-weight: 300; }
+  .flyout .close-flyout {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 3px;
+    font-size: 1.3em;
+    text-decoration: none; }
+
+/* Station detail flyout */
+.station-name {
+  display: inline; }
+
+.station-id {
+  display: inline;
+  margin-right: 0.2em; }
+
+/* About flyout */
