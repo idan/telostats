@@ -15,7 +15,7 @@ class Station(models.Model):
     latitude = models.FloatField(u'latitude')
     polygon = JSONField(u'polygon')
     poles = models.IntegerField(u'poles')
-    available = models.IntegerField(u'available')  # number of available _poles_
+    available = models.IntegerField(u'available')
     visible = models.BooleanField(u'visible', default=False)
 
     objects = models.Manager()
@@ -23,3 +23,9 @@ class Station(models.Model):
 
     def __unicode__(self):
         return u'({}) {}'.format(self.id, self.name)
+
+    def available_poles(self):
+        return self.available
+
+    def available_bikes(self):
+        return self.poles - self.available

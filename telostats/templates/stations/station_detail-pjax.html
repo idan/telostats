@@ -1,6 +1,8 @@
-<h1>Station Detail - {{ station.id }}</h1>
-<ul>
-    <li>{{ station.id }}</li>
-    <li>{{ station.name }}</li>
-    <li>{{ station.address }}</li>
-</ul>
+<h2 class="station-name" style="display: inline;">{{ station.name }}</h2>
+<h5 class="station-id" style="display: inline; margin-right: 0.2em;">({{ station.id }})</h5>
+{% if station.address %}
+<h4>{{ station.address }}</h4>
+{% endif %}
+
+<div><strong>אופניים פנויים</strong>: {{ station.available_bikes }}</div>
+<div><strong>תחנות פנויות</strong>: {{ station.available_poles }}</div>
