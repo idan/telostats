@@ -1,14 +1,9 @@
-{% extends "base.html" %}
+{% extends 'map.html' %}
 
 {% block title %}
 Station Detail - {{ station.id }}
 {% endblock title %}
 
-{% block body %}
-<h1>Station Detail - {{ station.id }}</h1>
-<ul>
-    <li>{{ station.id }}</li>
-    <li>{{ station.name }}</li>
-    <li>{{ station.address }}</li>
-</ul>
-{% endblock body %}
+{% block flyout %}
+{% include 'stations/station_detail-pjax.html' %}
+{% endblock flyout %}

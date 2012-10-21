@@ -1,3 +1,5 @@
+$(document).pjax('a[data-pjax]');
+
 var m = mapbox.map('map');
 
 function stationVoronoi() {
