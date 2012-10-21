@@ -7,12 +7,25 @@
 
 {% block body %}
     <div id="map"></div>
-    <div id="flyout" style="position: absolute; top: 0px; right: 100px;">
-        <a href="/station/110" data-pjax="#flyout">Station</a>
+
+    <div class="flyout" id="maininfo">
+        <h1>Telostats</h1>
+        <h2>Awesome shit, dude.</h2>
     </div>
-    <div id="flyout" style="position: absolute; top: 100px; right: 100px;">
-    {% block flyout %}
-    {% endblock %}
+    <div class="flyout secondary" id="stationflyout" data-state="hidden">
+        {% block stationflyout %}
+        {% endblock stationflyout%}
+    </div>
+    <div class="flyout secondary" id="about" data-state="hidden">
+        {% block aboutflyout %}
+        <h1>About Telostats</h1>
+        <section id="people">
+            <h1>People</h1>
+            <article><h1>Yuval Adam</h1></article>
+            <article><h1>Idan Gazit</h1></article>
+        </section>            
+        {% endblock aboutflyout %}
+    </div>
     </div>
 {% endblock body %}
 
