@@ -6,31 +6,6 @@
                    $weight: 300,
                    $style: normal);
 
-
-@mixin choropleth($color) {
-    fill: $color;
-    &:hover {
-        fill: #ffee57;
-        opacity: 0.7;
-    }
-}
-
-// shirt
-$color-0: #dd2ea3;
-$color-1: #ffafe5;
-$color-2: transparentize(rgb(247,247,247), 0.3);
-$color-3: #94e1ff;
-$color-4: #18b4f1;
-
-
-
-// brewer red-blue palette
-// $color-0: rgb(202,0,32);
-// $color-1: rgb(244,165,130);
-// $color-2: rgb(247,247,247);
-// $color-3: rgb(146,197,222);
-// $color-4: rgb(5,113,176);
-
 body {
     margin: 0;
     padding: 0;
@@ -38,39 +13,7 @@ body {
     font-weight: 300;
 }
 
-#map {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    width: 100%;
-    background: #444;
-}
-
-#d3svg {
-    position: absolute;
-}
-
-.station_cell {
-    stroke: white;
-    stroke: rgba(0,0,0,0.25);
-    opacity: 0.5;
-    @include transition(opacity 0.3s linear, fill 0.1s linear);
-    &.q0-5 { @include choropleth($color-0); }
-    &.q1-5 { @include choropleth($color-1); }
-    &.q2-5 { @include choropleth($color-2); }
-    &.q3-5 { @include choropleth($color-3); }
-    &.q4-5 { @include choropleth($color-4); }
-    &[data-state=fade-in] {
-        opacity: 0;
-    }
-}
-
-#stationsGroup {
-    fill: rgba(0,0,0,0.75);
-    stroke: rgba(255,255,255,0.75);
-    stroke-width: 1;
-}
-
+@import "map";
 
 
 

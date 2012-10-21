@@ -54,10 +54,9 @@ function stationVoronoi() {
         // fade in when added
         voronoi.enter().append("path")
             .attr('id', function(d, i) { return 'station' + stationData[i].id; })
-            .attr("class", function(d, i) {
-                return "station_cell q" + color(stationData[i]) + "-5";
-            })
-            .attr("data-state", "fade-in")
+            .classed("station_cell", true)
+            .attr("data-bucket", function(d, i) { return color(stationData[i]); })
+            .attr("data-state", "loading")
           .transition().delay(function(d, i) {
                 wait = stationAnimation(stationData[i].latitude);
                 delays[i] = wait;
