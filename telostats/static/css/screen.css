@@ -319,7 +319,12 @@ table {
   font-weight: 300;
   font-style: normal; }
 
-body {
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+body, html {
   margin: 0;
   padding: 0;
   font-family: "Almoni";
@@ -377,3 +382,29 @@ body {
   fill: rgba(0, 0, 0, 0.75);
   stroke: rgba(255, 255, 255, 0.75);
   stroke-width: 1; }
+
+/* flyouts */
+.flyout {
+  position: absolute;
+  width: 400px;
+  right: 0;
+  top: 1em;
+  bottom: 1em;
+  padding: 1em;
+  -webkit-border-top-left-radius: 2px;
+  border-top-left-radius: 2px;
+  -webkit-border-bottom-left-radius: 2px;
+  border-bottom-left-radius: 2px;
+  background: #eee;
+  border: 1px solid #ddd;
+  -webkit-transition: right 0.3s linear;
+  -moz-transition: right 0.3s linear;
+  -ms-transition: right 0.3s linear;
+  -o-transition: right 0.3s linear;
+  transition: right 0.3s linear;
+  -webkit-box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.25); }
+  .flyout.secondary {
+    width: 395px; }
+  .flyout[data-state="hidden"] {
+    right: -400px; }

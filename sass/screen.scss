@@ -6,7 +6,11 @@
                    $weight: 300,
                    $style: normal);
 
-body {
+* {
+    @include box-sizing(border-box);
+}
+
+body, html {
     margin: 0;
     padding: 0;
     font-family: "Almoni";
@@ -14,6 +18,7 @@ body {
 }
 
 @import "map";
+@import "flyouts";
 
 
 
