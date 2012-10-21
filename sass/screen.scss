@@ -1,7 +1,10 @@
 @import "normalize";
+@import "bourbon/bourbon";
 
-@import "compass/css3/transition";
-// @import "colorbrewer";
+@include font-face($font-family: "Almoni",
+                   $file-path: "../fonts/almoni-dl-aaa-300",
+                   $weight: 300,
+                   $style: normal);
 
 
 @mixin choropleth($color) {
@@ -31,6 +34,8 @@ $color-4: #18b4f1;
 body {
     margin: 0;
     padding: 0;
+    font-family: "Almoni";
+    font-weight: 300;
 }
 
 #map {

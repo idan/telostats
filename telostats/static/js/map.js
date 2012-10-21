@@ -66,7 +66,6 @@ function stationVoronoi() {
                 return 600 + (fadeInTime-wait);
             }).duration(1000)
                 .attr("data-state", "visible");
-//            .attr("opacity", null); // so CSS opacity takes over
 
         // project the station cell polys onto the map
         voronoi
