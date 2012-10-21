@@ -5,7 +5,6 @@ function stationVoronoi() {
         stationAnimation;
     var svg = d3.select(document.body).append("svg").attr("id", "d3svg");
 
-    // var cityGroup = svg.append("g").attr("id", "cityGroup");
     var voronoiGroup = svg.append("g").attr("id", "voronoiGroup");
     var stationsGroup = svg.append("g").attr("id", "stationsGroup");
 
