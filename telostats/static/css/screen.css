@@ -155,7 +155,7 @@ body { margin: 0; padding: 0; }
 #d3svg { position: absolute; }
 
 /* line 48, ../../../sass/screen.scss */
-.station_cell { stroke: white; stroke: rgba(0, 0, 0, 0.25); opacity: 0.5; -webkit-transition: opacity 0.3s linear, fill 0.1s linear; -moz-transition: opacity 0.3s linear, fill 0.1s linear; -o-transition: opacity 0.3s linear, fill 0.1s linear; transition: opacity 0.3s linear, fill 0.1s linear; }
+.station_cell { stroke: white; stroke: rgba(0, 0, 0, 0.25); opacity: 0.5; -webkit-transition: opacity 0.3s linear, fill 0.1s linear; -moz-transition: opacity 0.3s linear, fill 0.1s linear; -ms-transition: opacity 0.3s linear, fill 0.1s linear; -o-transition: opacity 0.3s linear, fill 0.1s linear; transition: opacity 0.3s linear, fill 0.1s linear; }
 /* line 53, ../../../sass/screen.scss */
 .station_cell.q0-5 { fill: #dd2ea3; }
 /* line 9, ../../../sass/screen.scss */
