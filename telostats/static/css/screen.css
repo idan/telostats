@@ -328,7 +328,8 @@ body, html {
   margin: 0;
   padding: 0;
   font-family: "Almoni";
-  font-weight: 300; }
+  font-weight: 300;
+  overflow-x: hidden; }
 
 /* Map */
 #map {
@@ -343,7 +344,8 @@ body, html {
 
 .station_cell {
   stroke: white;
-  stroke: rgba(0, 0, 0, 0.25);
+  stroke: black;
+  stroke-opacity: 0.25;
   opacity: 0.5;
   -webkit-transition: opacity 0.3s linear, fill 0.1s linear;
   -moz-transition: opacity 0.3s linear, fill 0.1s linear;
@@ -377,6 +379,9 @@ body, html {
       opacity: 0.7; }
   .station_cell[data-state="loading"] {
     opacity: 0; }
+  .station_cell[data-state="selected"] {
+    stroke-width: 6;
+    stroke-opacity: 0.75; }
 
 #stationsGroup {
   fill: rgba(0, 0, 0, 0.75);
@@ -397,14 +402,18 @@ body, html {
   border-bottom-left-radius: 2px;
   background: #eee;
   border: 1px solid #ddd;
-  -webkit-transition: right 0.3s linear;
-  -moz-transition: right 0.3s linear;
-  -ms-transition: right 0.3s linear;
-  -o-transition: right 0.3s linear;
-  transition: right 0.3s linear;
+  opacity: 1.0;
+  -webkit-transition: right 0.2s ease-in-out, opacity 0.2s linear;
+  -moz-transition: right 0.2s ease-in-out, opacity 0.2s linear;
+  -ms-transition: right 0.2s ease-in-out, opacity 0.2s linear;
+  -o-transition: right 0.2s ease-in-out, opacity 0.2s linear;
+  transition: right 0.2s ease-in-out, opacity 0.2s linear;
   -webkit-box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.25);
   box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.25); }
   .flyout.secondary {
     width: 395px; }
   .flyout[data-state="hidden"] {
-    right: -400px; }
+    right: -400px;
+    opacity: 0; }
+  .flyout > h1 {
+    font-weight: 300; }

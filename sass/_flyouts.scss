@@ -12,12 +12,18 @@ $flyout-width: 400px;
     @include border-left-radius(2px);
     background: #eee;
     border: 1px solid #ddd;
-    @include transition(right 0.3s linear);
+    opacity: 1.0;
+    @include transition(right 0.2s ease-in-out, opacity 0.2s linear);
     @include box-shadow(0 0 10px 3px rgba(0,0,0,0.25));
     &.secondary {
         width: $flyout-width - 5;
     }
     &[data-state="hidden"] {
         right: -$flyout-width;
+        opacity: 0;
+    }
+
+    &>h1 {
+        font-weight: 300;
     }
 }

@@ -37,7 +37,8 @@ $color-4: #18b4f1;
 
 .station_cell {
     stroke: white;
-    stroke: rgba(0,0,0,0.25);
+    stroke: black;
+    stroke-opacity: 0.25;
     opacity: 0.5;
     @include transition(opacity 0.3s linear, fill 0.1s linear);
     &[data-bucket="0"] { @include choropleth($color-0); }
@@ -47,6 +48,10 @@ $color-4: #18b4f1;
     &[data-bucket="4"] { @include choropleth($color-4); }
     &[data-state="loading"] {
         opacity: 0;
+    }
+    &[data-state="selected"] {
+        stroke-width: 6;
+        stroke-opacity: 0.75;
     }
 }
 

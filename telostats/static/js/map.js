@@ -54,9 +54,11 @@ function stationVoronoi() {
             .data(stationData);
 
         // fade in when added
-        voronoi.enter().append("path")
+        voronoi.enter()
+        .append("path")
             .attr('id', function(d, i) { return 'station' + stationData[i].id; })
             .classed("station_cell", true)
+            .attr("data-id", function(d, i) { return stationData[i].id; })
             .attr("data-bucket", function(d, i) { return color(stationData[i]); })
             .attr("data-state", "loading")
           .transition().delay(function(d, i) {
@@ -64,7 +66,26 @@ function stationVoronoi() {
                 delays[i] = wait;
                 return 600 + (fadeInTime-wait);
             }).duration(1000)
-                .attr("data-state", "visible");
+                .attr("data-state", "visible")
+            .each("end", function(d, i) {
+                $(this).on('click', function(event) {
+                    console.log(this, " clicked!");
+                    $(".station_cell").attr('data-state', "visible");
+                    $("#stationflyout").attr('data-state', "hidden");
+                    var container = $("#stationflyout");
+                    var opts = {
+                        url: "/station/" + $(this).attr('data-id'),
+                        container: container
+                    };
+
+                    $.pjax(opts);
+                    $(this).attr('data-state', 'selected');
+
+                    container.on('pjax:end', function() {
+                        $("#stationflyout").attr('data-state', "visible");
+                    });
+                });
+            });
 
         // project the station cell polys onto the map
         voronoi
