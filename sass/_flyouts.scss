@@ -3,6 +3,7 @@
 $flyout-width: 400px;
 
 .flyout {
+    direction: rtl;
     position: absolute;
     width: $flyout-width;
     right: 0;
