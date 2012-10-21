@@ -17,3 +17,8 @@ class StationMap(TemplateView):
 class StationDetail(PJAXResponseMixin, DetailView):
     model = Station
     context_object_name = 'station'
+
+    def get_context_data(self, **kwargs):
+        context = super(StationDetail, self).get_context_data(**kwargs)
+        context['tileserver_url'] = settings.TILESERVER_URL
+        return context
