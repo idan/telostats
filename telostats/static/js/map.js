@@ -77,22 +77,31 @@ function stationVoronoi() {
             }).duration(1000)
                 .attr("data-state", "visible")
             .each("end", function(d, i) {
-                $(this).on('click', function(event) {
-                    console.log(this, " clicked!");
-                    $(".station_cell").attr('data-state', "visible");
-                    $("#stationflyout").attr('data-state', "hidden");
-                    var container = $("#stationflyout");
-                    var opts = {
-                        url: "/station/" + $(this).attr('data-id'),
-                        container: container
-                    };
+                var clientX = null, clientY = null;
+                $(this).on('mousedown', function(event) {
+                    console.log("mousedown");
+                    clientX = event.clientX;
+                    clientY = event.clientY;
+                });
+                $(this).on('mouseup', function(event) {
+                    stationary = clientX == event.clientX &&
+                                 clientY == event.clientY;
+                    if (stationary) {
+                        $(".station_cell").attr('data-state', "visible");
+                        $("#stationflyout").attr('data-state', "hidden");
+                        var container = $("#stationflyout");
+                        var opts = {
+                            url: "/station/" + $(this).attr('data-id'),
+                            container: container
+                        };
 
-                    $.pjax(opts);
-                    $(this).attr('data-state', 'selected');
+                        $.pjax(opts);
+                        $(this).attr('data-state', 'selected');
 
-                    container.on('pjax:end', function() {
-                        $("#stationflyout").attr('data-state', "visible");
-                    });
+                        container.on('pjax:end', function() {
+                            $("#stationflyout").attr('data-state', "visible");
+                        });
+                    }
                 });
             });
 
