@@ -6,8 +6,7 @@ stationsLayer = (opts) ->
 
 
     svg = d3.select(document.body).append('svg').attr('id', 'd3svg')
-    stationCellsGroup = svg.append('g').attr('id', 'stationcells')
-    stationDotsGroup = svg.append('g').attr('id', 'stationdots')
+    stations = svg.append('g').attr('id', 'stations')
     fadeInTime = 500
     animationDelayTime = 600
 
@@ -52,7 +51,7 @@ stationsLayer = (opts) ->
             stationary = clientX == event.clientX &&
                          clientY == event.clientY
             if stationary
-                $('.station_cell').attr('data-state', 'visible')
+                $('.station').attr('data-state', 'visible')
                 $('#stationflyout').attr('data-state', 'hidden')
                 container = $('#stationflyout')
                 opts = {
@@ -68,51 +67,45 @@ stationsLayer = (opts) ->
                 )
         )
 
-    drawStationCells = () ->
-        cells = stationCellsGroup.selectAll('path').data(stationData)
+    drawStations = () ->
+        stationDelay = (d, i) ->
+            return animationDelayTime + fadeInTime - stationAnimationWait(i)
 
-        # Animate fade-in of cells
-        # happens only once, at load
-        cells.enter()
-            .append('path')
-            .data(stationData)
-            .attr('id', (d, i) -> return 'station' + stationData[i].id )
-            .classed('station_cell', true)
-            .attr('data-id', (d, i) -> return stationData[i].id )
-            .attr('data-bucket', (d, i) -> return stationColor(stationData[i]) )
-            .attr('data-state', 'loading')
-            .transition()
-            .delay((d, i) ->
-                return animationDelayTime + fadeInTime - stationAnimationWait(i))
-            .duration(1000)
-            .attr('data-state', 'visible')
-            .each('end', -> registerMapMouseDragHandlers(this))
+        cellGroups = stations.selectAll('g').data(stationData)
+        groupsEnter = cellGroups.enter().append('g')
+        cellsEnter = groupsEnter.append('path')
+        dotsEnter = groupsEnter.append('circle')
 
-        # draw the projected cells onto the map
-        cells.attr('d', (d, i) ->
-            poly = d3.geom.polygon(stationData[i].polygon)
-            projected = (project(p) for p in poly)
-            return 'M' + projected.join('L') + 'Z'
-        )
-
-
-    drawStationDots = () ->
-        dots = stationDotsGroup.selectAll('circle').data(stationCoords)
+        dots = stations.selectAll('g>circle').data(stationData)
 
         # Position the dots
         dots
             .attr('r', stationDotSize(map.zoom()))
             .attr('transform', (d) ->
-                return 'translate(' + project(d) + ')' )
+                return 'translate(' + project([d.longitude, d.latitude]) + ')' )
 
-        # Animate grow-in of dots
-        # happens only once, on load
-        dots.enter()
-            .append('circle')
+        groupsEnter
+            .classed('station', true)
+            .attr('data-id', (d, i) -> return stationData[i].id )
+            .attr('data-state', 'loading')
+            .transition()
+            .delay(stationDelay)
+            .duration(1000)
+            .attr('data-state', 'visible')
+            .each('end', -> registerMapMouseDragHandlers(this))
+
+
+        # Fade in the cells on load
+        cellsEnter
+            .classed('station_cell', true)
+            .attr('data-bucket', (d, i) -> return stationColor(stationData[i]) )
+
+        # fade in the dots on load
+        dotsEnter
             .attr('opacity', 0.0)
             .attr('r', 0)
             .attr('transform', (d) ->
-                return 'translate(' + project(d) + ')' )
+                return 'translate(' + project([d.longitude, d.latitude]) + ')' )
             .transition()
             .delay(150)
             .duration(450)
@@ -126,13 +119,24 @@ stationsLayer = (opts) ->
             .attr('opacity', 1)
 
 
+        # draw the projected cells onto the map
+        stations
+            .selectAll('g>path')
+            .data(stationData)
+            .attr('d', (d, i) ->
+                console.log(d, " ", i)
+                poly = d3.geom.polygon(stationData[i].polygon)
+                projected = (project(p) for p in poly)
+                return 'M' + projected.join('L') + 'Z'
+            )
 
     draw = ->
         # position the overlay
         svg.attr('width', $('#map').width())
            .attr('height', $('#map').height())
-        drawStationCells()
-        drawStationDots()
+
+        # draw the stations
+        drawStations()
 
     layer = {
         'project': project,
