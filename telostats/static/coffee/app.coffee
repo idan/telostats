@@ -176,12 +176,16 @@ $ ->
     $(document).pjax('a[data-pjax]')
     $('.close-flyout').live('click', (e) ->
         $(this).parent().attr('data-state', 'hidden')
-        window.history.pushState(null, '', '/')
+        url = '/'
+        window.history.pushState(null, '', url)
+        _gaq.push(['_trackPageview', url])
         return false
     )
 
     $('a#about').click( ->
         $('#aboutflyout').attr('data-state', 'visible')
-        window.history.pushState(null, '', '/about')
+        url = '/about'
+        window.history.pushState(null, '', url)
+        _gaq.push(['_trackPageview', url])
         return false
     )
