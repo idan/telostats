@@ -1,4 +1,13 @@
-$(document).pjax('a[data-pjax]');
+$(document).ready(function () {
+    $(document).pjax('a[data-pjax]');
+
+    $('.close-flyout').live('click', function(e) {
+        $(this).parent().attr('data-state', 'hidden');
+        window.history.pushState(null, '', '/');
+        return false;
+    });
+});
+
 
 var m = mapbox.map('map');
 
