@@ -142,7 +142,7 @@
     maxZoom = 17;
     m.addLayer(mapbox.layer().tilejson(telostats_tiles));
     m.ui.zoomer.add();
-    mapbounds = new MM.Extent(32.14920666588464, 34.74252281494142, 32.02678694143692, 34.85478935546873);
+    mapbounds = new MM.Extent(32.149, 34.742, 32.026, 34.924);
     m.setExtent(mapbounds);
     m.setPanLimits(mapbounds);
     m.setZoomRange(minZoom, maxZoom);
