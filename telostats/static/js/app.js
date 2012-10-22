@@ -50,15 +50,15 @@
     stationAnimationWait = function(index) {
       return stationAnimation(stationData[index].latitude);
     };
-    registerMapMouseDragHandlers = function() {
+    registerMapMouseDragHandlers = function(elem) {
       var clientX, clientY;
       clientX = null;
       clientY = null;
-      $(this).on('mousedown', function(event) {
+      $(elem).on('mousedown', function(event) {
         clientX = event.clientX;
         return clientY = event.clientY;
       });
-      return $(this).on('mouseup', function(event) {
+      return $(elem).on('mouseup', function(event) {
         var container, stationary;
         stationary = clientX === event.clientX && clientY === event.clientY;
         if (stationary) {
@@ -89,7 +89,7 @@
       }).attr('data-state', 'loading').transition().delay(function(d, i) {
         return animationDelayTime + fadeInTime - stationAnimationWait(i);
       }).duration(1000).attr('data-state', 'visible').each('end', function() {
-        return registerMapMouseDragHandlers();
+        return registerMapMouseDragHandlers(this);
       });
       return cells.attr('d', function(d, i) {
         var p, poly, projected;
@@ -109,8 +109,6 @@
     drawStationDots = function() {
       var dots;
       dots = stationDotsGroup.selectAll('circle').data(stationCoords);
-      console.log("Drawing station dots with zoom ", map.zoom());
-      console.log("Dots should be ", stationDotSize(map.zoom()), "px big");
       dots.attr('r', stationDotSize(map.zoom())).attr('transform', function(d) {
         return 'translate(' + project(d) + ')';
       });

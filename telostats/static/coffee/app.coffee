@@ -40,15 +40,15 @@ stationsLayer = (opts) ->
     stationAnimationWait = (index) ->
         return stationAnimation(stationData[index].latitude)
 
-    registerMapMouseDragHandlers = ->
+    registerMapMouseDragHandlers = (elem) ->
         clientX = null
         clientY = null
-        $(this).on('mousedown', (event) ->
+        $(elem).on('mousedown', (event) ->
             clientX = event.clientX
             clientY = event.clientY
         )
 
-        $(this).on('mouseup', (event) ->
+        $(elem).on('mouseup', (event) ->
             stationary = clientX == event.clientX &&
                          clientY == event.clientY
             if stationary
@@ -86,7 +86,7 @@ stationsLayer = (opts) ->
                 return animationDelayTime + fadeInTime - stationAnimationWait(i))
             .duration(1000)
             .attr('data-state', 'visible')
-            .each('end', -> registerMapMouseDragHandlers())
+            .each('end', -> registerMapMouseDragHandlers(this))
 
         # draw the projected cells onto the map
         cells.attr('d', (d, i) ->
