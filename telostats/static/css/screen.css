@@ -435,3 +435,13 @@ body, html {
   margin-right: 0.2em; }
 
 /* About flyout */
+.footer {
+  position: absolute;
+  bottom: 5px; }
+
+ul.h {
+  padding-right: 5px; }
+  ul.h li {
+    display: inline;
+    list-style-type: none;
+    padding-left: 7px; }
