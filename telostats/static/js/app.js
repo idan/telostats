@@ -91,13 +91,13 @@
       });
       groupsEnter.classed('station', true).attr('data-id', function(d, i) {
         return stationData[i].id;
+      }).attr('data-bucket', function(d, i) {
+        return stationColor(stationData[i]);
       }).attr('data-state', 'loading').transition().delay(stationDelay).duration(1000).attr('data-state', 'visible').each('end', function() {
         return registerMapMouseDragHandlers(this);
       });
-      cellsEnter.classed('station_cell', true).attr('data-bucket', function(d, i) {
-        return stationColor(stationData[i]);
-      });
-      dotsEnter.attr('opacity', 0.0).attr('r', 0).attr('transform', function(d) {
+      cellsEnter.classed('station_cell', true);
+      dotsEnter.classed("station_dot", true).attr('opacity', 0.0).attr('r', 0).attr('transform', function(d) {
         return 'translate(' + project([d.longitude, d.latitude]) + ')';
       }).transition().delay(150).duration(450).attr('opacity', 0.15).attr('r', 8 * stationDotSize(map.zoom())).transition().delay(function(d, i) {
         return animationDelayTime + fadeInTime - stationAnimationWait(i);

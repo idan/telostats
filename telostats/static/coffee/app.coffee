@@ -87,6 +87,7 @@ stationsLayer = (opts) ->
         groupsEnter
             .classed('station', true)
             .attr('data-id', (d, i) -> return stationData[i].id )
+            .attr('data-bucket', (d, i) -> return stationColor(stationData[i]) )
             .attr('data-state', 'loading')
             .transition()
             .delay(stationDelay)
@@ -98,10 +99,10 @@ stationsLayer = (opts) ->
         # Fade in the cells on load
         cellsEnter
             .classed('station_cell', true)
-            .attr('data-bucket', (d, i) -> return stationColor(stationData[i]) )
 
         # fade in the dots on load
         dotsEnter
+            .classed("station_dot", true)
             .attr('opacity', 0.0)
             .attr('r', 0)
             .attr('transform', (d) ->
