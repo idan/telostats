@@ -11,7 +11,7 @@ class StationResource(ModelResource):
         queryset = Station.visible_objects.all()
         resource_name = 'station'
         serializer = Serializer(formats=['json'])
-        limit = 200  # show all stations by default
+        limit = 0  # show all stations by default
         allowed_methods = ['get']
         filtering = {
             'id': ('exact', ),
