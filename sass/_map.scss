@@ -3,8 +3,10 @@
 @mixin choropleth($color) {
     fill: $color;
     &:hover {
-        fill: #ffee57;
+        fill: darken($color, 20%);
+//        fill: #ffee57;
         opacity: 0.7;
+        stroke-width: 4px;
     }
 }
 
@@ -35,27 +37,32 @@ $color-4: #18b4f1;
     position: absolute;
 }
 
-.station_cell {
-    stroke: white;
-    stroke: black;
-    stroke-opacity: 0.25;
-    opacity: 0.5;
-    @include transition(opacity 0.3s linear, fill 0.1s linear);
-    &[data-bucket="0"] { @include choropleth($color-0); }
-    &[data-bucket="1"] { @include choropleth($color-1); }
-    &[data-bucket="2"] { @include choropleth($color-2); }
-    &[data-bucket="3"] { @include choropleth($color-3); }
-    &[data-bucket="4"] { @include choropleth($color-4); }
-    &[data-state="loading"] {
+.station {
+    .station_cell {
+        stroke: white;
+        stroke: black;
+        stroke-opacity: 0.25;
+        opacity: 0.5;
+        @include transition(opacity 0.3s linear, fill 0.1s linear);
+        &[data-bucket="0"] { @include choropleth($color-0); }
+        &[data-bucket="1"] { @include choropleth($color-1); }
+        &[data-bucket="2"] { @include choropleth($color-2); }
+        &[data-bucket="3"] { @include choropleth($color-3); }
+        &[data-bucket="4"] { @include choropleth($color-4); }
+    }
+
+    &[data-state="loading"] .station_cell {
         opacity: 0;
     }
-    &[data-state="selected"] {
-        stroke-width: 6;
+    &[data-state="selected"] .station_cell {
+        stroke-width: 6px;
         stroke-opacity: 0.75;
     }
+
 }
 
-#stationsGroup {
+
+#stations {
     fill: rgba(0,0,0,0.75);
     stroke: rgba(255,255,255,0.75);
     stroke-width: 1;

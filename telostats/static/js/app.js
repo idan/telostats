@@ -3,7 +3,7 @@
   var initMap, stationsLayer;
 
   stationsLayer = function(opts) {
-    var animationDelayTime, draw, drawStationCells, drawStationDots, fadeInTime, layer, map, project, registerMapMouseDragHandlers, s, stationAnimation, stationAnimationWait, stationCellsGroup, stationColor, stationCoords, stationData, stationDotSize, stationDotsGroup, svg;
+    var animationDelayTime, draw, drawStations, fadeInTime, layer, map, project, registerMapMouseDragHandlers, s, stationAnimation, stationAnimationWait, stationColor, stationCoords, stationData, stationDotSize, stations, svg;
     map = opts.map;
     stationData = opts.stations;
     stationCoords = (function() {
@@ -16,8 +16,7 @@
       return _results;
     })();
     svg = d3.select(document.body).append('svg').attr('id', 'd3svg');
-    stationCellsGroup = svg.append('g').attr('id', 'stationcells');
-    stationDotsGroup = svg.append('g').attr('id', 'stationdots');
+    stations = svg.append('g').attr('id', 'stations');
     fadeInTime = 500;
     animationDelayTime = 600;
     stationColor = function(station) {
@@ -62,7 +61,7 @@
         var container, stationary;
         stationary = clientX === event.clientX && clientY === event.clientY;
         if (stationary) {
-          $('.station_cell').attr('data-state', 'visible');
+          $('.station').attr('data-state', 'visible');
           $('#stationflyout').attr('data-state', 'hidden');
           container = $('#stationflyout');
           opts = {
@@ -77,22 +76,35 @@
         }
       });
     };
-    drawStationCells = function() {
-      var cells;
-      cells = stationCellsGroup.selectAll('path').data(stationData);
-      cells.enter().append('path').data(stationData).attr('id', function(d, i) {
-        return 'station' + stationData[i].id;
-      }).classed('station_cell', true).attr('data-id', function(d, i) {
-        return stationData[i].id;
-      }).attr('data-bucket', function(d, i) {
-        return stationColor(stationData[i]);
-      }).attr('data-state', 'loading').transition().delay(function(d, i) {
+    drawStations = function() {
+      var cellGroups, cellsEnter, dots, dotsEnter, groupsEnter, stationDelay;
+      stationDelay = function(d, i) {
         return animationDelayTime + fadeInTime - stationAnimationWait(i);
-      }).duration(1000).attr('data-state', 'visible').each('end', function() {
+      };
+      cellGroups = stations.selectAll('g').data(stationData);
+      groupsEnter = cellGroups.enter().append('g');
+      cellsEnter = groupsEnter.append('path');
+      dotsEnter = groupsEnter.append('circle');
+      dots = stations.selectAll('g>circle').data(stationData);
+      dots.attr('r', stationDotSize(map.zoom())).attr('transform', function(d) {
+        return 'translate(' + project([d.longitude, d.latitude]) + ')';
+      });
+      groupsEnter.classed('station', true).attr('data-id', function(d, i) {
+        return stationData[i].id;
+      }).attr('data-state', 'loading').transition().delay(stationDelay).duration(1000).attr('data-state', 'visible').each('end', function() {
         return registerMapMouseDragHandlers(this);
       });
-      return cells.attr('d', function(d, i) {
+      cellsEnter.classed('station_cell', true).attr('data-bucket', function(d, i) {
+        return stationColor(stationData[i]);
+      });
+      dotsEnter.attr('opacity', 0.0).attr('r', 0).attr('transform', function(d) {
+        return 'translate(' + project([d.longitude, d.latitude]) + ')';
+      }).transition().delay(150).duration(450).attr('opacity', 0.15).attr('r', 8 * stationDotSize(map.zoom())).transition().delay(function(d, i) {
+        return animationDelayTime + fadeInTime - stationAnimationWait(i);
+      }).duration(200).attr('r', stationDotSize(map.zoom())).attr('opacity', 1);
+      return stations.selectAll('g>path').data(stationData).attr('d', function(d, i) {
         var p, poly, projected;
+        console.log(d, " ", i);
         poly = d3.geom.polygon(stationData[i].polygon);
         projected = (function() {
           var _i, _len, _results;
@@ -106,22 +118,9 @@
         return 'M' + projected.join('L') + 'Z';
       });
     };
-    drawStationDots = function() {
-      var dots;
-      dots = stationDotsGroup.selectAll('circle').data(stationCoords);
-      dots.attr('r', stationDotSize(map.zoom())).attr('transform', function(d) {
-        return 'translate(' + project(d) + ')';
-      });
-      return dots.enter().append('circle').attr('opacity', 0.0).attr('r', 0).attr('transform', function(d) {
-        return 'translate(' + project(d) + ')';
-      }).transition().delay(150).duration(450).attr('opacity', 0.15).attr('r', 8 * stationDotSize(map.zoom())).transition().delay(function(d, i) {
-        return animationDelayTime + fadeInTime - stationAnimationWait(i);
-      }).duration(200).attr('r', stationDotSize(map.zoom())).attr('opacity', 1);
-    };
     draw = function() {
       svg.attr('width', $('#map').width()).attr('height', $('#map').height());
-      drawStationCells();
-      return drawStationDots();
+      return drawStations();
     };
     layer = {
       'project': project,
