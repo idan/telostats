@@ -186,6 +186,7 @@ $ ->
 
     $('.close-flyout').live('click', (e) ->
         $(this).parent().attr('data-state', 'hidden')
+        $('.station[data-state=selected]').attr('data-state', 'visible')
         pushStateNav($(this).attr('href'))
         return false
     )
