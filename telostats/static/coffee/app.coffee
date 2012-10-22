@@ -125,7 +125,6 @@ stationsLayer = (opts) ->
             .selectAll('g>path')
             .data(stationData)
             .attr('d', (d, i) ->
-                console.log(d, " ", i)
                 poly = d3.geom.polygon(stationData[i].polygon)
                 projected = (project(p) for p in poly)
                 return 'M' + projected.join('L') + 'Z'
@@ -176,21 +175,23 @@ initMap = ->
         m.addLayer(sl)
     )
 
+pushStateNav = (url) ->
+    window.history.pushState(null, '', url)
+    if _gaq?
+        _gaq.push(['_trackPageview', url])
+
 $ ->
     initMap()
     $(document).pjax('a[data-pjax]')
+
     $('.close-flyout').live('click', (e) ->
         $(this).parent().attr('data-state', 'hidden')
-        url = '/'
-        window.history.pushState(null, '', url)
-        _gaq.push(['_trackPageview', url])
+        pushStateNav($(this).attr('href'))
         return false
     )
 
     $('a#about').click( ->
         $('#aboutflyout').attr('data-state', 'visible')
-        url = '/about'
-        window.history.pushState(null, '', url)
-        _gaq.push(['_trackPageview', url])
+        pushStateNav($(this).attr('href'))
         return false
     )
