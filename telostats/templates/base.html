@@ -17,6 +17,7 @@
         <link rel="stylesheet" href="{% static 'css/screen.css' %}">
         <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.1/modernizr.min.js"></script>
         {% block extra_head %}{% endblock extra_head %}
+        {% if not debug %}
         <script type="text/javascript">
           var _gaq = _gaq || [];
           _gaq.push(['_setAccount', 'UA-35753590-1']);
@@ -28,6 +29,7 @@
             var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
           })();
         </script>
+        {% endif %}
     </head>
     <body>
         <!--[if lt IE 7]>
