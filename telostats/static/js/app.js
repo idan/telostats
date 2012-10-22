@@ -173,8 +173,10 @@
       pushStateNav($(this).attr('href'));
       return false;
     });
-    return $('a#about').click(function() {
-      $('#aboutflyout').attr('data-state', 'visible');
+    return $('a.static-flyout').click(function() {
+      var target;
+      target = $(this).attr('data-flyout');
+      $(target).attr('data-state', 'visible');
       pushStateNav($(this).attr('href'));
       return false;
     });

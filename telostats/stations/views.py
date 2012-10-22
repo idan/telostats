@@ -25,3 +25,6 @@ class StationDetail(PJAXResponseMixin, DetailView):
 
 class About(StationMap):
     template_name = 'about.html'
+
+class AboutApi(StationMap):
+    template_name = 'about_api.html'

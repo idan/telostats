@@ -14,8 +14,8 @@
         <p>זה מראה אופניים על מפה. אם זה אדום, אין אופניים. אם זה כחול, אין חניה. אם זה לבן, הכל בסדר.</p>
         <div class="footer">
             <ul class="h">
-                <li><a href="{% url about %}" id="about">אודות</a></li>
-                <li><a href="#" id="api">API</a></li>
+                <li><a href="{% url about %}" id="about" class="static-flyout" data-flyout="#aboutflyout">אודות</a></li>
+                <li><a href="{% url about_api %}" id="api" class="static-flyout" data-flyout="#apiflyout">API</a></li>
                 <li><a href="#" id="contact">צור קשר</a></li>
                 <li>כל הזכויות שמורות &copy; 2012</li>
         </div>
@@ -40,6 +40,15 @@
             <p>Telostats פותח על ידי <a href="http://y3xz.com">יובל אדם</a> ו<a href="http://gazit.me">עידן גזית</a>.</p>
         </section>
         {% endblock aboutflyout %}
+    </div>
+
+    <div class="flyout secondary" id="apiflyout" data-state="{% block apiflyout_state %}hidden{% endblock apiflyout_state %}">
+        {% block apiflyout %}
+        <a href="{% url home %}" class="close-flyout">&#10006;</a>
+        <h2>API</h2>
+        <p>אנחנו מאמינים בצורך במידע חופשי. כל המידע הנאסף על ידי Telostats זמין ונגיש באמצעות RESTful API סנדרטי.</p>
+        <p><strong>נקודת קצה: </strong><a href="/api/v1?format=json">http://telostats.com/api/v1</a></p>
+        {% endblock apiflyout %}
     </div>
 {% endblock body %}
 

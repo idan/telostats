@@ -191,8 +191,9 @@ $ ->
         return false
     )
 
-    $('a#about').click( ->
-        $('#aboutflyout').attr('data-state', 'visible')
+    $('a.static-flyout').click( ->
+        target = $(this).attr('data-flyout')
+        $(target).attr('data-state', 'visible')
         pushStateNav($(this).attr('href'))
         return false
     )
