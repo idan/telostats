@@ -99,9 +99,6 @@ stationsLayer = (opts) ->
     drawStationDots = () ->
         dots = stationDotsGroup.selectAll('circle').data(stationCoords)
 
-        console.log("Drawing station dots with zoom ", map.zoom())
-        console.log("Dots should be ", stationDotSize(map.zoom()),  "px big")
-
         # Position the dots
         dots
             .attr('r', stationDotSize(map.zoom()))
