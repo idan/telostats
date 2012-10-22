@@ -1,2 +1,3 @@
 web: ./manage.py runserver
-sass: sass --watch sass:telostats/static/csss -r ./sass/bourbon/lib/bourbon.rb
+sass: sass --watch sass:telostats/static/css -r ./sass/bourbon/lib/bourbon.rb
+coffee: coffee --watch --compile --output telostats/static/js telostats/static/coffee
