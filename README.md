@@ -1,18 +1,25 @@
-Tel-O-Stats
-===========
+# Telostats
 
-Dev
+## Requirements:
+
+- `pip install -r requirements.txt`
+- `gem install sass bourbon`
+- `npm install -g coffee-script` (might require sudo)
+
+## Dev
 ---
 
- 1. `cd telostats`
- 2. `mkvirtualenv telostats`
- 3. `pip install -r requirements.txt`
- 4. `createdb telostats`
- 5. Create `.env` file (and use https://github.com/kennethreitz/autoenv) with required env vars:`AWS_ACCESS_KEY_ID`, `AWS_SECRET_ACCESS_KEY`, `DJANGO_SECRET_KEY`, `TEMPODB_KEY`, `TEMPODB_SECRET`
+- `cd telostats`
+- `mkvirtualenv telostats`
+- `pip install -r requirements.txt`
+- `pip install -r requirements.txt`
+- `gem install sass bourbon`
+- `npm install -g coffee-script` (might require sudo)
+- `createdb telostats`
+- Create `.env` file (and use https://github.com/kennethreitz/autoenv) with required env vars:`AWS_ACCESS_KEY_ID`, `AWS_SECRET_ACCESS_KEY`, `DJANGO_SECRET_KEY`, `TEMPODB_KEY`, `TEMPODB_SECRET`
 
 
-Random Useful Info
-------------------
+## Random Useful Info
 
 Tel Aviv Bounding Box [lon, lat]:
 * Top-Left: [34.7422646, 32.1460661]
