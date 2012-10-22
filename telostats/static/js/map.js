@@ -6,6 +6,12 @@ $(document).ready(function () {
         window.history.pushState(null, '', '/');
         return false;
     });
+
+    $('a#about').click(function() {
+        $('#aboutflyout').attr('data-state', 'visible');
+        window.history.pushState(null, '', '/about');
+        return false;
+    });
 });
 
 

@@ -12,6 +12,7 @@
         <h1>Telostats</h1>
         <h2>ועכשיו לקצת טקסט בעברית.</h2>
         <p>זה מראה אופניים על מפה. אם זה אדום, אין אופניים. אם זה כחול, אין חניה. אם זה לבן, הכל בסדר.</p>
+        <a href="#" id="about">אודות</a>
     </div>
 
     <div class="flyout secondary" id="stationflyout" data-state="{% block stationflyout_state %}hidden{% endblock stationflyout_state %}">
@@ -19,14 +20,19 @@
         {% endblock stationflyout %}
     </div>
 
-    <div class="flyout secondary" id="about" data-state="hidden">
+    <div class="flyout secondary" id="aboutflyout" data-state="{% block aboutflyout_state %}hidden{% endblock aboutflyout_state %}">
         {% block aboutflyout %}
-        <h1>About Telostats</h1>
+        <a href="{% url home %}" class="close-flyout">&#10006;</a>
+        <h2>אודות Telostats</h2>
+        <section id="about">
+            <p>Telostats פותח כדי לתת מענה למשתמשי שירות תל-אופן על מנת שיוכלו לבצע שימוש מוצלח יותר בשירות.</p>
+        </section>
+        <section id="api">
+            <p>כל המידע ממערכת Telostats פתוח וחופשי לכל משתמש. קוד המקור שלנו זמין בGithub (<a href="https://github.com/idan/telostats">כאן</a> ו<a href="https://github.com/idan/telostats-tiles">כאן</a>). המידע של Telostats זמין בAPI סטנדרטי.</p>
+        </section>
         <section id="people">
-            <h1>People</h1>
-            <article><h1>Yuval Adam</h1></article>
-            <article><h1>Idan Gazit</h1></article>
-        </section>            
+            <p>Telostats פותח על ידי <a href="http://y3xz.com">יובל אדם</a> ו<a href="http://gazit.me">עידן גזית</a>.</p>
+        </section>
         {% endblock aboutflyout %}
     </div>
 {% endblock body %}

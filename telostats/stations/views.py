@@ -22,3 +22,6 @@ class StationDetail(PJAXResponseMixin, DetailView):
         context = super(StationDetail, self).get_context_data(**kwargs)
         context['tileserver_url'] = settings.TILESERVER_URL
         return context
+
+class About(StationMap):
+    template_name = 'about.html'
