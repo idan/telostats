@@ -1,0 +1,2 @@
+web: ./manage.py runserver
+sass: sass --watch sass:telostats/static/csss -r ./sass/bourbon/lib/bourbon.rb
