@@ -171,8 +171,4 @@ d3.json('/api/v1/station/', function(stations) {
     var stationMap = stationVoronoi().data(stations.objects);
     m.addLayer(stationMap);
     console.log("added d3 layer!");
-    $('#map').on('click', function(event) {
-        var p = m.pointLocation({x:event.pageX, y:event.pageY});
-        console.log([p.lon, p.lat]);
-    });
 });
