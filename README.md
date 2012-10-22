@@ -7,7 +7,6 @@
 - `npm install -g coffee-script` (might require sudo)
 
 ## Dev
----
 
 - `cd telostats`
 - `mkvirtualenv telostats`
