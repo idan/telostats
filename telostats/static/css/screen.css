@@ -352,60 +352,64 @@ body, html {
   stroke: black;
   stroke-opacity: 0.1;
   fill-opacity: 0.5;
-  -webkit-transition: opacity 0.3s linear, fill 0.1s linear;
-  -moz-transition: opacity 0.3s linear, fill 0.1s linear;
-  -ms-transition: opacity 0.3s linear, fill 0.1s linear;
-  -o-transition: opacity 0.3s linear, fill 0.1s linear;
-  transition: opacity 0.3s linear, fill 0.1s linear; }
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  -ms-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear; }
 .station[data-bucket="0"] .station_cell {
   fill: #dd2ea3; }
 .station[data-bucket="0"]:hover .station_cell {
   stroke-width: 2px;
   stroke-opacity: 0.7; }
 .station[data-bucket="0"]:hover .station_dot {
-  stroke-width: 7px;
-  stroke: black; }
+  stroke-width: 6px;
+  stroke: black;
+  fill: black; }
 .station[data-bucket="1"] .station_cell {
   fill: #ffafe5; }
 .station[data-bucket="1"]:hover .station_cell {
   stroke-width: 2px;
   stroke-opacity: 0.7; }
 .station[data-bucket="1"]:hover .station_dot {
-  stroke-width: 7px;
-  stroke: black; }
+  stroke-width: 6px;
+  stroke: black;
+  fill: black; }
 .station[data-bucket="2"] .station_cell {
   fill: rgba(247, 247, 247, 0.7); }
 .station[data-bucket="2"]:hover .station_cell {
   stroke-width: 2px;
   stroke-opacity: 0.7; }
 .station[data-bucket="2"]:hover .station_dot {
-  stroke-width: 7px;
-  stroke: black; }
+  stroke-width: 6px;
+  stroke: black;
+  fill: black; }
 .station[data-bucket="3"] .station_cell {
   fill: #94e1ff; }
 .station[data-bucket="3"]:hover .station_cell {
   stroke-width: 2px;
   stroke-opacity: 0.7; }
 .station[data-bucket="3"]:hover .station_dot {
-  stroke-width: 7px;
-  stroke: black; }
+  stroke-width: 6px;
+  stroke: black;
+  fill: black; }
 .station[data-bucket="4"] .station_cell {
   fill: #18b4f1; }
 .station[data-bucket="4"]:hover .station_cell {
   stroke-width: 2px;
   stroke-opacity: 0.7; }
 .station[data-bucket="4"]:hover .station_dot {
-  stroke-width: 7px;
-  stroke: black; }
-.station[data-state="loading"] .station_cell {
-  opacity: 0; }
-.station[data-state="selected"] .station_dot {
-  stroke-width: 7px;
+  stroke-width: 6px;
   stroke: black;
-  fill: white; }
-.station[data-state="selected"] .station_cell {
-  stroke-width: 3px;
-  stroke-opacity: 1.0; }
+  fill: black; }
+.station.loading .station_cell {
+  opacity: 0; }
+.station.selected .station_dot {
+  stroke-width: 6px;
+  stroke: black; }
+.station.selected .station_cell {
+  stroke-width: 2px;
+  stroke-opacity: 0.9; }
 
 #stations {
   fill: rgba(0, 0, 0, 0.75);
@@ -418,15 +422,15 @@ body, html {
   position: absolute;
   width: 400px;
   right: 0;
-  top: 1em;
-  bottom: 1em;
+  top: 10px;
+  bottom: 10px;
   padding: 1em;
   -webkit-border-top-left-radius: 2px;
   border-top-left-radius: 2px;
   -webkit-border-bottom-left-radius: 2px;
   border-bottom-left-radius: 2px;
   background: #eee;
-  border: 1px solid #ddd;
+  border: 1px solid #888;
   opacity: 1.0;
   -webkit-transition: right 0.2s ease-in-out, opacity 0.2s linear;
   -moz-transition: right 0.2s ease-in-out, opacity 0.2s linear;
@@ -434,10 +438,12 @@ body, html {
   -o-transition: right 0.2s ease-in-out, opacity 0.2s linear;
   transition: right 0.2s ease-in-out, opacity 0.2s linear;
   -webkit-box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.25);
-  box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.25); }
+  box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.25);
+  z-index: 10; }
   .flyout.secondary {
-    width: 395px; }
-  .flyout[data-state="hidden"] {
+    width: 397px;
+    z-index: 20; }
+  .flyout.hidden {
     right: -400px;
     opacity: 0; }
   .flyout > h1 {

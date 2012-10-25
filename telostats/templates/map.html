@@ -9,7 +9,7 @@
     <div id="map"></div>
 
     <div class="flyout" id="maininfo">
-        <h1>Telostats</h1>
+        <h1>טלוסטס</h1>
         <h2>ועכשיו לקצת טקסט בעברית.</h2>
         <p>זה מראה אופניים על מפה. אם זה אדום, אין אופניים. אם זה כחול, אין חניה. אם זה לבן, הכל בסדר.</p>
         <div class="footer">
@@ -18,15 +18,11 @@
                 <li><a href="{% url about_api %}" id="api" class="static-flyout" data-flyout="#apiflyout">API</a></li>
                 <li><a href="#" id="contact">צור קשר</a></li>
                 <li>כל הזכויות שמורות &copy; 2012</li>
+            </ul>
         </div>
     </div>
 
-    <div class="flyout secondary" id="stationflyout" data-state="{% block stationflyout_state %}hidden{% endblock stationflyout_state %}">
-        {% block stationflyout %}
-        {% endblock stationflyout %}
-    </div>
-
-    <div class="flyout secondary" id="aboutflyout" data-state="{% block aboutflyout_state %}hidden{% endblock aboutflyout_state %}">
+    <div class="flyout secondary {% block aboutflyout_state %}hidden{% endblock aboutflyout_state %}" id="aboutflyout">
         {% block aboutflyout %}
         <a href="{% url home %}" class="close-flyout">&#10006;</a>
         <h2>אודות Telostats</h2>
@@ -42,13 +38,20 @@
         {% endblock aboutflyout %}
     </div>
 
-    <div class="flyout secondary" id="apiflyout" data-state="{% block apiflyout_state %}hidden{% endblock apiflyout_state %}">
+    <div class="flyout secondary {% block apiflyout_state %}hidden{% endblock apiflyout_state %}" id="apiflyout">
         {% block apiflyout %}
         <a href="{% url home %}" class="close-flyout">&#10006;</a>
         <h2>API</h2>
         <p>אנחנו מאמינים בצורך במידע חופשי. כל המידע הנאסף על ידי Telostats זמין ונגיש באמצעות RESTful API סנדרטי.</p>
         <p><strong>נקודת קצה: </strong><a href="/api/v1?format=json">http://telostats.com/api/v1</a></p>
         {% endblock apiflyout %}
+    </div>
+
+    <div id="stationflyouts">
+        <div class="flyout secondary stationflyout {% block stationflyout_state %}hidden{% endblock stationflyout_state %}" data-id="{% block stationid %}{% endblock stationid %}">
+            {% block stationflyout %}
+            {% endblock stationflyout %}
+        </div>
     </div>
 {% endblock body %}
 
@@ -57,10 +60,16 @@
     <script src="//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.3.3/underscore.js"></script>
     <script src="//d3js.org/d3.v2.js"></script>
     <script src='//api.tiles.mapbox.com/mapbox.js/v0.6.6/mapbox.uncompressed.js'></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ICanHaz.js/0.10/ICanHaz.min.js"></script>
 
     <script>
         TILESERVER_URL = "{{ tileserver_url }}";
     </script>
+
+    <script id="stationflyout_template" type="text/html">
+        <div class="flyout secondary stationflyout hidden" data-id="{% templatetag openvariable %} stationid {% templatetag closevariable %}"></div>
+    </script>
+
     <script src="{% static 'js/jquery.pjax.js' %}"></script>
     <script src="{% static 'js/app.js' %}"></script>
 {% endblock body_js %}

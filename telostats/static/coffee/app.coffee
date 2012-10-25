@@ -40,30 +40,39 @@ stationsLayer = (opts) ->
         return stationAnimation(stationData[index].latitude)
 
     registerMapMouseDragHandlers = (elem) ->
+        d3elem = d3.select(elem)
+        stationid = d3elem.attr('data-id')
+        d3elem.classed('loading', false)
         clientX = null
         clientY = null
-        $(elem).on('mousedown', (event) ->
-            clientX = event.clientX
-            clientY = event.clientY
+        d3elem.on('mousedown', (d, i) ->
+            clientX = d3.event.clientX
+            clientY = d3.event.clientY
         )
 
-        $(elem).on('mouseup', (event) ->
-            stationary = clientX == event.clientX &&
-                         clientY == event.clientY
+        d3elem.on('mouseup', (d, i) ->
+            stationary = clientX == d3.event.clientX &&
+                         clientY == d3.event.clientY
+            if d3elem.classed('selected')
+                # do nothing, we're already ok.
+                return
             if stationary
-                $('.station').attr('data-state', 'visible')
-                $('#stationflyout').attr('data-state', 'hidden')
-                container = $('#stationflyout')
+                d3.selectAll('.station').classed('selected', false)
+                newflyout = ich.stationflyout_template({stationid: stationid})
+                $('#stationflyouts').append(newflyout)
                 opts = {
-                    url: '/station/' + $(this).attr('data-id'),
-                    container: container
+                    url: '/station/' + stationid,
+                    container: ".stationflyout[data-id=#{stationid}]"
                 }
 
+                d3elem.classed('selected', true)
                 $.pjax(opts)
-                $(this).attr('data-state', 'selected')
-
-                container.on('pjax:end', ->
-                    $('#stationflyout').attr('data-state', 'visible')
+                $(newflyout).on('pjax:end', ->
+                    $(this).removeClass('hidden')
+                    setTimeout( ->
+                        $('.flyout.secondary:not(.stationflyout)').addClass('hidden')
+                        $(".stationflyout[data-id!=#{stationid}]").remove()
+                    , 200)
                 )
         )
 
@@ -86,13 +95,12 @@ stationsLayer = (opts) ->
 
         groupsEnter
             .classed('station', true)
+            .classed('loading', true)
             .attr('data-id', (d, i) -> return stationData[i].id )
             .attr('data-bucket', (d, i) -> return stationColor(stationData[i]) )
-            .attr('data-state', 'loading')
             .transition()
             .delay(stationDelay)
-            .duration(1000)
-            .attr('data-state', 'visible')
+            .duration(200)
             .each('end', -> registerMapMouseDragHandlers(this))
 
 
@@ -113,8 +121,7 @@ stationsLayer = (opts) ->
             .attr('opacity', 0.15)
             .attr('r', 8 * stationDotSize(map.zoom()))
             .transition()
-            .delay((d, i) ->
-                return animationDelayTime + fadeInTime - stationAnimationWait(i))
+            .delay(stationDelay)
             .duration(200)
             .attr('r', stationDotSize(map.zoom()))
             .attr('opacity', 1)
@@ -150,7 +157,15 @@ initMap = ->
     m = mapbox.map('map')
     telostats_tiles = {
         'tilejson': '2.0.0',
+        'scheme': 'xyz',
+        'name': 'Tel Aviv Light',
+        'description': 'A light tileset focusing on the municipality of Tel Aviv, suitable for visualizations.',
+        'attribution': 'OSM contributors',
+        'bounds': [34.742, 32.026, 34.924, 32.149],
+        'minzoom': 13,
+        'maxzoom': 17,
         'tiles': [TILESERVER_URL],
+        'grids': [],
     }
     minZoom = 13
     maxZoom = 17
@@ -185,15 +200,15 @@ $ ->
     $(document).pjax('a[data-pjax]')
 
     $('.close-flyout').live('click', (e) ->
-        $(this).parent().attr('data-state', 'hidden')
-        $('.station[data-state=selected]').attr('data-state', 'visible')
+        $(this).parent().addClass('hidden')
+        d3.select('.selected').classed('selected', false)
         pushStateNav($(this).attr('href'))
         return false
     )
 
     $('a.static-flyout').click( ->
         target = $(this).attr('data-flyout')
-        $(target).attr('data-state', 'visible')
+        $(target).removeClass('hidden')
         pushStateNav($(this).attr('href'))
         return false
     )

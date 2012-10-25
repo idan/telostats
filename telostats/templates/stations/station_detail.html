@@ -1,10 +1,12 @@
 {% extends 'map.html' %}
 
+{% block stationid %}{{ station.id }}{% endblock stationid %}
+
 {% block title %}
 Station Detail - {{ station.id }}
 {% endblock title %}
 
-{% block stationflyout_state %}visible{% endblock stationflyout_state %}
+{% block stationflyout_state %}{% endblock stationflyout_state %}
 
 {% block stationflyout %}
 {% include 'stations/station_detail-pjax.html' %}

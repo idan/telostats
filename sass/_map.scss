@@ -36,13 +36,13 @@ $color-4: #18b4f1;
         }
         &:hover {
             .station_cell {
-                // opacity: 0.7;
                 stroke-width: 2px;
                 stroke-opacity: 0.7;
             }
             .station_dot {
-                stroke-width: 7px;
+                stroke-width: 6px;
                 stroke: black;
+                fill: black;
             }
         }
     }
@@ -55,7 +55,7 @@ $color-4: #18b4f1;
         stroke: black;
         stroke-opacity: 0.1;
         fill-opacity: 0.5;
-        @include transition(opacity 0.3s linear, fill 0.1s linear);
+        @include transition(all 0.2s linear);
     }
 
     &[data-bucket="0"] { @include choropleth($color-0); }
@@ -64,18 +64,17 @@ $color-4: #18b4f1;
     &[data-bucket="3"] { @include choropleth($color-3); }
     &[data-bucket="4"] { @include choropleth($color-4); }
 
-    &[data-state="loading"] .station_cell {
+    &.loading .station_cell {
         opacity: 0;
     }
-    &[data-state="selected"] {
+    &.selected {
         .station_dot {
-            stroke-width: 7px;
+            stroke-width: 6px;
             stroke: black;
-            fill: white;
         }
         .station_cell {
-            stroke-width: 3px;
-            stroke-opacity: 1.0;
+            stroke-width: 2px;
+            stroke-opacity: 0.9;
         }
     }
 
