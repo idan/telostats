@@ -57,15 +57,16 @@
     <div class="flyout secondary {% block aboutflyout_state %}hidden{% endblock aboutflyout_state %}" id="aboutflyout">
         {% block aboutflyout %}
         <a href="{% url home %}" class="close-flyout">&#10006;</a>
-        <h2>אודות Telostats</h2>
+        <h2>אודות</h2>
         <section id="about">
-            <p>Telostats פותח כדי לתת מענה למשתמשי שירות תל-אופן על מנת שיוכלו לבצע שימוש מוצלח יותר בשירות.</p>
+            <p>כל מי שמשתמש בתל-אופן, האופניים הירוקות של תל אביב, מסכים על שני דברים: שמדובר באחד השדרוגים הכי טובים שעברו על תל אביב בשנים האחרונות, ושיש עוד הרבה מה לשפר.</p>
+            <p>Tel-O-Stats פותח במטרה להנגיש לציבור מידע שיאפשר לו לבצע שימוש נכון וחכם בשירות האופניים של תל אביב. המידע נאסף, קיים וזמין - אם רק נציג אותו בצורה חדה וברורה, אפשר יהיה לשפר משמעותית את השימוש בשירות.</p>
         </section>
         <section id="api">
-            <p>כל המידע ממערכת Telostats פתוח וחופשי לכל משתמש. קוד המקור שלנו זמין בGithub (<a href="https://github.com/idan/telostats">כאן</a> ו<a href="https://github.com/idan/telostats-tiles">כאן</a>). המידע של Telostats זמין בAPI סטנדרטי.</p>
+            <p>אנחנו מאמינים גדולים במידע פתוח וקוד פתוח. כל המידע ממערכת Telostats פתוח וחופשי לכל משתמש. קוד המקור שלנו זמין בGithub (<a href="https://github.com/idan/telostats">כאן</a> ו<a href="https://github.com/idan/telostats-tiles">כאן</a>). המידע מ-Tel-O-Stats זמין בAPI סטנדרטי.</p>
         </section>
         <section id="people">
-            <p>Telostats פותח על ידי <a href="http://y3xz.com">יובל אדם</a> ו<a href="http://gazit.me">עידן גזית</a>.</p>
+            <p>Telostats פותח על ידי <a href="http://y3xz.com">יובל אדם</a> ו<a href="http://gazit.me">עידן גזית</a> בצורה עצמאית וללא כל מימון.</p>
         </section>
         {% endblock aboutflyout %}
     </div>
@@ -74,7 +75,7 @@
         {% block apiflyout %}
         <a href="{% url home %}" class="close-flyout">&#10006;</a>
         <h2>API</h2>
-        <p>אנחנו מאמינים בצורך במידע חופשי. כל המידע הנאסף על ידי Telostats זמין ונגיש באמצעות RESTful API סנדרטי.</p>
+        <p>אנחנו מאמינים שמידע ציבורי חייב להיות פתוח וחופשי. כל המידע הנאסף על ידי Tel-O-Stats פתוח לשימוש חופשי וללא הגבלה באמצעות RESTful API (ממשק תכנות) סטנדרטי.</p>
         <p><strong>נקודת קצה: </strong><a href="/api/v1?format=json">http://telostats.com/api/v1</a></p>
         {% endblock apiflyout %}
     </div>
