@@ -1,0 +1,85 @@
+
+
+#maininfo {
+    header {
+        border-bottom: 1px solid #ccc;
+        h1 {
+            font-weight: bold;
+            text-shadow: 0 -1px 0 white;
+        }
+    }
+    footer {
+        position: absolute;
+        bottom: 5px;
+        left: 1em;
+        right: 1em;
+        border-top: 1px solid #ccc;
+        font-size: 0.8em;
+        color: #888;
+        a {
+            color: #444;
+            font-weight: bold;
+        }
+        ul {
+            padding: 0;
+            li {
+                display: inline-block;
+                list-style-type: none;
+                padding-left: 1em;
+            }
+        }
+    }
+    .l-key {
+        h1 {
+            font-size: 1em;
+            text-align: center;
+            text-shadow: 0 -1px 0 rgba(255,255,255,0.5);
+        }
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+            li {
+                $swatch-size: 62px;
+                $swatch-gutter: 14px;
+                float: left;
+                text-align: center;
+                width: $swatch-size;
+                margin-right: $swatch-gutter;
+                &:last-child {
+                    margin-right: 0;
+                }
+                padding: 0;
+                .swatch {
+                    width: $swatch-size;
+                    height: $swatch-size;
+                    border: 1px solid #ddd;
+                    background-color: white;
+                    position: relative;
+                    &:before {
+                        content: " ";
+                        position: absolute;
+                        left: 4px;
+                        top: 4px;
+                        right: 4px;
+                        bottom: 4px;
+                    }
+                }
+                &[data-bucket="0"] .swatch:before { background-color: $color-0; }
+                &[data-bucket="1"] .swatch:before { background-color: $color-1; }
+                &[data-bucket="2"] .swatch:before {
+                    background: $color-2 url(../img/checkmark.svg) center center no-repeat;
+                    background-size: contain;
+                }
+                &[data-bucket="3"] .swatch:before { background-color: $color-3; }
+                &[data-bucket="4"] .swatch:before { background-color: $color-4; }
+                font-size: 0.8em;
+                strong {
+                    display: block;
+                    font-weight: 700;
+                    font-size: 1.5em;
+                }
+            }
+        }
+    }
+}

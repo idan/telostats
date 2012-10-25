@@ -9,17 +9,50 @@
     <div id="map"></div>
 
     <div class="flyout" id="maininfo">
-        <h1>טלוסטס</h1>
-        <h2>ועכשיו לקצת טקסט בעברית.</h2>
-        <p>זה מראה אופניים על מפה. אם זה אדום, אין אופניים. אם זה כחול, אין חניה. אם זה לבן, הכל בסדר.</p>
-        <div class="footer">
-            <ul class="h">
+        <header>
+            <h1>טלוסטס</h1>
+            <h2>ועכשיו לקצת טקסט בעברית.</h2>
+            <p>זה מראה אופניים על מפה. אם זה אדום, אין אופניים. אם זה כחול, אין חניה. אם זה לבן, הכל בסדר.</p>
+        </header>
+        <section class="l-key">
+            <h1>מפתח</h1>
+            <ul>
+                <li data-bucket="0">
+                    <div class="swatch"></div>
+                    <strong>0</strong>
+                    אופניים
+                </li>
+                <li data-bucket="1">
+                    <div class="swatch"></div>
+                    <strong>5</strong>
+                    אופניים
+                </li>
+                <li data-bucket="2">
+                    <div class="swatch"></div>
+                    <strong>תקין</strong>
+                </li>
+                <li data-bucket="3">
+                    <div class="swatch"></div>
+                    <strong>5</strong>
+                    חנייות
+                </li>
+                <li data-bucket="4">
+                    <div class="swatch"></div>
+                    <strong>0</strong>
+                    חנייות
+                </li>
+
+            </ul>
+        </section>
+
+        <footer>
+            <ul>
                 <li><a href="{% url about %}" id="about" class="static-flyout" data-flyout="#aboutflyout">אודות</a></li>
                 <li><a href="{% url about_api %}" id="api" class="static-flyout" data-flyout="#apiflyout">API</a></li>
                 <li><a href="#" id="contact">צור קשר</a></li>
                 <li>כל הזכויות שמורות &copy; 2012</li>
             </ul>
-        </div>
+        </footer>
     </div>
 
     <div class="flyout secondary {% block aboutflyout_state %}hidden{% endblock aboutflyout_state %}" id="aboutflyout">

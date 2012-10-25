@@ -319,6 +319,13 @@ table {
   font-weight: 300;
   font-style: normal; }
 
+@font-face {
+  font-family: "Almoni";
+  src: url("../fonts/almoni-dl-aaa-700.eot");
+  src: url("../fonts/almoni-dl-aaa-700.eot?#iefix") format("embedded-opentype"), url("../fonts/almoni-dl-aaa-700.woff") format("woff"), url("../fonts/almoni-dl-aaa-700.ttf") format("truetype"), url("../fonts/almoni-dl-aaa-700.svg#Almoni") format("svg");
+  font-weight: 700;
+  font-style: normal; }
+
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -420,6 +427,7 @@ body, html {
 .flyout {
   direction: rtl;
   position: absolute;
+  color: #444;
   width: 400px;
   right: 0;
   top: 10px;
@@ -446,7 +454,7 @@ body, html {
   .flyout.hidden {
     right: -400px;
     opacity: 0; }
-  .flyout > h1 {
+  .flyout h1, .flyout h2, .flyout h3, .flyout h4, .flyout h5, .flyout h6 {
     font-weight: 300; }
   .flyout .close-flyout {
     position: absolute;
@@ -465,13 +473,70 @@ body, html {
   margin-right: 0.2em; }
 
 /* About flyout */
-.footer {
+#maininfo header {
+  border-bottom: 1px solid #ccc; }
+  #maininfo header h1 {
+    font-weight: bold;
+    text-shadow: 0 -1px 0 white; }
+#maininfo footer {
   position: absolute;
-  bottom: 5px; }
-
-ul.h {
-  padding-right: 5px; }
-  ul.h li {
-    display: inline;
-    list-style-type: none;
-    padding-left: 7px; }
+  bottom: 5px;
+  left: 1em;
+  right: 1em;
+  border-top: 1px solid #ccc;
+  font-size: 0.8em;
+  color: #888; }
+  #maininfo footer a {
+    color: #444;
+    font-weight: bold; }
+  #maininfo footer ul {
+    padding: 0; }
+    #maininfo footer ul li {
+      display: inline-block;
+      list-style-type: none;
+      padding-left: 1em; }
+#maininfo .l-key h1 {
+  font-size: 1em;
+  text-align: center;
+  text-shadow: 0 -1px 0 rgba(255, 255, 255, 0.5); }
+#maininfo .l-key ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none; }
+  #maininfo .l-key ul li {
+    float: left;
+    text-align: center;
+    width: 62px;
+    margin-right: 14px;
+    padding: 0;
+    font-size: 0.8em; }
+    #maininfo .l-key ul li:last-child {
+      margin-right: 0; }
+    #maininfo .l-key ul li .swatch {
+      width: 62px;
+      height: 62px;
+      border: 1px solid #ddd;
+      background-color: white;
+      position: relative; }
+      #maininfo .l-key ul li .swatch:before {
+        content: " ";
+        position: absolute;
+        left: 4px;
+        top: 4px;
+        right: 4px;
+        bottom: 4px; }
+    #maininfo .l-key ul li[data-bucket="0"] .swatch:before {
+      background-color: #dd2ea3; }
+    #maininfo .l-key ul li[data-bucket="1"] .swatch:before {
+      background-color: #ffafe5; }
+    #maininfo .l-key ul li[data-bucket="2"] .swatch:before {
+      background: rgba(247, 247, 247, 0.7) url(../img/checkmark.svg) center center no-repeat;
+      background-size: contain; }
+    #maininfo .l-key ul li[data-bucket="3"] .swatch:before {
+      background-color: #94e1ff; }
+    #maininfo .l-key ul li[data-bucket="4"] .swatch:before {
+      background-color: #18b4f1; }
+    #maininfo .l-key ul li strong {
+      display: block;
+      font-weight: 700;
+      font-size: 1.5em; }
