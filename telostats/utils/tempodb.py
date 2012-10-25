@@ -33,20 +33,9 @@ class TempoDbClient():
         url = API_URL + '/data/'
         return self.session.get(url, params=params)
 
-    def get_pole_series(self, station_id=None, start=None, end=None):
-        params = {}
-        if station_id:
-            params['attr[station]'] = station_id
-        if start:
-            params['start'] = start.isoformat()
-        if end:
-            params['end'] = end.isoformat()
-        url = API_URL + '/data/'
-        return self.session.get(url, params=params)
-
     def get_series(self, station_id=None, **kwargs):
         start = datetime.utcnow() - timedelta(**kwargs)
-        content = self.get_pole_series(station_id=station_id, start=start).content
+        content = self.get_pole_data(station_id=station_id, start=start).content
         res = defaultdict(dict)
 
         d = json.loads(content)
