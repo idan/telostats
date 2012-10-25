@@ -46,16 +46,16 @@
 
         <footer>
             <ul>
-                <li><a href="{% url about %}" id="about" class="static-flyout" data-flyout="#aboutflyout">אודות</a></li>
-                <li><a href="{% url about_api %}" id="api" class="static-flyout" data-flyout="#apiflyout">API</a></li>
-                <li><a href="#" id="contact">צור קשר</a></li>
+                <li><a href="{% url about %}" id="about" class="static-flyout" data-flyout="#about-flyout">אודות</a></li>
+                <li><a href="{% url about_api %}" id="api" class="static-flyout" data-flyout="#api-flyout">API</a></li>
+                <li><a href="{% url contact %}" id="contact" class="static-flyout" data-flyout="#contact-flyout">צרו קשר</a></li>
                 <li>כל הזכויות שמורות &copy; 2012</li>
             </ul>
         </footer>
     </div>
 
-    <div class="flyout secondary {% block aboutflyout_state %}hidden{% endblock aboutflyout_state %}" id="aboutflyout">
-        {% block aboutflyout %}
+    <div class="flyout secondary {% block aboutflyout_state %}hidden{% endblock aboutflyout_state %}" id="about-flyout">
+        {% block about_flyout %}
         <a href="{% url home %}" class="close-flyout">&#10006;</a>
         <h2>אודות</h2>
         <section id="about">
@@ -68,16 +68,30 @@
         <section id="people">
             <p>Telostats פותח על ידי <a href="http://y3xz.com">יובל אדם</a> ו<a href="http://gazit.me">עידן גזית</a> בצורה עצמאית וללא כל מימון.</p>
         </section>
-        {% endblock aboutflyout %}
+        {% endblock about_flyout %}
     </div>
 
-    <div class="flyout secondary {% block apiflyout_state %}hidden{% endblock apiflyout_state %}" id="apiflyout">
-        {% block apiflyout %}
+    <div class="flyout secondary {% block apiflyout_state %}hidden{% endblock apiflyout_state %}" id="api-flyout">
+        {% block api_flyout %}
         <a href="{% url home %}" class="close-flyout">&#10006;</a>
         <h2>API</h2>
         <p>אנחנו מאמינים שמידע ציבורי חייב להיות פתוח וחופשי. כל המידע הנאסף על ידי Tel-O-Stats פתוח לשימוש חופשי וללא הגבלה באמצעות RESTful API (ממשק תכנות) סטנדרטי.</p>
         <p><strong>נקודת קצה: </strong><a href="/api/v1?format=json">http://telostats.com/api/v1</a></p>
-        {% endblock apiflyout %}
+        {% endblock api_flyout %}
+    </div>
+
+    <div class="flyout secondary {% block contactflyout_state %}hidden{% endblock contactflyout_state %}" id="contact-flyout">
+        {% block contact_flyout %}
+        <a href="{% url home %}" class="close-flyout">&#10006;</a>
+        <h2>צרו קשר</h2>
+        <p>נשמח לשמוע כל הערה, תלונה או בקשה שיש לכם לגבי Tel-O-Stats.</p>
+        <p>אם ברצונכם לקבל תשובה, דאגו לציין כתובת אימייל או מספר טלפון בו נוכל לחזור אליכם.</p>
+        <form id="contact-form" action="{% url contact %}" method="POST">
+            {% csrf_token %}
+            <textarea id="contact-feedback" rows="4" cols="40"></textarea>
+            <input type="submit" value="שלח/י" disabled="disabled"></input>
+        </form>
+        {% endblock contact_flyout %}
     </div>
 
     <div id="stationflyouts">
