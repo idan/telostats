@@ -530,7 +530,8 @@ body, html {
     #maininfo .l-key ul li[data-bucket="1"] .swatch:before {
       background-color: #ffafe5; }
     #maininfo .l-key ul li[data-bucket="2"] .swatch:before {
-      background-color: rgba(247, 247, 247, 0.7); }
+      background: rgba(247, 247, 247, 0.7) url(../img/checkmark.svg) center center no-repeat;
+      background-size: contain; }
     #maininfo .l-key ul li[data-bucket="3"] .swatch:before {
       background-color: #94e1ff; }
     #maininfo .l-key ul li[data-bucket="4"] .swatch:before {
