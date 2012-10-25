@@ -8,6 +8,27 @@
             text-shadow: 0 -1px 0 white;
         }
     }
+    footer {
+        position: absolute;
+        bottom: 5px;
+        left: 1em;
+        right: 1em;
+        border-top: 1px solid #ccc;
+        font-size: 0.8em;
+        color: #888;
+        a {
+            color: #444;
+            font-weight: bold;
+        }
+        ul {
+            padding: 0;
+            li {
+                display: inline-block;
+                list-style-type: none;
+                padding-left: 1em;
+            }
+        }
+    }
     .l-key {
         h1 {
             font-size: 1em;

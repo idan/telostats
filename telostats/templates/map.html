@@ -45,14 +45,14 @@
             </ul>
         </section>
 
-        <div class="footer">
-            <ul class="h">
+        <footer>
+            <ul>
                 <li><a href="{% url about %}" id="about" class="static-flyout" data-flyout="#aboutflyout">אודות</a></li>
                 <li><a href="{% url about_api %}" id="api" class="static-flyout" data-flyout="#apiflyout">API</a></li>
                 <li><a href="#" id="contact">צור קשר</a></li>
                 <li>כל הזכויות שמורות &copy; 2012</li>
             </ul>
-        </div>
+        </footer>
     </div>
 
     <div class="flyout secondary {% block aboutflyout_state %}hidden{% endblock aboutflyout_state %}" id="aboutflyout">

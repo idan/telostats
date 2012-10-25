@@ -473,22 +473,28 @@ body, html {
   margin-right: 0.2em; }
 
 /* About flyout */
-.footer {
-  position: absolute;
-  bottom: 5px; }
-
-ul.h {
-  padding-right: 5px; }
-  ul.h li {
-    display: inline;
-    list-style-type: none;
-    padding-left: 7px; }
-
 #maininfo header {
   border-bottom: 1px solid #ccc; }
   #maininfo header h1 {
     font-weight: bold;
     text-shadow: 0 -1px 0 white; }
+#maininfo footer {
+  position: absolute;
+  bottom: 5px;
+  left: 1em;
+  right: 1em;
+  border-top: 1px solid #ccc;
+  font-size: 0.8em;
+  color: #888; }
+  #maininfo footer a {
+    color: #444;
+    font-weight: bold; }
+  #maininfo footer ul {
+    padding: 0; }
+    #maininfo footer ul li {
+      display: inline-block;
+      list-style-type: none;
+      padding-left: 1em; }
 #maininfo .l-key h1 {
   font-size: 1em;
   text-align: center;
