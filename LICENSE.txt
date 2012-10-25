@@ -1,4 +1,4 @@
-Copyright (c) 2011 Idan Gazit, Yuval Adam, and Contributors
+Copyright (c) 2012 Idan Gazit, Yuval Adam, and Contributors
 All rights reserved.
 
 Patterns: based on Subtle Patterns (http://subtlepatterns.com).
