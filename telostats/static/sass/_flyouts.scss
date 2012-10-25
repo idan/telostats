@@ -5,6 +5,7 @@ $flyout-vpadding: 10px;
 .flyout {
     direction: rtl;
     position: absolute;
+    color: #444;
     width: $flyout-width;
     right: 0;
     top: $flyout-vpadding;
@@ -26,9 +27,10 @@ $flyout-vpadding: 10px;
         opacity: 0;
     }
 
-    &>h1 {
+    h1, h2, h3, h4, h5, h6 {
         font-weight: 300;
     }
+
     .close-flyout {
         position: absolute;
         top: 0;
