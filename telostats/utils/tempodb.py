@@ -22,7 +22,7 @@ class TempoDbClient():
         session_auth = requests.auth.HTTPBasicAuth(TEMPODB_KEY, TEMPODB_SECRET)
         self.session = requests.session(auth=session_auth)
 
-    def get_pole_data(self, station_id=None, start=None, end=None):
+    def get_data(self, station_id=None, start=None, end=None):
         params = {}
         if station_id:
             params['attr[station]'] = station_id
@@ -35,7 +35,7 @@ class TempoDbClient():
 
     def get_series(self, station_id=None, **kwargs):
         start = datetime.utcnow() - timedelta(**kwargs)
-        content = self.get_pole_data(station_id=station_id, start=start).content
+        content = self.get_data(station_id=station_id, start=start).content
         res = defaultdict(dict)
 
         d = json.loads(content)
@@ -50,7 +50,7 @@ class TempoDbClient():
     def get_latest_counts(self, station_id=None):
         '''This method is pending a proper get_latest API from tempo db'''
         start = datetime.utcnow() - timedelta(minutes=15)
-        content = self.get_pole_data(station_id=station_id, start=start).content
+        content = self.get_data(station_id=station_id, start=start).content
         res = defaultdict(dict)
 
         d = json.loads(content)
