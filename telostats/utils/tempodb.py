@@ -30,6 +30,8 @@ class TempoDbClient():
             params['start'] = start.isoformat()
         if end:
             params['end'] = end.isoformat()
+        params['interval'] = '1hour'
+        params['fucntion'] = 'mean'
         url = API_URL + '/data/'
         return self.session.get(url, params=params)
 

@@ -62,7 +62,7 @@ class SeriesResource(Resource):
         return self._client().get_series(station_id, **kwargs)
 
     def get_object_list(self, request):
-        series_list = self._get_series(hours=2).items()
+        series_list = self._get_series(hours=24).items()
         res = []
         for sta_id, series in series_list:
             obj = StationSeries(initial=series)
@@ -75,7 +75,7 @@ class SeriesResource(Resource):
 
     def obj_get(self, request=None, **kwargs):
         station_id = kwargs['pk']
-        series = self._get_series(station_id=station_id, hours=2)
+        series = self._get_series(station_id=station_id, hours=24)
         station_series = StationSeries(initial=series[station_id])
         station_series.id = station_id
         return station_series
