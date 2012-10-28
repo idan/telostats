@@ -484,12 +484,12 @@ body, html {
   left: 1em;
   right: 1em;
   border-top: 1px solid #ccc;
-  font-size: 0.8em;
   color: #888; }
   #maininfo footer a {
     color: #444;
     font-weight: bold; }
   #maininfo footer ul {
+    font-size: 0.8em;
     padding: 0; }
     #maininfo footer ul li {
       display: inline-block;
