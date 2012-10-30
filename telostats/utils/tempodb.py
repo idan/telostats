@@ -22,23 +22,25 @@ class TempoDbClient():
         session_auth = requests.auth.HTTPBasicAuth(TEMPODB_KEY, TEMPODB_SECRET)
         self.session = requests.session(auth=session_auth)
 
-    def get_data(self, station_id=None, start=None, end=None):
-        params = {}
+    def get_data(self, station_id=None, start=None, end=None, interval='1hour',
+            function='mean', tz='Asia/Jerusalem'):
+        params = {
+            'interval': interval,
+            'function': function,
+            'tz': tz
+        }
+        if start:
+            params['start'] = start
+        if end:
+            params['end'] = end
         if station_id:
             params['attr[station]'] = station_id
-        if start:
-            params['start'] = start.isoformat()
-        if end:
-            params['end'] = end.isoformat()
-        params['interval'] = '1hour'
-        params['function'] = 'mean'
-        params['tz'] = 'Asia/Jerusalem'
-        url = API_URL + '/data/'
-        return self.session.get(url, params=params)
+        return self.session.get(API_URL + '/data/', params=params)
 
     def get_series(self, station_id=None, **kwargs):
-        start = datetime.utcnow() - timedelta(**kwargs)
-        content = self.get_data(station_id=station_id, start=start).content
+        start = (datetime.utcnow() - timedelta(hours=24)).isoformat()
+        data = self.get_data(station_id=station_id, start=start)
+        content = data.content
         res = defaultdict(dict)
 
         d = json.loads(content)
