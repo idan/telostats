@@ -5,7 +5,7 @@ PROJECT_DIR = Path(__file__).absolute().ancestor(2)
 
 AWS_ACCESS_KEY_ID = os.environ.get('AWS_ACCESS_KEY_ID')
 AWS_SECRET_ACCESS_KEY = os.environ.get('AWS_SECRET_ACCESS_KEY')
-AWS_STORAGE_BUCKET_NAME = 'telostats'
+AWS_STORAGE_BUCKET_NAME = os.environ.get('AWS_STORAGE_BUCKET_NAME')
 TILESERVER_URL = os.environ.get('TILESERVER_URL')
 
 DEBUG = False
@@ -28,13 +28,15 @@ USE_I18N = False
 USE_L10N = True
 
 MEDIA_ROOT = PROJECT_DIR.child('media')
-MEDIA_URL = 'http://' + AWS_STORAGE_BUCKET_NAME + '.s3.amazonaws.com/media'
+# the following line is a total lie
+MEDIA_URL = 'http://' + AWS_STORAGE_BUCKET_NAME + '/media'
 
 STATIC_ROOT = PROJECT_DIR.child('static_root')
-STATIC_URL = 'http://' + AWS_STORAGE_BUCKET_NAME + '.s3.amazonaws.com/'
-STATICFILES_DIRS = (
-    str(PROJECT_DIR.child('static')),
-)
+STATICFILES_ROOT = PROJECT_DIR.child('static')
+STATIC_URL = 'http://' + AWS_STORAGE_BUCKET_NAME
+STATICFILES_DIRS = [
+    (subdir, str(STATICFILES_ROOT.child(subdir))) for subdir in
+    ['css', 'fonts', 'img', 'js']]
 STATICFILES_FINDERS = (
     'django.contrib.staticfiles.finders.FileSystemFinder',
     'django.contrib.staticfiles.finders.AppDirectoriesFinder',
