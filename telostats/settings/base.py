@@ -13,10 +13,7 @@ TILESERVER_URL = os.environ.get('TILESERVER_URL')
 DEBUG = False
 TEMPLATE_DEBUG = DEBUG
 
-ADMINS = (
-    ('Idan Gazit', 'idan@gazit.me'),
-    ('Yuval Adam', 'yuv.adm@gmail.com'),
-)
+ADMINS = ()
 MANAGERS = ADMINS
 INTERNAL_IPS = ('127.0.0.1',)
 
