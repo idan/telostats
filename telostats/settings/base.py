@@ -116,3 +116,11 @@ LOGGING = {
         },
     }
 }
+
+EMAIL_HOST = os.environ.get('MAILGUN_SMTP_SERVER')
+EMAIL_HOST_USER = os.environ.get('MAILGUN_SMTP_LOGIN')
+EMAIL_HOST_PASSWORD = os.environ.get('MAILGUN_SMTP_PASSWORD')
+EMAIL_PORT = os.environ.get('MAILGUN_SMTP_PORT')
+EMAIL_USE_TLS = True
+SERVER_EMAIL = 'admin@telostats.com'
+DEFAULT_FROM_EMAIL = SERVER_EMAIL

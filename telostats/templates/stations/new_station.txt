@@ -1,0 +1,9 @@
+New Tel-O-Stats station found
+=============================
+
+Latitude: {{ station.latitude }}
+Longitude: {{ station.longitude }}
+Name: {{ station.name }}
+Address: {{ station.address }}
+Poles: {{ station.poles }}
+Available: {{ station.available }}

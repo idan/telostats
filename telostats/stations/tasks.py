@@ -6,8 +6,12 @@ import logging
 import os
 import json
 
+from django.core.mail import send_mail
+from django.template import Context
+from django.template.loader import get_template
 from django.utils.timezone import utc
 from pyparsing import commaSeparatedList
+from telostats.settings import ADMINS, ENV
 from .models import Station
 
 STATION_LIST_URL = u'http://www.tel-o-fun.co.il/Default.aspx?TabID=64'
@@ -72,6 +76,11 @@ def store_stations(stations):
             obj.poles = station['poles']
             obj.available = station['available']
             obj.save()
+        if created and ENV == 'HEROKU':
+            raw_msg = get_template('stations/new_station.txt')
+            msg = raw_msg.render(Context({'station': obj}))
+            send_mail('New Tel-O-Stats station found', msg,
+                'admin@telostats.com', [admin[1] for admin in ADMINS])
 
 
 def station_poles_key(station):

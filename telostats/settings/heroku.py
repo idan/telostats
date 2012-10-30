@@ -5,6 +5,8 @@ import dj_database_url
 from os import environ
 from .base import *
 
+ENV = 'HEROKU'
+
 # Store files on S3
 DEFAULT_FILE_STORAGE = 'storages.backends.s3boto.S3BotoStorage'
 
