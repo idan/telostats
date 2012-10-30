@@ -339,6 +339,9 @@ body, html {
   overflow-x: hidden; }
 
 /* Map */
+.map {
+  direction: ltr; }
+
 #map {
   position: absolute;
   top: 0;
@@ -463,6 +466,12 @@ body, html {
     padding: 3px;
     font-size: 1.3em;
     text-decoration: none; }
+  .flyout section {
+    padding: 1em 0; }
+    .flyout section h1 {
+      font-size: 1em;
+      text-align: center;
+      text-shadow: 0 -1px 0 rgba(255, 255, 255, 0.5); }
 
 /* Station detail flyout */
 .station-name {
@@ -471,6 +480,15 @@ body, html {
 .station-id {
   display: inline;
   margin-right: 0.2em; }
+
+.station-map-wrap {
+  background: white;
+  border: 1px solid #ccc;
+  padding: 5px; }
+
+.station-map {
+  height: 200px;
+  width: 100%; }
 
 /* About flyout */
 #maininfo header {
@@ -495,48 +513,51 @@ body, html {
       display: inline-block;
       list-style-type: none;
       padding-left: 1em; }
-#maininfo .l-key h1 {
-  font-size: 1em;
-  text-align: center;
-  text-shadow: 0 -1px 0 rgba(255, 255, 255, 0.5); }
-#maininfo .l-key ul {
-  margin: 0;
-  padding: 0;
-  list-style-type: none; }
-  #maininfo .l-key ul li {
-    float: left;
-    text-align: center;
-    width: 62px;
-    margin-right: 14px;
+#maininfo .l-key {
+  zoom: 1; }
+  #maininfo .l-key:before, #maininfo .l-key:after {
+    content: "";
+    display: table; }
+  #maininfo .l-key:after {
+    clear: both; }
+  #maininfo .l-key ul {
+    margin: 0;
     padding: 0;
-    font-size: 0.8em; }
-    #maininfo .l-key ul li:last-child {
-      margin-right: 0; }
-    #maininfo .l-key ul li .swatch {
+    list-style-type: none; }
+    #maininfo .l-key ul li {
+      float: left;
+      text-align: center;
       width: 62px;
-      height: 62px;
-      border: 1px solid #ddd;
-      background-color: white;
-      position: relative; }
-      #maininfo .l-key ul li .swatch:before {
-        content: " ";
-        position: absolute;
-        left: 4px;
-        top: 4px;
-        right: 4px;
-        bottom: 4px; }
-    #maininfo .l-key ul li[data-bucket="0"] .swatch:before {
-      background-color: #dd2ea3; }
-    #maininfo .l-key ul li[data-bucket="1"] .swatch:before {
-      background-color: #ffafe5; }
-    #maininfo .l-key ul li[data-bucket="2"] .swatch:before {
-      background: rgba(247, 247, 247, 0.7) url(../img/checkmark.svg) center center no-repeat;
-      background-size: contain; }
-    #maininfo .l-key ul li[data-bucket="3"] .swatch:before {
-      background-color: #94e1ff; }
-    #maininfo .l-key ul li[data-bucket="4"] .swatch:before {
-      background-color: #18b4f1; }
-    #maininfo .l-key ul li strong {
-      display: block;
-      font-weight: 700;
-      font-size: 1.5em; }
+      margin-right: 14px;
+      padding: 0;
+      font-size: 0.8em; }
+      #maininfo .l-key ul li:last-child {
+        margin-right: 0; }
+      #maininfo .l-key ul li .swatch {
+        width: 62px;
+        height: 62px;
+        border: 1px solid #ddd;
+        background-color: white;
+        position: relative; }
+        #maininfo .l-key ul li .swatch:before {
+          content: " ";
+          position: absolute;
+          left: 4px;
+          top: 4px;
+          right: 4px;
+          bottom: 4px; }
+      #maininfo .l-key ul li[data-bucket="0"] .swatch:before {
+        background-color: #dd2ea3; }
+      #maininfo .l-key ul li[data-bucket="1"] .swatch:before {
+        background-color: #ffafe5; }
+      #maininfo .l-key ul li[data-bucket="2"] .swatch:before {
+        background: rgba(247, 247, 247, 0.7) url(../img/checkmark.svg) center center no-repeat;
+        background-size: contain; }
+      #maininfo .l-key ul li[data-bucket="3"] .swatch:before {
+        background-color: #94e1ff; }
+      #maininfo .l-key ul li[data-bucket="4"] .swatch:before {
+        background-color: #18b4f1; }
+      #maininfo .l-key ul li strong {
+        display: block;
+        font-weight: 700;
+        font-size: 1.5em; }

@@ -29,12 +29,10 @@
             }
         }
     }
+
+
     .l-key {
-        h1 {
-            font-size: 1em;
-            text-align: center;
-            text-shadow: 0 -1px 0 rgba(255,255,255,0.5);
-        }
+        @include clearfix;
         ul {
             margin: 0;
             padding: 0;
@@ -81,5 +79,9 @@
                 }
             }
         }
+    }
+
+    .l-stations-overview {
+
     }
 }
