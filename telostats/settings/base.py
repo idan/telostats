@@ -6,8 +6,9 @@ PROJECT_DIR = Path(__file__).absolute().ancestor(2)
 AWS_ACCESS_KEY_ID = os.environ.get('AWS_ACCESS_KEY_ID')
 AWS_SECRET_ACCESS_KEY = os.environ.get('AWS_SECRET_ACCESS_KEY')
 AWS_STORAGE_BUCKET_NAME = os.environ.get('AWS_STORAGE_BUCKET_NAME')
-AWS_CUSTOM_DOMAIN = os.environ.get('AWS_STORAGE_BUCKET_NAME')
+AWS_S3_CUSTOM_DOMAIN = os.environ.get('AWS_STORAGE_BUCKET_NAME')
 AWS_QUERYSTRING_AUTH = False
+AWS_S3_SECURE_URLS = False
 TILESERVER_URL = os.environ.get('TILESERVER_URL')
 
 DEBUG = False
@@ -41,7 +42,7 @@ STATICFILES_FINDERS = (
     'django.contrib.staticfiles.finders.AppDirectoriesFinder',
 #    'django.contrib.staticfiles.finders.DefaultStorageFinder',
 )
-STATICFILES_STORAGE = 'telostats.utils.storages.ProtocolRelativeS3BotoStorage'
+STATICFILES_STORAGE = 'telostats.utils.customstorages.ProtocolRelativeS3BotoStorage'
 
 ADMIN_MEDIA_PREFIX = STATIC_URL + 'admin/'
 
