@@ -6,7 +6,7 @@ def deploy_staticfiles():
 
 
 def deploy_heroku():
-    local('git push heroku')
+    local('git push heroku master')
 
 
 def deploy():

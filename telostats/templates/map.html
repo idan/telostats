@@ -6,7 +6,7 @@
 {% endblock extra_head %}
 
 {% block body %}
-    <div id="map"></div>
+    <div id="map" class="map"></div>
 
     <div class="flyout" id="maininfo">
         <header>
@@ -14,6 +14,7 @@
             <h2>כל המידע שצריך לתכנון הנסיעה</h2>
             <p>גם אנחנו חושבים שתל-אופן זה הדבר הכי טוב שקרה לתל אביב בשנים האחרונות. אז החלטנו לקחת את כל המידע של המערכת ולהציג אותו בצורה חדה, ברורה ופתוחה כדי שכולנו נוכל לבצע שימוש נכון וחכם יותר באופניים הירוקות של תל אביב.</p>
         </header>
+
         <section class="l-key">
             <h1>מפתח</h1>
             <ul>
@@ -42,6 +43,11 @@
                     חניות
                 </li>
             </ul>
+        </section>
+
+        <section class="l-stations-overview">
+            <h1>מצב התחנות</h1>
+            <div id="stations_overview_pie"></div>
         </section>
 
         <footer>

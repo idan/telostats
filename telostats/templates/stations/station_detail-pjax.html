@@ -7,3 +7,10 @@
 
 <div><strong>אופניים פנויים</strong>: {{ station.available_bikes }}</div>
 <div><strong>תחנות פנויות</strong>: {{ station.available_poles }}</div>
+
+<section class="l-station-map">
+    <h1>מפת תחנה</h1>
+    <div class="station-map-wrap">
+        <div class="station-map map" data-id="{{ station.id }}" data-lat="{{ station.latitude }}" data-lon="{{ station.longitude }}" data-available="{{ station.available_poles }}" data-poles="{{ station.poles }}"></div>
+    </div>
+</section>

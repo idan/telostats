@@ -1,4 +1,66 @@
 
+# TileJSON
+TELOSTATS_TILEJSON = {
+    'tilejson': '2.0.0',
+    'scheme': 'xyz',
+    'name': 'Tel Aviv Light',
+    'description': 'A light tileset focusing on the municipality of Tel Aviv, suitable for visualizations.',
+    'attribution': 'OSM contributors',
+    'bounds': [34.742, 32.026, 34.924, 32.149],
+    'minzoom': 13,
+    'maxzoom': 17,
+    'tiles': [TILESERVER_URL],
+    'grids': [],
+}
+
+MARKER_BUCKET_COLORS = {
+    0: '#dd2ea3',
+    1: '#ffafe5',
+    2: '#ccc', # it's a lie, but station markers need to be darker
+    3: '#94e1ff',
+    4: '#18b4f1',
+}
+
+stationClassifier = (poles, available) ->
+        bikes = poles - available
+        if bikes == 0
+            return 0
+        else if bikes <= 5
+            return 1
+        else if available <= 5
+            return 3
+        else if available == 0
+            return 4
+        else
+            return 2  # middle state is normal.
+
+renderStationMap = (elem) ->
+    id = $(elem).attr('data-id')
+    coords =
+        lat: Number($(elem).attr('data-lat')),
+        lon: Number($(elem).attr('data-lon')),
+    bucket = stationClassifier($(elem).attr('data-poles'),
+                               $(elem).attr('data-available'))
+
+    baseLayer = mapbox.layer().tilejson(TELOSTATS_TILEJSON)
+    markerLayer = mapbox.markers.layer()
+    markerLayer.add_feature(
+        geometry:
+            coordinates: [coords.lon, coords.lat]
+        properties:
+            'marker-color': MARKER_BUCKET_COLORS[bucket],
+            'marker-symbol': 'bicycle',
+            'marker-size': 'large'
+    )
+
+    stationmap = mapbox.map(elem, [], null, [])
+    stationmap.addLayer(baseLayer)
+    stationmap.addLayer(markerLayer)
+
+    # set center and z17, no animation
+    stationmap.centerzoom(coords, 17, false)
+
+
 stationsLayer = (opts) ->
     map = opts.map
     stationData = opts.stations
@@ -9,19 +71,6 @@ stationsLayer = (opts) ->
     stations = svg.append('g').attr('id', 'stations')
     fadeInTime = 500
     animationDelayTime = 600
-
-    stationColor = (station) ->
-        bikes = station.poles - station.available;
-        if bikes == 0
-            return 0
-        else if bikes <= 5
-            return 1
-        else if station.available <= 5
-            return 3
-        else if station.available == 0
-            return 4
-        else
-            return 2  # middle state is normal.
 
     stationDotSize = d3.scale.quantize()
         .domain([opts.minZoom, opts.maxZoom])
@@ -42,6 +91,11 @@ stationsLayer = (opts) ->
     registerMapMouseDragHandlers = (elem) ->
         d3elem = d3.select(elem)
         stationid = d3elem.attr('data-id')
+        # stationcoords =
+        #     lat: Number(d3elem.attr('data-lat')),
+        #     lon: Number(d3elem.attr('data-lon')),
+        # stationbucket = d3elem.attr('data-bucket')
+
         d3elem.classed('loading', false)
         clientX = null
         clientY = null
@@ -68,6 +122,30 @@ stationsLayer = (opts) ->
                 d3elem.classed('selected', true)
                 $.pjax(opts)
                 $(newflyout).on('pjax:end', ->
+                    mapelem = $(".station-map[data-id='#{stationid}']")[0]
+                    renderStationMap(mapelem)
+                    # baseLayer = mapbox.layer().tilejson(TELOSTATS_TILEJSON)
+                    # markerLayer = mapbox.markers.layer()
+                    # markerLayer.add_feature(
+                    #     geometry:
+                    #         coordinates: [stationcoords.lon, stationcoords.lat]
+                    #     properties:
+                    #         'marker-color': BUCKET_COLORS[stationbucket],
+                    #         'marker-symbol': 'bicycle',
+                    #         'marker-size': 'large'
+                    # )
+
+                    # stationmap = mapbox.map(mapelem, [], null, [])
+                    # stationmap.addLayer(baseLayer)
+                    # stationmap.addLayer(markerLayer)
+
+                    # # set center and z17, no animation
+                    # stationmap.centerzoom(stationcoords, 16)
+
+                    # stationmap.addCallback("drawn", (m) =>
+                    #     $(this).removeClass('hidden')
+                    # )
+
                     $(this).removeClass('hidden')
                     setTimeout( ->
                         $('.flyout.secondary:not(.stationflyout)').addClass('hidden')
@@ -96,8 +174,14 @@ stationsLayer = (opts) ->
         groupsEnter
             .classed('station', true)
             .classed('loading', true)
-            .attr('data-id', (d, i) -> return stationData[i].id )
-            .attr('data-bucket', (d, i) -> return stationColor(stationData[i]) )
+            .attr('data-id', (d, i) -> return stationData[i].id)
+            .attr('data-lat', (d, i) -> return stationData[i].latitude)
+            .attr('data-lon', (d, i) -> return stationData[i].longitude)
+            .attr('data-bucket', (d, i) -> return stationClassifier(
+                stationData[i].poles, stationData[i].available
+            ))
+            .attr('data-poles', (d, i) -> return stationData[i].poles)
+            .attr('data-available', (d, i) -> return stationData[i].available)
             .transition()
             .delay(stationDelay)
             .duration(200)
@@ -155,21 +239,9 @@ stationsLayer = (opts) ->
 
 initMap = ->
     m = mapbox.map('map')
-    telostats_tiles = {
-        'tilejson': '2.0.0',
-        'scheme': 'xyz',
-        'name': 'Tel Aviv Light',
-        'description': 'A light tileset focusing on the municipality of Tel Aviv, suitable for visualizations.',
-        'attribution': 'OSM contributors',
-        'bounds': [34.742, 32.026, 34.924, 32.149],
-        'minzoom': 13,
-        'maxzoom': 17,
-        'tiles': [TILESERVER_URL],
-        'grids': [],
-    }
     minZoom = 13
     maxZoom = 17
-    m.addLayer(mapbox.layer().tilejson(telostats_tiles))
+    m.addLayer(mapbox.layer().tilejson(TELOSTATS_TILEJSON))
     m.ui.zoomer.add()
     mapbounds = new MM.Extent(
         32.149, 34.742,
@@ -197,6 +269,7 @@ pushStateNav = (url) ->
 
 $ ->
     initMap()
+    _.each($(".station-map"), renderStationMap)
     $(document).pjax('a[data-pjax]')
 
     $('.close-flyout').live('click', (e) ->
