@@ -80,8 +80,7 @@ def store_stations(stations):
             raw_msg = get_template('stations/new_station.txt')
             msg = raw_msg.render(Context({'station': obj}))
             send_mail('New Tel-O-Stats station found', msg,
-                'admin@telostats.com', ['idan@gazit.me', 'yuv.adm@gmail.com']),
-)])
+                'admin@telostats.com', ['idan@gazit.me', 'yuv.adm@gmail.com'])
 
 
 def station_poles_key(station):
