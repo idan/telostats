@@ -44,7 +44,7 @@ STATICFILES_FINDERS = (
     'django.contrib.staticfiles.finders.AppDirectoriesFinder',
 #    'django.contrib.staticfiles.finders.DefaultStorageFinder',
 )
-STATICFILES_STORAGE = 'storages.backends.s3boto.S3BotoStorage'
+STATICFILES_STORAGE = 'telostats.utils.storages.ProtocolRelativeS3BotoStorage'
 
 ADMIN_MEDIA_PREFIX = STATIC_URL + 'admin/'
 
