@@ -369,45 +369,30 @@ body, html {
   transition: all 0.2s linear; }
 .station[data-bucket="0"] .station_cell {
   fill: #dd2ea3; }
-.station[data-bucket="0"]:hover .station_cell {
-  stroke-width: 2px;
-  stroke-opacity: 0.7; }
 .station[data-bucket="0"]:hover .station_dot {
   stroke-width: 6px;
   stroke: black;
   fill: black; }
 .station[data-bucket="1"] .station_cell {
   fill: #ffafe5; }
-.station[data-bucket="1"]:hover .station_cell {
-  stroke-width: 2px;
-  stroke-opacity: 0.7; }
 .station[data-bucket="1"]:hover .station_dot {
   stroke-width: 6px;
   stroke: black;
   fill: black; }
 .station[data-bucket="2"] .station_cell {
   fill: rgba(247, 247, 247, 0.7); }
-.station[data-bucket="2"]:hover .station_cell {
-  stroke-width: 2px;
-  stroke-opacity: 0.7; }
 .station[data-bucket="2"]:hover .station_dot {
   stroke-width: 6px;
   stroke: black;
   fill: black; }
 .station[data-bucket="3"] .station_cell {
   fill: #94e1ff; }
-.station[data-bucket="3"]:hover .station_cell {
-  stroke-width: 2px;
-  stroke-opacity: 0.7; }
 .station[data-bucket="3"]:hover .station_dot {
   stroke-width: 6px;
   stroke: black;
   fill: black; }
 .station[data-bucket="4"] .station_cell {
   fill: #18b4f1; }
-.station[data-bucket="4"]:hover .station_cell {
-  stroke-width: 2px;
-  stroke-opacity: 0.7; }
 .station[data-bucket="4"]:hover .station_dot {
   stroke-width: 6px;
   stroke: black;
@@ -417,9 +402,6 @@ body, html {
 .station.selected .station_dot {
   stroke-width: 6px;
   stroke: black; }
-.station.selected .station_cell {
-  stroke-width: 2px;
-  stroke-opacity: 0.9; }
 
 #stations {
   fill: rgba(0, 0, 0, 0.75);

@@ -22,10 +22,10 @@
             fill: $color;
         }
         &:hover {
-            .station_cell {
-                stroke-width: 2px;
-                stroke-opacity: 0.7;
-            }
+            // .station_cell {
+            //     stroke-width: 2px;
+            //     stroke-opacity: 0.7;
+            // }
             .station_dot {
                 stroke-width: 6px;
                 stroke: black;
@@ -59,10 +59,10 @@
             stroke-width: 6px;
             stroke: black;
         }
-        .station_cell {
-            stroke-width: 2px;
-            stroke-opacity: 0.9;
-        }
+        // .station_cell {
+        //     stroke-width: 2px;
+        //     stroke-opacity: 0.9;
+        // }
     }
 
 }
