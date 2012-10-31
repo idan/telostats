@@ -73,3 +73,31 @@
     stroke: rgba(255,255,255,0.75);
     stroke-width: 1;
 }
+
+
+@mixin station-marker($color) {
+    .stationmarker-pin {
+        fill: $color;
+    }
+    .stationmarker-ground {
+        fill: #444;
+    }
+    .stationmarker-bicycle {
+        fill: #444;
+    }
+}
+
+.station-marker {
+    width: 40px;
+    height: 80px;
+    margin-left: -20px;
+    margin-top:-40px;
+    pointer-events:all;
+    position:absolute;
+    &[data-bucket="0"] { @include station-marker(lighten($color-0, 15%)); }
+    &[data-bucket="1"] { @include station-marker($color-1); }
+    &[data-bucket="2"] { @include station-marker(#aaa); }
+    &[data-bucket="3"] { @include station-marker($color-3); }
+    &[data-bucket="4"] { @include station-marker(lighten($color-4, 15%)); }
+}
+

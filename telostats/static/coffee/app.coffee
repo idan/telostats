@@ -46,11 +46,16 @@ renderStationMap = (elem) ->
     markerLayer = mapbox.markers.layer()
     markerLayer.add_feature(
         geometry:
-            coordinates: [coords.lon, coords.lat]
-        properties:
-            'marker-color': MARKER_BUCKET_COLORS[bucket],
-            'marker-symbol': 'bicycle',
-            'marker-size': 'large'
+            type: "Point",
+            coordinates: [coords.lon, coords.lat],
+    ).factory((f) ->
+        marker = ich.stationmarker_svg_template({bucket: bucket})
+        return marker[0]
+        # img = document.createElement('img')
+        # img.className = 'station-marker'
+        # img.setAttribute('src', f.properties.image)
+        # img.setAttribute('data-bucket', bucket)
+        # return img
     )
 
     stationmap = mapbox.map(elem, [], null, [])

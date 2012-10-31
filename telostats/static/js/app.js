@@ -51,13 +51,15 @@
     markerLayer = mapbox.markers.layer();
     markerLayer.add_feature({
       geometry: {
+        type: "Point",
         coordinates: [coords.lon, coords.lat]
-      },
-      properties: {
-        'marker-color': MARKER_BUCKET_COLORS[bucket],
-        'marker-symbol': 'bicycle',
-        'marker-size': 'large'
       }
+    }).factory(function(f) {
+      var marker;
+      marker = ich.stationmarker_svg_template({
+        bucket: bucket
+      });
+      return marker[0];
     });
     stationmap = mapbox.map(elem, [], null, []);
     stationmap.addLayer(baseLayer);

@@ -426,6 +426,44 @@ body, html {
   stroke: rgba(255, 255, 255, 0.75);
   stroke-width: 1; }
 
+.station-marker {
+  width: 40px;
+  height: 80px;
+  margin-left: -20px;
+  margin-top: -40px;
+  pointer-events: all;
+  position: absolute; }
+  .station-marker[data-bucket="0"] .stationmarker-pin {
+    fill: #e870c0; }
+  .station-marker[data-bucket="0"] .stationmarker-ground {
+    fill: #444; }
+  .station-marker[data-bucket="0"] .stationmarker-bicycle {
+    fill: #444; }
+  .station-marker[data-bucket="1"] .stationmarker-pin {
+    fill: #ffafe5; }
+  .station-marker[data-bucket="1"] .stationmarker-ground {
+    fill: #444; }
+  .station-marker[data-bucket="1"] .stationmarker-bicycle {
+    fill: #444; }
+  .station-marker[data-bucket="2"] .stationmarker-pin {
+    fill: #aaaaaa; }
+  .station-marker[data-bucket="2"] .stationmarker-ground {
+    fill: #444; }
+  .station-marker[data-bucket="2"] .stationmarker-bicycle {
+    fill: #444; }
+  .station-marker[data-bucket="3"] .stationmarker-pin {
+    fill: #94e1ff; }
+  .station-marker[data-bucket="3"] .stationmarker-ground {
+    fill: #444; }
+  .station-marker[data-bucket="3"] .stationmarker-bicycle {
+    fill: #444; }
+  .station-marker[data-bucket="4"] .stationmarker-pin {
+    fill: #60cbf5; }
+  .station-marker[data-bucket="4"] .stationmarker-ground {
+    fill: #444; }
+  .station-marker[data-bucket="4"] .stationmarker-bicycle {
+    fill: #444; }
+
 /* flyouts */
 .flyout {
   direction: rtl;
