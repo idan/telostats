@@ -124,28 +124,6 @@ stationsLayer = (opts) ->
                 $(newflyout).on('pjax:end', ->
                     mapelem = $(".station-map[data-id='#{stationid}']")[0]
                     renderStationMap(mapelem)
-                    # baseLayer = mapbox.layer().tilejson(TELOSTATS_TILEJSON)
-                    # markerLayer = mapbox.markers.layer()
-                    # markerLayer.add_feature(
-                    #     geometry:
-                    #         coordinates: [stationcoords.lon, stationcoords.lat]
-                    #     properties:
-                    #         'marker-color': BUCKET_COLORS[stationbucket],
-                    #         'marker-symbol': 'bicycle',
-                    #         'marker-size': 'large'
-                    # )
-
-                    # stationmap = mapbox.map(mapelem, [], null, [])
-                    # stationmap.addLayer(baseLayer)
-                    # stationmap.addLayer(markerLayer)
-
-                    # # set center and z17, no animation
-                    # stationmap.centerzoom(stationcoords, 16)
-
-                    # stationmap.addCallback("drawn", (m) =>
-                    #     $(this).removeClass('hidden')
-                    # )
-
                     $(this).removeClass('hidden')
                     setTimeout( ->
                         $('.flyout.secondary:not(.stationflyout)').addClass('hidden')
