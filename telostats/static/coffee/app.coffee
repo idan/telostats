@@ -253,12 +253,13 @@ initStationPie = (stations) ->
     buckets = _.map(stations, (s) ->
         return stationClassifier(s.poles, s.available))
     counts = _.countBy(buckets, (b) -> return b)
-    data = []
-    for i in [0..4]
-        data[i] = counts[i] or 0
+    pctformat = d3.format('.1p')
+    data = ({
+        bucket: Number(k),
+        value: Number(v),
+        percentage: pctformat(Number(v) / stations.length)
+        } for k,v of counts)
 
-
-    console.log("Station counts: #{data}")
 
     pie_w = $('#stations-overview-pie').width()
     pie_h = $('#stations-overview-pie').height()
@@ -270,7 +271,7 @@ initStationPie = (stations) ->
         .innerRadius(pie_radius - 70)
     pie = d3.layout.pie()
         .sort(null)
-        # .value((d) -> return d )
+        .value((d) -> return d.value )
 
     piesvg = d3.select('#stations-overview-pie').append('svg')
             .attr('width', pie_w)
@@ -285,13 +286,13 @@ initStationPie = (stations) ->
 
     g.append("path")
         .attr("d", arc)
-        .style("fill", (d, i) -> return pie_colors(i) )
+        .style("fill", (d, i) -> return pie_colors(d.data.bucket) )
 
     g.append("text")
         .attr("transform", (d) -> return "translate(#{arc.centroid(d)})" )
         .attr("dy", ".35em")
         .style("text-anchor", "middle")
-        .text((d, i) -> return d.data )
+        .text((d, i) -> return d.data.percentage )
 
 
 

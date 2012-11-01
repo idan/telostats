@@ -237,33 +237,44 @@
   };
 
   initStationPie = function(stations) {
-    var arc, buckets, counts, data, g, i, pie, pie_colors, pie_h, pie_radius, pie_w, piesvg, _i;
+    var arc, buckets, counts, data, g, k, pctformat, pie, pie_colors, pie_h, pie_radius, pie_w, piesvg, v;
     buckets = _.map(stations, function(s) {
       return stationClassifier(s.poles, s.available);
     });
     counts = _.countBy(buckets, function(b) {
       return b;
     });
-    data = [];
-    for (i = _i = 0; _i <= 4; i = ++_i) {
-      data[i] = counts[i] || 0;
-    }
-    console.log("Station counts: " + data);
+    pctformat = d3.format('.1p');
+    data = (function() {
+      var _results;
+      _results = [];
+      for (k in counts) {
+        v = counts[k];
+        _results.push({
+          bucket: Number(k),
+          value: Number(v),
+          percentage: pctformat(Number(v) / stations.length)
+        });
+      }
+      return _results;
+    })();
     pie_w = $('#stations-overview-pie').width();
     pie_h = $('#stations-overview-pie').height();
     pie_radius = Math.min(pie_w, pie_h) / 2;
     pie_colors = d3.scale.ordinal().range(['#dd2ea3', '#ffafe5', '#fff', '#94e1ff', '#18b4f1']);
     arc = d3.svg.arc().outerRadius(pie_radius - 10).innerRadius(pie_radius - 70);
-    pie = d3.layout.pie().sort(null);
+    pie = d3.layout.pie().sort(null).value(function(d) {
+      return d.value;
+    });
     piesvg = d3.select('#stations-overview-pie').append('svg').attr('width', pie_w).attr('height', pie_h).append('g').attr("transform", "translate(" + (pie_w / 2) + "," + (pie_h / 2) + ")");
     g = piesvg.selectAll(".arc").data(pie(data)).enter().append("g").attr("class", "arc");
     g.append("path").attr("d", arc).style("fill", function(d, i) {
-      return pie_colors(i);
+      return pie_colors(d.data.bucket);
     });
     return g.append("text").attr("transform", function(d) {
       return "translate(" + (arc.centroid(d)) + ")";
     }).attr("dy", ".35em").style("text-anchor", "middle").text(function(d, i) {
-      return d.data;
+      return d.data.percentage;
     });
   };
 
