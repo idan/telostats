@@ -96,10 +96,6 @@ stationsLayer = (opts) ->
     registerMapMouseDragHandlers = (elem) ->
         d3elem = d3.select(elem)
         stationid = d3elem.attr('data-id')
-        # stationcoords =
-        #     lat: Number(d3elem.attr('data-lat')),
-        #     lon: Number(d3elem.attr('data-lon')),
-        # stationbucket = d3elem.attr('data-bucket')
 
         d3elem.classed('loading', false)
         clientX = null
@@ -222,8 +218,8 @@ stationsLayer = (opts) ->
 
 initMap = ->
     m = mapbox.map('map')
-    minZoom = 13
-    maxZoom = 17
+    minZoom = TELOSTATS_TILEJSON.minzoom
+    maxZoom = TELOSTATS_TILEJSON.maxzoom
     m.addLayer(mapbox.layer().tilejson(TELOSTATS_TILEJSON))
     m.ui.zoomer.add()
     mapbounds = new MM.Extent(
@@ -232,26 +228,40 @@ initMap = ->
     m.setExtent(mapbounds)
     m.setPanLimits(mapbounds)
     m.setZoomRange(minZoom, maxZoom)
+    return m
 
-
+initStations = (map, selectedid) ->
     d3.json('/api/v1/station/', (stations) ->
         opts = {
-            'map': m,
+            'map': map,
             'stations': stations.objects,
-            'minZoom': minZoom,
-            'maxZoom': maxZoom,
+            'minZoom': TELOSTATS_TILEJSON.minzoom,
+            'maxZoom': TELOSTATS_TILEJSON.maxzoom,
         }
         sl = stationsLayer(opts)
-        m.addLayer(sl)
+        map.addLayer(sl)
+        if selectedid
+            elem = d3.select(".station[data-id=\"#{selectedid}\"]")
+            console.log(elem)
+            elem.classed('selected', true)
+            console.log(elem)
     )
+
 
 pushStateNav = (url) ->
     window.history.pushState(null, '', url)
     if _gaq?
         _gaq.push(['_trackPageview', url])
 
+
 $ ->
-    initMap()
+    map = initMap()
+    selectedid = $('.stationflyout').attr('data-id')
+    initStations(map, selectedid)
+    if selectedid
+        stationelem = $(".station[data-id=#{selectedid}]")[0]
+        if stationelem
+            d3.select(stationelem).classed('selected', true)
     _.each($(".station-map"), renderStationMap)
     $(document).pjax('a[data-pjax]')
 
