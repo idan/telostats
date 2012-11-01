@@ -581,3 +581,5 @@ body, html {
         display: block;
         font-weight: 700;
         font-size: 1.5em; }
+#maininfo .l-stations-overview #stations-overview-pie {
+  height: 200px; }

@@ -240,12 +240,61 @@ initStations = (map, selectedid) ->
         }
         sl = stationsLayer(opts)
         map.addLayer(sl)
+        map.refresh()
         if selectedid
             elem = d3.select(".station[data-id=\"#{selectedid}\"]")
             console.log(elem)
             elem.classed('selected', true)
             console.log(elem)
+        initStationPie(stations.objects)
     )
+
+initStationPie = (stations) ->
+    buckets = _.map(stations, (s) ->
+        return stationClassifier(s.poles, s.available))
+    counts = _.countBy(buckets, (b) -> return b)
+    data = []
+    for i in [0..4]
+        data[i] = counts[i] or 0
+
+
+    console.log("Station counts: #{data}")
+
+    pie_w = $('#stations-overview-pie').width()
+    pie_h = $('#stations-overview-pie').height()
+    pie_radius = Math.min(pie_w, pie_h) / 2;
+    pie_colors = d3.scale.ordinal()
+        .range(['#dd2ea3', '#ffafe5', '#fff', '#94e1ff', '#18b4f1'])
+    arc = d3.svg.arc()
+        .outerRadius(pie_radius - 10)
+        .innerRadius(pie_radius - 70)
+    pie = d3.layout.pie()
+        .sort(null)
+        # .value((d) -> return d )
+
+    piesvg = d3.select('#stations-overview-pie').append('svg')
+            .attr('width', pie_w)
+            .attr('height', pie_h)
+          .append('g')
+            .attr("transform", "translate(#{pie_w / 2},#{pie_h / 2})")
+
+    g = piesvg.selectAll(".arc")
+            .data(pie(data))
+            .enter().append("g")
+            .attr("class", "arc");
+
+    g.append("path")
+        .attr("d", arc)
+        .style("fill", (d, i) -> return pie_colors(i) )
+
+    g.append("text")
+        .attr("transform", (d) -> return "translate(#{arc.centroid(d)})" )
+        .attr("dy", ".35em")
+        .style("text-anchor", "middle")
+        .text((d, i) -> return d.data )
+
+
+
 
 
 pushStateNav = (url) ->
