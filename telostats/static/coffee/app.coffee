@@ -118,6 +118,7 @@ stationsLayer = (opts) ->
                 opts = {
                     url: '/station/' + stationid,
                     container: ".stationflyout[data-id=#{stationid}]"
+                    timeout: 2000
                 }
 
                 d3elem.classed('selected', true)
