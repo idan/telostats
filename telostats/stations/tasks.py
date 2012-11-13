@@ -26,20 +26,23 @@ tempo = requests.session(auth=tempo_auth)
 FIELD_KEYS = ['longitude', 'latitude', 'id', 'name', 'address', 'poles', 'available']
 
 
-def measure():
-    logging.info("Measuring stations...")
+def measure(log_tempodb=True):
+    logging.info('Measuring stations...')
     timestamp = datetime.datetime.utcnow().replace(tzinfo=utc)
     stations = parse_stations(scrape_stations())
     store_stations(stations)
-    log_data(timestamp, stations)
-    logging.info("Measured {} stations.".format(len(stations)))
+    if log_tempodb:
+        log_data(timestamp, stations)
+    else:
+        logging.debug('Skipping logging measurements to TempoDB...')
+    logging.info('Measured {} stations.'.format(len(stations)))
     # TODO: periodically write more metadata about stations to the tempo series?
 
 
 def scrape_stations():
-    logging.debug("Scraping site content...")
+    logging.debug('Scraping site content...')
     r = requests.get(STATION_LIST_URL)
-    logging.debug("Parsing DOM...")
+    logging.debug('Parsing DOM...')
     soup = BeautifulSoup(r.content)
     raw_stations = soup.find_all(lambda t:
         t.name == 'script' and
@@ -49,9 +52,9 @@ def scrape_stations():
 
 
 def parse_stations(raw_stations):
-    logging.debug("Extracting raw stations...")
+    logging.debug('Extracting raw stations...')
     filtered = re.findall(r'setMarker\((.+?)\);(?=setMarker|\})', raw_stations)
-    logging.debug("Parsing stations...")
+    logging.debug('Parsing stations...')
     parsed = []
     for station in filtered:
         stripped = [s.strip("' ") for s in commaSeparatedList.parseString(station)[:7]]
@@ -61,12 +64,12 @@ def parse_stations(raw_stations):
         for intkey in ['id', 'poles', 'available']:
             d[intkey] = int(d[intkey])
         parsed.append(d)
-    logging.debug("Parsed {} stations".format(len(parsed)))
+    logging.debug('Parsed {} stations'.format(len(parsed)))
     return parsed
 
 
 def store_stations(stations):
-    logging.debug("Create/update station metadata in Django DB...")
+    logging.debug('Create/update station metadata in Django DB...')
     for station in stations:
         fields = ['longitude', 'latitude', 'name', 'address', 'poles', 'available']
         metadata = dict((f, station[f]) for f in fields)
@@ -84,15 +87,15 @@ def store_stations(stations):
 
 
 def station_poles_key(station):
-    return "station:{id}.poles.{id}".format(**station)
+    return 'station:{id}.poles.{id}'.format(**station)
 
 
 def station_available_key(station):
-    return "station:{id}.available.{id}".format(**station)
+    return 'station:{id}.available.{id}'.format(**station)
 
 
 def log_data(timestamp, stations):
-    logging.debug("Logging measurements to TempoDB...")
+    logging.debug('Logging measurements to TempoDB...')
     payload = {}
     payload['t'] = timestamp.isoformat()
     data = []
