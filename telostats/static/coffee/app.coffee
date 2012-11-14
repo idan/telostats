@@ -260,7 +260,7 @@ initStationPie = (stations) ->
         value: Number(v),
         percentage: pctformat(Number(v) / stations.length)
         } for k,v of counts)
-
+    data = _.sortBy(data, (x) -> return x.bucket)
 
     pie_w = $('#stations-overview-pie').width()
     pie_h = $('#stations-overview-pie').height()
@@ -272,7 +272,7 @@ initStationPie = (stations) ->
         .innerRadius(pie_radius - 70)
     pie = d3.layout.pie()
         .sort(null)
-        .value((d) -> return d.value )
+        .value((d) -> return d.value)
 
     piesvg = d3.select('#stations-overview-pie').append('svg')
             .attr('width', pie_w)

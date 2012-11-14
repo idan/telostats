@@ -259,6 +259,9 @@
       }
       return _results;
     })();
+    data = _.sortBy(data, function(x) {
+      return x.bucket;
+    });
     pie_w = $('#stations-overview-pie').width();
     pie_h = $('#stations-overview-pie').height();
     pie_radius = Math.min(pie_w, pie_h) / 2;
