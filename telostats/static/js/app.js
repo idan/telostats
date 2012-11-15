@@ -76,6 +76,10 @@
     bucket = stationClassifier(poles, available);
     switch (bucket) {
       case 0:
+        section = 'empty';
+        direction = 'left';
+        percent = -0.07;
+        break;
       case 1:
         section = 'empty';
         direction = 'left';
@@ -87,6 +91,10 @@
         percent = (bikes - 5) / (available + bikes - 10);
         break;
       case 3:
+        section = 'full';
+        direction = 'right';
+        percent = -0.07;
+        break;
       case 4:
         section = 'full';
         direction = 'right';

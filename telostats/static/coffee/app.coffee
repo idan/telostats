@@ -74,7 +74,11 @@ renderStationScale = (elem) ->
     bucket = stationClassifier(poles, available)
 
     switch bucket
-        when 0, 1
+        when 0
+            section = 'empty'
+            direction = 'left'
+            percent = -0.07
+        when 1
             section = 'empty'
             direction = 'left'
             percent = bikes / 5
@@ -82,7 +86,11 @@ renderStationScale = (elem) ->
             section = 'ok'
             direction = 'left'
             percent = ((bikes-5) / (available + bikes - 10))
-        when 3, 4
+        when 3
+            section = 'full'
+            direction = 'right'
+            percent = -0.07
+        when 4
             section = 'full'
             direction = 'right'
             percent = available / 5
