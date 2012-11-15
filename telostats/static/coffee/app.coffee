@@ -66,6 +66,35 @@ renderStationMap = (elem) ->
     stationmap.centerzoom(coords, 17, false)
 
 
+renderStationScale = (elem) ->
+    id = $(elem).attr('data-id')
+    poles = Number($(elem).attr('data-poles'))
+    available = Number($(elem).attr('data-available'))
+    bikes = poles - available
+    bucket = stationClassifier(poles, available)
+
+    switch bucket
+        when 0, 1
+            section = 'empty'
+            direction = 'left'
+            percent = bikes / 5
+        when 2
+            section = 'ok'
+            direction = 'left'
+            percent = ((bikes-5) / (available + bikes - 10))
+        when 3, 4
+            section = 'full'
+            direction = 'right'
+            percent = available / 5
+
+    marker = ich.stationscale_marker_template({
+        'direction': direction,
+        'percent': percent * 100
+    })
+
+    $("[data-id=#{id}] .station-slider>.#{section}").append(marker);
+
+
 stationsLayer = (opts) ->
     map = opts.map
     stationData = opts.stations
@@ -126,6 +155,7 @@ stationsLayer = (opts) ->
                 $(newflyout).on('pjax:end', ->
                     mapelem = $(".station-map[data-id='#{stationid}']")[0]
                     renderStationMap(mapelem)
+                    renderStationScale(mapelem)
                     $(this).removeClass('hidden')
                     setTimeout( ->
                         $('.flyout.secondary:not(.stationflyout)').addClass('hidden')
@@ -244,9 +274,7 @@ initStations = (map, selectedid) ->
         map.refresh()
         if selectedid
             elem = d3.select(".station[data-id=\"#{selectedid}\"]")
-            console.log(elem)
             elem.classed('selected', true)
-            console.log(elem)
         initStationPie(stations.objects)
     )
 
@@ -314,6 +342,7 @@ $ ->
         if stationelem
             d3.select(stationelem).classed('selected', true)
     _.each($(".station-map"), renderStationMap)
+    _.each($(".station-map"), renderStationScale)
     $(document).pjax('a[data-pjax]')
 
     $('.close-flyout').live('click', (e) ->

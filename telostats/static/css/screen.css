@@ -532,7 +532,8 @@ body, html {
   .station-slider .marker {
     border-right: 2px solid #000;
     position: absolute;
-    height: 1.5em; }
+    height: 1.5em;
+    z-index: 100; }
 
 .station-map-wrap {
   background: white;
