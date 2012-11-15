@@ -501,6 +501,27 @@ body, html {
   display: inline;
   margin-right: 0.2em; }
 
+.station-slider {
+  width: 100%;
+  background-color: white;
+  border-left: 9px solid #dd2ea3;
+  border-right: 9px solid #18b4f1;
+  -webkit-border-radius: 2px;
+  border-radius: 2px; }
+  .station-slider .empty {
+    background-color: #ffafe5;
+    display: inline-block;
+    width: 25%;
+    float: left; }
+  .station-slider .ok {
+    background-color: rgba(247, 247, 247, 0.7);
+    display: inline-block; }
+  .station-slider .full {
+    background-color: #94e1ff;
+    display: inline-block;
+    width: 25%;
+    float: right; }
+
 .station-map-wrap {
   background: white;
   border: 1px solid #ccc;
