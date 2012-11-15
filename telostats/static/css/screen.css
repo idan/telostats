@@ -502,29 +502,37 @@ body, html {
   margin-right: 0.2em; }
 
 .station-slider {
+  margin: 2em 0;
   width: 100%;
-  background-color: white;
-  border-left: 9px solid #dd2ea3;
-  border-right: 9px solid #18b4f1;
+  text-align: center;
   -webkit-border-radius: 2px;
-  border-radius: 2px; }
+  border-radius: 2px;
+  border: 1px solid #ccc;
+  -webkit-box-shadow: 0 0 7px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 7px 0px rgba(0, 0, 0, 0.1);
+  overflow: hidden; }
+  .station-slider .empty, .station-slider .ok, .station-slider .full {
+    position: relative;
+    display: block;
+    height: 1.5em;
+    margin: 0;
+    padding: 0;
+    float: left; }
   .station-slider .empty {
     background-color: #ffafe5;
-    display: inline-block;
-    width: 25%;
-    float: left; }
+    border-left: 9px solid #dd2ea3;
+    width: 25%; }
   .station-slider .ok {
-    background-color: rgba(247, 247, 247, 0.7);
-    display: inline-block; }
+    background-color: white;
+    width: 50%; }
   .station-slider .full {
     background-color: #94e1ff;
-    display: inline-block;
-    width: 25%;
-    float: right; }
+    border-right: 9px solid #18b4f1;
+    width: 25%; }
   .station-slider .marker {
     border-right: 2px solid #000;
     position: absolute;
-    left: 10px; }
+    height: 1.5em; }
 
 .station-map-wrap {
   background: white;
