@@ -9,8 +9,4 @@
 
 {% block stationflyout %}
 {% include 'stations/station_detail-pjax.html' %}
-
-<script id="stationscale_marker_template" type="text/html">
-    <div class="marker" style="{% templatetag openvariable %} direction {% templatetag closevariable %}: {% templatetag openvariable %} percent {% templatetag closevariable %}%"></div>
-</script>
 {% endblock stationflyout %}

@@ -136,6 +136,10 @@
         <div class="flyout secondary stationflyout hidden" data-id="{% templatetag openvariable %} stationid {% templatetag closevariable %}"></div>
     </script>
 
+    <script id="stationscale_marker_template" type="text/html">
+        <div class="marker" style="{% templatetag openvariable %} direction {% templatetag closevariable %}: {% templatetag openvariable %} percent {% templatetag closevariable %}%"></div>
+    </script>
+
     <script id="stationmarker_svg_template" type="text/html">
         <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="62px" height="124px" viewBox="0 0 62 124" enable-background="new 0 0 62 124" xml:space="preserve" class="station-marker" data-bucket="{% templatetag openvariable %} bucket {% templatetag closevariable %}">
             <path class="stationmarker-pin" d="M61.998,10.333V46.5H43.312L31.077,61.998L18.841,46.5H0V10.333C0,4.624,4.624,0,10.333,0h41.333C57.366,0,61.998,4.624,61.998,10.333z"/>
