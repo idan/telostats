@@ -1,6 +1,5 @@
 from django.views.generic import DetailView, TemplateView
 from django.conf import settings
-from django.http import HttpResponseRedirect
 from djpjax import PJAXResponseMixin
 
 from .models import Station
@@ -24,11 +23,14 @@ class StationDetail(PJAXResponseMixin, DetailView):
         context['tileserver_url'] = settings.TILESERVER_URL
         return context
 
+
 class About(StationMap):
     template_name = 'about.html'
 
+
 class AboutApi(StationMap):
     template_name = 'about_api.html'
+
 
 class Contact(StationMap):
     template_name = 'contact.html'
