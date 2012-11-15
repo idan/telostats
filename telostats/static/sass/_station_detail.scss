@@ -35,6 +35,11 @@
         width: 25%;
         float: right;
     }
+    .marker {
+        border-right: 2px solid #000;
+        position: absolute;
+        left: 10px;
+    }
 }
 
 .station-map-wrap {

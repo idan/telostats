@@ -521,6 +521,10 @@ body, html {
     display: inline-block;
     width: 25%;
     float: right; }
+  .station-slider .marker {
+    border-right: 2px solid #000;
+    position: absolute;
+    left: 10px; }
 
 .station-map-wrap {
   background: white;
