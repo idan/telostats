@@ -7,6 +7,25 @@
             font-weight: bold;
             text-shadow: 0 -1px 0 white;
         }
+        .intro {
+            padding-bottom: 10px;
+            .line {
+                padding-bottom: 3px;
+                .num {
+                    background: #26DB12;
+                    @include border-radius(0.8em);
+                    color: #ffffff;
+                    display: inline-block;
+                    font-weight: bold;
+                    line-height: 1.6em;
+                    margin: 2px 5px 2px 3px;
+                    text-align: center;
+                    width: 1.6em;
+                }
+                .full { color: $color-4 }
+                .empty { color: $color-0 }
+            }
+        }
     }
     footer {
         position: absolute;

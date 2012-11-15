@@ -550,6 +550,25 @@ body, html {
   #maininfo header h1 {
     font-weight: bold;
     text-shadow: 0 -1px 0 white; }
+  #maininfo header .intro {
+    padding-bottom: 10px; }
+    #maininfo header .intro .line {
+      padding-bottom: 3px; }
+      #maininfo header .intro .line .num {
+        background: #26DB12;
+        -webkit-border-radius: 0.8em;
+        border-radius: 0.8em;
+        color: #ffffff;
+        display: inline-block;
+        font-weight: bold;
+        line-height: 1.6em;
+        margin: 2px 5px 2px 3px;
+        text-align: center;
+        width: 1.6em; }
+      #maininfo header .intro .line .full {
+        color: #18b4f1; }
+      #maininfo header .intro .line .empty {
+        color: #dd2ea3; }
 #maininfo footer {
   position: absolute;
   bottom: 5px;
