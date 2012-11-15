@@ -2,9 +2,8 @@
 
 {% block stationid %}{{ station.id }}{% endblock stationid %}
 
-{% block title %}
-Station Detail - {{ station.id }}
-{% endblock title %}
+{% block extra_title %} - {{ station.name }}
+{% endblock extra_title %}
 
 {% block stationflyout_state %}{% endblock stationflyout_state %}
 
