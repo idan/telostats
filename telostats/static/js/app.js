@@ -93,12 +93,12 @@
       case 3:
         section = 'full';
         direction = 'right';
-        percent = -0.07;
+        percent = available / 5;
         break;
       case 4:
         section = 'full';
         direction = 'right';
-        percent = available / 5;
+        percent = -0.07;
     }
     marker = ich.stationscale_marker_template({
       'direction': direction,
