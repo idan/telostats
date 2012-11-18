@@ -541,8 +541,20 @@ body, html {
   padding: 5px; }
 
 .station-map {
-  height: 200px;
+  height: 125px;
   width: 100%; }
+
+.timeline {
+  height: 40px; }
+  .timeline .axis path,
+  .timeline .axis line {
+    fill: none;
+    stroke: #ccc;
+    shape-rendering: crispEdges; }
+  .timeline .axis text {
+    fill: #ccc; }
+  .timeline .x.axis path {
+    display: none; }
 
 /* About flyout */
 #maininfo header {

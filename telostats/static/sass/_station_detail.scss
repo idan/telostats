@@ -9,10 +9,6 @@
     margin-right: 0.2em;
 }
 
-.station-slider-wrap {
-
-}
-
 .station-slider {
     margin: 2em 0;
     width: 100%;
@@ -58,6 +54,24 @@
 }
 
 .station-map {
-    height: 200px;
+    height: 125px;
     width: 100%;
+}
+
+.timeline {
+    height: 40px;
+
+    .axis path,
+    .axis line {
+      fill: none;
+      stroke: #ccc;
+      shape-rendering: crispEdges;
+    }
+    .axis text {
+        fill: #ccc;
+    }
+    .x.axis path {
+        display: none;
+    }
+
 }

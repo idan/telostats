@@ -21,6 +21,9 @@ MARKER_BUCKET_COLORS = {
     4: '#18b4f1',
 }
 
+bucket_colors = d3.scale.ordinal()
+    .range(['#dd2ea3', '#ffafe5', '#fff', '#94e1ff', '#18b4f1'])
+
 stationClassifier = (poles, available) ->
         bikes = poles - available
         if bikes == 0
@@ -103,6 +106,65 @@ renderStationScale = (elem) ->
     $("[data-id=#{id}] .station-slider>.#{section}").append(marker);
 
 
+renderTimeline = (data, elem) ->
+    # Render a timeline using data and stick it in elem
+
+    margin = {top: 0, right: 0, bottom: 25, left: 0}
+    width = $(elem).width() - margin.right - margin.left
+    console.log($(elem).height())
+    height = $(elem).height() - margin.top - margin.bottom
+    console.log(height)
+    console.log(width)
+    svg = d3.select(elem).append('svg')
+                         .attr('class', 'timeline')
+                         .attr('width', width + margin.right + margin.left)
+                         .attr('height', height + margin.top + margin.bottom)
+                         .append('g')
+                         .attr("transform", "translate(#{margin.left},#{margin.top})");
+
+    iso = d3.time.format.iso;
+
+    x = d3.time.scale()
+        .range([0, width])
+        .domain(d3.extent(data, (d) -> return iso.parse(d.timestamp) ))
+
+    xWidth = d3.scale.linear()
+             .domain([0, data.length])
+             .range([0, width])
+
+    xAxis = d3.svg.axis()
+            .scale(x)
+            .orient('bottom')
+            .ticks(d3.time.hours, 3)
+            .tickSubdivide(2)
+            .tickSize(5, 3, 8)
+            .tickFormat(d3.time.format('%H'))
+
+    colors = svg.append('g')
+
+    colors.selectAll('.timespan')
+        .data(data)
+        .enter().append('rect')
+        .attr('height', 10)
+        .attr('width', (d, i) -> xWidth(1))
+        .attr('fill', (d) ->
+            return bucket_colors(stationClassifier(d.poles, d.available)))
+        .attr('transform', (d) ->
+            offset = x(iso.parse(d.timestamp))
+            return "translate(#{offset}, 0)")
+
+    svg.append("g")
+        .attr("class", "x axis")
+        .attr("transform", "translate(0," + height + ")")
+        .call(xAxis);
+
+
+renderHistoryTimeline = (elem) ->
+    id = $(elem).attr('data-id')
+    d3.json("/api/v1/recent/#{id}", (recent) ->
+        renderTimeline(recent.series, elem))
+
+
 stationsLayer = (opts) ->
     map = opts.map
     stationData = opts.stations
@@ -162,8 +224,10 @@ stationsLayer = (opts) ->
                 $.pjax(opts)
                 $(newflyout).on('pjax:end', ->
                     mapelem = $(".station-map[data-id='#{stationid}']")[0]
+                    historyelem = $(".history-timeline[data-id='#{stationid}']")[0]
                     renderStationMap(mapelem)
                     renderStationScale(mapelem)
+                    renderHistoryTimeline(historyelem)
                     $(this).removeClass('hidden')
                     setTimeout( ->
                         $('.flyout.secondary:not(.stationflyout)').addClass('hidden')
@@ -301,8 +365,6 @@ initStationPie = (stations) ->
     pie_w = $('#stations-overview-pie').width()
     pie_h = $('#stations-overview-pie').height()
     pie_radius = Math.min(pie_w, pie_h) / 2;
-    pie_colors = d3.scale.ordinal()
-        .range(['#dd2ea3', '#ffafe5', '#fff', '#94e1ff', '#18b4f1'])
     arc = d3.svg.arc()
         .outerRadius(pie_radius - 10)
         .innerRadius(pie_radius - 70)
@@ -323,7 +385,7 @@ initStationPie = (stations) ->
 
     g.append("path")
         .attr("d", arc)
-        .style("fill", (d, i) -> return pie_colors(d.data.bucket) )
+        .style("fill", (d, i) -> return bucket_colors(d.data.bucket) )
 
     g.append("text")
         .attr("transform", (d) -> return "translate(#{arc.centroid(d)})" )
@@ -351,6 +413,7 @@ $ ->
             d3.select(stationelem).classed('selected', true)
     _.each($(".station-map"), renderStationMap)
     _.each($(".station-map"), renderStationScale)
+    _.each($(".history-timeline"), renderHistoryTimeline)
     $(document).pjax('a[data-pjax]')
 
     $('.close-flyout').live('click', (e) ->
