@@ -314,17 +314,17 @@ table {
 
 @font-face {
   font-family: "Almoni";
-  src: url("../fonts/almoni-dl-aaa-300.eot");
-  src: url("../fonts/almoni-dl-aaa-300.eot?#iefix") format("embedded-opentype"), url("../fonts/almoni-dl-aaa-300.woff") format("woff"), url("../fonts/almoni-dl-aaa-300.ttf") format("truetype"), url("../fonts/almoni-dl-aaa-300.svg#Almoni") format("svg");
   font-weight: 300;
-  font-style: normal; }
+  font-style: normal;
+  src: url("../fonts/almoni-dl-aaa-300.eot");
+  src: url("../fonts/almoni-dl-aaa-300.eot?#iefix") format("embedded-opentype"), url("../fonts/almoni-dl-aaa-300.woff") format("woff"), url("../fonts/almoni-dl-aaa-300.ttf") format("truetype"), url("../fonts/almoni-dl-aaa-300.svg#Almoni") format("svg"); }
 
 @font-face {
   font-family: "Almoni";
-  src: url("../fonts/almoni-dl-aaa-700.eot");
-  src: url("../fonts/almoni-dl-aaa-700.eot?#iefix") format("embedded-opentype"), url("../fonts/almoni-dl-aaa-700.woff") format("woff"), url("../fonts/almoni-dl-aaa-700.ttf") format("truetype"), url("../fonts/almoni-dl-aaa-700.svg#Almoni") format("svg");
   font-weight: 700;
-  font-style: normal; }
+  font-style: normal;
+  src: url("../fonts/almoni-dl-aaa-700.eot");
+  src: url("../fonts/almoni-dl-aaa-700.eot?#iefix") format("embedded-opentype"), url("../fonts/almoni-dl-aaa-700.woff") format("woff"), url("../fonts/almoni-dl-aaa-700.ttf") format("truetype"), url("../fonts/almoni-dl-aaa-700.svg#Almoni") format("svg"); }
 
 * {
   -webkit-box-sizing: border-box;
