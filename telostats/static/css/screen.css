@@ -505,8 +505,7 @@ body, html {
   margin: 2em 0; }
   .station-slider-wrap .station-slider {
     width: 100%;
-    text-align: center;
-    overflow: hidden; }
+    text-align: center; }
     .station-slider-wrap .station-slider .empty-marker {
       float: left;
       width: 10%; }
