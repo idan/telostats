@@ -492,6 +492,8 @@ body, html {
       font-size: 1em;
       text-align: center;
       text-shadow: 0 -1px 0 rgba(255, 255, 255, 0.5); }
+      .flyout section h1.hidden {
+        display: none; }
 
 /* Station detail flyout */
 .station-name {
@@ -546,6 +548,34 @@ body, html {
 
 .timeline {
   height: 45px; }
+  .timeline .timespan {
+    stroke-width: 1px;
+    stroke: #eee;
+    -webkit-transition: all 0.2s linear;
+    -moz-transition: all 0.2s linear;
+    -ms-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    transition: all 0.2s linear; }
+    .timeline .timespan.bucket-0 {
+      fill: #dd2ea3; }
+      .timeline .timespan.bucket-0:hover {
+        fill: #d8239c; }
+    .timeline .timespan.bucket-1 {
+      fill: #ffafe5; }
+      .timeline .timespan.bucket-1:hover {
+        fill: #ffa0e0; }
+    .timeline .timespan.bucket-2 {
+      fill: white; }
+      .timeline .timespan.bucket-2:hover {
+        fill: #f7f7f7; }
+    .timeline .timespan.bucket-3 {
+      fill: #94e1ff; }
+      .timeline .timespan.bucket-3:hover {
+        fill: #85ddff; }
+    .timeline .timespan.bucket-4 {
+      fill: #18b4f1; }
+      .timeline .timespan.bucket-4:hover {
+        fill: #0eadeb; }
   .timeline .axis path,
   .timeline .axis line {
     fill: none;

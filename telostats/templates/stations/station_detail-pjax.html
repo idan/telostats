@@ -1,12 +1,11 @@
 <a href="{% url home %}" class="close-flyout">&#10006;</a>
-<h2 class="station-name">{{ station.name }}</h2>
-<h5 class="station-id">({{ station.id }})</h5>
-{% if station.address %}
-<h4>{{ station.address }}</h4>
-{% endif %}
-
-<div><strong>אופניים פנויים</strong>: {{ station.available_bikes }}</div>
-<div><strong>עמדות פנויות</strong>: {{ station.available_poles }}</div>
+<section class="l-station-map">
+    <h1 class="hidden">מפת תחנה</h1>
+    <div class="station-map-wrap">
+        <div class="station-map map" data-id="{{ station.id }}" data-lat="{{ station.latitude }}" data-lon="{{ station.longitude }}" data-available="{{ station.available_poles }}" data-poles="{{ station.poles }}"></div>
+    </div>
+</section>
+<h2 class="station-name">{{ station.name }} <small>{{ station.id }}</small></h2>
 
 <div class="station-slider-wrap">
     <div class="station-slider">
@@ -16,14 +15,10 @@
     </div>
 </div>
 
-<div class="station-timelines">
+<section class="station-timelines">
     <h1>היסטוריה</h1>
+    <p>XXX need intro copy here</p>
     <div class="timeline history-timeline" data-id="{{ station.id }}"></div>
-</div>
-
-<section class="l-station-map">
-    <h1>מפת תחנה</h1>
-    <div class="station-map-wrap">
-        <div class="station-map map" data-id="{{ station.id }}" data-lat="{{ station.latitude }}" data-lon="{{ station.longitude }}" data-available="{{ station.available_poles }}" data-poles="{{ station.poles }}"></div>
-    </div>
 </section>
+
+

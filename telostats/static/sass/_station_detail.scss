@@ -61,6 +61,32 @@
 .timeline {
     height: 45px;
 
+    .timespan {
+        stroke-width: 1px;
+        stroke: #eee;
+        &.bucket-0 {
+            fill: $color-0;
+            &:hover { fill: darken($color-0, 3%) };
+        }
+        &.bucket-1 {
+            fill: $color-1;
+            &:hover { fill: darken($color-1, 3%) };
+        }
+        &.bucket-2 {
+            fill: white;
+            &:hover { fill: darken(white, 3%) };
+        }
+        &.bucket-3 {
+            fill: $color-3;
+            &:hover { fill: darken($color-3, 3%) };
+        }
+        &.bucket-4 {
+            fill: $color-4;
+            &:hover { fill: darken($color-4, 3%) };
+        }
+        @include transition (all 0.2s linear);
+
+    }
     .axis path,
     .axis line {
       fill: none;

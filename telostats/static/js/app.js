@@ -110,30 +110,40 @@
   };
 
   renderTimeline = function(data, elem) {
-    var colors, height, iso, margin, svg, width, x, xAxis, xWidth;
+    var colors, elemHeight, elemWidth, height, iso, margin, svg, timeExtent, width, x, xAxis, xWidth;
     margin = {
       top: 0,
-      right: 0,
+      right: 7,
       bottom: 25,
-      left: 0
+      left: 7
     };
-    width = $(elem).width() - margin.right - margin.left;
-    console.log($(elem).height());
-    height = $(elem).height() - margin.top - margin.bottom;
-    console.log(height);
-    console.log(width);
-    svg = d3.select(elem).append('svg').attr('class', 'timeline').attr('width', width + margin.right + margin.left).attr('height', height + margin.top + margin.bottom).append('g').attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+    elemWidth = $(elem).width();
+    elemHeight = $(elem).height();
+    width = elemWidth - margin.right - margin.left;
+    height = elemHeight - margin.top - margin.bottom;
+    console.log("width: " + width + ", height: " + height);
+    console.log("elemWidth: " + elemWidth + ", elemHeight: " + elemHeight);
+    console.log("data.length: " + data.length);
+    svg = d3.select(elem).append('svg').attr('class', 'timeline').attr('width', elemWidth).attr('height', elemHeight).append('g').attr("transform", "translate(" + margin.left + "," + margin.top + ")");
     iso = d3.time.format.iso;
-    x = d3.time.scale().range([0, width]).domain(d3.extent(data, function(d) {
+    timeExtent = d3.extent(data, function(d) {
       return iso.parse(d.timestamp);
-    }));
+    });
+    timeExtent[1] = d3.time.hour.offset(timeExtent[1], 1);
+    console.log(timeExtent);
+    x = d3.time.scale().rangeRound([0, width]).domain(timeExtent);
     xWidth = d3.scale.linear().domain([0, data.length]).range([0, width]);
     xAxis = d3.svg.axis().scale(x).orient('bottom').ticks(d3.time.hours, 3).tickSubdivide(2).tickSize(5, 3).tickFormat(d3.time.format('%H'));
     colors = svg.append('g');
-    colors.selectAll('.timespan').data(data).enter().append('rect').attr('height', 15).attr('width', function(d, i) {
-      return xWidth(1);
-    }).attr('fill', function(d) {
-      return bucket_colors(stationClassifier(d.poles, d.available));
+    colors.selectAll('.timespan').data(data).enter().append('rect').attr('class', function(d, i) {
+      var bucket;
+      bucket = stationClassifier(d.poles, d.available);
+      return "timespan bucket-" + bucket;
+    }).attr('height', 15).attr('width', function(d, i) {
+      var end, start;
+      start = iso.parse(d.timestamp);
+      end = d3.time.hour.offset(start, 1);
+      return width = x(end) - x(start);
     }).attr('transform', function(d) {
       var offset;
       offset = x(iso.parse(d.timestamp));

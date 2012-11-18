@@ -108,25 +108,32 @@ renderStationScale = (elem) ->
 
 renderTimeline = (data, elem) ->
     # Render a timeline using data and stick it in elem
-
-    margin = {top: 0, right: 0, bottom: 25, left: 0}
-    width = $(elem).width() - margin.right - margin.left
-    console.log($(elem).height())
-    height = $(elem).height() - margin.top - margin.bottom
-    console.log(height)
-    console.log(width)
+    margin = {top: 0, right: 7, bottom: 25, left: 7}
+    elemWidth = $(elem).width()
+    elemHeight = $(elem).height()
+    width = elemWidth - margin.right - margin.left
+    height = elemHeight - margin.top - margin.bottom
+    console.log("width: #{width}, height: #{height}")
+    console.log("elemWidth: #{elemWidth}, elemHeight: #{elemHeight}")
+    console.log("data.length: #{data.length}")
     svg = d3.select(elem).append('svg')
                          .attr('class', 'timeline')
-                         .attr('width', width + margin.right + margin.left)
-                         .attr('height', height + margin.top + margin.bottom)
+                         .attr('width', elemWidth)
+                         .attr('height', elemHeight)
                          .append('g')
                          .attr("transform", "translate(#{margin.left},#{margin.top})");
 
     iso = d3.time.format.iso;
 
+    timeExtent = d3.extent(data, (d) -> return iso.parse(d.timestamp))
+    # push the end hour forward by one, because our data indicates one slice
+    # per hour, so the last slice lasts one hour after the last timestamp
+    timeExtent[1] = d3.time.hour.offset(timeExtent[1], 1)
+    console.log(timeExtent)
+
     x = d3.time.scale()
-        .range([0, width])
-        .domain(d3.extent(data, (d) -> return iso.parse(d.timestamp) ))
+        .rangeRound([0, width])
+        .domain(timeExtent)
 
     xWidth = d3.scale.linear()
              .domain([0, data.length])
@@ -145,10 +152,15 @@ renderTimeline = (data, elem) ->
     colors.selectAll('.timespan')
         .data(data)
         .enter().append('rect')
+        .attr('class', (d, i) ->
+            bucket = stationClassifier(d.poles, d.available)
+            return "timespan bucket-#{bucket}")
         .attr('height', 15)
-        .attr('width', (d, i) -> xWidth(1))
-        .attr('fill', (d) ->
-            return bucket_colors(stationClassifier(d.poles, d.available)))
+        .attr('width', (d, i) -> 
+            start = iso.parse(d.timestamp)
+            end = d3.time.hour.offset(start, 1)
+            width = x(end) - x(start))
+        # .attr('width', (d, i) -> xWidth(1))
         .attr('transform', (d) ->
             offset = x(iso.parse(d.timestamp))
             return "translate(#{offset}, 0)")
