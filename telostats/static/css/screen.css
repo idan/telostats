@@ -541,25 +541,28 @@ body, html {
         position: absolute;
         height: 1.5em;
         z-index: 100; }
-  .station-slider-wrap .marker-info .arrow-up {
-    width: 0;
-    height: 0;
-    border-left: 5px solid transparent;
-    border-right: 5px solid transparent;
-    border-bottom: 5px solid black; }
-  .station-slider-wrap .marker-info .text {
-    padding: 2px;
-    display: inline-block;
-    border: 1px solid #000;
-    background-color: #fff;
-    font-weight: 700; }
-    .station-slider-wrap .marker-info .text .poles {
-      padding: 2px;
-      border-left: 1px solid #ccc;
-      width: 50%; }
-    .station-slider-wrap .marker-info .text .bikes {
-      padding: 2px;
-      width: 50%; }
+        .station-slider-wrap .station-slider .station-slider-bar .marker .marker-info {
+          position: relative;
+          top: 1.5em; }
+          .station-slider-wrap .station-slider .station-slider-bar .marker .marker-info .arrow-up {
+            width: 0;
+            height: 0;
+            border-left: 5px solid transparent;
+            border-right: 5px solid transparent;
+            border-bottom: 5px solid black; }
+          .station-slider-wrap .station-slider .station-slider-bar .marker .marker-info .text {
+            padding: 2px;
+            display: inline-block;
+            border: 1px solid #000;
+            background-color: #fff;
+            font-weight: 700; }
+            .station-slider-wrap .station-slider .station-slider-bar .marker .marker-info .text .poles {
+              padding: 2px;
+              border-left: 1px solid #ccc;
+              width: 50%; }
+            .station-slider-wrap .station-slider .station-slider-bar .marker .marker-info .text .bikes {
+              padding: 2px;
+              width: 50%; }
 
 .station-map-wrap {
   background: white;

@@ -141,8 +141,8 @@
             <div class="marker-info">
                 <div class="arrow-up"></div>
                 <div class="text">
-                    <span class="poles">{{ station.available_poles }}</span>
-                    <span class="bikes">{{ station.available_bikes }}</span>
+                    <span class="poles">{% templatetag openvariable %} poles {% templatetag closevariable %}</span>
+                    <span class="bikes">{% templatetag openvariable %} bikes {% templatetag closevariable %}</span>
                 </div>
             </div>
         </div>

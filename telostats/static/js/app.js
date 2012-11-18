@@ -104,7 +104,9 @@
     }
     marker = ich.stationscale_marker_template({
       'direction': direction,
-      'percent': percent * 100
+      'percent': percent * 100,
+      'bikes': bikes,
+      'poles': available
     });
     return $("[data-id=" + id + "] .station-slider-bar>." + section).append(marker);
   };
