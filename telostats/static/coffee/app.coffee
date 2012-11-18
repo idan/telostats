@@ -137,7 +137,7 @@ renderTimeline = (data, elem) ->
             .orient('bottom')
             .ticks(d3.time.hours, 3)
             .tickSubdivide(2)
-            .tickSize(5, 3, 8)
+            .tickSize(5, 3)
             .tickFormat(d3.time.format('%H'))
 
     colors = svg.append('g')
@@ -145,7 +145,7 @@ renderTimeline = (data, elem) ->
     colors.selectAll('.timespan')
         .data(data)
         .enter().append('rect')
-        .attr('height', 10)
+        .attr('height', 15)
         .attr('width', (d, i) -> xWidth(1))
         .attr('fill', (d) ->
             return bucket_colors(stationClassifier(d.poles, d.available)))

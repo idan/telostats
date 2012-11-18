@@ -128,9 +128,9 @@
       return iso.parse(d.timestamp);
     }));
     xWidth = d3.scale.linear().domain([0, data.length]).range([0, width]);
-    xAxis = d3.svg.axis().scale(x).orient('bottom').ticks(d3.time.hours, 3).tickSubdivide(2).tickSize(5, 3, 8).tickFormat(d3.time.format('%H'));
+    xAxis = d3.svg.axis().scale(x).orient('bottom').ticks(d3.time.hours, 3).tickSubdivide(2).tickSize(5, 3).tickFormat(d3.time.format('%H'));
     colors = svg.append('g');
-    colors.selectAll('.timespan').data(data).enter().append('rect').attr('height', 10).attr('width', function(d, i) {
+    colors.selectAll('.timespan').data(data).enter().append('rect').attr('height', 15).attr('width', function(d, i) {
       return xWidth(1);
     }).attr('fill', function(d) {
       return bucket_colors(stationClassifier(d.poles, d.available));
