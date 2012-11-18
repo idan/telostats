@@ -1,31 +1,32 @@
 /* Station detail flyout */
 
 .station-name {
-    display: inline;
-}
-
-.station-id {
-    display: inline;
-    margin-right: 0.2em;
+    small {
+        font-size: 0.7em;
+        color: #888;
+    }
 }
 
 .station-slider-wrap {
-    margin: 2em 0;
     .station-slider {
         width: 100%;
+        padding-bottom: 4em;
+        @include clearfix;
         text-align: center;
-        .empty-marker {
+        .label {
             float: left;
             width: 10%;
+            color: #aaa;
+            font-size: 0.75em;
+            line-height: 1.5em * (4/3);
         }
-        .full-marker {
-            float: right;
-            width: 10%;
-        }
-        .station-slider-bar {
+       .station-slider-bar {
+            width: 80%;
+            float: left;
             border: 1px solid #ccc;
             @include box-shadow(0 0 7px 0px rgba(0,0,0,0.1));
             @include border-radius(2px);
+            @include clearfix;
             .empty, .ok, .full {
                 position: relative;
                 display: block;
@@ -37,50 +38,62 @@
             .empty {
                 background-color: $color-1;
                 border-left: 9px solid $color-0;
-                width: 20%;
+                width: 25%;
             }
             .ok {
                 background-color: white;
-                width: 40%;
+                width: 50%;
             }
             .full {
                 background-color: $color-3;
                 border-right: 9px solid $color-4;
-                width: 20%;
+                width: 25%;
             }
             .marker {
-                border-right: 2px solid #000;
                 position: absolute;
                 height: 1.5em;
                 z-index: 100;
                 .marker-info {
                     position: relative;
                     top: 1.5em;
-                    right: -1.55em;
-                    width: 3em;
+                    width: 5em;
+                    $border-color: #aaa;
                     .arrow-up {
                         width: 0;
                         height: 0;
                         margin: 0 auto;
                         border-left: 5px solid transparent;
                         border-right: 5px solid transparent;
-                        border-bottom: 5px solid black;
+                        border-bottom: 5px solid $border-color;
                     }
                     .text {
                         width: 100%;
                         padding: 2px;
                         display: inline-block;
-                        border: 1px solid #000;
+                        border: 1px solid $border-color;
                         background-color: #fff;
-                        font-weight: 700;
-                        .poles {
-                            padding: 2px;
-                            border-left: 1px solid #ccc;
+                        @include box-shadow(0 0 10px 3px rgba(0,0,0,0.1));
+                        @include border-radius(2px);
+                        @include clearfix;
+                        &>div {
+                            float: right;
                             width: 50%;
+                            height: 2.7em;
+                            padding: 2px;
+                            text-align: center;
+                            font-size: 1.25em;
+                            line-height: 1.25em;
+                            font-weight: 700;
+                            background-position: center bottom;
+                            background-size: 90%;
+                            background-repeat: no-repeat;
+                        }
+                        .poles {
+                            border-left: 1px solid #eee;
+                            background-image: url(../img/parking.svg);
                         }
                         .bikes {
-                            padding: 2px;
-                            width: 50%;
+                            background-image: url(../img/bicycle.svg);
                         }
                     }
                 }

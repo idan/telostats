@@ -80,7 +80,7 @@ renderStationScale = (elem) ->
         when 0
             section = 'empty'
             direction = 'left'
-            percent = -0.09
+            percent = -0.07
         when 1
             section = 'empty'
             direction = 'left'
@@ -96,7 +96,7 @@ renderStationScale = (elem) ->
         when 4
             section = 'full'
             direction = 'right'
-            percent = -0.09
+            percent = -0.07
 
     marker = ich.stationscale_marker_template({
         'direction': direction,
@@ -167,11 +167,13 @@ renderTimeline = (data, elem) ->
             offset = x(iso.parse(d.timestamp))
             return "translate(#{offset}, 0)")
 
-    svg.append("g")
-        .attr("class", "x axis")
-        .attr("transform", "translate(0," + height + ")")
-        .call(xAxis);
+    xaxisSVG = svg.append("g")
+              .attr("class", "x axis")
+              .attr("transform", "translate(0," + height + ")")
+              .call(xAxis);
 
+    xaxisSVG.selectAll("text")
+            .each((d) -> d3.select(this).attr("class", "axislabel"))
 
 renderHistoryTimeline = (elem) ->
     id = $(elem).attr('data-id')

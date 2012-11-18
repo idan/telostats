@@ -138,11 +138,11 @@
 
     <script id="stationscale_marker_template" type="text/html">
         <div class="marker" style="{% templatetag openvariable %} direction {% templatetag closevariable %}: {% templatetag openvariable %} percent {% templatetag closevariable %}%">
-            <div class="marker-info">
+            <div class="marker-info" style="{% templatetag openvariable %} direction {% templatetag closevariable %}: -2.5em">
                 <div class="arrow-up"></div>
                 <div class="text">
-                    <span class="poles">{% templatetag openvariable %} poles {% templatetag closevariable %}</span>
-                    <span class="bikes">{% templatetag openvariable %} bikes {% templatetag closevariable %}</span>
+                    <div class="poles">{% templatetag openvariable %} poles {% templatetag closevariable %}</div>
+                    <div class="bikes">{% templatetag openvariable %} bikes {% templatetag closevariable %}</div>
                 </div>
             </div>
         </div>

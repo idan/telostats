@@ -5,19 +5,20 @@
         <div class="station-map map" data-id="{{ station.id }}" data-lat="{{ station.latitude }}" data-lon="{{ station.longitude }}" data-available="{{ station.available_poles }}" data-poles="{{ station.poles }}"></div>
     </div>
 </section>
-<h2 class="station-name">{{ station.name }} <small>{{ station.id }}</small></h2>
+<h2 class="station-name">{{ station.name }} <small>({{ station.id }})</small></h2>
 
-<div class="station-slider-wrap">
+<section class="station-slider-wrap">
+    <h1 class="hidden">סטטוס התחנה</h1>
     <div class="station-slider">
-        <div class="empty-marker">ריק</div>
+        <div class="label">ריק</div>
         <div class="station-slider-bar">
             <div class="empty"></div>
             <div class="ok"></div>
             <div class="full"></div>
         </div>
-        <div class="full-marker">מלא</div>
+        <div class="label">מלא</div>
     </div>
-</div>
+</section>
 
 <section class="station-timelines">
     <h1>היסטוריה</h1>

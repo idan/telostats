@@ -80,7 +80,7 @@
       case 0:
         section = 'empty';
         direction = 'left';
-        percent = -0.09;
+        percent = -0.07;
         break;
       case 1:
         section = 'empty';
@@ -100,7 +100,7 @@
       case 4:
         section = 'full';
         direction = 'right';
-        percent = -0.09;
+        percent = -0.07;
     }
     marker = ich.stationscale_marker_template({
       'direction': direction,
@@ -112,7 +112,7 @@
   };
 
   renderTimeline = function(data, elem) {
-    var colors, elemHeight, elemWidth, height, iso, margin, svg, timeExtent, width, x, xAxis, xWidth;
+    var colors, elemHeight, elemWidth, height, iso, margin, svg, timeExtent, width, x, xAxis, xWidth, xaxisSVG;
     margin = {
       top: 0,
       right: 7,
@@ -151,7 +151,10 @@
       offset = x(iso.parse(d.timestamp));
       return "translate(" + offset + ", 0)";
     });
-    return svg.append("g").attr("class", "x axis").attr("transform", "translate(0," + height + ")").call(xAxis);
+    xaxisSVG = svg.append("g").attr("class", "x axis").attr("transform", "translate(0," + height + ")").call(xAxis);
+    return xaxisSVG.selectAll("text").each(function(d) {
+      return d3.select(this).attr("class", "axislabel");
+    });
   };
 
   renderHistoryTimeline = function(elem) {
