@@ -80,7 +80,7 @@
       case 0:
         section = 'empty';
         direction = 'left';
-        percent = -0.07;
+        percent = -0.09;
         break;
       case 1:
         section = 'empty';
@@ -100,13 +100,13 @@
       case 4:
         section = 'full';
         direction = 'right';
-        percent = -0.07;
+        percent = -0.09;
     }
     marker = ich.stationscale_marker_template({
       'direction': direction,
       'percent': percent * 100
     });
-    return $("[data-id=" + id + "] .station-slider>." + section).append(marker);
+    return $("[data-id=" + id + "] .station-slider-bar>." + section).append(marker);
   };
 
   renderTimeline = function(data, elem) {

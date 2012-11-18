@@ -13,37 +13,47 @@
     margin: 2em 0;
     width: 100%;
     text-align: center;
-    @include border-radius(2px);
-    border: 1px solid #ccc;
-    @include box-shadow(0 0 7px 0px rgba(0,0,0,0.1));
     overflow: hidden;
-    .empty, .ok, .full {
-        position: relative;
-        display: block;
-        height: 1.5em;
-        margin: 0;
-        padding: 0;
+    .empty-marker {
         float: left;
+        width: 10%;
     }
-    .empty {
-        background-color: $color-1;
-        border-left: 9px solid $color-0;
-        width: 25%;
+    .full-marker {
+        float: right;
+        width: 10%;
     }
-    .ok {
-        background-color: white;
-        width: 50%;
-    }
-    .full {
-        background-color: $color-3;
-        border-right: 9px solid $color-4;
-        width: 25%;
-    }
-    .marker {
-        border-right: 2px solid #000;
-        position: absolute;
-        height: 1.5em;
-        z-index: 100;
+    .station-slider-bar {
+        border: 1px solid #ccc;
+        @include box-shadow(0 0 7px 0px rgba(0,0,0,0.1));
+        @include border-radius(2px);
+        .empty, .ok, .full {
+            position: relative;
+            display: block;
+            height: 1.5em;
+            margin: 0;
+            padding: 0;
+            float: left;
+        }
+        .empty {
+            background-color: $color-1;
+            border-left: 9px solid $color-0;
+            width: 20%;
+        }
+        .ok {
+            background-color: white;
+            width: 40%;
+        }
+        .full {
+            background-color: $color-3;
+            border-right: 9px solid $color-4;
+            width: 20%;
+        }
+        .marker {
+            border-right: 2px solid #000;
+            position: absolute;
+            height: 1.5em;
+            z-index: 100;
+        }
     }
 }
 
