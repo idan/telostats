@@ -80,7 +80,7 @@ renderStationScale = (elem) ->
         when 0
             section = 'empty'
             direction = 'left'
-            percent = -0.07
+            percent = -0.09
         when 1
             section = 'empty'
             direction = 'left'
@@ -88,7 +88,7 @@ renderStationScale = (elem) ->
         when 2
             section = 'ok'
             direction = 'left'
-            percent = ((bikes-5) / (available + bikes - 10))
+            percent = ((bikes - 5) / (available + bikes - 10))
         when 3
             section = 'full'
             direction = 'right'
@@ -96,14 +96,16 @@ renderStationScale = (elem) ->
         when 4
             section = 'full'
             direction = 'right'
-            percent = -0.07
+            percent = -0.09
 
     marker = ich.stationscale_marker_template({
         'direction': direction,
-        'percent': percent * 100
+        'percent': percent * 100,
+        'bikes': bikes,
+        'poles': available
     })
 
-    $("[data-id=#{id}] .station-slider>.#{section}").append(marker);
+    $("[data-id=#{id}] .station-slider-bar>.#{section}").append(marker);
 
 
 renderTimeline = (data, elem) ->

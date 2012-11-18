@@ -9,41 +9,83 @@
     margin-right: 0.2em;
 }
 
-.station-slider {
+.station-slider-wrap {
     margin: 2em 0;
-    width: 100%;
-    text-align: center;
-    @include border-radius(2px);
-    border: 1px solid #ccc;
-    @include box-shadow(0 0 7px 0px rgba(0,0,0,0.1));
-    overflow: hidden;
-    .empty, .ok, .full {
-        position: relative;
-        display: block;
-        height: 1.5em;
-        margin: 0;
-        padding: 0;
-        float: left;
-    }
-    .empty {
-        background-color: $color-1;
-        border-left: 9px solid $color-0;
-        width: 25%;
-    }
-    .ok {
-        background-color: white;
-        width: 50%;
-    }
-    .full {
-        background-color: $color-3;
-        border-right: 9px solid $color-4;
-        width: 25%;
-    }
-    .marker {
-        border-right: 2px solid #000;
-        position: absolute;
-        height: 1.5em;
-        z-index: 100;
+    .station-slider {
+        width: 100%;
+        text-align: center;
+        .empty-marker {
+            float: left;
+            width: 10%;
+        }
+        .full-marker {
+            float: right;
+            width: 10%;
+        }
+        .station-slider-bar {
+            border: 1px solid #ccc;
+            @include box-shadow(0 0 7px 0px rgba(0,0,0,0.1));
+            @include border-radius(2px);
+            .empty, .ok, .full {
+                position: relative;
+                display: block;
+                height: 1.5em;
+                margin: 0;
+                padding: 0;
+                float: left;
+            }
+            .empty {
+                background-color: $color-1;
+                border-left: 9px solid $color-0;
+                width: 20%;
+            }
+            .ok {
+                background-color: white;
+                width: 40%;
+            }
+            .full {
+                background-color: $color-3;
+                border-right: 9px solid $color-4;
+                width: 20%;
+            }
+            .marker {
+                border-right: 2px solid #000;
+                position: absolute;
+                height: 1.5em;
+                z-index: 100;
+                .marker-info {
+                    position: relative;
+                    top: 1.5em;
+                    right: -1.55em;
+                    width: 3em;
+                    .arrow-up {
+                        width: 0;
+                        height: 0;
+                        margin: 0 auto;
+                        border-left: 5px solid transparent;
+                        border-right: 5px solid transparent;
+                        border-bottom: 5px solid black;
+                    }
+                    .text {
+                        width: 100%;
+                        padding: 2px;
+                        display: inline-block;
+                        border: 1px solid #000;
+                        background-color: #fff;
+                        font-weight: 700;
+                        .poles {
+                            padding: 2px;
+                            border-left: 1px solid #ccc;
+                            width: 50%;
+                        }
+                        .bikes {
+                            padding: 2px;
+                            width: 50%;
+                        }
+                    }
+                }
+            }
+        }
     }
 }
 

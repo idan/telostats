@@ -503,39 +503,72 @@ body, html {
   display: inline;
   margin-right: 0.2em; }
 
-.station-slider {
-  margin: 2em 0;
-  width: 100%;
-  text-align: center;
-  -webkit-border-radius: 2px;
-  border-radius: 2px;
-  border: 1px solid #ccc;
-  -webkit-box-shadow: 0 0 7px 0px rgba(0, 0, 0, 0.1);
-  box-shadow: 0 0 7px 0px rgba(0, 0, 0, 0.1);
-  overflow: hidden; }
-  .station-slider .empty, .station-slider .ok, .station-slider .full {
-    position: relative;
-    display: block;
-    height: 1.5em;
-    margin: 0;
-    padding: 0;
-    float: left; }
-  .station-slider .empty {
-    background-color: #ffafe5;
-    border-left: 9px solid #dd2ea3;
-    width: 25%; }
-  .station-slider .ok {
-    background-color: white;
-    width: 50%; }
-  .station-slider .full {
-    background-color: #94e1ff;
-    border-right: 9px solid #18b4f1;
-    width: 25%; }
-  .station-slider .marker {
-    border-right: 2px solid #000;
-    position: absolute;
-    height: 1.5em;
-    z-index: 100; }
+.station-slider-wrap {
+  margin: 2em 0; }
+  .station-slider-wrap .station-slider {
+    width: 100%;
+    text-align: center; }
+    .station-slider-wrap .station-slider .empty-marker {
+      float: left;
+      width: 10%; }
+    .station-slider-wrap .station-slider .full-marker {
+      float: right;
+      width: 10%; }
+    .station-slider-wrap .station-slider .station-slider-bar {
+      border: 1px solid #ccc;
+      -webkit-box-shadow: 0 0 7px 0px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 0 7px 0px rgba(0, 0, 0, 0.1);
+      -webkit-border-radius: 2px;
+      border-radius: 2px; }
+      .station-slider-wrap .station-slider .station-slider-bar .empty, .station-slider-wrap .station-slider .station-slider-bar .ok, .station-slider-wrap .station-slider .station-slider-bar .full {
+        position: relative;
+        display: block;
+        height: 1.5em;
+        margin: 0;
+        padding: 0;
+        float: left; }
+      .station-slider-wrap .station-slider .station-slider-bar .empty {
+        background-color: #ffafe5;
+        border-left: 9px solid #dd2ea3;
+        width: 20%; }
+      .station-slider-wrap .station-slider .station-slider-bar .ok {
+        background-color: white;
+        width: 40%; }
+      .station-slider-wrap .station-slider .station-slider-bar .full {
+        background-color: #94e1ff;
+        border-right: 9px solid #18b4f1;
+        width: 20%; }
+      .station-slider-wrap .station-slider .station-slider-bar .marker {
+        border-right: 2px solid #000;
+        position: absolute;
+        height: 1.5em;
+        z-index: 100; }
+        .station-slider-wrap .station-slider .station-slider-bar .marker .marker-info {
+          position: relative;
+          top: 1.5em;
+          right: -1.55em;
+          width: 3em; }
+          .station-slider-wrap .station-slider .station-slider-bar .marker .marker-info .arrow-up {
+            width: 0;
+            height: 0;
+            margin: 0 auto;
+            border-left: 5px solid transparent;
+            border-right: 5px solid transparent;
+            border-bottom: 5px solid black; }
+          .station-slider-wrap .station-slider .station-slider-bar .marker .marker-info .text {
+            width: 100%;
+            padding: 2px;
+            display: inline-block;
+            border: 1px solid #000;
+            background-color: #fff;
+            font-weight: 700; }
+            .station-slider-wrap .station-slider .station-slider-bar .marker .marker-info .text .poles {
+              padding: 2px;
+              border-left: 1px solid #ccc;
+              width: 50%; }
+            .station-slider-wrap .station-slider .station-slider-bar .marker .marker-info .text .bikes {
+              padding: 2px;
+              width: 50%; }
 
 .station-map-wrap {
   background: white;
