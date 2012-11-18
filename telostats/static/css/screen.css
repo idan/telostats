@@ -542,6 +542,13 @@ body, html {
       height: 1.5em;
       z-index: 100; }
 
+.marker-info {
+  display: inline-block;
+  border: 1px solid #ccc;
+  background-color: #fff; }
+  .marker-info .poles {
+    border-left: 1px solid #ccc; }
+
 .station-map-wrap {
   background: white;
   border: 1px solid #ccc;

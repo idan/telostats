@@ -57,6 +57,15 @@
     }
 }
 
+.marker-info {
+    display: inline-block;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    .poles {
+        border-left: 1px solid #ccc;
+    }
+}
+
 .station-map-wrap {
     background: white;
     border: 1px solid #ccc;
