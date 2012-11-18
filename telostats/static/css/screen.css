@@ -543,14 +543,18 @@ body, html {
         z-index: 100; }
         .station-slider-wrap .station-slider .station-slider-bar .marker .marker-info {
           position: relative;
-          top: 1.5em; }
+          top: 1.5em;
+          right: -1.55em;
+          width: 3em; }
           .station-slider-wrap .station-slider .station-slider-bar .marker .marker-info .arrow-up {
             width: 0;
             height: 0;
+            margin: 0 auto;
             border-left: 5px solid transparent;
             border-right: 5px solid transparent;
             border-bottom: 5px solid black; }
           .station-slider-wrap .station-slider .station-slider-bar .marker .marker-info .text {
+            width: 100%;
             padding: 2px;
             display: inline-block;
             border: 1px solid #000;
