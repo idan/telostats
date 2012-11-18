@@ -1,3 +1,4 @@
+import logging
 import json
 
 from tastypie.resources import ModelResource, Resource, fields
@@ -42,8 +43,7 @@ class StationSeries:
 
 class SeriesResource(Resource):
     id = fields.CharField(attribute='id')
-    poles = fields.ListField(attribute='poles')
-    available = fields.ListField(attribute='available')
+    series = fields.ListField(attribute='series')
 
     class Meta:
         object_class = StationSeries
@@ -75,7 +75,18 @@ class SeriesResource(Resource):
 
     def obj_get(self, request=None, **kwargs):
         station_id = kwargs['pk']
-        series = self._get_series(station_id=station_id, hours=24)
-        station_series = StationSeries(initial=series[station_id])
+        series = self._get_series(station_id=station_id, hours=24)[station_id]
+        # zip the two lists together on same timestamps
+        timestamps = [x['t'] for x in series['available']]  # or poles, dm;st
+        available = [x['v'] for x in series['available']]
+        poles = [x['v'] for x in series['poles']]
+        series = [{
+            'timestamp': t,
+            'poles': p,
+            'available': a,
+            'bikes': p - a
+        } for t, p, a in zip(timestamps, poles, available)]
+        initial_series = {'series': series}
+        station_series = StationSeries(initial=initial_series)
         station_series.id = station_id
         return station_series
