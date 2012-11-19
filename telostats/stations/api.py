@@ -1,6 +1,8 @@
-import logging
 import json
 
+from datetime import timedelta
+from dateutil.parser import parse as parse_date
+from tastypie.cache import SimpleCache
 from tastypie.resources import ModelResource, Resource, fields
 from tastypie.serializers import Serializer
 from .models import Station
@@ -41,7 +43,7 @@ class StationSeries:
         return self._data
 
 
-class SeriesResource(Resource):
+class RecentResource(Resource):
     id = fields.CharField(attribute='id')
     series = fields.ListField(attribute='series')
 
@@ -49,8 +51,9 @@ class SeriesResource(Resource):
         object_class = StationSeries
         resource_name = 'recent'
         serializer = Serializer(formats=['json'])
-        limit = 200
-        allowed_methods = ['get']
+        limit = 1
+        list_allowed_methods = []
+        detail_allowed_methods = ['get']
         filtering = {
             'id': ('exact', ),
         }
@@ -62,7 +65,7 @@ class SeriesResource(Resource):
         return self._client().get_series(station_id, **kwargs)
 
     def get_object_list(self, request):
-        series_list = self._get_series(hours=24).items()
+        series_list = self._get_series().items()
         res = []
         for sta_id, series in series_list:
             obj = StationSeries(initial=series)
@@ -75,7 +78,7 @@ class SeriesResource(Resource):
 
     def obj_get(self, request=None, **kwargs):
         station_id = kwargs['pk']
-        series = self._get_series(station_id=station_id, hours=24)[station_id]
+        series = self._get_series(station_id=station_id)[station_id]
         # zip the two lists together on same timestamps
         timestamps = [x['t'] for x in series['available']]  # or poles, dm;st
         available = [x['v'] for x in series['available']]
@@ -87,6 +90,60 @@ class SeriesResource(Resource):
             'bikes': p - a
         } for t, p, a in zip(timestamps, poles, available)]
         initial_series = {'series': series}
+        station_series = StationSeries(initial=initial_series)
+        station_series.id = station_id
+        return station_series
+
+
+class AverageResource(Resource):
+    id = fields.CharField(attribute='id')
+    series = fields.ListField(attribute='series')
+
+    class Meta:
+        object_class = StationSeries
+        resource_name = 'average'
+        cache = SimpleCache(timeout=60 * 60 * 24 * 7)
+        serializer = Serializer(formats=['json'])
+        limit = 1
+        list_allowed_methods = []
+        detail_allowed_methods = ['get']
+        filtering = {
+            'id': ('exact', ),
+        }
+
+    def _client(self):
+        return TempoDbClient()
+
+    def _get_series(self, station_id=None, **kwargs):
+        return self._client().get_series(station_id, start=timedelta(days=28), **kwargs)
+
+    def obj_get(self, request=None, **kwargs):
+        station_id = kwargs['pk']
+        series = self._get_series(station_id=station_id)[station_id]
+
+        # initial result structure
+        res = dict([
+            (i, {'available': [], 'poles': []})
+        for i in range(24)])
+
+        # data collection in buckets
+        for s in ['available', 'poles']:
+            for datum in series[s]:
+                hour = parse_date(datum['t']).hour
+                res[hour][s].append(datum['v'])
+
+        # reduce lists by average
+        res = [{
+            'hour': k,
+            'available': sum(v['available']) / len(v['available']),
+            'poles': sum(v['poles']) / len(v['poles']),
+        } for k, v in res.items()]
+
+        # add final bike count
+        for hour in res:
+            hour['bikes'] = hour['poles'] - hour['available']
+
+        initial_series = {'series': res}
         station_series = StationSeries(initial=initial_series)
         station_series.id = station_id
         return station_series

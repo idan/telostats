@@ -37,8 +37,8 @@ class TempoDbClient():
             params['attr[station]'] = station_id
         return self.session.get(API_URL + '/data/', params=params)
 
-    def get_series(self, station_id=None, interval='1hour', **kwargs):
-        start = (datetime.utcnow() - timedelta(hours=24)).isoformat()
+    def get_series(self, station_id=None, interval='1hour', start=timedelta(hours=24), **kwargs):
+        start = (datetime.utcnow() - start).isoformat()
         data = self.get_data(station_id=station_id, start=start, interval=interval)
         content = data.content
         res = defaultdict(dict)
