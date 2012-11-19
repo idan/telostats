@@ -50,6 +50,7 @@ class RecentResource(Resource):
     class Meta:
         object_class = StationSeries
         resource_name = 'recent'
+        cache = SimpleCache(timeout=60 * 60)
         serializer = Serializer(formats=['json'])
         limit = 1
         list_allowed_methods = []
