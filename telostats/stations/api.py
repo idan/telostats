@@ -50,7 +50,7 @@ class RecentResource(Resource):
     class Meta:
         object_class = StationSeries
         resource_name = 'recent'
-        cache = SimpleCache(timeout=60 * 60)
+        # cache = SimpleCache(timeout=60 * 60)
         serializer = Serializer(formats=['json'])
         limit = 1
         list_allowed_methods = []
@@ -103,7 +103,7 @@ class AverageResource(Resource):
     class Meta:
         object_class = StationSeries
         resource_name = 'average'
-        cache = SimpleCache(timeout=60 * 60 * 24 * 7)
+        # cache = SimpleCache(timeout=60 * 60 * 24 * 7)
         serializer = Serializer(formats=['json'])
         limit = 1
         list_allowed_methods = []
