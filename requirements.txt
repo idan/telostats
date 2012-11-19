@@ -4,7 +4,6 @@ dj-database-url==0.2.1
 django-jsonfield==0.8.11
 django-pjax==1.2
 django-storages==1.1.5
-django-tastypie==0.9.11
 Django==1.4.1
 gunicorn==0.14.6
 psycopg2==2.4.5
@@ -15,3 +14,4 @@ requests==0.14.0
 Fabric==1.4.3
 South==0.7.6
 Unipath==0.2.1
+-e git+https://github.com/toastdriven/django-tastypie.git@63055a7a3c8bf53eac1b879c3bebfd6898416721#egg=django_tastypie-dev
