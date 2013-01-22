@@ -2,13 +2,16 @@
 
 ## Dev
 
-- `cd telostats`
-- `mkvirtualenv telostats`
-- `pip install -r requirements.txt`
-- `gem install sass bourbon`
-- `npm install -g coffee-script` (might require sudo)
-- `createdb telostats`
-- Create `.env` file (and use [https://github.com/kennethreitz/autoenv](https://github.com/kennethreitz/autoenv)) with required env vars:
+```bash
+$ cd telostats
+$ mkvirtualenv telostats
+$ pip install -r requirements.txt
+$ gem install sass bourbon
+$ npm install -g coffee-script  # might require sudo
+$ createdb telostats
+```
+
+Create `.env` file (and use [https://github.com/kennethreitz/autoenv](https://github.com/kennethreitz/autoenv)) with required env vars:
   - `AWS_ACCESS_KEY_ID`
   - `AWS_SECRET_ACCESS_KEY`
   - `DJANGO_SECRET_KEY`
