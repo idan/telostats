@@ -243,7 +243,7 @@
             renderStationMap(mapelem);
             renderStationScale(mapelem);
             renderHistoryTimeline(historyelem);
-            renderHistoryTimeline(averageelem);
+            renderAverageTimeline(averageelem);
             $(this).removeClass('hidden');
             return setTimeout(function() {
               $('.flyout.secondary:not(.stationflyout)').addClass('hidden');

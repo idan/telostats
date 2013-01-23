@@ -249,7 +249,7 @@ stationsLayer = (opts) ->
                     renderStationMap(mapelem)
                     renderStationScale(mapelem)
                     renderHistoryTimeline(historyelem)
-                    renderHistoryTimeline(averageelem)
+                    renderAverageTimeline(averageelem)
                     $(this).removeClass('hidden')
                     setTimeout( ->
                         $('.flyout.secondary:not(.stationflyout)').addClass('hidden')
