@@ -1,5 +1,7 @@
-from django.views.generic import DetailView, TemplateView
 from django.conf import settings
+from django.core.mail import send_mail
+from django.http import HttpResponseRedirect
+from django.views.generic import DetailView, TemplateView
 from djpjax import PJAXResponseMixin
 
 from .models import Station
@@ -34,3 +36,9 @@ class AboutApi(StationMap):
 
 class Contact(StationMap):
     template_name = 'contact.html'
+
+    def post(self, request):
+        msg = request.POST.get('message')
+        send_mail('Tel-O-Stats Feedback Received', msg,
+            'admin@telostats.com', ['idan@gazit.me', 'yuv.adm@gmail.com'])
+        return HttpResponseRedirect('/')

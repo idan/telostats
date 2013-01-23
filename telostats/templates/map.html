@@ -106,8 +106,8 @@
         <p>אם ברצונכם לקבל תשובה, דאגו לציין כתובת אימייל או מספר טלפון בו נוכל לחזור אליכם.</p>
         <form id="contact-form" action="{% url contact %}" method="POST">
             {% csrf_token %}
-            <textarea id="contact-feedback" rows="4" cols="40"></textarea>
-            <input type="submit" value="שלח/י" disabled="disabled"></input>
+            <textarea id="contact-feedback" name="message" rows="4" cols="40"></textarea>
+            <input type="submit" value="שלח/י"></input>
         </form>
         {% endblock contact_flyout %}
     </div>
