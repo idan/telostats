@@ -432,6 +432,7 @@ $ ->
     _.each($('.station-map'), renderStationScale)
     _.each($('.history-timeline'), renderHistoryTimeline)
     _.each($('.average-timeline'), renderAverageTimeline)
+
     $(document).pjax('a[data-pjax]')
 
     $('.close-flyout').live('click', (e) ->
@@ -446,4 +447,9 @@ $ ->
         $(target).removeClass('hidden')
         pushStateNav($(this).attr('href'))
         return false
+    )
+
+    $(document).keyup((e) ->
+        if e.keyCode == 27
+            $('.close-flyout').click()
     )

@@ -419,12 +419,17 @@
       pushStateNav($(this).attr('href'));
       return false;
     });
-    return $('a.static-flyout').click(function() {
+    $('a.static-flyout').click(function() {
       var target;
       target = $(this).attr('data-flyout');
       $(target).removeClass('hidden');
       pushStateNav($(this).attr('href'));
       return false;
+    });
+    return $(document).keyup(function(e) {
+      if (e.keyCode === 27) {
+        return $('.close-flyout').click();
+      }
     });
   });
 
