@@ -1,7 +1,7 @@
 /* flyouts */
 
 $flyout-width: 400px;
-$flyout-vpadding: 10px;
+$flyout-vpadding: 15px;
 .flyout {
     direction: rtl;
     position: absolute;
@@ -35,9 +35,10 @@ $flyout-vpadding: 10px;
         position: absolute;
         top: 0;
         left: 0;
-        padding: 3px;
+        padding: 0px 3px;
         font-size: 1.3em;
         text-decoration: none;
+        color: #777;
     }
 
     section {

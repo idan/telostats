@@ -191,7 +191,7 @@ figure {
  * Define consistent border, margin, and padding.
  */
 fieldset {
-  border: 1px solid #c0c0c0;
+  border: 1px solid silver;
   margin: 0 2px;
   padding: 0.35em 0.625em 0.75em; }
 
@@ -453,15 +453,15 @@ body, html {
   color: #444;
   width: 400px;
   right: 0;
-  top: 10px;
-  bottom: 10px;
+  top: 15px;
+  bottom: 15px;
   padding: 1em;
   -webkit-border-top-left-radius: 2px;
   border-top-left-radius: 2px;
   -webkit-border-bottom-left-radius: 2px;
   border-bottom-left-radius: 2px;
   background: #eee;
-  border: 1px solid #888;
+  border: 1px solid #888888;
   opacity: 1.0;
   -webkit-transition: right 0.2s ease-in-out, opacity 0.2s linear;
   -moz-transition: right 0.2s ease-in-out, opacity 0.2s linear;
@@ -483,9 +483,10 @@ body, html {
     position: absolute;
     top: 0;
     left: 0;
-    padding: 3px;
+    padding: 0px 3px;
     font-size: 1.3em;
-    text-decoration: none; }
+    text-decoration: none;
+    color: #777; }
   .flyout section {
     padding: 0.5em 0; }
     .flyout section h1 {
@@ -519,7 +520,7 @@ body, html {
   .station-slider-wrap .station-slider .station-slider-bar {
     width: 80%;
     float: left;
-    border: 1px solid #ccc;
+    border: 1px solid #cccccc;
     -webkit-box-shadow: 0 0 7px 0px rgba(0, 0, 0, 0.1);
     box-shadow: 0 0 7px 0px rgba(0, 0, 0, 0.1);
     -webkit-border-radius: 2px;
@@ -592,14 +593,14 @@ body, html {
             background-size: 90%;
             background-repeat: no-repeat; }
           .station-slider-wrap .station-slider .station-slider-bar .marker .marker-info .text .poles {
-            border-left: 1px solid #eee;
+            border-left: 1px solid #eeeeee;
             background-image: url(../img/parking.svg); }
           .station-slider-wrap .station-slider .station-slider-bar .marker .marker-info .text .bikes {
             background-image: url(../img/bicycle.svg); }
 
 .station-map-wrap {
   background: white;
-  border: 1px solid #ccc;
+  border: 1px solid #cccccc;
   padding: 5px; }
 
 .station-map {
@@ -648,7 +649,7 @@ body, html {
 
 /* About flyout */
 #maininfo header {
-  border-bottom: 1px solid #ccc; }
+  border-bottom: 1px solid #cccccc; }
   #maininfo header h1 {
     font-weight: bold;
     text-shadow: 0 -1px 0 white; }
@@ -676,7 +677,7 @@ body, html {
   bottom: 5px;
   left: 1em;
   right: 1em;
-  border-top: 1px solid #ccc;
+  border-top: 1px solid #cccccc;
   color: #888; }
   #maininfo footer a {
     color: #444;
@@ -711,7 +712,7 @@ body, html {
       #maininfo .l-key ul li .swatch {
         width: 62px;
         height: 62px;
-        border: 1px solid #ddd;
+        border: 1px solid #dddddd;
         background-color: white;
         position: relative; }
         #maininfo .l-key ul li .swatch:before {
