@@ -3,8 +3,9 @@ boto==2.5.2
 dj-database-url==0.2.1
 django-jsonfield==0.8.11
 django-pjax==1.2
+django-redis-cache==0.9.5
 django-storages==1.1.5
-Django==1.4.1
+Django==1.4.2
 gunicorn==0.14.6
 psycopg2==2.4.5
 pyparsing==1.5.6
