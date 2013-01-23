@@ -2,17 +2,30 @@ import json
 
 from datetime import datetime, timedelta
 from dateutil.parser import parse as parse_date
-from tastypie.cache import SimpleCache
+from tastypie.cache import NoCache
 from tastypie.resources import ModelResource, Resource, fields
 from tastypie.serializers import Serializer
 from .models import Station
 from ..utils.tempodb import TempoDbClient
 
 
+class APICache(NoCache):
+    def __init__(self, timeout=60, *args, **kwargs):
+        super(APICache, self).__init__(*args, **kwargs)
+        self.timeout = timeout
+
+    def cache_control(self):
+        return {
+            'max_age': self.timeout,
+            's_maxage': self.timeout,
+            'public': True
+        }
+
 class StationResource(ModelResource):
     class Meta:
         queryset = Station.visible_objects.all()
         resource_name = 'station'
+        cache = APICache(timeout=60 * 60 * 24 * 7)
         serializer = Serializer(formats=['json'])
         limit = 0  # show all stations by default
         allowed_methods = ['get']
@@ -50,7 +63,7 @@ class RecentResource(Resource):
     class Meta:
         object_class = StationSeries
         resource_name = 'recent'
-        # cache = SimpleCache(timeout=60 * 60)
+        cache = APICache(timeout=60 * 15)
         serializer = Serializer(formats=['json'])
         limit = 1
         list_allowed_methods = []
@@ -103,7 +116,7 @@ class AverageResource(Resource):
     class Meta:
         object_class = StationSeries
         resource_name = 'average'
-        # cache = SimpleCache(timeout=60 * 60 * 24 * 7)
+        cache = APICache(timeout=60 * 60 * 24 * 7)
         serializer = Serializer(formats=['json'])
         limit = 1
         list_allowed_methods = []
