@@ -1,6 +1,6 @@
 import json
 
-from datetime import timedelta
+from datetime import datetime, timedelta
 from dateutil.parser import parse as parse_date
 from tastypie.cache import SimpleCache
 from tastypie.resources import ModelResource, Resource, fields
@@ -116,7 +116,7 @@ class AverageResource(Resource):
         return TempoDbClient()
 
     def _get_series(self, station_id=None, **kwargs):
-        return self._client().get_series(station_id, start=timedelta(days=28), **kwargs)
+        return self._client().get_series(station_id, start=timedelta(days=7), **kwargs)
 
     def obj_get(self, request=None, **kwargs):
         station_id = kwargs['pk']
@@ -135,7 +135,7 @@ class AverageResource(Resource):
 
         # reduce lists by average
         res = [{
-            'hour': k,
+            'timestamp': datetime(2013, 1, 1, k).isoformat(),
             'available': sum(v['available']) / len(v['available']),
             'poles': sum(v['poles']) / len(v['poles']),
         } for k, v in res.items()]

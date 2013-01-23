@@ -180,6 +180,10 @@ renderHistoryTimeline = (elem) ->
     d3.json("/api/v1/recent/#{id}", (recent) ->
         renderTimeline(recent.series, elem))
 
+renderAverageTimeline = (elem) ->
+    id = $(elem).attr('data-id')
+    d3.json("/api/v1/average/#{id}", (recent) ->
+        renderTimeline(recent.series, elem))
 
 stationsLayer = (opts) ->
     map = opts.map
@@ -241,9 +245,11 @@ stationsLayer = (opts) ->
                 $(newflyout).on('pjax:end', ->
                     mapelem = $(".station-map[data-id='#{stationid}']")[0]
                     historyelem = $(".history-timeline[data-id='#{stationid}']")[0]
+                    averageelem = $(".average-timeline[data-id='#{stationid}']")[0]
                     renderStationMap(mapelem)
                     renderStationScale(mapelem)
                     renderHistoryTimeline(historyelem)
+                    renderHistoryTimeline(averageelem)
                     $(this).removeClass('hidden')
                     setTimeout( ->
                         $('.flyout.secondary:not(.stationflyout)').addClass('hidden')
@@ -409,15 +415,10 @@ initStationPie = (stations) ->
         .style("text-anchor", "middle")
         .text((d, i) -> return d.data.percentage )
 
-
-
-
-
 pushStateNav = (url) ->
     window.history.pushState(null, '', url)
     if _gaq?
         _gaq.push(['_trackPageview', url])
-
 
 $ ->
     map = initMap()
@@ -427,9 +428,10 @@ $ ->
         stationelem = $(".station[data-id=#{selectedid}]")[0]
         if stationelem
             d3.select(stationelem).classed('selected', true)
-    _.each($(".station-map"), renderStationMap)
-    _.each($(".station-map"), renderStationScale)
-    _.each($(".history-timeline"), renderHistoryTimeline)
+    _.each($('.station-map'), renderStationMap)
+    _.each($('.station-map'), renderStationScale)
+    _.each($('.history-timeline'), renderHistoryTimeline)
+    _.each($('.average-timeline'), renderAverageTimeline)
     $(document).pjax('a[data-pjax]')
 
     $('.close-flyout').live('click', (e) ->
