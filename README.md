@@ -9,6 +9,8 @@ $ pip install -r requirements.txt
 $ gem install sass bourbon
 $ npm install -g coffee-script  # might require sudo
 $ createdb telostats
+$ python manage.py syncdb --migrate
+$ python manage.py measure_stations --no-log
 ```
 
 Create `.env` file (and use [https://github.com/kennethreitz/autoenv](https://github.com/kennethreitz/autoenv)) with required env vars:
