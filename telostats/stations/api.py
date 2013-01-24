@@ -25,7 +25,7 @@ class StationResource(ModelResource):
     class Meta:
         queryset = Station.visible_objects.all()
         resource_name = 'station'
-        cache = APICache(timeout=60 * 60 * 24 * 7)
+        cache = APICache(timeout=60 * 15)
         serializer = Serializer(formats=['json'])
         limit = 0  # show all stations by default
         allowed_methods = ['get']
